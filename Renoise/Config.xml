@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoisePrefs doc_version="15">
+  <GraphPortPrefs>
+<!--Window Metrics-->
+    <WindowedMode>false</WindowedMode>
+    <WindowedModePosition>48,34</WindowedModePosition>
+    <WindowedModeSize>1824,988</WindowedModeSize>
+    <WindowedModeIsMaximized>true</WindowedModeIsMaximized>
+    <FullScreenMonitorMatchPos>960,540</FullScreenMonitorMatchPos>
+<!--Window Performance-->
+    <VisualEffects>false</VisualEffects>
+    <EnableExternEditorKeyboardAccess>false</EnableExternEditorKeyboardAccess>
+    <ApplyFrameRate>true</ApplyFrameRate>
+    <MaxFrameRate>60</MaxFrameRate>
+    <CompatibilityBlitMode>true</CompatibilityBlitMode>
+<!--Keyboard Handling-->
+    <OverrideSystemShortcuts>true</OverrideSystemShortcuts>
+    <UseRightSideModifiersAsMappableKeys>true</UseRightSideModifiersAsMappableKeys>
+    <CapsLockKeyWorkaround>true</CapsLockKeyWorkaround>
+<!--Mouse Handling-->
+    <ApplyMouseWheelAcceleration>true</ApplyMouseWheelAcceleration>
+<!--Application Prefs-->
+    <RecentFiles>
+      <RecentFile>D:\Music\Modules\keith303\Keith303 - Reconstruction of the untouched.xrns</RecentFile>
+      <RecentFile>D:\Music\Modules\keith303\keith303_-_all_beauty_fades_with_the_blink_of_an_eye.xrns</RecentFile>
+      <RecentFile>D:\Music\Modules\keith303\sdc80_keith303-constantly_switching_device.xrns</RecentFile>
+      <RecentFile>D:\Music\Modules\keith303\keith303_-_no_more_looking_back.xrns</RecentFile>
+      <RecentFile>D:\Music\Modules\keith303\keith303_-_evaluate_your_life.xrns</RecentFile>
+      <RecentFile>D:\Music\Modules\keith303\keith303_-_subtly_distant_comatose.rns</RecentFile>
+      <RecentFile>D:\Music\Modules\keith303\keith303_-_all_wheels_spinning_freely.xrns</RecentFile>
+      <RecentFile>D:\Music\Modules\keith303\keith303_-_3_days_until_yesterday.xrns</RecentFile>
+      <RecentFile>C:\Program Files\Renoise 3.0.1\Resources\Songs\DemoSong - Dblue - Syntechtic Sugar.xrns</RecentFile>
+      <RecentFile>C:\Program Files\Renoise 3.0.1\Resources\Songs\DemoSong - Phobium - Abrupt.xrns</RecentFile>
+    </RecentFiles>
+    <RecentLoadedFiles>
+      <RecentLoadedFile>D:\Music\Modules\keith303\Keith303 - Reconstruction of the untouched.xrns</RecentLoadedFile>
+      <RecentLoadedFile>D:\Music\Modules\keith303\keith303_-_all_beauty_fades_with_the_blink_of_an_eye.xrns</RecentLoadedFile>
+      <RecentLoadedFile>D:\Music\Modules\keith303\sdc80_keith303-constantly_switching_device.xrns</RecentLoadedFile>
+      <RecentLoadedFile>D:\Music\Modules\keith303\keith303_-_no_more_looking_back.xrns</RecentLoadedFile>
+      <RecentLoadedFile>D:\Music\Modules\keith303\keith303_-_evaluate_your_life.xrns</RecentLoadedFile>
+      <RecentLoadedFile>D:\Music\Modules\keith303\keith303_-_subtly_distant_comatose.rns</RecentLoadedFile>
+      <RecentLoadedFile>D:\Music\Modules\keith303\keith303_-_all_wheels_spinning_freely.xrns</RecentLoadedFile>
+      <RecentLoadedFile>D:\Music\Modules\keith303\keith303_-_3_days_until_yesterday.xrns</RecentLoadedFile>
+      <RecentLoadedFile>C:\Program Files\Renoise 3.0.1\Resources\Songs\DemoSong - Dblue - Syntechtic Sugar.xrns</RecentLoadedFile>
+      <RecentLoadedFile>C:\Program Files\Renoise 3.0.1\Resources\Songs\DemoSong - Phobium - Abrupt.xrns</RecentLoadedFile>
+    </RecentLoadedFiles>
+    <RecentSavedFiles>
+      <RecentSavedFile>D:\Work\Music\Sounds\apocalypse-saw.xrns</RecentSavedFile>
+      <RecentSavedFile>D:\Music\Modules\Keith303\keith303_-_all_beauty_fades_with_the_blink_of_an_eye.xrns</RecentSavedFile>
+    </RecentSavedFiles>
+    <WarnAboutUnsavedDocumentChanges>true</WarnAboutUnsavedDocumentChanges>
+    <QuitAndSaveBackupOnFatalError>true</QuitAndSaveBackupOnFatalError>
+    <ShowScriptingDevelopmentTools>true</ShowScriptingDevelopmentTools>
+    <ApplicationStartsFirstTime>false</ApplicationStartsFirstTime>
+  </GraphPortPrefs>
+<!--View Presets-->
+  <GlobalViewPresets>
+    <GlobalViewPreset>
+      <UpperFrameIsVisible>true</UpperFrameIsVisible>
+      <LowerFrameIsVisible>true</LowerFrameIsVisible>
+      <ActiveUpperFrameView>Track Scopes</ActiveUpperFrameView>
+      <ActiveMiddleFrameView>Patterns</ActiveMiddleFrameView>
+      <DetachedFirstActiveMiddleFrameView>Patterns</DetachedFirstActiveMiddleFrameView>
+      <DetachedSecondActiveMiddleFrameView>Sample Editor</DetachedSecondActiveMiddleFrameView>
+      <ActiveLowerFrameView>Automation</ActiveLowerFrameView>
+      <FocusedView>Pattern Editor</FocusedView>
+      <AdvancedEditIsVisible>false</AdvancedEditIsVisible>
+      <PatternMatrixIsVisible>false</PatternMatrixIsVisible>
+      <DiskBrowserIsVisible>false</DiskBrowserIsVisible>
+      <InstrumentBoxIsVisible>true</InstrumentBoxIsVisible>
+      <InstrumentPropertiesVisible>false</InstrumentPropertiesVisible>
+    </GlobalViewPreset>
+    <GlobalViewPreset>
+      <UpperFrameIsVisible>false</UpperFrameIsVisible>
+      <LowerFrameIsVisible>false</LowerFrameIsVisible>
+      <ActiveUpperFrameView>Track Scopes</ActiveUpperFrameView>
+      <ActiveMiddleFrameView>Patterns</ActiveMiddleFrameView>
+      <DetachedFirstActiveMiddleFrameView>Mixer</DetachedFirstActiveMiddleFrameView>
+      <DetachedSecondActiveMiddleFrameView>Sample Editor</DetachedSecondActiveMiddleFrameView>
+      <ActiveLowerFrameView>Automation</ActiveLowerFrameView>
+      <FocusedView>Pattern Editor</FocusedView>
+      <AdvancedEditIsVisible>false</AdvancedEditIsVisible>
+      <PatternMatrixIsVisible>false</PatternMatrixIsVisible>
+      <DiskBrowserIsVisible>false</DiskBrowserIsVisible>
+      <InstrumentBoxIsVisible>true</InstrumentBoxIsVisible>
+      <InstrumentPropertiesVisible>false</InstrumentPropertiesVisible>
+    </GlobalViewPreset>
+    <GlobalViewPreset>
+      <UpperFrameIsVisible>true</UpperFrameIsVisible>
+      <LowerFrameIsVisible>true</LowerFrameIsVisible>
+      <ActiveUpperFrameView>Master Spectrum</ActiveUpperFrameView>
+      <ActiveMiddleFrameView>Mixer</ActiveMiddleFrameView>
+      <DetachedFirstActiveMiddleFrameView>Patterns</DetachedFirstActiveMiddleFrameView>
+      <DetachedSecondActiveMiddleFrameView>Sample Editor</DetachedSecondActiveMiddleFrameView>
+      <ActiveLowerFrameView>Track DSPs</ActiveLowerFrameView>
+      <FocusedView>Mixer</FocusedView>
+      <AdvancedEditIsVisible>false</AdvancedEditIsVisible>
+      <PatternMatrixIsVisible>false</PatternMatrixIsVisible>
+      <DiskBrowserIsVisible>true</DiskBrowserIsVisible>
+      <InstrumentBoxIsVisible>true</InstrumentBoxIsVisible>
+      <InstrumentPropertiesVisible>false</InstrumentPropertiesVisible>
+    </GlobalViewPreset>
+    <GlobalViewPreset>
+      <UpperFrameIsVisible>false</UpperFrameIsVisible>
+      <LowerFrameIsVisible>false</LowerFrameIsVisible>
+      <ActiveUpperFrameView>Track Scopes</ActiveUpperFrameView>
+      <ActiveMiddleFrameView>Patterns</ActiveMiddleFrameView>
+      <DetachedFirstActiveMiddleFrameView>Patterns</DetachedFirstActiveMiddleFrameView>
+      <DetachedSecondActiveMiddleFrameView>Sample Keyzones</DetachedSecondActiveMiddleFrameView>
+      <ActiveLowerFrameView>Track DSPs</ActiveLowerFrameView>
+      <FocusedView>Pattern Editor</FocusedView>
+      <AdvancedEditIsVisible>false</AdvancedEditIsVisible>
+      <PatternMatrixIsVisible>false</PatternMatrixIsVisible>
+      <DiskBrowserIsVisible>false</DiskBrowserIsVisible>
+      <InstrumentBoxIsVisible>true</InstrumentBoxIsVisible>
+      <InstrumentPropertiesVisible>false</InstrumentPropertiesVisible>
+    </GlobalViewPreset>
+    <GlobalViewPreset>
+      <UpperFrameIsVisible>false</UpperFrameIsVisible>
+      <LowerFrameIsVisible>false</LowerFrameIsVisible>
+      <ActiveUpperFrameView>Master Spectrum</ActiveUpperFrameView>
+      <ActiveMiddleFrameView>Sample Modulation</ActiveMiddleFrameView>
+      <DetachedFirstActiveMiddleFrameView>Patterns</DetachedFirstActiveMiddleFrameView>
+      <DetachedSecondActiveMiddleFrameView>Sample Modulation</DetachedSecondActiveMiddleFrameView>
+      <ActiveLowerFrameView>Track DSPs</ActiveLowerFrameView>
+      <FocusedView>Sample Modulation Matrix</FocusedView>
+      <AdvancedEditIsVisible>false</AdvancedEditIsVisible>
+      <PatternMatrixIsVisible>false</PatternMatrixIsVisible>
+      <DiskBrowserIsVisible>true</DiskBrowserIsVisible>
+      <InstrumentBoxIsVisible>true</InstrumentBoxIsVisible>
+      <InstrumentPropertiesVisible>false</InstrumentPropertiesVisible>
+    </GlobalViewPreset>
+    <GlobalViewPreset>
+      <UpperFrameIsVisible>false</UpperFrameIsVisible>
+      <LowerFrameIsVisible>false</LowerFrameIsVisible>
+      <ActiveUpperFrameView>Master Spectrum</ActiveUpperFrameView>
+      <ActiveMiddleFrameView>Sample Effects</ActiveMiddleFrameView>
+      <DetachedFirstActiveMiddleFrameView>Patterns</DetachedFirstActiveMiddleFrameView>
+      <DetachedSecondActiveMiddleFrameView>Sample Effects</DetachedSecondActiveMiddleFrameView>
+      <ActiveLowerFrameView>Track DSPs</ActiveLowerFrameView>
+      <FocusedView>Sample Effects Mixer</FocusedView>
+      <AdvancedEditIsVisible>false</AdvancedEditIsVisible>
+      <PatternMatrixIsVisible>false</PatternMatrixIsVisible>
+      <DiskBrowserIsVisible>true</DiskBrowserIsVisible>
+      <InstrumentBoxIsVisible>true</InstrumentBoxIsVisible>
+      <InstrumentPropertiesVisible>false</InstrumentPropertiesVisible>
+    </GlobalViewPreset>
+    <GlobalViewPreset>
+      <UpperFrameIsVisible>false</UpperFrameIsVisible>
+      <LowerFrameIsVisible>false</LowerFrameIsVisible>
+      <ActiveUpperFrameView>Master Spectrum</ActiveUpperFrameView>
+      <ActiveMiddleFrameView>Plugin Editor</ActiveMiddleFrameView>
+      <DetachedFirstActiveMiddleFrameView>Patterns</DetachedFirstActiveMiddleFrameView>
+      <DetachedSecondActiveMiddleFrameView>Plugin Editor</DetachedSecondActiveMiddleFrameView>
+      <ActiveLowerFrameView>Track DSPs</ActiveLowerFrameView>
+      <FocusedView>Plugin Editor</FocusedView>
+      <AdvancedEditIsVisible>false</AdvancedEditIsVisible>
+      <PatternMatrixIsVisible>false</PatternMatrixIsVisible>
+      <DiskBrowserIsVisible>true</DiskBrowserIsVisible>
+      <InstrumentBoxIsVisible>true</InstrumentBoxIsVisible>
+      <InstrumentPropertiesVisible>false</InstrumentPropertiesVisible>
+    </GlobalViewPreset>
+    <GlobalViewPreset>
+      <UpperFrameIsVisible>false</UpperFrameIsVisible>
+      <LowerFrameIsVisible>false</LowerFrameIsVisible>
+      <ActiveUpperFrameView>Master Spectrum</ActiveUpperFrameView>
+      <ActiveMiddleFrameView>Midi Editor</ActiveMiddleFrameView>
+      <DetachedFirstActiveMiddleFrameView>Patterns</DetachedFirstActiveMiddleFrameView>
+      <DetachedSecondActiveMiddleFrameView>Midi Editor</DetachedSecondActiveMiddleFrameView>
+      <ActiveLowerFrameView>Track DSPs</ActiveLowerFrameView>
+      <FocusedView>MIDI Editor</FocusedView>
+      <AdvancedEditIsVisible>false</AdvancedEditIsVisible>
+      <PatternMatrixIsVisible>false</PatternMatrixIsVisible>
+      <DiskBrowserIsVisible>true</DiskBrowserIsVisible>
+      <InstrumentBoxIsVisible>true</InstrumentBoxIsVisible>
+      <InstrumentPropertiesVisible>false</InstrumentPropertiesVisible>
+    </GlobalViewPreset>
+  </GlobalViewPresets>
+<!--Frame Visibility-->
+  <UpperFrameVisibilities>
+    <UpperFrameVisibility>true</UpperFrameVisibility>
+    <UpperFrameVisibility>true</UpperFrameVisibility>
+  </UpperFrameVisibilities>
+  <LowerFrameVisibilities>
+    <LowerFrameVisibility>true</LowerFrameVisibility>
+    <LowerFrameVisibility>true</LowerFrameVisibility>
+  </LowerFrameVisibilities>
+  <UpperFrameHeight>158</UpperFrameHeight>
+  <LowerFrameHeight>144</LowerFrameHeight>
+  <LastActiveUpperFrameView>0</LastActiveUpperFrameView>
+  <LastActiveMiddleFrameView>0</LastActiveMiddleFrameView>
+  <LastActiveLowerFrameView>0</LastActiveLowerFrameView>
+<!--Instrument Box-->
+  <InstrumentBoxIsVisible>false</InstrumentBoxIsVisible>
+  <InstrumentBoxHeight>153</InstrumentBoxHeight>
+  <UpperFrameInstrumentBoxIsVisible>true</UpperFrameInstrumentBoxIsVisible>
+  <UpperFrameInstrumentBoxWidth>354</UpperFrameInstrumentBoxWidth>
+<!--Instrument Editor-->
+  <InstrumentEditorSidePaneWidth>226</InstrumentEditorSidePaneWidth>
+<!--Detached Instrument Editor-->
+  <InstrumentEditorDetached>false</InstrumentEditorDetached>
+  <InstrumentEditorDialogMaximized>false</InstrumentEditorDialogMaximized>
+  <InstrumentEditorDialogPosition>171,119</InstrumentEditorDialogPosition>
+  <InstrumentEditorDialogSize>1266,751</InstrumentEditorDialogSize>
+<!--Disk Browser-->
+  <DiskBrowserIsVisible>false</DiskBrowserIsVisible>
+  <DiskBrowserWidth>449</DiskBrowserWidth>
+  <DiskBrowserDirTreeHeight>0</DiskBrowserDirTreeHeight>
+  <DirectoryPresets>
+    <DirectoryPreset>
+      <DirectoryPreset/>
+      <DirectoryPreset/>
+      <DirectoryPreset/>
+      <DirectoryPreset/>
+    </DirectoryPreset>
+    <DirectoryPreset>
+      <DirectoryPreset/>
+      <DirectoryPreset/>
+      <DirectoryPreset/>
+      <DirectoryPreset/>
+    </DirectoryPreset>
+    <DirectoryPreset>
+      <DirectoryPreset/>
+      <DirectoryPreset/>
+      <DirectoryPreset/>
+      <DirectoryPreset/>
+    </DirectoryPreset>
+    <DirectoryPreset>
+      <DirectoryPreset/>
+      <DirectoryPreset/>
+      <DirectoryPreset/>
+      <DirectoryPreset/>
+    </DirectoryPreset>
+  </DirectoryPresets>
+  <LastBrowsedDirectories>
+    <LastBrowsedDirectory>
+      <TreeInfo>?0?C:\Program Files\Renoise 3.0.1\Resources\Library\Instruments\Leads\</TreeInfo>
+      <SelectedNodeName>C:\Program Files\Renoise 3.0.1\Resources\Library\Instruments\Leads\</SelectedNodeName>
+    </LastBrowsedDirectory>
+    <LastBrowsedDirectory>
+      <TreeInfo>?0?C:\Program Files\Renoise 3.0.1\Resources\Library\?1?Effect Chains?1?Effect Presets?1?Instruments?1?Modulation Sets?1?Phrases?1?Samples</TreeInfo>
+      <SelectedNodeName>C:\Program Files\Renoise 3.0.1\Resources\Library\Instruments\</SelectedNodeName>
+    </LastBrowsedDirectory>
+    <LastBrowsedDirectory>
+      <TreeInfo>?0?C:\Program Files\Renoise 3.0.1\Resources\Library\?1?Effect Chains?1?Effect Presets?1?Instruments?1?Modulation Sets?1?Phrases?1?Samples</TreeInfo>
+      <SelectedNodeName>C:\Program Files\Renoise 3.0.1\Resources\Library\Samples\</SelectedNodeName>
+    </LastBrowsedDirectory>
+    <LastBrowsedDirectory>
+      <TreeInfo>?0?C:\Program Files\Renoise 3.0.1\Resources\?1?Library?1?Schemas?1?Scripts?1?Skin?1?Songs?1?Stylesheets?1?Themes</TreeInfo>
+      <SelectedNodeName>C:\Program Files\Renoise 3.0.1\Resources\Library\</SelectedNodeName>
+    </LastBrowsedDirectory>
+  </LastBrowsedDirectories>
+  <FileListShowAllOptions>
+    <FileListShowAllOption>false</FileListShowAllOption>
+    <FileListShowAllOption>false</FileListShowAllOption>
+    <FileListShowAllOption>false</FileListShowAllOption>
+    <FileListShowAllOption>false</FileListShowAllOption>
+  </FileListShowAllOptions>
+  <FileListShowSearchFieldOptions>
+    <FileListShowSearchFieldOption>true</FileListShowSearchFieldOption>
+    <FileListShowSearchFieldOption>false</FileListShowSearchFieldOption>
+    <FileListShowSearchFieldOption>false</FileListShowSearchFieldOption>
+    <FileListShowSearchFieldOption>false</FileListShowSearchFieldOption>
+  </FileListShowSearchFieldOptions>
+  <FileListSearchFieldStrings>
+    <FileListSearchFieldString/>
+    <FileListSearchFieldString/>
+    <FileListSearchFieldString/>
+    <FileListSearchFieldString/>
+  </FileListSearchFieldStrings>
+  <FileListSortOptions>
+    <FileListSortOption>Alphabetic</FileListSortOption>
+    <FileListSortOption>Alphabetic</FileListSortOption>
+    <FileListSortOption>Alphabetic</FileListSortOption>
+    <FileListSortOption>Alphabetic</FileListSortOption>
+  </FileListSortOptions>
+  <FileListShowSize>
+    <FileListShowSizeItem>false</FileListShowSizeItem>
+    <FileListShowSizeItem>false</FileListShowSizeItem>
+    <FileListShowSizeItem>false</FileListShowSizeItem>
+    <FileListShowSizeItem>false</FileListShowSizeItem>
+  </FileListShowSize>
+  <FileListShowModificationDate>
+    <FileListShowModificationDateItem>false</FileListShowModificationDateItem>
+    <FileListShowModificationDateItem>false</FileListShowModificationDateItem>
+    <FileListShowModificationDateItem>false</FileListShowModificationDateItem>
+    <FileListShowModificationDateItem>false</FileListShowModificationDateItem>
+  </FileListShowModificationDate>
+<!--Welcome Dialog-->
+  <ShowWelcomeDialog>false</ShowWelcomeDialog>
+  <LastActiveWelcomeFileListView>Demos &amp; Tutorials</LastActiveWelcomeFileListView>
+<!--Skin Colors-->
+  <SkinColors>
+    <Main_Back>7,8,7</Main_Back>
+    <Main_Font>181,181,181</Main_Font>
+    <Alternate_Main_Back>31,31,31</Alternate_Main_Back>
+    <Alternate_Main_Font>167,167,167</Alternate_Main_Font>
+    <Body_Back>78,89,105</Body_Back>
+    <Body_Font>222,233,245</Body_Font>
+    <Strong_Body_Font>235,255,252</Strong_Body_Font>
+    <Button_Back>57,74,86</Button_Back>
+    <Button_Font>237,237,237</Button_Font>
+    <Button_Highlight_Font>20,255,156</Button_Highlight_Font>
+    <Selected_Button_Back>238,238,238</Selected_Button_Back>
+    <Selected_Button_Font>0,0,0</Selected_Button_Font>
+    <Selection_Back>0,186,207</Selection_Back>
+    <Selection_Font>0,0,0</Selection_Font>
+    <StandBy_Selection_Back>50,50,50</StandBy_Selection_Back>
+    <StandBy_Selection_Font>143,143,143</StandBy_Selection_Font>
+    <Midi_Mapping_Back>255,255,0</Midi_Mapping_Back>
+    <Midi_Mapping_Font>0,0,0</Midi_Mapping_Font>
+    <ToolTip_Back>242,242,198</ToolTip_Back>
+    <ToolTip_Font>36,36,36</ToolTip_Font>
+    <ValueBox_Back>30,36,48</ValueBox_Back>
+    <ValueBox_Font>225,250,165</ValueBox_Font>
+    <ValueBox_Font_Icons>131,207,202</ValueBox_Font_Icons>
+    <SliderBar_Back>26,36,52</SliderBar_Back>
+    <SliderBar_Font>255,255,255</SliderBar_Font>
+    <Mute_State>240,53,120</Mute_State>
+    <Fader>255,255,255</Fader>
+    <Folder>135,135,135</Folder>
+    <Pattern_Default_Back>10,11,11</Pattern_Default_Back>
+    <Pattern_Default_Font>110,110,110</Pattern_Default_Font>
+    <Pattern_Default_Font_Volume>69,163,136</Pattern_Default_Font_Volume>
+    <Pattern_Default_Font_Panning>114,90,184</Pattern_Default_Font_Panning>
+    <Pattern_Default_Font_Pitch>179,38,122</Pattern_Default_Font_Pitch>
+    <Pattern_Default_Font_Delay>58,114,164</Pattern_Default_Font_Delay>
+    <Pattern_Default_Font_Global>86,195,40</Pattern_Default_Font_Global>
+    <Pattern_Default_Font_Other>194,62,62</Pattern_Default_Font_Other>
+    <Pattern_Default_Font_DspFx>139,148,154</Pattern_Default_Font_DspFx>
+    <Pattern_Default_Font_Unused>80,81,82</Pattern_Default_Font_Unused>
+    <Pattern_Highlighted_Back>18,25,31</Pattern_Highlighted_Back>
+    <Pattern_Highlighted_Font>207,207,207</Pattern_Highlighted_Font>
+    <Pattern_Highlighted_Font_Volume>0,255,182</Pattern_Highlighted_Font_Volume>
+    <Pattern_Highlighted_Font_Panning>158,124,255</Pattern_Highlighted_Font_Panning>
+    <Pattern_Highlighted_Font_Pitch>255,79,184</Pattern_Highlighted_Font_Pitch>
+    <Pattern_Highlighted_Font_Delay>83,167,240</Pattern_Highlighted_Font_Delay>
+    <Pattern_Highlighted_Font_Global>153,255,82</Pattern_Highlighted_Font_Global>
+    <Pattern_Highlighted_Font_Other>255,100,100</Pattern_Highlighted_Font_Other>
+    <Pattern_Highlighted_Font_DspFx>255,255,255</Pattern_Highlighted_Font_DspFx>
+    <Pattern_Highlighted_Font_Unused>95,97,98</Pattern_Highlighted_Font_Unused>
+    <Pattern_PlayPosition_Back>214,0,103</Pattern_PlayPosition_Back>
+    <Pattern_PlayPosition_Font>255,255,255</Pattern_PlayPosition_Font>
+    <Pattern_CenterBar_Back>59,70,73</Pattern_CenterBar_Back>
+    <Pattern_CenterBar_Font>232,255,248</Pattern_CenterBar_Font>
+    <Pattern_CenterBar_Back_StandBy>27,32,35</Pattern_CenterBar_Back_StandBy>
+    <Pattern_CenterBar_Font_StandBy>147,147,147</Pattern_CenterBar_Font_StandBy>
+    <Pattern_Selection>38,77,109</Pattern_Selection>
+    <Pattern_StandBy_Selection>31,39,53</Pattern_StandBy_Selection>
+    <Automation_Grid>163,163,163</Automation_Grid>
+    <Automation_Line_Edge>0,178,242</Automation_Line_Edge>
+    <Automation_Line_Fill>12,67,83</Automation_Line_Fill>
+    <Automation_Point>0,255,42</Automation_Point>
+    <Automation_Marker_Play>255,82,82</Automation_Marker_Play>
+    <Automation_Marker_Single>255,82,82</Automation_Marker_Single>
+    <Automation_Marker_Pair>214,0,103</Automation_Marker_Pair>
+    <Automation_Marker_Diamond>0,255,42</Automation_Marker_Diamond>
+    <VuMeter_Meter>232,232,232</VuMeter_Meter>
+    <VuMeter_Meter_Low>0,126,255</VuMeter_Meter_Low>
+    <VuMeter_Meter_Middle>0,255,132</VuMeter_Meter_Middle>
+    <VuMeter_Meter_High>255,0,122</VuMeter_Meter_High>
+    <VuMeter_Peak>61,255,0</VuMeter_Peak>
+    <VuMeter_Back_Normal>33,33,38</VuMeter_Back_Normal>
+    <VuMeter_Back_Clipped>255,0,107</VuMeter_Back_Clipped>
+    <Default_Color_01>168,168,133</Default_Color_01>
+    <Default_Color_02>99,140,140</Default_Color_02>
+    <Default_Color_03>99,140,99</Default_Color_03>
+    <Default_Color_04>99,140,120</Default_Color_04>
+    <Default_Color_05>83,120,140</Default_Color_05>
+    <Default_Color_06>133,133,168</Default_Color_06>
+    <Default_Color_07>194,194,168</Default_Color_07>
+    <Default_Color_08>99,140,99</Default_Color_08>
+    <Default_Color_09>150,211,150</Default_Color_09>
+    <Default_Color_10>132,186,161</Default_Color_10>
+    <Default_Color_11>150,211,211</Default_Color_11>
+    <Default_Color_12>150,182,211</Default_Color_12>
+    <Default_Color_13>190,190,241</Default_Color_13>
+    <Default_Color_14>221,221,255</Default_Color_14>
+    <Default_Color_15>241,241,190</Default_Color_15>
+    <Default_Color_16>255,255,221</Default_Color_16>
+    <ButtonBevalAmount>1.15999985</ButtonBevalAmount>
+    <BodyBevalAmount>1.0</BodyBevalAmount>
+    <TextureSet>Default</TextureSet>
+  </SkinColors>
+<!--External Prefs-->
+  <BaseViewsPrefs>
+<!--MIDI Mapping-->
+    <MidiLearnModeAllowMultiAssignment>false</MidiLearnModeAllowMultiAssignment>
+    <MidiLearnModePreferSecondaryMappings>true</MidiLearnModePreferSecondaryMappings>
+<!--Envelope Editing-->
+    <CreateEnvelopePointsWithSingleClicks>false</CreateEnvelopePointsWithSingleClicks>
+    <EnvelopeEditorDialogMaximized>false</EnvelopeEditorDialogMaximized>
+    <EnvelopeEditorDialogPosition>-1,-1</EnvelopeEditorDialogPosition>
+    <EnvelopeEditorDialogSize>-1,-1</EnvelopeEditorDialogSize>
+    <EnvelopeEditorViewDrawModeEnabled>false</EnvelopeEditorViewDrawModeEnabled>
+    <EnvelopeEditorViewSnapXEnabled>false</EnvelopeEditorViewSnapXEnabled>
+    <EnvelopeEditorViewSnapXQuantum>16</EnvelopeEditorViewSnapXQuantum>
+    <EnvelopeEditorViewSnapYEnabled>false</EnvelopeEditorViewSnapYEnabled>
+    <EnvelopeEditorViewSnapYQuantum>24</EnvelopeEditorViewSnapYQuantum>
+    <EnvelopeEditorIsDetached>false</EnvelopeEditorIsDetached>
+<!--GUI-->
+    <ShowTooltips>true</ShowTooltips>
+    <LastShownPreferencePane>0</LastShownPreferencePane>
+<!--Keyboard/Mouse-->
+    <LockFocusToMiddleFrame>true</LockFocusToMiddleFrame>
+    <RightMouseButtonRepeatRate>60</RightMouseButtonRepeatRate>
+    <LeftMouseButtonRepeatRate>20</LeftMouseButtonRepeatRate>
+    <KeyboardRepeatRate>20</KeyboardRepeatRate>
+<!--Find And Replace-->
+    <FindAndReplaceCaseSensitive>false</FindAndReplaceCaseSensitive>
+    <FindAndReplaceMatchWholeWord>false</FindAndReplaceMatchWholeWord>
+<!--Scripting Dialog-->
+    <ScriptingDialogMaximized>false</ScriptingDialogMaximized>
+    <ScriptingDialogPosition>741,295</ScriptingDialogPosition>
+    <ScriptingDialogSize>1033,417</ScriptingDialogSize>
+    <ScriptingDialogSplitterSize>240</ScriptingDialogSplitterSize>
+<!--Scripting Editor-->
+    <ScriptTerminalHistory>
+      <ScriptTerminalHistoryItem>renoise.app():show_message('stuff')</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.app():show_status(message)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.app():show_status(1)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.app():show_status('1')</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.app():show_status('3')</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.app():show_status('2')</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.app():show_status('a')</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.app():show_status('Selected')</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.tool()</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>oprint(renoise.tool())</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>oprint(renoise)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>rprint(renoise)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.tool()</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>rprint(renoise.tool())</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>rprint(renoise.tool)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>rprint(renoise.app)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>rprint(renoise.app.tool)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>rprint(renoise.app)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>rprint(renoise.tool)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.tool</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.tool()</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.ApplicationWindow</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>rprint renoise.ApplicationWindow</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>rprint renoise</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>oprint renoise</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>oprint(renoise)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>oprint(renoise.ApplicationWindow)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>rprint(renoise.ApplicationWindow)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>rprint(renoise.app().window)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>rprint(renoise.app())</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>oprint(renoise.app().window)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_line = 12</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_line_index = 12</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_line_index = 13</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_note_column = 2</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_note_column_index = 2</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_note_column_index = 1</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_note_column_index = 2</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_effect_column_index = 1</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_effect_column_index = 2</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_sub_column_type = renoise.Song.SUB_COLUMN_EFFECT_NUMBER</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_track.visible_effect_columns</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_track</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song()</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_track</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_track = 1</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_track </ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_track_index</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_track_index = 12</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_line_index = 13</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_line_index = 14</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_line_index = 11</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_line_index = 10</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_pattern_track</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_pattern_track = 2</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_pattern_track = 1</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_pattern_track</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_pattern_track_index</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_track_index</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_sequence_index</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_line</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_line_index</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_line_index = 12</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_line_index</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>print renoise.song().selected_line_index</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>print(renoise.song().selected_line_index)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>5</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>3</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>print(renoise.song().selected_line_index)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>oprint(renoise.song().selected_pattern)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>oprint(renoise.song().selected_pattern_track)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>oprint(renoise.song().selected_pattern_track.visible_note_columns)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>oprint(renoise.song().selected_track.visible_note_columns)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>oprint(renoise.song().selected_track.visible_effect_columns)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>renoise.song().selected_note_column_index</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>print renoise.song().selected_note_column_index</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>print(renoise.song().selected_note_column_index)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>print nil</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>print(nil)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>print(renoise.song().selected_effect_column_index)</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>local a = {local: 3}</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>local a = {local = 3}</ScriptTerminalHistoryItem>
+      <ScriptTerminalHistoryItem>local a = {local = 'a'}</ScriptTerminalHistoryItem>
+    </ScriptTerminalHistory>
+<!--Tool Browser-->
+    <ScriptingToolBrowserMaximized>false</ScriptingToolBrowserMaximized>
+    <ScriptingToolBrowserPosition>737,365</ScriptingToolBrowserPosition>
+    <ScriptingToolBrowserSize>446,350</ScriptingToolBrowserSize>
+<!--Color Picker-->
+    <ColorPickerUserColors>
+      <ColorPickerUserColor>255,0,0</ColorPickerUserColor>
+      <ColorPickerUserColor>153,0,0</ColorPickerUserColor>
+      <ColorPickerUserColor>153,99,99</ColorPickerUserColor>
+      <ColorPickerUserColor>255,128,128</ColorPickerUserColor>
+      <ColorPickerUserColor>255,128,0</ColorPickerUserColor>
+      <ColorPickerUserColor>153,77,0</ColorPickerUserColor>
+      <ColorPickerUserColor>153,126,99</ColorPickerUserColor>
+      <ColorPickerUserColor>255,191,128</ColorPickerUserColor>
+      <ColorPickerUserColor>255,255,0</ColorPickerUserColor>
+      <ColorPickerUserColor>153,153,0</ColorPickerUserColor>
+      <ColorPickerUserColor>153,153,99</ColorPickerUserColor>
+      <ColorPickerUserColor>255,255,128</ColorPickerUserColor>
+      <ColorPickerUserColor>0,255,42</ColorPickerUserColor>
+      <ColorPickerUserColor>0,153,25</ColorPickerUserColor>
+      <ColorPickerUserColor>99,153,108</ColorPickerUserColor>
+      <ColorPickerUserColor>128,255,149</ColorPickerUserColor>
+      <ColorPickerUserColor>0,85,255</ColorPickerUserColor>
+      <ColorPickerUserColor>0,51,153</ColorPickerUserColor>
+      <ColorPickerUserColor>99,117,153</ColorPickerUserColor>
+      <ColorPickerUserColor>128,170,255</ColorPickerUserColor>
+      <ColorPickerUserColor>140,0,255</ColorPickerUserColor>
+      <ColorPickerUserColor>84,0,153</ColorPickerUserColor>
+      <ColorPickerUserColor>129,99,153</ColorPickerUserColor>
+      <ColorPickerUserColor>198,128,255</ColorPickerUserColor>
+      <ColorPickerUserColor>255,0,170</ColorPickerUserColor>
+      <ColorPickerUserColor>153,0,102</ColorPickerUserColor>
+      <ColorPickerUserColor>153,99,135</ColorPickerUserColor>
+      <ColorPickerUserColor>255,128,212</ColorPickerUserColor>
+      <ColorPickerUserColor>0,0,0</ColorPickerUserColor>
+      <ColorPickerUserColor>84,84,84</ColorPickerUserColor>
+      <ColorPickerUserColor>168,168,168</ColorPickerUserColor>
+      <ColorPickerUserColor>255,255,255</ColorPickerUserColor>
+    </ColorPickerUserColors>
+    <ColorPickerApplyAll>true</ColorPickerApplyAll>
+  </BaseViewsPrefs>
+  <AudioPluginHostPrefs>
+<!--Plugins-->
+    <ScanForNewPluginsOnStartup>true</ScanForNewPluginsOnStartup>
+    <RescanPreviouslyFailedPlugs>true</RescanPreviouslyFailedPlugs>
+    <BridgePluginsWithSameArchitecture>false</BridgePluginsWithSameArchitecture>
+    <ShowShortPluginFxNames>false</ShowShortPluginFxNames>
+    <ShowHiddenPluginFx>false</ShowHiddenPluginFx>
+    <ShowShortPluginInstrumentNames>false</ShowShortPluginInstrumentNames>
+    <ShowHiddenPluginInstruments>false</ShowHiddenPluginInstruments>
+    <ShowPluginEditorsSticky>true</ShowPluginEditorsSticky>
+<!--VST-->
+    <VstDirPath64Bit>C:\Program Files\VstPlugins\</VstDirPath64Bit>
+    <VstDirPathIsEnabled32Bit>true</VstDirPathIsEnabled32Bit>
+    <VstDirPathIsEnabled64Bit>true</VstDirPathIsEnabled64Bit>
+    <SecondaryVstDirPath64Bit>C:\Program Files (x86)\Vstplugins\</SecondaryVstDirPath64Bit>
+    <SecondaryVstDirPathIsEnabled32Bit>false</SecondaryVstDirPathIsEnabled32Bit>
+    <SecondaryVstDirPathIsEnabled64Bit>true</SecondaryVstDirPathIsEnabled64Bit>
+  </AudioPluginHostPrefs>
+  <TrackDspPrefs>
+<!--LFO Device Envelope Presets-->
+    <LfoDeviceEnvelopePresets>
+      <LfoDeviceEnvelopePreset>
+        <PlayMode>Linear</PlayMode>
+        <Length>1</Length>
+        <ValueQuantum>0.0</ValueQuantum>
+        <Polarity>Unipolar</Polarity>
+      </LfoDeviceEnvelopePreset>
+      <LfoDeviceEnvelopePreset>
+        <PlayMode>Linear</PlayMode>
+        <Length>1</Length>
+        <ValueQuantum>0.0</ValueQuantum>
+        <Polarity>Unipolar</Polarity>
+      </LfoDeviceEnvelopePreset>
+      <LfoDeviceEnvelopePreset>
+        <PlayMode>Linear</PlayMode>
+        <Length>1</Length>
+        <ValueQuantum>0.0</ValueQuantum>
+        <Polarity>Unipolar</Polarity>
+      </LfoDeviceEnvelopePreset>
+      <LfoDeviceEnvelopePreset>
+        <PlayMode>Linear</PlayMode>
+        <Length>1</Length>
+        <ValueQuantum>0.0</ValueQuantum>
+        <Polarity>Unipolar</Polarity>
+      </LfoDeviceEnvelopePreset>
+      <LfoDeviceEnvelopePreset>
+        <PlayMode>Linear</PlayMode>
+        <Length>1</Length>
+        <ValueQuantum>0.0</ValueQuantum>
+        <Polarity>Unipolar</Polarity>
+      </LfoDeviceEnvelopePreset>
+      <LfoDeviceEnvelopePreset>
+        <PlayMode>Linear</PlayMode>
+        <Length>1</Length>
+        <ValueQuantum>0.0</ValueQuantum>
+        <Polarity>Unipolar</Polarity>
+      </LfoDeviceEnvelopePreset>
+    </LfoDeviceEnvelopePresets>
+<!--Native Device Preferences-->
+  </TrackDspPrefs>
+  <PlayerPrefs>
+<!--Metronome-->
+    <MetronomeBeatsPerBar>4</MetronomeBeatsPerBar>
+    <MetronomeLinesPerBeat>0</MetronomeLinesPerBeat>
+    <MetronomeVolume>0.707945764</MetronomeVolume>
+    <MetronomePrecountIsOn>false</MetronomePrecountIsOn>
+    <MetronomePrecountBars>1</MetronomePrecountBars>
+<!--Auto-Panic-->
+    <AutoPanicIsOn>true</AutoPanicIsOn>
+    <AutoPanicCpuThreshold>90</AutoPanicCpuThreshold>
+    <AutoPanicTimeThreshold>500</AutoPanicTimeThreshold>
+<!--PDC-->
+    <PluginDelayCompensationIsOn>true</PluginDelayCompensationIsOn>
+<!--Transport Sync-->
+    <TransportSlaveMode>Full Transport Sync</TransportSlaveMode>
+    <CompensateLatenciesAsTransportSlave>false</CompensateLatenciesAsTransportSlave>
+<!--CPU Options-->
+    <NumberOfConcurrentAudioThreads>8</NumberOfConcurrentAudioThreads>
+<!--Sample Prehearing-->
+    <PrehearSampleFiles>true</PrehearSampleFiles>
+    <PrehearSampleFilesOnMaster>true</PrehearSampleFilesOnMaster>
+    <SampleEditorPrehearSampleFilesOnMaster>true</SampleEditorPrehearSampleFilesOnMaster>
+    <PrehearSampleVolume>1.0</PrehearSampleVolume>
+<!--Recording-->
+    <RecordSyncMode>None</RecordSyncMode>
+    <RecordCreateNewInstrument>true</RecordCreateNewInstrument>
+    <RecordPrehear>false</RecordPrehear>
+    <RecordDry>false</RecordDry>
+    <RecordInputChannel>-1</RecordInputChannel>
+    <RecordInputChannelMode>L+R</RecordInputChannelMode>
+    <RecordExtraInputLatency>0</RecordExtraInputLatency>
+    <RecordCompensateLatency>true</RecordCompensateLatency>
+<!--Osc Server-->
+    <OscServerEnabled>false</OscServerEnabled>
+    <OscServerPort>8000</OscServerPort>
+    <OscServerProtocol>Udp</OscServerProtocol>
+<!--Playback & Recording-->
+    <DefaultTrackMuteMode>Off</DefaultTrackMuteMode>
+    <RealSoloEnabled>false</RealSoloEnabled>
+    <AutoCaptureInstrument>false</AutoCaptureInstrument>
+    <AutoSoloSelectedTrack>false</AutoSoloSelectedTrack>
+    <Ft2SpaceMode>true</Ft2SpaceMode>
+    <RecordQuantizationEnabled>false</RecordQuantizationEnabled>
+    <RecordQuantizationAmount>5</RecordQuantizationAmount>
+    <RecordMidiMappedParameters>true</RecordMidiMappedParameters>
+    <RecordBatchManeuverTimeout>500</RecordBatchManeuverTimeout>
+    <ComputerKeyboardVelocityEnabled>true</ComputerKeyboardVelocityEnabled>
+    <ComputerKeyboardVelocity>106</ComputerKeyboardVelocity>
+    <DetachSequencerWithPatternFollow>true</DetachSequencerWithPatternFollow>
+    <FollowPlayer>true</FollowPlayer>
+    <StopNotesOnSongPosChanges>true</StopNotesOnSongPosChanges>
+    <SyncToMidiClock>true</SyncToMidiClock>
+    <GenerateDrumKitStartNote>48</GenerateDrumKitStartNote>
+    <GenerateDrumKitFirstOctaveTranspose>false</GenerateDrumKitFirstOctaveTranspose>
+    <GenerateDrumKitWhiteKeysOnly>false</GenerateDrumKitWhiteKeysOnly>
+<!--Render To Disk-->
+    <RenderToDiskDefaultPath>D:\Music\Modules\keith303\</RenderToDiskDefaultPath>
+    <RenderInRealtimeDefault>false</RenderInRealtimeDefault>
+    <RenderToDiskDefaultPriority>Low (render in background)</RenderToDiskDefaultPriority>
+    <RenderToDiskDefaultSampleFormatMode>16 Bit</RenderToDiskDefaultSampleFormatMode>
+    <RenderToDiskDefaultQualityMode>Default (as played)</RenderToDiskDefaultQualityMode>
+    <RenderToDiskDefaultTracksIndividually>false</RenderToDiskDefaultTracksIndividually>
+    <RenderToDiskDefaultPatternsIndividually>false</RenderToDiskDefaultPatternsIndividually>
+    <RenderToDiskDefaultUseAutomaticNaming>false</RenderToDiskDefaultUseAutomaticNaming>
+    <RenderToDiskDefaultAutomaticNamingFilename>%SONG_NAME% (%SONG_BPM% BPM)</RenderToDiskDefaultAutomaticNamingFilename>
+    <RenderToDiskDefaultOpenDestFolder>false</RenderToDiskDefaultOpenDestFolder>
+  </PlayerPrefs>
+  <SongViewsPrefs>
+<!--GUI-->
+    <DspDeviceListWidth>200</DspDeviceListWidth>
+    <AutomationListWidth>200</AutomationListWidth>
+    <ModulationListWidth>150</ModulationListWidth>
+    <SampleEffectsListWidth>200</SampleEffectsListWidth>
+<!--Dialogs-->
+    <MidiMappingDialogPosition>795,395</MidiMappingDialogPosition>
+<!--Autosave/Autoplay-->
+    <AutosaveBackups>false</AutosaveBackups>
+    <SaveBackupsWhilePlaying>true</SaveBackupsWhilePlaying>
+    <AutosaveBackupInterval>10</AutosaveBackupInterval>
+    <AutosaveKeepNoOfBackups>2</AutosaveKeepNoOfBackups>
+    <AutoPlaySongsAfterLoading>false</AutoPlaySongsAfterLoading>
+<!--Scopes/Meters-->
+    <MasterMeterMode>-96dB To 0dB</MasterMeterMode>
+    <ShowTrackNamesInScopes>true</ShowTrackNamesInScopes>
+    <MasterScopeWidthInSamples>1024</MasterScopeWidthInSamples>
+    <MasterScopeSnapToZero>true</MasterScopeSnapToZero>
+    <TrackScopeWidthInSamples>512</TrackScopeWidthInSamples>
+    <TrackScopeSnapToZero>true</TrackScopeSnapToZero>
+    <ShowTrackColorsInScopes>false</ShowTrackColorsInScopes>
+<!--Spectrum-->
+    <SpectrumWindowSize>2048</SpectrumWindowSize>
+    <SpectrumMode>Filled Curve</SpectrumMode>
+    <SpectrumScale>Logarithmic</SpectrumScale>
+    <SpectrumSumming>L+R combined</SpectrumSumming>
+    <SpectrogramPalette>Green</SpectrogramPalette>
+    <SpectrumPeakReleaseSeconds>0.5</SpectrumPeakReleaseSeconds>
+    <SpectrogramScrollingPixels>2</SpectrogramScrollingPixels>
+    <SpectrumSlopeDb>0.0</SpectrumSlopeDb>
+    <ShowSpectrumScopesView>false</ShowSpectrumScopesView>
+    <ShowSpectrumPhaseView>true</ShowSpectrumPhaseView>
+<!--Songtimer-->
+    <ShowRemainingSongTime>false</ShowRemainingSongTime>
+<!--Song Browser-->
+    <SongBrowserSplitterHeight>90</SongBrowserSplitterHeight>
+<!--File Import-->
+    <WavImportPrefs>
+      <MultiSampleInstruments>true</MultiSampleInstruments>
+      <ImportLoops>true</ImportLoops>
+      <AutoGuessBeatSync>true</AutoGuessBeatSync>
+    </WavImportPrefs>
+    <RawImportPrefs>
+      <Bits>16 Bit Signed</Bits>
+      <Samplerate>44100</Samplerate>
+      <SkipHeaderBytes>0</SkipHeaderBytes>
+      <BigEndian>false</BigEndian>
+    </RawImportPrefs>
+    <DeviceChainImportPrefs>
+      <ReplaceExistingDevices>true</ReplaceExistingDevices>
+    </DeviceChainImportPrefs>
+    <MidiImportPrefs>
+      <CreateInstruments>true</CreateInstruments>
+      <CreateMidiCCDevices>true</CreateMidiCCDevices>
+      <LinesPerBeat>4</LinesPerBeat>
+      <LinesPerPattern>64</LinesPerPattern>
+    </MidiImportPrefs>
+    <SampleExportMode>Flac</SampleExportMode>
+    <ValidateDocumentsOnLoad>false</ValidateDocumentsOnLoad>
+    <ValidateDocumentsOnSave>true</ValidateDocumentsOnSave>
+<!--Shuffle-->
+    <UserShuffles>
+      <UserShuffle>
+        <UserShuffle>0</UserShuffle>
+        <UserShuffle>0</UserShuffle>
+        <UserShuffle>0</UserShuffle>
+        <UserShuffle>0</UserShuffle>
+      </UserShuffle>
+      <UserShuffle>
+        <UserShuffle>10</UserShuffle>
+        <UserShuffle>10</UserShuffle>
+        <UserShuffle>10</UserShuffle>
+        <UserShuffle>10</UserShuffle>
+      </UserShuffle>
+      <UserShuffle>
+        <UserShuffle>20</UserShuffle>
+        <UserShuffle>20</UserShuffle>
+        <UserShuffle>20</UserShuffle>
+        <UserShuffle>20</UserShuffle>
+      </UserShuffle>
+      <UserShuffle>
+        <UserShuffle>30</UserShuffle>
+        <UserShuffle>30</UserShuffle>
+        <UserShuffle>30</UserShuffle>
+        <UserShuffle>30</UserShuffle>
+      </UserShuffle>
+      <UserShuffle>
+        <UserShuffle>40</UserShuffle>
+        <UserShuffle>40</UserShuffle>
+        <UserShuffle>40</UserShuffle>
+        <UserShuffle>40</UserShuffle>
+      </UserShuffle>
+      <UserShuffle>
+        <UserShuffle>50</UserShuffle>
+        <UserShuffle>50</UserShuffle>
+        <UserShuffle>50</UserShuffle>
+        <UserShuffle>50</UserShuffle>
+      </UserShuffle>
+      <UserShuffle>
+        <UserShuffle>60</UserShuffle>
+        <UserShuffle>60</UserShuffle>
+        <UserShuffle>60</UserShuffle>
+        <UserShuffle>60</UserShuffle>
+      </UserShuffle>
+      <UserShuffle>
+        <UserShuffle>70</UserShuffle>
+        <UserShuffle>70</UserShuffle>
+        <UserShuffle>70</UserShuffle>
+        <UserShuffle>70</UserShuffle>
+      </UserShuffle>
+      <UserShuffle>
+        <UserShuffle>80</UserShuffle>
+        <UserShuffle>80</UserShuffle>
+        <UserShuffle>80</UserShuffle>
+        <UserShuffle>80</UserShuffle>
+      </UserShuffle>
+      <UserShuffle>
+        <UserShuffle>90</UserShuffle>
+        <UserShuffle>90</UserShuffle>
+        <UserShuffle>90</UserShuffle>
+        <UserShuffle>90</UserShuffle>
+      </UserShuffle>
+    </UserShuffles>
+<!--Track Envelope Presets-->
+    <TrackEnvelopePresets>
+      <TrackEnvelopePreset>
+        <PlayMode>Linear</PlayMode>
+        <Length>1</Length>
+        <ValueQuantum>0.0</ValueQuantum>
+        <Polarity>Unipolar</Polarity>
+      </TrackEnvelopePreset>
+      <TrackEnvelopePreset>
+        <PlayMode>Linear</PlayMode>
+        <Length>1</Length>
+        <ValueQuantum>0.0</ValueQuantum>
+        <Polarity>Unipolar</Polarity>
+      </TrackEnvelopePreset>
+      <TrackEnvelopePreset>
+        <PlayMode>Linear</PlayMode>
+        <Length>1</Length>
+        <ValueQuantum>0.0</ValueQuantum>
+        <Polarity>Unipolar</Polarity>
+      </TrackEnvelopePreset>
+      <TrackEnvelopePreset>
+        <PlayMode>Linear</PlayMode>
+        <Length>1</Length>
+        <ValueQuantum>0.0</ValueQuantum>
+        <Polarity>Unipolar</Polarity>
+      </TrackEnvelopePreset>
+      <TrackEnvelopePreset>
+        <PlayMode>Linear</PlayMode>
+        <Length>1</Length>
+        <ValueQuantum>0.0</ValueQuantum>
+        <Polarity>Unipolar</Polarity>
+      </TrackEnvelopePreset>
+      <TrackEnvelopePreset>
+        <PlayMode>Linear</PlayMode>
+        <Length>1</Length>
+        <ValueQuantum>0.0</ValueQuantum>
+        <Polarity>Unipolar</Polarity>
+      </TrackEnvelopePreset>
+      <TrackEnvelopePreset>
+        <PlayMode>Linear</PlayMode>
+        <Length>1</Length>
+        <ValueQuantum>0.0</ValueQuantum>
+        <Polarity>Unipolar</Polarity>
+      </TrackEnvelopePreset>
+      <TrackEnvelopePreset>
+        <PlayMode>Linear</PlayMode>
+        <Length>1</Length>
+        <ValueQuantum>0.0</ValueQuantum>
+        <Polarity>Unipolar</Polarity>
+      </TrackEnvelopePreset>
+    </TrackEnvelopePresets>
+    <EnvelopeEditorDrawToolEnabled>false</EnvelopeEditorDrawToolEnabled>
+    <EnvelopeEditorLineToolEnabled>false</EnvelopeEditorLineToolEnabled>
+    <SnapTrackEnvelopes>true</SnapTrackEnvelopes>
+    <TrackEnvelopeSnapMode>Grid</TrackEnvelopeSnapMode>
+    <TrackEnvelopeZoomLocked>true</TrackEnvelopeZoomLocked>
+<!--Mixer-->
+    <MixerMeterMode>-48dB To 0dB</MixerMeterMode>
+<!--Macros-->
+  </SongViewsPrefs>
+  <PatternEditorPrefs>
+<!--Pattern Sequencer / Matrix-->
+    <PatternMatrixIsVisible>false</PatternMatrixIsVisible>
+    <PatternMatrixShowTrackNames>true</PatternMatrixShowTrackNames>
+    <PatternMatrixShowTrackMeters>true</PatternMatrixShowTrackMeters>
+    <PatternMatrixShowTrackColors>true</PatternMatrixShowTrackColors>
+    <PatternMatrixShowContentRepeats>false</PatternMatrixShowContentRepeats>
+<!--Pattern Editor-->
+    <PatternNrFormatIsHex>false</PatternNrFormatIsHex>
+    <HideZeroPatternEffects>true</HideZeroPatternEffects>
+    <ContinuesPatternEditing>true</ContinuesPatternEditing>
+    <ShowPreviousAndNextPattern>false</ShowPreviousAndNextPattern>
+    <SyntaxHighlightingInPattern>true</SyntaxHighlightingInPattern>
+    <PatternVSpacing>2</PatternVSpacing>
+    <PatternHSpacing>1</PatternHSpacing>
+    <PatternFont>Big</PatternFont>
+    <SingleClickNavigationInPatternEditor>true</SingleClickNavigationInPatternEditor>
+    <InstantDragAndDropInPatternEditor>false</InstantDragAndDropInPatternEditor>
+    <PatternEditorShowTrackColors>true</PatternEditorShowTrackColors>
+    <PatternEditorViewRouting>false</PatternEditorViewRouting>
+    <PatternEditorViewPanning>false</PatternEditorViewPanning>
+    <PatternEditorSingleTrackModeInMatrix>false</PatternEditorSingleTrackModeInMatrix>
+    <PatternEditStep>1</PatternEditStep>
+    <RecordParameterTweaksToEnvelopes>false</RecordParameterTweaksToEnvelopes>
+    <AdvancedEditIsVisible>false</AdvancedEditIsVisible>
+    <AdvancedEditMaskPaneIsVisible>true</AdvancedEditMaskPaneIsVisible>
+    <AdvancedEditCutCopyPaneIsVisible>true</AdvancedEditCutCopyPaneIsVisible>
+    <AdvancedEditEffectPaneIsVisible>false</AdvancedEditEffectPaneIsVisible>
+    <AdvancedEditInstrumentPaneIsVisible>false</AdvancedEditInstrumentPaneIsVisible>
+    <AdvancedEditNotePaneIsVisible>false</AdvancedEditNotePaneIsVisible>
+  </PatternEditorPrefs>
+  <MixerPrefs>
+    <ViewPostVolPans>true</ViewPostVolPans>
+    <ViewLabels>true</ViewLabels>
+    <ViewMuteSolo>true</ViewMuteSolo>
+    <ViewPan>true</ViewPan>
+    <ViewMeters>true</ViewMeters>
+    <ViewVolume>true</ViewVolume>
+    <ViewDelay>true</ViewDelay>
+    <ViewRouting>true</ViewRouting>
+    <ViewTrackColors>true</ViewTrackColors>
+  </MixerPrefs>
+  <InstrumentEditorPrefs>
+<!--Instrument & Sample Properties-->
+    <AutoSelectPlayedSample>true</AutoSelectPlayedSample>
+    <InstrumentPropertiesExpanded>false</InstrumentPropertiesExpanded>
+    <InstrumentPropertiesShowVolumeAndTranspose>true</InstrumentPropertiesShowVolumeAndTranspose>
+    <InstrumentPropertiesShowTriggerOptions>false</InstrumentPropertiesShowTriggerOptions>
+    <InstrumentPropertiesShowScaleOptions>false</InstrumentPropertiesShowScaleOptions>
+    <InstrumentPropertiesShowPluginChooser>true</InstrumentPropertiesShowPluginChooser>
+    <InstrumentPropertiesShowPluginProgramChooser>true</InstrumentPropertiesShowPluginProgramChooser>
+    <InstrumentPropertiesShowMidiChooser>false</InstrumentPropertiesShowMidiChooser>
+    <InstrumentPropertiesShowMidiProgramChooser>false</InstrumentPropertiesShowMidiProgramChooser>
+    <InstrumentPropertiesShowMacros>true</InstrumentPropertiesShowMacros>
+    <SamplePropertiesExpanded>true</SamplePropertiesExpanded>
+<!--Instrument Grid view-->
+    <InstrumentGridTileSize>64</InstrumentGridTileSize>
+<!--Macro Mapping-->
+    <MacroMappingDialogMaximized>false</MacroMappingDialogMaximized>
+    <MacroMappingDialogPosition>-1,-1</MacroMappingDialogPosition>
+    <MacroMappingDialogSize>-1,-1</MacroMappingDialogSize>
+<!--Midi Routing-->
+    <MidiInputRoutingDialogPosition>764,350</MidiInputRoutingDialogPosition>
+<!--Envelopes-->
+    <InstrumentEnvelopePresets>
+      <InstrumentEnvelopePreset>
+        <InstrumentEnvelopePreset>
+          <PlayMode>Linear</PlayMode>
+          <Length>1</Length>
+          <ValueQuantum>0.0</ValueQuantum>
+          <Polarity>Unipolar</Polarity>
+        </InstrumentEnvelopePreset>
+        <InstrumentEnvelopePreset>
+          <PlayMode>Linear</PlayMode>
+          <Length>1</Length>
+          <ValueQuantum>0.0</ValueQuantum>
+          <Polarity>Unipolar</Polarity>
+        </InstrumentEnvelopePreset>
+        <InstrumentEnvelopePreset>
+          <PlayMode>Linear</PlayMode>
+          <Length>1</Length>
+          <ValueQuantum>0.0</ValueQuantum>
+          <Polarity>Unipolar</Polarity>
+        </InstrumentEnvelopePreset>
+        <InstrumentEnvelopePreset>
+          <PlayMode>Linear</PlayMode>
+          <Length>1</Length>
+          <ValueQuantum>0.0</ValueQuantum>
+          <Polarity>Unipolar</Polarity>
+        </InstrumentEnvelopePreset>
+        <InstrumentEnvelopePreset>
+          <PlayMode>Linear</PlayMode>
+          <Length>1</Length>
+          <ValueQuantum>0.0</ValueQuantum>
+          <Polarity>Unipolar</Polarity>
+        </InstrumentEnvelopePreset>
+        <InstrumentEnvelopePreset>
+          <PlayMode>Linear</PlayMode>
+          <Length>1</Length>
+          <ValueQuantum>0.0</ValueQuantum>
+          <Polarity>Unipolar</Polarity>
+        </InstrumentEnvelopePreset>
+      </InstrumentEnvelopePreset>
+      <InstrumentEnvelopePreset>
+        <InstrumentEnvelopePreset>
+          <PlayMode>Linear</PlayMode>
+          <Length>1</Length>
+          <ValueQuantum>0.0</ValueQuantum>
+          <Polarity>Unipolar</Polarity>
+        </InstrumentEnvelopePreset>
+        <InstrumentEnvelopePreset>
+          <PlayMode>Linear</PlayMode>
+          <Length>1</Length>
+          <ValueQuantum>0.0</ValueQuantum>
+          <Polarity>Unipolar</Polarity>
+        </InstrumentEnvelopePreset>
+        <InstrumentEnvelopePreset>
+          <PlayMode>Linear</PlayMode>
+          <Length>1</Length>
+          <ValueQuantum>0.0</ValueQuantum>
+          <Polarity>Unipolar</Polarity>
+        </InstrumentEnvelopePreset>
+        <InstrumentEnvelopePreset>
+          <PlayMode>Linear</PlayMode>
+          <Length>1</Length>
+          <ValueQuantum>0.0</ValueQuantum>
+          <Polarity>Unipolar</Polarity>
+        </InstrumentEnvelopePreset>
+        <InstrumentEnvelopePreset>
+          <PlayMode>Linear</PlayMode>
+          <Length>1</Length>
+          <ValueQuantum>0.0</ValueQuantum>
+          <Polarity>Unipolar</Polarity>
+        </InstrumentEnvelopePreset>
+        <InstrumentEnvelopePreset>
+          <PlayMode>Linear</PlayMode>
+          <Length>1</Length>
+          <ValueQuantum>0.0</ValueQuantum>
+          <Polarity>Unipolar</Polarity>
+        </InstrumentEnvelopePreset>
+      </InstrumentEnvelopePreset>
+    </InstrumentEnvelopePresets>
+    <ModulationEnvelopeSnapXEnabled>false</ModulationEnvelopeSnapXEnabled>
+    <ModulationEnvelopeSnapXMode>Grid</ModulationEnvelopeSnapXMode>
+    <ModulationEnvelopeSnapYEnabled>false</ModulationEnvelopeSnapYEnabled>
+    <ModulationEnvelopeSnapYDivisions>10</ModulationEnvelopeSnapYDivisions>
+<!--MIDI Monitor-->
+    <MidiInFilters>
+      <NoteFilterEnabled>true</NoteFilterEnabled>
+      <ControllerFilterEnabled>true</ControllerFilterEnabled>
+      <SystemFilterEnabled>true</SystemFilterEnabled>
+      <ClockFilterEnabled>true</ClockFilterEnabled>
+      <MmcFilterEnabled>true</MmcFilterEnabled>
+      <ActiveSensingFilterEnabled>false</ActiveSensingFilterEnabled>
+    </MidiInFilters>
+    <MidiOutFilters>
+      <NoteFilterEnabled>true</NoteFilterEnabled>
+      <ControllerFilterEnabled>true</ControllerFilterEnabled>
+      <SystemFilterEnabled>true</SystemFilterEnabled>
+      <ClockFilterEnabled>true</ClockFilterEnabled>
+      <MmcFilterEnabled>true</MmcFilterEnabled>
+      <ActiveSensingFilterEnabled>false</ActiveSensingFilterEnabled>
+    </MidiOutFilters>
+  </InstrumentEditorPrefs>
+  <SampleEditorPrefs>
+    <UpperRulerFormat>0S Effect</UpperRulerFormat>
+    <LowerRulerFormat>Beats</LowerRulerFormat>
+    <SnappingEnabled>false</SnappingEnabled>
+    <SnapMode>0 Crossing</SnapMode>
+    <RecordDialogPosition>403,487</RecordDialogPosition>
+    <UndoInSampleEditor>true</UndoInSampleEditor>
+  </SampleEditorPrefs>
+  <MidiIO>
+    <EnableWindowsWDMDevices>true</EnableWindowsWDMDevices>
+    <RecordNoteOffs>true</RecordNoteOffs>
+    <RecordAndPlayVelocity>true</RecordAndPlayVelocity>
+    <RecordAndPlayAftertouch>true</RecordAndPlayAftertouch>
+    <RecordAndPlayChannelPressure>true</RecordAndPlayChannelPressure>
+    <RecordAndPlayProgramChanges>true</RecordAndPlayProgramChanges>
+    <RecordAndPlayControllers>true</RecordAndPlayControllers>
+    <CompensateLatenciesOnRecording>true</CompensateLatenciesOnRecording>
+    <SyncSendMMC>true</SyncSendMMC>
+    <SyncSendClock>true</SyncSendClock>
+    <SyncSendSPP>true</SyncSendSPP>
+    <SyncSendStartStop>true</SyncSendStartStop>
+    <SyncInOffset>0.0</SyncInOffset>
+    <SyncInSmoothing>40</SyncInSmoothing>
+    <SyncOutOffset>0.0</SyncOutOffset>
+    <MasterInDeviceNameA>A-PRO 1</MasterInDeviceNameA>
+    <MasterInDeviceNameB>A-PRO 2</MasterInDeviceNameB>
+  </MidiIO>
+  <AudioIO>
+<!--Devices-->
+    <ActiveDeviceType>1</ActiveDeviceType>
+    <ActiveInputDriverIndices>
+      <ActiveInputDriverIndex>-1</ActiveInputDriverIndex>
+      <ActiveInputDriverIndex>0</ActiveInputDriverIndex>
+    </ActiveInputDriverIndices>
+    <ActiveInputDriverNames>
+      <ActiveInputDriverName/>
+      <ActiveInputDriverName>MOTU Audio ASIO</ActiveInputDriverName>
+    </ActiveInputDriverNames>
+    <ActiveOutputDriverIndices>
+      <ActiveOutputDriverIndex>1</ActiveOutputDriverIndex>
+      <ActiveOutputDriverIndex>0</ActiveOutputDriverIndex>
+    </ActiveOutputDriverIndices>
+    <ActiveOutputDriverNames>
+      <ActiveOutputDriverName>MOTU Main Out (MOTU Audio Wave for 64 bit)</ActiveOutputDriverName>
+      <ActiveOutputDriverName>MOTU Audio ASIO</ActiveOutputDriverName>
+    </ActiveOutputDriverNames>
+    <BufferLengths>
+      <BufferLength>35</BufferLength>
+      <BufferLength>35</BufferLength>
+    </BufferLengths>
+    <NumberOfBuffers>
+      <NumberOfBuffer>1</NumberOfBuffer>
+      <NumberOfBuffer>1</NumberOfBuffer>
+    </NumberOfBuffers>
+    <SampleRates>
+      <SampleRate>44100</SampleRate>
+      <SampleRate>44100</SampleRate>
+    </SampleRates>
+    <EnableTransportSyncs>
+      <EnableTransportSync>false</EnableTransportSync>
+      <EnableTransportSync>false</EnableTransportSync>
+    </EnableTransportSyncs>
+    <OpenFirstStereoPairOnly>false</OpenFirstStereoPairOnly>
+    <UseHardwareBuffers>false</UseHardwareBuffers>
+    <UseRealTimePriority>true</UseRealTimePriority>
+<!--Mastering-->
+    <MasterSignalDithering>true</MasterSignalDithering>
+  </AudioIO>
+</RenoisePrefs>
