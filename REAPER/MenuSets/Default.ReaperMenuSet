@@ -1,0 +1,32 @@
+[Floating toolbar 1]
+icon_0=toolbar_shape_linear.png
+icon_1=toolbar_shape_square.png
+icon_2=toolbar_shape_bezier.png
+icon_3=toolbar_shape_fast_start.png
+icon_4=toolbar_shape_fast_end.png
+icon_5=text
+item_0=40189 Envelope: Set shape of selected points to linear
+item_1=40190 Envelope: Set shape of selected points to square
+item_2=40424 Envelope: Set shape of selected points to slow start/end
+item_3=40428 Envelope: Set shape of selected points to fast start
+item_4=40429 Envelope: Set shape of selected points to fast end
+item_5=40683 Bez
+title=Envelope
+
+[Main toolbar]
+icon_10=toolbar_sync_follow_play.png
+icon_11=toolbar_sync_follow_record.png
+item_0=1157 Enable snapping
+item_1=40145 Show arrange view grid
+item_2=40364 Enable metronome
+item_3=-1
+item_4=40070 Move envelope points with media items
+item_5=40041 Enable auto-crossfade
+item_6=1156 Enable grouping
+item_7=1155 Enable ripple editing
+item_8=1135 Enable locking
+item_9=-1
+item_10=40036 View: Toggle auto-view-scroll during playback
+item_11=40262 View: Toggle auto-view-scroll while recording
+title=Main toolbar
+

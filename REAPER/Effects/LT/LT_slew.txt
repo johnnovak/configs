@@ -1,0 +1,64 @@
+// The filter in this effect (sections commented //f)
+//Copyright (C) 2004 and later Cockos Incorporated
+// License: GPL - http://www.gnu.org/licenses/gpl.html
+// The rest ashcat_lt@hotmail.com 2013 Rights Are Lies!
+
+desc: slew rate limiter
+
+slider1:27.6<9,100000,0.1>0dbfs = (V)
+slider2:0, V = -18dbfs
+slider3:13<0.2,30, 0.1>slew rate (Volts/microsecond)
+
+@slider
+  volt= slider1;
+  slew = slider3 * (10^6) * (1/srate); 
+  slider2 = volt / 8; 
+
+
+@init
+  damp=4.01;//f
+  c = 1/tan($pi*18000/srate);//f
+  fk = 1 / (1 + c*(c+damp)); //f
+  fa1 = 2 * (1 - c*c) * fk;//f
+  fa0 = (1 + c*(c-damp)) * fk;//f
+  //damp!=oldamp ? fd1l=fd2l=fd1r=fd2r=0;//f
+  oldamp=damp; //f
+  l_samp_0 = 0;
+  l_samp_1 = 0;
+  r_samp_0 = 0;
+  r_samp_1 = 0;
+
+@sample
+  l_samp_1 = volt * spl0;
+  l_samp_0 = volt * l_samp_0;
+  samp_diff = l_samp_1 - l_samp_0;
+  slew_sign = sign(samp_diff);  
+  abs (samp_diff) > slew ?
+    (l_samp_1 = l_samp_0 + (slew_sign * slew));
+  l_samp_1 = l_samp_1 / volt; 
+  l_samp_1 = min (0.99999999, max (-0.99999999, l_samp_1));
+  
+
+  r_samp_1 = volt * spl1;
+  r_samp_0 = volt * r_samp_0;
+  samp_diff = r_samp_1 - r_samp_0;
+  slew_sign = sign(samp_diff);  
+  abs (samp_diff) > slew ?
+    (r_samp_1 = r_samp_0 + (slew_sign * slew));
+  r_samp_1 = r_samp_1 / volt;  
+  r_samp_1 = min (0.99999999, max (-0.99999999, r_samp_1));
+      
+fd0l = (fk*l_samp_1) - (fa1*fd1l) - (fa0*fd2l);//f
+fd0r = (fk*r_samp_1) - (fa1*fd1r) - (fa0*fd2r);//f
+
+spl0 = fd0l + fd1l + fd1l + fd2l;//f
+spl1 = fd0r + fd1r + fd1r + fd2r;//f
+
+fd2l = fd1l;//f
+fd2r = fd1r;//f
+
+fd1l = fd0l;//f
+fd1r = fd0r;//f
+
+    l_samp_0 = l_samp_1;
+     r_samp_0 = r_samp_1;

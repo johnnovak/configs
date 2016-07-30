@@ -1,0 +1,141 @@
+desc: simple scope
+
+
+slider1:0 <-18, 96, 1> zoom gain (db)
+slider2:0, Left Maximum Peak (V)
+slider3:0, Left Minimum Peak (V)
+slider4:0, Left Running RMS (V)
+slider5:0, Left DC Average (V)
+slider6:0, Right Maximum Peak (V)
+slider7:0, Right Minimum Peak (V)
+slider8:0, Right Running RMS (V)
+slider9:0, Right DC Average (V)
+slider10:50<1,300,1>Response (MS)
+
+in_pin:left input
+in_pin:right input
+
+@init
+gfx_clear=0; // set clearing to "black". red would be 255, green 255*256, etc.
+histlen=65536;
+rms_count = 0;
+l_rms = 0;
+r_rms = 0;
+volt = 13.8;
+l_max_peak = 0;
+l_min_peak = 0;
+r_max_peak = 0;
+r_min_peak = 0;
+l_sqr_sum = 0;
+r_sqr_sum = 0;
+l_sum = 0;
+r_sum = 0;
+
+
+@slider
+zoom_gain = 2^(slider1/6);
+ms = slider10;
+st = ms*srate/1000;
+hold = (0.001*ms*srate)
+
+@block
+l_rms = volt*sqrt(l_sqr_sum/rms_count);
+r_rms = volt*sqrt(r_sqr_sum/rms_count);
+l_dc = l_max_peak + l_min_peak;
+r_dc = r_max_peak + r_min_peak;
+
+slider2 = l_max_peak;
+slider3= l_min_peak;
+slider4= l_rms;
+slider5= l_dc;
+slider6= r_max_peak;
+slider7= r_min_peak;
+slider8= r_rms;
+slider9= r_dc;
+
+
+@sample
+
+
+splpos[]=spl0 * -zoom_gain;
+splpos[1]=spl1 * -zoom_gain;
+splpos+=2;
+splpos >= histlen?splpos=0;
+
+
+rms_count > hold ? (
+rms_count = 1;
+l_sqr_sum = 0;
+r_sqr_sum = 0;
+l_min_peak = 0;
+r_max_peak = 0;
+r_min_peak = 0;
+
+) : (
+rms_count += 1; 
+l_sqr_sum += sqr(spl0);
+r_sqr_sum += sqr(spl1);
+l_max_peak = max(volt*spl0, l_max_peak);
+l_min_peak = min(volt*spl0, l_min_peak);
+r_max_peak = max(volt*spl1, r_max_peak);
+r_min_peak = min(volt*spl1, r_min_peak);
+);
+
+@gfx 400 300
+
+
+0 ? loop(30,
+  gfx_x=rand(gfx_w); gfx_y=rand(gfx_h);
+  gfx_r=rand(100)/100; gfx_g=rand(100)/100; gfx_b=rand(100)/100; gfx_a=rand(50)/100;
+  gfx_rectto(rand(gfx_w),rand(gfx_h));
+);
+
+gfx_a=1; // alpha 1.0
+
+gfx_x=0;
+gfx_y=0;
+gfx_r=gfx_g=gfx_b=1;
+
+gfx_r=gfx_g=gfx_b=1;
+
+isplpos=splpos;
+chan=0;
+loop(2,
+i=0;
+
+rdpos=isplpos-samplesblock*2;
+rdpos<0? rdpos+=histlen;
+rdpos+=chan;
+
+gfx_r= 1 - chan;
+gfx_g= 0;
+gfx_b= chan;
+
+gfx_x=0;
+offs= gfx_h*0.5;
+loop(samplesblock,
+  val = rdpos[]*gfx_h*0.5+offs;
+  (rdpos+=2) >= histlen ? rdpos-=histlen;
+  i == 0 ? (gfx_y=val) : (
+    gfx_lineto(i*(gfx_w)/samplesblock,val,1);
+  );
+  i+=1;
+);
+chan+=1;
+);
+
+
+gfx_x=0;
+gfx_y=gfx_h-gfx_texth;
+gfx_drawnumber(0,0);
+gfx_drawchar($'s');
+gfx_drawchar($'p');
+gfx_drawchar($'l');
+
+gfx_x=gfx_w/2;
+gfx_drawnumber(samplesblock/2,0);
+gfx_drawchar($'s');
+gfx_drawchar($'p');
+gfx_drawchar($'l');
+
+

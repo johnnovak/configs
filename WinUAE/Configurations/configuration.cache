@@ -1,0 +1,99 @@
+﻿WinUAE Configuration.Cache
+3
+4
+7
+131041168237590000
+;
+Host\
+131040401096481785
+Host
+
+;
+A1200 Real Accelerator.uae
+131041168237390449
+A1200 Real Accelerator.uae
+020 FPU 8/16MB Cycle Exact x2
+
+
+3
+;
+A1200 Real.uae
+131040465203357680
+A1200 Real.uae
+020 FPU 2/8MB Cycle Exact
+
+
+3
+;
+A1200 Turbo.uae
+130267328380000000
+A1200 Turbo.uae
+JIT 020 FPU 8/16MB
+
+
+3
+;
+A4000 Compatible.uae
+130267328440000000
+A4000 Compatible.uae
+020 FPU 8/32MB Cycle Exact x2
+
+
+3
+;
+A4000 Normal.uae
+130267328520000000
+A4000 Normal.uae
+020 FPU 8/32MB
+
+
+3
+;
+A4000 Turbo 040.uae
+131040720885354064
+A4000 Turbo 040.uae
+JIT 040 FPU 8/64MB
+
+
+3
+;
+A4000 Turbo.uae
+131040702800904331
+A4000 Turbo.uae
+JIT 020 FPU 8/32MB
+
+
+3
+;
+Host\Fullscreen (800x600).uae
+129984809180000000
+Fullscreen (800x600).uae
+
+
+
+2
+;
+Host\Fullscreen PAL VSync.uae
+129984810580000000
+Fullscreen PAL VSync.uae
+
+
+
+2
+;
+Host\FullwindowD3D.uae
+129984809200000000
+FullwindowD3D.uae
+
+
+
+2
+;
+Host\Windowed.uae
+129984804820000000
+Windowed.uae
+
+
+
+2
+;

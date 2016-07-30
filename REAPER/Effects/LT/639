@@ -1,0 +1,412 @@
+// NO WARRANTY IS GRANTED. THIS PLUG-IN IS PROVIDED ON AN "AS IS" BASIS, WITHOUT
+// WARRANTY OF ANY KIND. NO LIABILITY IS GRANTED, INCLUDING, BUT NOT LIMITED TO,
+// ANY DIRECT OR INDIRECT,  SPECIAL,  INCIDENTAL OR CONSEQUENTIAL DAMAGE ARISING
+// OUT OF  THE  USE  OR INABILITY  TO  USE  THIS PLUG-IN,  COMPUTER FAILTURE  OF
+// MALFUNCTION INCLUDED.  THE USE OF THE SOURCE CODE,  EITHER  PARTIALLY  OR  IN
+// TOTAL, IS ONLY GRANTED,  IF USED IN THE SENSE OF THE AUTHOR'S INTENTION,  AND
+// USED WITH ACKNOWLEDGEMENT OF THE AUTHOR. FURTHERMORE IS THIS PLUG-IN A  THIRD
+// PARTY CONTRIBUTION,  EVEN IF INCLUDED IN REAPER(TM),  COCKOS INCORPORATED  OR
+// ITS AFFILIATES HAVE NOTHING TO DO WITH IT.  LAST BUT NOT LEAST, BY USING THIS
+// PLUG-IN YOU RELINQUISH YOUR CLAIM TO SUE IT'S AUTHOR, AS WELL AS THE CLAIM TO
+// ENTRUST SOMEBODY ELSE WITH DOING SO.
+
+
+desc:1337 DRIVE
+slider1:5<0,10,0.1> 6 3 9
+slider2:10<0,10,0.1> PWN
+slider3:0 <0, 1, 1{off, on}> flip bottom
+slider4:0 <0, 1, 1{off, on}> R channel bias
+
+@init
+ext_nodenorm = 1.0;
+cDenorm=10^-30;
+x_scale = 1.39629436112;
+quotient = 0.333333333333;
+gainpotsize = 149981;
+gainpot = 1;
+gainpot = gainpotsize;
+gainratio = 1;
+flosscompgain = 4;
+
+
+tonepotsize = 100639;
+c4 = 99.999999999 * 10^(-12);
+c5 = 0.1 * 2.1108103465 * 10^(-6);
+c6 = 0.1 * 4.8816110904 * 10^(-6);
+c8 = 3 * 3.2378945095 * 10^(-9);
+r4 = 46.363636363;
+r5 = 538.43843843;
+divtop = rpar = (r4 * r5) / (r4 + r5);
+totalgain = 1 + (gainpot / rpar);
+cleangain = 8.0063906390639;
+
+volt = 13.8;
+bias = 0;
+unitybandwidth = 3044847.56 * .1;
+slew = 2.92827262524;
+toprail = 4.020908070604;
+bottomrail = 4.469874682101;
+topdiode = 0.750750750750;
+bottomdiode = 0.7067371044;
+
+crossover = 0.06;
+top_floor = -crossover;
+bottom_floor = crossover;
+
+
+freqHP1 = 1 / (2*$pi*c5*r4);
+xHP1 = exp(-2.0*$pi*freqHP1/srate);
+a0HP1 = 1.0-xHP1;
+b1HP1 = -xHP1;
+HP1_divtop = r4;
+HP1_divbottom = gainpot + r4;
+HP1_divbottomdrop = HP1_divtop/HP1_divbottom;
+HP1_divtopdrop = 1 - HP1_divbottomdrop;
+HP1_filtermix = HP1_divtopdrop;
+HP1_drymix = HP1_divbottomdrop;
+HP1_gain = 1 / HP1_drymix;
+
+freqHP2 = 1 / (2*$pi*c6*r5);
+xHP2 = exp(-2.0*$pi*freqHP2/srate);
+a0HP2 = 1.0-xHP2;
+b1HP2 = -xHP2;
+HP2_divtop = r5;
+HP2_divbottom = gainpot + r5;
+HP2_divbottomdrop = HP2_divtop/HP2_divbottom;
+HP2_divtopdrop = 1 - HP2_divbottomdrop;
+HP2_filtermix = HP2_divtopdrop;
+HP2_drymix = HP2_divbottomdrop;
+HP2_gain = 1 / HP2_drymix;
+
+freqHP3 = 12;
+xHP3 = exp(-2.0*$pi*freqHP3/srate);
+a0HP3 = 1.0-xHP3;
+b1HP3 = -xHP3;
+
+HP1_limit = 1;
+HP2_limit = 1;
+
+freqLP1 = 1 / (2*$pi*c4*gainpot);
+xLP1 = exp(-2.0*$pi*freqLP1/srate);
+a0LP1 = 1.0-xLP1;
+b1LP1 = -xLP1;
+
+//LP2 see @slider (tonepot dependent)
+
+freqLP3 = 129732.237921 * 0.25;
+xLP3 = exp(-2.0*$pi*freqLP3/srate);
+a0LP3 = 1.0-xLP3;
+b1LP3 = -xLP3;
+
+//LP4 deleted
+//LP5 = LP3
+//LP6 deleted
+
+freqLP7 = unitybandwidth / totalgain;
+xLP7 = exp(-2.0*$pi*freqLP7/srate);
+a0LP7 = 1.0-xLP7;
+b1LP7 = -xLP7;
+
+//fir restoration
+c1 = 1;
+c2 = -0.75;
+c3 = 0.17;
+flosscompgain = 0.66368;
+
+fgaincomp = 10;
+
+//fir bandlimit
+bl_c1 = 0.52;
+bl_c2 = 0.54;
+bl_c3 = -0.02;
+restlosscompgain = 0.365153;
+
+
+s0 = 0;
+so_1 = 0;
+
+
+
+
+@slider
+
+mixpot = slider1 / 10;
+
+tonepot = 1 - (slider2 / 10);
+tonepot = tonepotsize * quotient * (exp(x_scale * tonepot) - 1);
+tonepot += 1;
+
+
+freqLP2 = 1 / (2*$pi*c8*(tonepot + 2515.25152515));
+xLP2 = exp(-2.0*$pi*freqLP2/srate);
+a0LP2 = 1.0-xLP2;
+b1LP2 = -xLP2;
+
+flip_bottom = slider3;
+R_chan_bias = slider4;  
+   
+
+@sample
+ 
+input0 = spl0*volt;
+input1 = spl1*volt;
+
+bias = input1 * R_chan_bias;
+
+s0 = input0;
+
+
+input = s0*4350;
+tophalf = max(input, top_floor);
+tophalf -= top_floor;
+exp_var = exp(-3.33*tophalf);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+equ_quo = equ_top / equ_bot;
+tophalf -= (.6 * equ_quo);
+
+bottomhalf = min(input, bottom_floor);
+bottomhalf -= bottom_floor;
+exp_var = exp(-3.33*bottomhalf);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+equ_quo = equ_top / equ_bot;
+bottomhalf -= (.6 * equ_quo);
+flip_bottom == 1 ?
+    (bottomhalf *= -1);
+output = tophalf + bottomhalf;
+s0 = output/4350;
+
+HP1 = s0 - (tmplHP1 = a0HP1*s0 - b1HP1*tmplHP1 + cDenorm);
+HP1_filter = HP1 * HP1_filtermix;
+HP1_dry = s0 * HP1_drymix;
+
+HP1 = (HP1_filter + HP1_dry) / HP1_drymix;
+
+HP2 = s0 - (tmplHP2 = a0HP2*s0 - b1HP2*tmplHP2 + cDenorm);
+HP2_filter = HP2 * HP2_filtermix;
+HP2_dry = s0 * HP2_drymix;
+
+HP2 = (HP2_filter + HP2_dry) / HP2_drymix;
+
+s0 = ((HP1 + HP2)) / 1.2;
+s0 += bias;
+
+LP1 = (tmplLP1 = a0LP1*s0 - b1LP1*tmplLP1 + cDenorm);
+s0 = LP1;
+
+LP7 = (tmplLP7 = a0LP7*s0 - b1LP7*tmplLP7 + cDenorm);
+s0 = LP7;
+
+LP3 = (tmplLP3 = a0LP3*s0 - b1LP3*tmplLP3 + cDenorm);
+s0 = LP3;
+
+slew_diff = s0 - s0_1;
+slew_sign = sign (slew_diff);
+abs (sample_diff) > slew ?
+    (s0 = s0_1 + (slewsign * slew));
+s0_1 = s0;
+
+
+LP5 = (tmplLP5 = a0LP3*s0 - b1LP3*tmplLP5 + cDenorm);
+s0 = LP5;
+checking = s0;
+
+
+//oversampled
+ps_out1l = 0.5*(s0+ps_out2l);
+ps_out2l = 0.5*ps_out1l;
+
+//1
+input = ps_out1l / flosscompgain;
+opampinput = input;
+s = sign(input);
+abs_in = abs(input);
+s == -1 ? (drop = bottomrail):
+         (drop = toprail);         
+(exp_var = exp ((-2/drop)*abs_in);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+abs_out = drop * equ_top / equ_bot);
+output = s * abs_out;
+s0 = output;
+
+input = s0;
+s = sign(input);
+abs_in = abs(input);
+s == -1 ? (drop = bottomdiode):
+         (drop = topdiode);         
+(exp_var = exp ((-2/drop)*abs_in);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+abs_out = drop * equ_top / equ_bot);
+output = s * abs_out;
+
+o_in1l = output;
+
+//2l
+input = ps_out2l / flosscompgain;
+opampinput = input;
+s = sign(input);
+abs_in = abs(input);
+s == -1 ? (drop = bottomrail):
+         (drop = toprail);         
+(exp_var = exp ((-2/drop)*abs_in);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+abs_out = drop * equ_top / equ_bot);
+output = s * abs_out;
+s0 = output;
+
+input = s0;
+s = sign(input);
+abs_in = abs(input);
+s == -1 ? (drop = bottomdiode):
+         (drop = topdiode);         
+(exp_var = exp ((-2/drop)*abs_in);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+abs_out = drop * equ_top / equ_bot);
+output = s * abs_out;
+
+o_in2l = output;
+checkit = output;
+
+//bandlimit
+bl3_l1 = bl2_l1;
+bl3_l2 = bl2_l2;
+
+bl2_l1 = bl1_l1;
+bl2_l2 = bl1_l2;
+
+bl1_l1 = o_in1l;
+bl1_l2 = o_in2l;
+
+bl_out1l = (bl1_l1*bl_c1 + bl2_l1*bl_c2 + bl3_l1*bl_c3);
+bl_out2l = (bl1_l2*bl_c1 + bl2_l2*bl_c2 + bl3_l2*bl_c3);
+
+//---------------------------
+//power series out
+o_out1l = 0.5*(bl_out1l+o_out2l);
+o_out2l = 0.5*(bl_out2l+o_out1l);
+
+//---------------------------
+//fir restoration
+s3l = s2l;
+s2l = s1l;
+s1l = o_out1l;
+
+output = (s1l*c1+s2l*c2+s3l*c3);
+s0 = output / restlosscompgain;
+
+thisthing = checkit / s0;
+
+///////////////////
+s1 = cleangain * ((input1 * (1 - R_chan_bias)) + (input0 * R_chan_bias));
+checkit = s1; //output;
+
+input = s1*4350;
+tophalf = max(input, top_floor);
+tophalf -= top_floor;
+exp_var = exp(-3.33*tophalf);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+equ_quo = equ_top / equ_bot;
+tophalf -= (.6 * equ_quo);
+
+bottomhalf = min(input, bottom_floor);
+bottomhalf -= bottom_floor;
+exp_var = exp(-3.33*bottomhalf);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+equ_quo = equ_top / equ_bot;
+bottomhalf -= (.6 * equ_quo);
+output = tophalf + bottomhalf;
+s1 = output/4350;
+
+slew_diff = s1 - s1_1;
+slew_sign = sign (slew_diff);
+abs (sample_diff) > slew ?
+    (s0 = s0_1 + (slewsign * slew));
+s1_1 = s1;
+
+
+//oversampled
+ps_out1r = 0.5*(s1+ps_out2r);
+ps_out2r = 0.5*ps_out1r;
+
+//1
+input = ps_out1r / flosscompgain;
+opampinput = input;
+s = sign(input);
+abs_in = abs(input);
+s == -1 ? (drop = bottomrail):
+         (drop = toprail);         
+(exp_var = exp ((-2/drop)*abs_in);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+abs_out = drop * equ_top / equ_bot);
+output = s * abs_out;
+o_in1r = output;
+
+//2
+input = ps_out2r / flosscompgain;
+opampinput = input;
+s = sign(input);
+abs_in = abs(input);
+s == -1 ? (drop = bottomrail):
+         (drop = toprail);         
+(exp_var = exp ((-2/drop)*abs_in);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+abs_out = drop * equ_top / equ_bot);
+output = s * abs_out;
+
+o_in2r = output;
+checkit = output;
+
+//bandlimit
+bl3_r1 = bl2_r1;
+bl3_r2 = bl2_r2;
+
+bl2_r1 = bl1_r1;
+bl2_r2 = bl1_r2;
+
+bl1_r1 = o_in1r;
+bl1_r2 = o_in2r;
+
+bl_out1r = (bl1_r1*bl_c1 + bl2_r1*bl_c2 + bl3_r1*bl_c3);
+bl_out2r = (bl1_r2*bl_c1 + bl2_r2*bl_c2 + bl3_r2*bl_c3);
+
+//---------------------------
+//power series out
+o_out1r = 0.5*(bl_out1r+o_out2r);
+o_out2r = 0.5*(bl_out2r+o_out1r);
+
+//---------------------------
+//fir restoration
+s3r = s2r;
+s2r = s1r;
+s1r = o_out1r;
+
+output = (s1r*c1+s2r*c2+s3r*c3);
+s1 = output / restlosscompgain;
+
+LP2 = (tmplLP2 = a0LP2*s1 - b1LP2*tmplLP2 + cDenorm);
+s1 = LP2;
+
+//////////////////////
+
+s0 = ((s0) * mixpot) + ((s1) * (1-mixpot));
+
+HP3 = s0 - (tmplHP3 = a0HP3*s0 - b1HP3*tmplHP3 + cDenorm);
+s0 = HP3;
+
+checkit = s0; //output;
+
+
+spl0 = s0*1.2/(volt*cleangain);
+spl1 = spl0;
+
+
+

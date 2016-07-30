@@ -1,0 +1,77 @@
+// This effect Copyright (C) 2004 and later Cockos Incorporated
+// License: GPL - http://www.gnu.org/licenses/gpl.html
+
+desc: sine amplifier
+
+slider1:0<-20,400,.1> input gain (dB)
+slider2:-12<-20,0,.1> output limit (dBfs, approx)
+slider3:5<0, 10,.1> color
+slider4:0<0, 10,.1> depth
+slider5:1<0.5, 4, .1>width
+slider6:0<0, 10, .1>bias
+
+
+@slider
+
+ingain = 2 ^ (slider1/6);
+outlimit = 2 ^ ((slider2+2)/6)/2;
+AP1Freq = 5 * (2 ^(slider3)) + 50;
+depth = slider4/20;
+idepth = 1 - abs(depth);
+width = slider5;
+bias = slider6/10;
+
+LP1period = 300/(5248*width);
+HP1freq = 800 / width;
+HP1period = 1000/HP1freq;
+
+AP1_dsc = AP1Freq*2/srate;
+AP1_coef=(1-AP1_dsc)/(1+AP1_dsc);
+
+LP1.singlepole_set(LP1period);
+HP1.singlepole_set(HP1period);
+
+@init
+function singlepole_set(ms)
+ instance(coeff)
+(
+  coeff = exp(-1/(ms/1000*srate));
+);
+
+
+function singlepole(in,target)
+  instance(coeff)
+(
+  in*coeff + target*(1-coeff);
+);
+
+
+@sample
+  l_samp = outlimit * sin ((max(min(bias+ingain*spl0,1), -1) ) * ($pi/2));
+  r_samp = outlimit * sin ((max(min(bias+ingain*spl1,1), -1) ) * ($pi/2));
+  
+
+x1=l_samp;
+ly1 = AP1_coef * (ly1 + x1) - lx1;  lx1 = x1;
+ly2 = AP1_coef * (ly2 + ly1) - lx2; lx2 = ly1;
+
+rx=r_samp;
+ry1 = AP1_coef * (ry1 + rx) - rx1;  rx1 = rx;
+ry2 = AP1_coef * (ry2 + ry1) - rx2; rx2 = ry1;
+
+
+  colored_l = idepth*l_samp + depth*ly2;
+  colored_r = idepth*r_samp + depth*ry2;;
+
+  LP1_l = LP1.singlepole(LP1_l,colored_l);
+  LP1_r = LP1.singlepole(LP1_r,colored_r);
+  
+  HP1_l = LP1_l - HP1_l_L = HP1.singlepole(HP1_l_L,LP1_l);
+  HP1_r = LP1_r - HP1_r_L = HP1.singlepole(HP1_r_L,LP1_r);
+
+  
+  
+      
+spl0 = HP1_l;
+spl1 = HP1_r;
+

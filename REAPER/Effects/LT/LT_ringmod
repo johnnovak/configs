@@ -1,0 +1,57 @@
+desc: LT Ring Modulator
+
+slider1:-60<-120,6,1>l_threshold (dB)
+slider2:-60<-120,6,1>r_threshold (dB)
+
+@slider
+
+l_thresh=2 ^ (slider1/6);
+r_thresh=2 ^ (slider2/6);
+
+@init
+l_silentcnt=0;
+l_seekv=1; l_seekto=1;
+r_silentcnt=0;
+r_seekv=1; r_seekto=1;
+sillen=0;
+fadeout = 1/pow(10,1/(srate*0.01));
+fadein  = fadeout;
+   
+@sample
+  a=abs(spl0) > l_thresh;
+  a ? 
+    (
+     l_silentcnt=0; 
+     l_seekto=1;
+    ) : (
+     (l_silentcnt+=1) > sillen ?  l_seekto=0;
+    );
+  l_seekto > 0.5 ? 
+    ( // fading in
+    l_seekv=l_seekv*fadein + (1-fadein);
+    )
+    :
+    ( // fading out
+    l_seekv=l_seekv*fadeout;
+    );
+  leftsample=spl0*l_seekv;
+  a=abs(spl1) > r_thresh;
+  a ? 
+    (
+     r_silentcnt=0; 
+     r_seekto=1;
+    ) : (
+     (r_silentcnt+=1) > sillen ?  r_seekto=0;
+    );
+  r_seekto > 0.5 ? 
+    ( // fading in
+    r_seekv=r_seekv*fadein + (1-fadein);
+    )
+    :
+    ( // fading out
+    r_seekv=r_seekv*fadeout;
+    );
+  rightsample=spl1*r_seekv;
+  spl0=leftsample*rightsample;
+  spl1=spl0;
+ 

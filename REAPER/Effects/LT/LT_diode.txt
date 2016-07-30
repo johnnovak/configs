@@ -1,0 +1,173 @@
+// This is the actual one!  
+//Fully implemented and apparently working.
+
+desc: tanh clipper
+
+slider1:27.6<3,10000,0.1> input (0dbfs = V)
+slider2:0, input (-18dbfs = V)
+slider3:0.6 <0, 9, .01> top diode drop (V)
+slider4:0 <0, 1, 1{real, ideal}> top ideal
+slider5:0.6 <0 , 9, .01> bottom diode drop (V)
+slider6:0 <0, 1, 1{real, ideal}> bottom ideal
+slider7:0 <0, 1, 1{off, on}> flip bottom
+slider8:27.6<3,1000,0.1> output (0dbfs = V)
+slider9:0, output (-18dbfs = V)
+slider10:1 <0, 1, 1{off, on}> remove DC
+
+@slider
+  in_volt= slider1/2;
+  slider2 = slider1 / 8;
+  top_drop = slider3;
+  bottom_drop = slider5; 
+  top_ideal = slider4;
+  bottom_ideal = slider6;
+  flip_bottom = slider7;
+  out_volt = slider8/2;
+  slider9 = slider8 / 8;
+  remove_dc = slider10;
+  
+@init
+//fir restoration
+floss_comp = 3;
+fgain_comp = 1.79088;
+
+c1 = 1;
+c2 = -0.75;
+c3 = 0.17;
+fgain = 4.1/fgain_comp;
+
+//fir bandlimit
+bl_c1 = 0.52;
+bl_c2 = 0.54;
+bl_c3 = -0.02;
+
+//dc remove
+itm1=itm2=otm1=otm2=0;
+
+@sample
+inl=spl0*in_volt*floss_comp;
+inr=spl1*in_volt*floss_comp;
+
+//temp debug craps
+//inl = 300;
+//inr = 300;
+//
+
+
+ps_out1l = 0.5*(inl+ps_out2l);
+ps_out2l = 0.5*ps_out1l;
+
+ps_out1r = 0.5*(inr+ps_out2r);
+ps_out2r = 0.5*ps_out1r; 
+//1l
+input = ps_out1l;
+s = sign(input);
+abs_in = abs(input);
+s == -1 ? (drop = bottom_drop; ideal = bottom_ideal):
+         (drop = top_drop; ideal = top_ideal);         
+ideal == 1 ? (abs_out = min(abs_in, drop)):
+(exp_var = exp ((-2/drop)*abs_in);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+abs_out = drop * equ_top / equ_bot);
+flip_bottom == 1 ? 
+  (s = 1;);
+output = s * abs_out;
+
+o_in1l = output;
+//2l
+input = ps_out2l;
+s = sign(input);
+abs_in = abs(input);
+s == -1 ? (drop = bottom_drop; ideal = bottom_ideal):
+         (drop = top_drop; ideal = top_ideal);         
+ideal == 1 ? (abs_out = min(abs_in, drop)):
+(exp_var = exp ((-2/drop)*abs_in);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+abs_out = drop * equ_top / equ_bot);
+flip_bottom == 1 ? 
+  (s = 1;);
+output = s * abs_out;
+
+o_in2l = output;   
+//1r
+input = ps_out1r;
+s = sign(input);
+abs_in = abs(input);
+s == -1 ? (drop = bottom_drop; ideal = bottom_ideal):
+         (drop = top_drop; ideal = top_ideal);         
+ideal == 1 ? (abs_out = min(abs_in, drop)):
+(exp_var = exp ((-2/drop)*abs_in);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+abs_out = drop * equ_top / equ_bot);
+flip_bottom == 1 ? 
+  (s = 1;);
+output = s * abs_out;
+
+o_in1r = output;
+//2r
+input = ps_out2r;
+s = sign(input);
+abs_in = abs(input);
+s == -1 ? (drop = bottom_drop; ideal = bottom_ideal):
+         (drop = top_drop; ideal = top_ideal);         
+ideal == 1 ? (abs_out = min(abs_in, drop)):
+(exp_var = exp ((-2/drop)*abs_in);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+abs_out = drop * equ_top / equ_bot);
+flip_bottom == 1 ? 
+  (s = 1;);
+output = s * abs_out;
+
+o_in2r = output;
+
+//bandlimit
+bl3_l1 = bl2_l1;
+bl3_r1 = bl2_r1;
+bl3_l2 = bl2_l2;
+bl3_r2 = bl2_r2;
+
+bl2_l1 = bl1_l1;
+bl2_r1 = bl1_r1;
+bl2_l2 = bl1_l2;
+bl2_r2 = bl1_r2;
+
+bl1_l1 = o_in1l;
+bl1_r1 = o_in1r;
+bl1_l2 = o_in2l;
+bl1_r2 = o_in2r;
+
+bl_out1l = (bl1_l1*bl_c1 + bl2_l1*bl_c2 + bl3_l1*bl_c3);
+bl_out1r = (bl1_r1*bl_c1 + bl2_r1*bl_c2 + bl3_r1*bl_c3);
+bl_out2l = (bl1_l2*bl_c1 + bl2_l2*bl_c2 + bl3_l2*bl_c3);
+bl_out2r = (bl1_r2*bl_c1 + bl2_r2*bl_c2 + bl3_r2*bl_c3);
+
+//---------------------------
+//power series out
+o_out1l = 0.5*(bl_out1l+o_out2l);
+o_out2l = 0.5*(bl_out2l+o_out1l);
+
+o_out1r = 0.5*(bl_out1r+o_out2r);
+o_out2r = 0.5*(bl_out2r+o_out1r);
+
+//---------------------------
+//fir restoration
+s3l = s2l;
+s3r = s2r;
+s2l = s1l;
+s2r = s1r;
+s1l = o_out1l;
+s1r = o_out1r;
+
+o_outl = (s1l*c1+s2l*c2+s3l*c3)*fgain;
+o_outr = (s1r*c1+s2r*c2+s3r*c3)*fgain;
+
+remove_dc == 1 ?
+  (otm1=0.999*otm1 + o_outl - itm1; itm1=o_outl; o_outl=otm1;
+   otm2=0.999*otm2 + o_outr - itm2; itm2=o_outr; o_outr=otm2;
+   );
+spl0 = o_outl/out_volt;
+spl1 = o_outr/out_volt;

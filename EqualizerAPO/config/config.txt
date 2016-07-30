@@ -1,0 +1,13 @@
+Dated: February 18, 2014 7:00:23 PM
+
+Notes: NoAudiophile.com Pioneer BS-22 LR Correction 
+
+Equaliser: Generic
+
+Preamp: -2.8 dB
+Filter  1:  ON  PK       Fc  92 Hz  Gain   -2.5 dB  Q  2.50
+Filter  2:  ON  PK       Fc  560 Hz  Gain   0.7 dB  Q  3.00
+Filter  3:  ON  LS       Fc  700 Hz  Gain   2.8 dB
+Filter  4:  ON  PK       Fc  860 Hz  Gain   -0.8 dB  Q  1.70
+Filter  5:  ON  PK       Fc  13800 Hz  Gain   -2.8 dB  Q  3.80
+Filter  6:  ON  PK       Fc  15800 Hz  Gain   -3.0 dB  Q  3.50

@@ -1,0 +1,251 @@
+﻿Illegal operation:
+Code: C000001Dh, flags: 00000001h, address: 00000000h
+Additional parameters: 00010006h
+
+Call path not available.
+
+Stack (06E6FAF4h):
+06E6FAD4h:  00000000 00000000 06E6FB40 06E6FAF4
+06E6FAE4h:  00000000 60431CDD 00000000 75553368
+06E6FAF4h:  06E6FB30 00000001 37780206 6C9727F5
+06E6FB04h:  C38B2DF6 00000000 00000000 00000000
+06E6FB14h:  00000000 00000000 00000000 00000000
+06E6FB24h:  00000000 7555498F 60431CE9 60465280
+06E6FB34h:  00000000 7555337A 00000000 06E6FB80
+06E6FB44h:  777392E2 00000000 717948DE 00000000
+06E6FB54h:  00000000 00000000 00000000 00000000
+06E6FB64h:  00000000 06E6FB4C 00000000 06E6FB90
+06E6FB74h:  77771A05 00ED76CE 00000000 06E6FB98
+06E6FB84h:  777392B5 60431CDD 00000000 FFFFFFFF
+06E6FB94h:  777C7707 00000000 00000000 60431CDD
+06E6FBA4h:  00000000 00000000 00000000 00000000
+06E6FBB4h:  00000000 00000000 00000000 00000000
+06E6FBC4h:  00000000 00000000 00000000 00000000
+06E6FBD4h:  00000000 00000000 00000000 00000000
+06E6FBE4h:  00000000 00000000 00000000 00000000
+06E6FBF4h:  00000000 00000000 00000000 00000000
+06E6FC04h:  00000000 00000000 00000000 00000000
+
+Registers:
+EAX: 75553368, EBX: 00000000, ECX: 00000000, EDX: 60431CDD
+ESI: 00000000, EDI: 00000000, EBP: 06E6FB40, ESP: 06E6FAF4
+
+Unable to identify crash location!
+
+Loaded modules:
+foobar2000                       loaded at 013C0000h - 0158D000h
+ntdll                            loaded at 77700000h - 77880000h
+kernel32                         loaded at 75540000h - 75650000h
+KERNELBASE                       loaded at 763D0000h - 76417000h
+ADVAPI32                         loaded at 765D0000h - 76671000h
+msvcrt                           loaded at 764B0000h - 7655C000h
+sechost                          loaded at 75830000h - 75849000h
+RPCRT4                           loaded at 75900000h - 759F0000h
+SspiCli                          loaded at 75070000h - 750D0000h
+CRYPTBASE                        loaded at 75060000h - 7506C000h
+COMCTL32                         loaded at 70000000h - 7019E000h
+GDI32                            loaded at 76420000h - 764B0000h
+USER32                           loaded at 759F0000h - 75AF0000h
+LPK                              loaded at 763C0000h - 763CA000h
+USP10                            loaded at 76300000h - 7639D000h
+SHLWAPI                          loaded at 76160000h - 761B7000h
+WINMM                            loaded at 74250000h - 74282000h
+DSOUND                           loaded at 6F040000h - 6F0B2000h
+ole32                            loaded at 76000000h - 7615C000h
+POWRPROF                         loaded at 707D0000h - 707F5000h
+SETUPAPI                         loaded at 75340000h - 754DD000h
+CFGMGR32                         loaded at 76250000h - 76277000h
+OLEAUT32                         loaded at 761C0000h - 7624F000h
+DEVOBJ                           loaded at 75AF0000h - 75B02000h
+UxTheme                          loaded at 6FD20000h - 6FDA0000h
+SHELL32                          loaded at 766B0000h - 772FB000h
+zlib1                            loaded at 62E80000h - 62E9F000h
+shared                           loaded at 6F010000h - 6F03D000h
+imagehlp                         loaded at 76680000h - 766AB000h
+dbghelp                          loaded at 6F7E0000h - 6F8CB000h
+COMDLG32                         loaded at 76280000h - 762FB000h
+CRYPT32                          loaded at 75660000h - 75781000h
+MSASN1                           loaded at 75650000h - 7565C000h
+Secur32                          loaded at 6BD50000h - 6BD58000h
+gdiplus                          loaded at 73E60000h - 73FF0000h
+WINHTTP                          loaded at 741F0000h - 74248000h
+webio                            loaded at 740D0000h - 7411F000h
+apphelp                          loaded at 6EF30000h - 6EF7C000h
+EMET                             loaded at 6C910000h - 6CAB0000h
+AcLayers                         loaded at 73C40000h - 73CCD000h
+USERENV                          loaded at 750D0000h - 750E7000h
+profapi                          loaded at 75B10000h - 75B1B000h
+WINSPOOL                         loaded at 74180000h - 741D1000h
+MPR                              loaded at 742B0000h - 742C2000h
+IMM32                            loaded at 76570000h - 765D0000h
+MSCTF                            loaded at 75E60000h - 75F2C000h
+dwmapi                           loaded at 740A0000h - 740B3000h
+foo_wave_seekbar                 loaded at 658F0000h - 65A99000h
+WS2_32                           loaded at 75F30000h - 75F65000h
+NSI                              loaded at 75820000h - 75826000h
+PSAPI                            loaded at 758E0000h - 758E5000h
+IPHLPAPI                         loaded at 70870000h - 7088C000h
+WINNSI                           loaded at 70860000h - 70867000h
+MSVCP120                         loaded at 6EF90000h - 6F001000h
+MSVCR120                         loaded at 65800000h - 658EE000h
+mswsock                          loaded at 70790000h - 707CC000h
+wshtcpip                         loaded at 70780000h - 70785000h
+wship6                           loaded at 70770000h - 70776000h
+foo_masstag                      loaded at 02990000h - 029E4000h
+foo_dsp_eq                       loaded at 657C0000h - 657F7000h
+foo_input_std                    loaded at 65660000h - 657BC000h
+MSACM32                          loaded at 6C6D0000h - 6C6E4000h
+avcodec-fb2k-56                  loaded at 65480000h - 6565E000h
+avutil-fb2k-54                   loaded at 653F0000h - 6547A000h
+foo_rgscan                       loaded at 65390000h - 653EF000h
+foo_quicktag                     loaded at 65350000h - 65384000h
+foo_cdda                         loaded at 652F0000h - 65341000h
+foo_texttools                    loaded at 652B0000h - 652E4000h
+foo_ui_std                       loaded at 651A0000h - 652AE000h
+MSIMG32                          loaded at 6FDA0000h - 6FDA5000h
+foo_albumlist                    loaded at 65140000h - 6519B000h
+foo_discogs                      loaded at 03A80000h - 03AF5000h
+foo_musicbrainz                  loaded at 61B00000h - 61B5B000h
+foo_abx                          loaded at 650F0000h - 6513C000h
+foo_dsp_std                      loaded at 61AC0000h - 61AF7000h
+foo_freedb2                      loaded at 61A70000h - 61AC0000h
+foo_bpm                          loaded at 61A20000h - 61A61000h
+foo_quicksearch                  loaded at 619C0000h - 61A17000h
+WindowsCodecs                    loaded at 6CAB0000h - 6CBE1000h
+foo_r128norm                     loaded at 61990000h - 619BB000h
+foo_sid                          loaded at 5CFA0000h - 5E0B7000h
+foo_converter                    loaded at 613A0000h - 61428000h
+foo_ui_columns                   loaded at 066C0000h - 06850000h
+urlmon                           loaded at 75D10000h - 75E5A000h
+api-ms-win-downlevel-ole32-l1-1  loaded at 76560000h - 76564000h
+api-ms-win-downlevel-shlwapi-l1  loaded at 763A0000h - 763A4000h
+api-ms-win-downlevel-advapi32-l  loaded at 75530000h - 75535000h
+api-ms-win-downlevel-user32-l1-  loaded at 763B0000h - 763B4000h
+api-ms-win-downlevel-version-l1  loaded at 758F0000h - 758F4000h
+version                          loaded at 706A0000h - 706A9000h
+api-ms-win-downlevel-normaliz-l  loaded at 776D0000h - 776D3000h
+normaliz                         loaded at 75330000h - 75333000h
+iertutil                         loaded at 750F0000h - 75322000h
+WININET                          loaded at 75B20000h - 75D04000h
+foo_fileops                      loaded at 618E0000h - 6192E000h
+foo_input_monkey                 loaded at 03D90000h - 03DD8000h
+foo_audioscrobbler               loaded at 03D40000h - 03D73000h
+foo_unpack                       loaded at 61350000h - 6139C000h
+foo_dumb                         loaded at 60480000h - 6056A000h
+BASS                             loaded at 60430000h - 60480000h
+foo_playcount                    loaded at 603F0000h - 6042E000h
+WTSAPI32                         loaded at 72E00000h - 72E0D000h
+WINSTA                           loaded at 73BD0000h - 73BF9000h
+
+Stack dump analysis:
+Address: 6C9727F5h (EMET+627F5h), symbol: "EMETSendCert" (+9C7h)
+Address: 7555498Fh (kernel32+1498Fh), symbol: "LoadLibraryA" (+0h)
+Address: 60431CE9h (BASS+1CE9h)
+Address: 60465280h (BASS+35280h)
+Address: 7555337Ah (kernel32+1337Ah), symbol: "BaseThreadInitThunk" (+12h)
+Address: 777392E2h (ntdll+392E2h), symbol: "RtlInitializeExceptionChain" (+63h)
+Address: 77771A05h (ntdll+71A05h), symbol: "WinSqmSetIfMaxDWORD" (+31h)
+Address: 777392B5h (ntdll+392B5h), symbol: "RtlInitializeExceptionChain" (+36h)
+Address: 60431CDDh (BASS+1CDDh)
+Address: 777C7707h (ntdll+C7707h), symbol: "RtlRemoteCall" (+249h)
+Address: 60431CDDh (BASS+1CDDh)
+
+Environment:
+App: foobar2000 v1.3.8
+
+Components:
+Core (2015-03-26 07:45:52 UTC)
+    foobar2000 core 1.3.8
+foo_abx.dll (2015-05-05 00:36:14 UTC)
+    ABX Comparator 2.0.1
+foo_albumlist.dll (2015-03-26 07:42:40 UTC)
+    Album List 4.5
+foo_audioscrobbler.dll (2010-06-03 23:27:04 UTC)
+    Audioscrobbler 1.4.7
+foo_bpm.dll (2014-06-24 11:36:50 UTC)
+    BPM Analyser 0.2.4.6
+foo_cdda.dll (2015-03-26 07:42:18 UTC)
+    CD Audio Decoder 3.0
+foo_converter.dll (2015-03-26 07:42:24 UTC)
+    Converter 1.5
+foo_discogs.dll (2015-03-24 13:28:40 UTC)
+    Discogs Tagger 1.55
+foo_dsp_eq.dll (2015-03-07 10:19:44 UTC)
+    Equalizer 1.0
+foo_dsp_std.dll (2015-03-26 07:42:26 UTC)
+    Standard DSP Array 1.3.1
+foo_dumb.dll (2015-06-01 14:03:46 UTC)
+    DUMB module decoder 1.0.154
+foo_fileops.dll (2015-03-07 10:19:10 UTC)
+    File Operations 2.2.1
+foo_freedb2.dll (2015-03-07 10:19:36 UTC)
+    Online Tagger 0.7
+foo_input_monkey.dll (2013-04-13 02:40:08 UTC)
+    Monkey's Audio Decoder 2.1.7
+foo_input_std.dll (2015-03-26 07:45:52 UTC)
+    Standard Input Array 1.0
+foo_masstag.dll (2009-09-18 00:01:36 UTC)
+    Masstagger 1.8.4
+foo_musicbrainz.dll (2012-07-24 16:23:28 UTC)
+    MusicBrainz Tagger 0.3
+foo_playcount.dll (2011-07-13 01:47:18 UTC)
+    Playback Statistics 3.0.2
+foo_quicksearch.dll (2012-10-29 07:44:48 UTC)
+    Quick Search Toolbar 3.4
+foo_quicktag.dll (2010-09-01 00:15:08 UTC)
+    Quick Tagger 1.0.3
+foo_r128norm.dll (2013-10-21 10:07:28 UTC)
+    EBU R128 Normalizer 1.11
+foo_rgscan.dll (2015-03-26 07:43:12 UTC)
+    ReplayGain Scanner 2.2.1
+foo_sid.dll (2015-01-04 09:51:22 UTC)
+    sidplay2 1.33
+foo_texttools.dll (2010-08-23 23:49:52 UTC)
+    Text Tools 1.0.5
+foo_ui_columns.dll (2011-02-27 20:22:58 UTC)
+    Columns UI 0.3.8.8
+foo_ui_std.dll (2015-03-26 07:45:52 UTC)
+    Default User Interface 0.9.5
+foo_unpack.dll (2015-03-26 07:42:42 UTC)
+    ZIP/GZIP/RAR Reader 1.7.1
+foo_wave_seekbar.dll (2014-02-08 12:37:10 UTC)
+    Waveform seekbar 0.2.45
+
+Recent events:
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_masstag.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_dsp_eq.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_input_std.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_rgscan.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_quicktag.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_cdda.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_texttools.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_ui_std.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_albumlist.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_discogs.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_musicbrainz.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_abx.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_dsp_std.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_freedb2.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_bpm.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_quicksearch.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_r128norm.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_sid.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_converter.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_ui_columns.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_fileops.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_input_monkey.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_audioscrobbler.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_unpack.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_dumb.dll
+Loading DLL: C:\Program Files (x86)\foobar2000\components\foo_playcount.dll
+Components loaded in: 0:00.178075
+Pre config read
+Configuration read in: 0:00.019288
+Starting playlist loading
+
+
+Machine specifications:
+OS: Windows 6.1.7601 Service Pack 1 x64
+CPU: Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz, features: MMX SSE SSE2 SSE3 SSE4.1 SSE4.2
+CPU threads: 8
+Audio: MOTU Main Out (MOTU Audio Wave for 64 bit); MOTU S/PDIF (MOTU Audio Wave for 64 bit); MOTU Analog (MOTU Audio Wave for 64 bit); MOTU Phones (MOTU Audio Wave for 64 bit)

@@ -1,0 +1,21 @@
+ACT 1 0 "558843a9158a0c45aeb8d99b4785c2f6" "Custom: Set track/item to white color" _SWS_WHITEITEM _SWS_WHITETRACK
+ACT 1 0 "f2369113a8e45f4e9fbf66c02414bf89" "Custom: Set track/item to black color" _SWS_BLACKITEM _SWS_BLACKTRACK
+ACT 1 0 "a6c0fb7fe914544982ae7f1a2d0b83a1" "Custom: Set track/item to color gradient" _SWS_ITEMGRAD _SWS_TRACKGRAD
+ACT 1 0 "6118dd6677009846b7fc81039147accf" "Custom: Set track/item to random colors" _SWS_TRACKRANDCOLS _SWS_ITEMRANDCOLS
+ACT 1 0 "c72e00910bd69d4a8c4063d86f780acc" "Custom: Set track/item to default color" 40359 40707
+ACT 1 0 "791341f27eee5c4794fe11bb144a3417" "Custom: Set track/item to custom color 1" _SWS_ITEMCUSTCOL1 _SWS_TRACKCUSTCOL1
+ACT 1 0 "2de3370452b8f2439e0fa9450fc83129" "Custom: Set track/item to custom color 2" _SWS_ITEMCUSTCOL2 _SWS_TRACKCUSTCOL2
+ACT 1 0 "52d18cedb9cb1b4faa14c7db3c12b2a2" "Custom: Set track/item to custom color 3" _SWS_ITEMCUSTCOL3 _SWS_TRACKCUSTCOL3
+ACT 1 0 "1e0354d32e2a9f4697d7b945c44ec2a1" "Custom: Set track/item to custom color 4" _SWS_ITEMCUSTCOL4 _SWS_TRACKCUSTCOL4
+ACT 1 0 "7cd6572302990b4a9e03b3290abc2474" "Custom: Set track/item to custom color 5" _SWS_ITEMCUSTCOL5 _SWS_TRACKCUSTCOL5
+ACT 1 0 "af5f91a93739d44099d5062f4db7eab4" "Custom: Set track/item to custom color 6" _SWS_ITEMCUSTCOL6 _SWS_TRACKCUSTCOL6
+ACT 1 0 "52e62fed6a2db544a38679bdf84ebf89" "Custom: Set track/item to custom color 7" _SWS_ITEMCUSTCOL7 _SWS_TRACKCUSTCOL7
+ACT 1 0 "9cbdca9919d3ca46959793026aa8c468" "Custom: Set track/item to custom color 8" _SWS_ITEMCUSTCOL8 _SWS_TRACKCUSTCOL8
+ACT 1 0 "952fda468255ca4eb9a3399148523081" "Custom: Set track/item to custom color 9" _SWS_ITEMCUSTCOL9 _SWS_TRACKCUSTCOL9
+ACT 1 0 "52ce34d598183a4083030140b7251f4e" "Custom: Set track/item to custom color 10" _SWS_ITEMCUSTCOL10 _SWS_TRACKCUSTCOL10
+ACT 1 0 "e2b0d2dfc2dd3b438c1c5b681f74d2f0" "Custom: Set track/item to custom color 11" _SWS_ITEMCUSTCOL11 _SWS_TRACKCUSTCOL11
+ACT 1 0 "4c9e53296ca48049adb05de3a3081580" "Custom: Set track/item to custom color 12" _SWS_ITEMCUSTCOL12 _SWS_TRACKCUSTCOL12
+ACT 1 0 "fec5dd939b14364a81106dcb5b56c613" "Custom: Set track/item to custom color 13" _SWS_ITEMCUSTCOL13 _SWS_TRACKCUSTCOL13
+ACT 1 0 "70dfca4c114f944a97ff8d7410fa9fc3" "Custom: Set track/item to custom color 14" _SWS_ITEMCUSTCOL14 _SWS_TRACKCUSTCOL14
+ACT 1 0 "499af1cc755b6744beb306ee0d1d7458" "Custom: Set track/item to custom color 15" _SWS_ITEMCUSTCOL15 _SWS_TRACKCUSTCOL15
+ACT 1 0 "19d5154f2b7f8f49a24cbd3ae9450b1a" "Custom: Set track/item to custom color 16" _SWS_ITEMCUSTCOL16 _SWS_TRACKCUSTCOL16

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkspacePreferencesxyz doc_version="0">
+  <sampler_workspace_action>6</sampler_workspace_action>
+  <restore_upper_frame_state>true</restore_upper_frame_state>
+  <mixer_workspace_action>2</mixer_workspace_action>
+  <restore_lower_frame_state>true</restore_lower_frame_state>
+  <pattern_workspace_action>0.0</pattern_workspace_action>
+  <restore_disk_browser_state>true</restore_disk_browser_state>
+  <restore_pattern_matrix_state>true</restore_pattern_matrix_state>
+</WorkspacePreferencesxyz>

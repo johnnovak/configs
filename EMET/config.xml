@@ -1,0 +1,1249 @@
+<EMET Version="5.1.5426.28431">
+  <Settings>
+    <ExploitAction Value="StopProgram" />
+    <AdvancedSettings DeepHooks="True" AntiDetours="True" BannedFunctions="True" />
+    <Reporting Telemetry="False" TrayIcon="True" EventLog="True" />
+    <SystemSettings DEP="Application Opt Out" SEHOP="Application Opt Out" ASLR="Application Opt In" Pinning="Enabled" />
+  </Settings>
+  <EMET_Apps>
+    <AppConfig Path="*\7-Zip" Executable="7zFM.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="false" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\7-Zip" Executable="7zG.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="false" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Adobe\Acrobat*\Acrobat" Executable="Acrobat.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="true">
+        <eaf_modules>AcroRd32.dll;Acrofx32.dll;AcroForm.api</eaf_modules>
+      </Mitigation>
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Adobe\Reader*\Reader" Executable="AcroRd32.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="true">
+        <eaf_modules>AcroRd32.dll;Acrofx32.dll;AcroForm.api</eaf_modules>
+      </Mitigation>
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files\CCleaner" Executable="CCleaner.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files\CCleaner" Executable="CCleaner64.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Google\Chrome\Application" Executable="chrome.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="true">
+        <eaf_modules>chrome_child.dll</eaf_modules>
+      </Mitigation>
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Microsoft Lync" Executable="communicator.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\Deluge" Executable="deluge-console.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\Deluge" Executable="deluge-debug.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\Deluge" Executable="deluge-gtk.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\Deluge" Executable="deluge-web-debug.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\Deluge" Executable="deluge-web.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\Deluge" Executable="deluge.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\Deluge" Executable="deluged-debug.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\Deluge" Executable="deluged.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\OFFICE1*" Executable="EXCEL.EXE">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="true">
+        <asr_modules>flash*.ocx</asr_modules>
+      </Mitigation>
+    </AppConfig>
+    <AppConfig Path="*\Mozilla Firefox" Executable="firefox.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="true">
+        <eaf_modules>mozjs.dll;xul.dll</eaf_modules>
+      </Mitigation>
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\foobar2000" Executable="foobar2000 Shell Associations Updater.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="false" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\foobar2000" Executable="foobar2000.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="false" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Foxit Reader" Executable="Foxit Reader.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\Foxit Software\Foxit Reader" Executable="FoxitReader.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\Foxit Software\Foxit Reader" Executable="FoxitUpdater.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Google\Google Talk" Executable="googletalk.exe">
+      <Mitigation Name="DEP" Enabled="false" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Internet Explorer" Executable="iexplore.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="true">
+        <eaf_modules>mshtml.dll;flash*.ocx;jscript*.dll;vbscript.dll;vgx.dll</eaf_modules>
+      </Mitigation>
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="true">
+        <asr_modules>npjpi*.dll;jp2iexp.dll;vgx.dll;msxml4*.dll;wshom.ocx;scrrun.dll</asr_modules>
+        <asr_zones>1;2</asr_zones>
+      </Mitigation>
+    </AppConfig>
+    <AppConfig Path="*\OFFICE1*" Executable="INFOPATH.EXE">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\iTunes" Executable="iTunes.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Java\jre6\bin" Executable="java.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="false" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Java\jre7\bin" Executable="java.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="false" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Java\jre1.8*\bin" Executable="java.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="false" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Java\jre6\bin" Executable="javaw.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="false" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Java\jre7\bin" Executable="javaw.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="false" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Java\jre1.8*\bin" Executable="javaw.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="false" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Java\jre6\bin" Executable="javaws.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="false" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Java\jre7\bin" Executable="javaws.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="false" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Java\jre1.8*\bin" Executable="javaws.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="false" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\Launchy" Executable="Launchy.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\OFFICE1*" Executable="LYNC.EXE">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\mIRC" Executable="mirc.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\OFFICE1*" Executable="MSACCESS.EXE">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\OFFICE1*" Executable="MSPUB.EXE">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\OFFICE1*" Executable="OIS.EXE">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Opera" Executable="opera.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Opera\*" Executable="opera.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\OFFICE1*" Executable="OUTLOOK.EXE">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Adobe\Adobe Photoshop CS*" Executable="Photoshop.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Pidgin" Executable="pidgin.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Mozilla Firefox" Executable="plugin-container.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Mozilla Thunderbird" Executable="plugin-container.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\OFFICE1*" Executable="POWERPNT.EXE">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="true">
+        <asr_modules>flash*.ocx</asr_modules>
+      </Mitigation>
+    </AppConfig>
+    <AppConfig Path="*\OFFICE1*" Executable="PPTVIEW.EXE">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\QuickTime" Executable="QuickTimePlayer.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\WinRAR" Executable="rar.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Real\RealPlayer" Executable="realconverter.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Real\RealPlayer" Executable="realplay.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Safari" Executable="Safari.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\SkyDrive" Executable="SkyDrive.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Skype\Phone" Executable="Skype.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="false" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Mozilla Thunderbird" Executable="thunderbird.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files\totalcmd" Executable="TOTALCMD64.EXE">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\WinRAR" Executable="unrar.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\OFFICE1*" Executable="VISIO.EXE">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\VideoLAN\VLC" Executable="vlc.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\OFFICE1*" Executable="VPREVIEW.EXE">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Winamp" Executable="winamp.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Windows Live\Writer" Executable="WindowsLiveWriter.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\WinRAR" Executable="winrar.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\OFFICE1*" Executable="WINWORD.EXE">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="true">
+        <asr_modules>flash*.ocx</asr_modules>
+      </Mitigation>
+    </AppConfig>
+    <AppConfig Path="*\WinZip" Executable="winzip32.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\WinZip" Executable="winzip64.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Windows Live\Mail" Executable="wlmail.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Windows Live\Photo Gallery" Executable="WLXPhotoGallery.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Windows Media Player" Executable="wmplayer.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="false" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="false" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="*\Windows NT\Accessories" Executable="wordpad.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\xmplay" Executable="xmplay.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+    <AppConfig Path="C:\Program Files (x86)\XnView" Executable="xnview.exe">
+      <Mitigation Name="DEP" Enabled="true" />
+      <Mitigation Name="SEHOP" Enabled="true" />
+      <Mitigation Name="NullPage" Enabled="true" />
+      <Mitigation Name="HeapSpray" Enabled="true" />
+      <Mitigation Name="EAF" Enabled="true" />
+      <Mitigation Name="EAF+" Enabled="false" />
+      <Mitigation Name="MandatoryASLR" Enabled="true" />
+      <Mitigation Name="BottomUpASLR" Enabled="true" />
+      <Mitigation Name="LoadLib" Enabled="true" />
+      <Mitigation Name="MemProt" Enabled="true" />
+      <Mitigation Name="Caller" Enabled="true" />
+      <Mitigation Name="SimExecFlow" Enabled="true" />
+      <Mitigation Name="StackPivot" Enabled="true" />
+      <Mitigation Name="ASR" Enabled="false" />
+    </AppConfig>
+  </EMET_Apps>
+  <Pinning>
+    <PinRules />
+    <PinnedSites />
+  </Pinning>
+</EMET>

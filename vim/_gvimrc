@@ -1,0 +1,13 @@
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
+
+set guifont=DejaVu_Sans_Mono_For_Powerline:h10
+
+set antialias
+set columns=100
+set lines=50
+colo Lucius
+set bg=dark
+
+hi MatchParen gui=underline

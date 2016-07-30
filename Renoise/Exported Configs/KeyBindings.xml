@@ -1,0 +1,5311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="KeyBindings.xslt"?>
+<KeyboardBindings doc_version="4">
+  <Categories>
+    <Category>
+      <Identifier>Global</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Attach/Detach Instrument Editor</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Toggle Track- and Instrument Editors</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Show/Focus Instrument Editors</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Show/Focus Track Editors</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Show/Hide Upper Frame</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Show/Hide Lower Frame</Binding>
+          <Key>F4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Show/Hide Disk Browser</Binding>
+          <Key>Alt + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Show/Hide Instrument Box</Binding>
+          <Key>Alt + N</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Show/Hide Instrument Properties</Binding>
+          <Key>Shift + Alt + N</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Show/Hide Pattern Matrix</Binding>
+          <Key>Alt + M</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Show/Hide Phrase Editor</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Recall View Preset 1</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Recall View Preset 2</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Recall View Preset 3</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Recall View Preset 4</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Recall View Preset 5</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Recall View Preset 6</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Recall View Preset 7</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Recall View Preset 8</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show Disk Browser</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show Instrument Box</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show Pattern Sequencer</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show Pattern Matrix</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show Pattern Editor</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show Mixer</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show Sample Keyzones</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show Sample Modulation</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show Sample Effects</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show Phrase Editor</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show Sample Editor</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show Plugin Instrument</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show MIDI Instrument</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show Track DSPs</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus/Show Automation</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Show Scopes</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Show Spectrum</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Open MIDI Mapping Dialog...</Binding>
+          <Key>Control + M</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Show Used MIDI Mappings...</Binding>
+          <Key>Shift + Control + M</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Open Render Plugin To Instrument Dialog...</Binding>
+          <Key>Alt + Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Song Control</Topic>
+          <Binding>Toggle Automatic Plugin Delay Compensation</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Song Control</Topic>
+          <Binding>Toggle Metronome Precount</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Open Instrument Editor</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Song Control</Topic>
+          <Binding>Toggle Follow Pattern</Binding>
+          <Key>Scroll</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Song Control</Topic>
+          <Binding>Toggle Metronome</Binding>
+          <Key>Grave</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Open Render Dialog...</Binding>
+          <Key>Shift + Alt + Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Show Song Comments...</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus Next View</Binding>
+          <Key>Control + Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Focus Previous View</Binding>
+          <Key>Shift + Control + Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Toggle Loop Pattern</Binding>
+          <Key>Control + Scroll</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Play/Stop/Edit</Binding>
+          <Key>Space</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Toggle Block Playing</Binding>
+          <Key>NumpadEnter</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Panic</Binding>
+          <Key>Alt + Control + F12</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Play Pattern</Binding>
+          <Key>RAlt</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Play Pattern from Current Line</Binding>
+          <Key>Shift + RAlt</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Play Song</Binding>
+          <Key>RControl</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Play Song from Current Line</Binding>
+          <Key>Shift + RControl</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Pause/Continue</Binding>
+          <Key>Apps</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Pause/Continue (from cursor)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Schedule Edited Sequence for Playback</Binding>
+          <Key>Control + Space</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Play from Edited Sequence</Binding>
+          <Key>Shift + Control + Space</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Record Song</Binding>
+          <Key>RShift</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Record Pattern</Binding>
+          <Key>Shift + RShift</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Stop Song</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Play from Cursor</Binding>
+          <Key>Shift + Space</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Select Previous LoopBlock</Binding>
+          <Key>NumpadMinus</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Select Next LoopBlock</Binding>
+          <Key>NumpadPlus</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Halve LoopBlock Size</Binding>
+          <Key>NumpadDivide</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Double LoopBlock Size</Binding>
+          <Key>NumpadMultiply</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Go to Previous Pattern in Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Go to Next Pattern in Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Note Off</Binding>
+          <Key>Shift + Capital</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Note Off (2nd)</Binding>
+          <Key>Shift + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Smart Note Off</Binding>
+          <Key>Capital</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Smart Note Off (2nd)</Binding>
+          <Key>A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Note Off Row</Binding>
+          <Key>Shift + Control + Capital</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Note Off Row (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Smart Note Off Row</Binding>
+          <Key>Control + Capital</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Smart Note Off Row (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select Previous Instrument</Binding>
+          <Key>Control + NumpadMinus</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select Previous Instrument (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select Next Instrument</Binding>
+          <Key>Control + NumpadPlus</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select Next Instrument (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select Previous Instrument Page</Binding>
+          <Key>Shift + Control + NumpadMinus</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select Next Instrument Page</Binding>
+          <Key>Shift + Control + NumpadPlus</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select First Instrument</Binding>
+          <Key>Alt + Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select Last Instrument</Binding>
+          <Key>Alt + End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select 1st Instrument</Binding>
+          <Key>Numpad1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select 2nd Instrument</Binding>
+          <Key>Numpad2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select 3rd Instrument</Binding>
+          <Key>Numpad3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select 4th Instrument</Binding>
+          <Key>Numpad4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select 5th Instrument</Binding>
+          <Key>Numpad5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select 6th Instrument</Binding>
+          <Key>Numpad6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select 7th Instrument</Binding>
+          <Key>Numpad7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select 8th Instrument</Binding>
+          <Key>Numpad8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select 9th Instrument</Binding>
+          <Key>Numpad9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select Previous Sample in Instrument</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select Previous Sample in Instrument (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select Next Sample in Instrument</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Select Next Sample in Instrument (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Load Instrument...</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Save Instrument As...</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Load Sample...</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Instruments</Topic>
+          <Binding>Save Sample As...</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track</Binding>
+          <Key>Backslash</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track Secondary</Binding>
+          <Key>Shift + Backslash</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Group</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Group Secondary</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Song Control</Topic>
+          <Binding>Toggle Auto Solo</Binding>
+          <Key>Alt + Control + Backslash</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Solo Track</Binding>
+          <Key>Control + Backslash</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Solo Group</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Unmute All Tracks</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 1</Binding>
+          <Key>Control + Numpad1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 2</Binding>
+          <Key>Control + Numpad2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 3</Binding>
+          <Key>Control + Numpad3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 4</Binding>
+          <Key>Control + Numpad4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 5</Binding>
+          <Key>Control + Numpad5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 6</Binding>
+          <Key>Control + Numpad6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 7</Binding>
+          <Key>Control + Numpad7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 8</Binding>
+          <Key>Control + Numpad8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 9</Binding>
+          <Key>Control + Numpad9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 10</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 11</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 12</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 13</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 14</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 15</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 16</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 17</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 18</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 19</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 20</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 21</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 22</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 23</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 24</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 25</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 26</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 27</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 28</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 29</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 30</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 31</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Muting</Topic>
+          <Binding>Mute Track 32</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Octave</Topic>
+          <Binding>Increase Octave</Binding>
+          <Key>F8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Octave</Topic>
+          <Binding>Decrease Octave</Binding>
+          <Key>F7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Octave</Topic>
+          <Binding>Increase Octave (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Octave</Topic>
+          <Binding>Decrease Octave (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Octave</Topic>
+          <Binding>Set Octave to 0</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Octave</Topic>
+          <Binding>Set Octave to 1</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Octave</Topic>
+          <Binding>Set Octave to 2</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Octave</Topic>
+          <Binding>Set Octave to 3</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Octave</Topic>
+          <Binding>Set Octave to 4</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Octave</Topic>
+          <Binding>Set Octave to 5</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Octave</Topic>
+          <Binding>Set Octave to 6</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Octave</Topic>
+          <Binding>Set Octave to 7</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Octave</Topic>
+          <Binding>Set Octave to 8</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Open Sample Record Dialog...</Binding>
+          <Key>Shift + Alt + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Playback</Topic>
+          <Binding>Play Selected Sample</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Application</Topic>
+          <Binding>Quit</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Application</Topic>
+          <Binding>Preferences...</Binding>
+          <Key>Control + Comma</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Application</Topic>
+          <Binding>Minimize Renoise</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Application</Topic>
+          <Binding>Focus Previous Window</Binding>
+          <Key>Shift + Control + PeakedBracket</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Application</Topic>
+          <Binding>Focus Next Window</Binding>
+          <Key>Control + PeakedBracket</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Toggle Fullscreen/Windowed Mode</Binding>
+          <Key>Shift + Alt + Control + F12</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>File</Topic>
+          <Binding>New Song</Binding>
+          <Key>Control + N</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>File</Topic>
+          <Binding>New Song (no template)</Binding>
+          <Key>Shift + Control + N</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>File</Topic>
+          <Binding>Open Song...</Binding>
+          <Key>Control + O</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>File</Topic>
+          <Binding>Save Song...</Binding>
+          <Key>Control + S</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>File</Topic>
+          <Binding>Save Song As...</Binding>
+          <Key>Shift + Control + S</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>File</Topic>
+          <Binding>Save Song As Template...</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Document</Topic>
+          <Binding>Undo</Binding>
+          <Key>Control + Z</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Document</Topic>
+          <Binding>Redo</Binding>
+          <Key>Control + Y</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Clipboard</Topic>
+          <Binding>Select Clipboard 1</Binding>
+          <Key>Alt + 1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Clipboard</Topic>
+          <Binding>Select Clipboard 2</Binding>
+          <Key>Alt + 2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Clipboard</Topic>
+          <Binding>Select Clipboard 3</Binding>
+          <Key>Alt + 3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Clipboard</Topic>
+          <Binding>Select Clipboard 4</Binding>
+          <Key>Alt + 4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>∿ Show/Toggle Pattern Workspace</Binding>
+          <Key>F1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>∿ Show/Toggle Mixer Workspace</Binding>
+          <Key>F2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>∿ Show/Toggle Sampler Workspace</Binding>
+          <Key>F3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>∿ Show/Toggle Lower Frame</Binding>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+    <Category>
+      <Identifier>Disk Browser</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Previous Category Browser</Binding>
+          <Key>Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Next Category Browser</Binding>
+          <Key>Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select Previous File</Binding>
+          <Key>Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select Next File</Binding>
+          <Key>Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Collapse Folder</Binding>
+          <Key>Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Expand Folder</Binding>
+          <Key>Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select First Entry</Binding>
+          <Key>Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select Last Entry</Binding>
+          <Key>End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select on Previous Page</Binding>
+          <Key>Prior</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select on Next Page</Binding>
+          <Key>Next</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select All Files</Binding>
+          <Key>Control + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Toggle Dir/File List</Binding>
+          <Key>Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Toggle Dir/File List (2nd)</Binding>
+          <Key>Shift + Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Loading</Topic>
+          <Binding>Load Selected Files</Binding>
+          <Key>Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Loading</Topic>
+          <Binding>Load Selected Files with Options</Binding>
+          <Key>Shift + Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select CurrentDir as Root</Binding>
+          <Key>Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Switch to Parent Root Directory</Binding>
+          <Key>Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Rescan Contents</Binding>
+          <Key>Control + U</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Rename Selected File or Dir</Binding>
+          <Key>Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Create a New Directory</Binding>
+          <Key>Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete the Selected File or Dir</Binding>
+          <Key>Control + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Show Selected File or Dir in Explorer</Binding>
+          <Key>Control + F</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Favorites</Topic>
+          <Binding>Recall Favorite 1</Binding>
+          <Key>Control + 1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Favorites</Topic>
+          <Binding>Recall Favorite 2</Binding>
+          <Key>Control + 2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Favorites</Topic>
+          <Binding>Recall Favorite 3</Binding>
+          <Key>Control + 3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Favorites</Topic>
+          <Binding>Recall Favorite 4</Binding>
+          <Key>Control + 4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Favorites</Topic>
+          <Binding>Store Favorite 1</Binding>
+          <Key>Shift + Control + 1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Favorites</Topic>
+          <Binding>Store Favorite 2</Binding>
+          <Key>Shift + Control + 2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Favorites</Topic>
+          <Binding>Store Favorite 3</Binding>
+          <Key>Shift + Control + 3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Favorites</Topic>
+          <Binding>Store Favorite 4</Binding>
+          <Key>Shift + Control + 4</Key>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+    <Category>
+      <Identifier>Pattern Editor</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Toggle Advanced Edit</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Focus Pattern Matrix</Binding>
+          <Key>Shift + Escape</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Previous Column</Binding>
+          <Key>Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Next Column</Binding>
+          <Key>Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Previous Row</Binding>
+          <Key>Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Next Row</Binding>
+          <Key>Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Previous Row with EditStep</Binding>
+          <Key>Alt + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Next Row with EditStep</Binding>
+          <Key>Alt + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Previous Row with Note</Binding>
+          <Key>Shift + Alt + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Next Row with Note</Binding>
+          <Key>Shift + Alt + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Toggle Auto Capture Instrument</Binding>
+          <Key>Shift + Alt + Backslash</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Capture Instrument</Binding>
+          <Key>Alt + Control + Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Capture Nearest Instrument</Binding>
+          <Key>Alt + Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump 16 Rows Up</Binding>
+          <Key>Prior</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump 16 Rows Down</Binding>
+          <Key>Next</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to First Row</Binding>
+          <Key>Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Last Row</Binding>
+          <Key>End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Row 0</Binding>
+          <Key>F9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Row 16</Binding>
+          <Key>F10</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Row 32</Binding>
+          <Key>F11</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Row 48</Binding>
+          <Key>F12</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Previous Column</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Next Column</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Previous Track</Binding>
+          <Key>Shift + Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Next Track</Binding>
+          <Key>Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Master Track</Binding>
+          <Key>Shift + Control + End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to First Track</Binding>
+          <Key>Shift + Control + Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Clear Current Note or Effect</Binding>
+          <Key>Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Clear Current Note or Effect (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Clear Whole Note or Effect</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Clear Whole Row</Binding>
+          <Key>Alt + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Insert New Row</Binding>
+          <Key>Insert</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Insert New Row (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Delete Current Row</Binding>
+          <Key>Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Delete Previous Row</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Insert New Row in Column</Binding>
+          <Key>Shift + Control + Insert</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Delete Current Row in Column</Binding>
+          <Key>Shift + Control + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Delete Previous Row in Column</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Insert New Row in Pattern</Binding>
+          <Key>Alt + Control + I</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Delete Current Row in Pattern</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Delete Previous Row in Pattern</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Increase Pattern Length</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Decrease Pattern Length</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Play</Topic>
+          <Binding>Play Current Line</Binding>
+          <Key>Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Increase EditStep</Binding>
+          <Key>Control + Equals</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Decrease EditStep</Binding>
+          <Key>Control + Minus</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Double EditStep</Binding>
+          <Key>Alt + Equals</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Halve EditStep</Binding>
+          <Key>Alt + Minus</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 0</Binding>
+          <Key>Control + Grave</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 1</Binding>
+          <Key>Control + 1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 2</Binding>
+          <Key>Control + 2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 3</Binding>
+          <Key>Control + 3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 4</Binding>
+          <Key>Control + 4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 5</Binding>
+          <Key>Control + 5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 6</Binding>
+          <Key>Control + 6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 7</Binding>
+          <Key>Control + 7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 8</Binding>
+          <Key>Control + 8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 9</Binding>
+          <Key>Control + 9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 12</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 16</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 18</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 24</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 32</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Toggle Edit Mode</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Toggle Record to Envelopes/Pattern</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Toggle Record Quantized</Binding>
+          <Key>Shift + Control + Grave</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Increase Quantization</Binding>
+          <Key>Shift + Control + Equals</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Decrease Quantization</Binding>
+          <Key>Shift + Control + Minus</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 1</Binding>
+          <Key>Shift + Control + 1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 2</Binding>
+          <Key>Shift + Control + 2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 3</Binding>
+          <Key>Shift + Control + 3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 4</Binding>
+          <Key>Shift + Control + 4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 5</Binding>
+          <Key>Shift + Control + 5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 6</Binding>
+          <Key>Shift + Control + 6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 7</Binding>
+          <Key>Shift + Control + 7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 8</Binding>
+          <Key>Shift + Control + 8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 9</Binding>
+          <Key>Shift + Control + 9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 12</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 16</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 18</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 24</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 32</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Insert Track</Binding>
+          <Key>Control + T</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Insert Group</Binding>
+          <Key>Control + G</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Extend Group to Here</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Delete Track</Binding>
+          <Key>Shift + Control + T</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Delete Group</Binding>
+          <Key>Shift + Control + G</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Duplicate Track</Binding>
+          <Key>Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Duplicate Track (incl. Patterns)</Binding>
+          <Key>Alt + Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Rename Track</Binding>
+          <Key>Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Move Track Left</Binding>
+          <Key>Shift + Alt + Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Move Track Right</Binding>
+          <Key>Shift + Alt + Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Decrease Number of Columns</Binding>
+          <Key>Shift + Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Increase Number of Columns</Binding>
+          <Key>Shift + Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>View/Hide Volume Column</Binding>
+          <Key>Shift + Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>View/Hide Panning Column</Binding>
+          <Key>Shift + Control + P</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>View/Hide Delay Column</Binding>
+          <Key>Shift + Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Toggle Mute Note Column</Binding>
+          <Key>Shift + Control + Backslash</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Collapse/Expand Track</Binding>
+          <Key>Shift + Control + K</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Collapse/Expand Group</Binding>
+          <Key>Shift + Control + J</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Collapse All Tracks</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Expand All Tracks</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Collapse All Tracks in Group</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Expand All Tracks in Group</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Increase Pattern Number</Binding>
+          <Key>Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Decrease Pattern Number</Binding>
+          <Key>Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Go Up in Sequencer</Binding>
+          <Key>Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Go Down in Sequencer</Binding>
+          <Key>Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Go to Prev Section in Sequencer</Binding>
+          <Key>Alt + Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Go to Next Section in Sequencer</Binding>
+          <Key>Alt + Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Go to Sequence Start</Binding>
+          <Key>Control + Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Go to Sequence End</Binding>
+          <Key>Control + End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Jump One Page Up</Binding>
+          <Key>Control + Prior</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Jump One Page Down</Binding>
+          <Key>Control + Next</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Insert Pattern</Binding>
+          <Key>Control + Insert</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Insert Pattern (2nd)</Binding>
+          <Key>Shift + Control + Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Insert Repeated Pattern</Binding>
+          <Key>Alt + Control + Insert</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Insert Repeated Pattern (2nd)</Binding>
+          <Key>Alt + Control + Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Delete Pattern</Binding>
+          <Key>Control + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Delete Pattern (2nd)</Binding>
+          <Key>Control + Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Sort Pattern Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Flatten &amp; Sort Pattern Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Duplicate Current Pattern</Binding>
+          <Key>Control + K</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Duplicate 2 Pattern Block Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Duplicate 3 Pattern Block Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Duplicate 4 Pattern Block Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Duplicate 5 Pattern Block Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Duplicate 6 Pattern Block Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Duplicate 7 Pattern Block Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Duplicate 8 Pattern Block Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Duplicate 9 Pattern Block Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Duplicate 10 Pattern Block Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Duplicate Whole Song Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Begin Selection</Binding>
+          <Key>Control + B</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>End Selection</Binding>
+          <Key>Control + E</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Whole Column</Binding>
+          <Key>Alt + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Column in Block Loop Range</Binding>
+          <Key>Shift + Alt + Q</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Column Above Current Line</Binding>
+          <Key>Shift + Alt + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Column Below Current Line</Binding>
+          <Key>Shift + Alt + Z</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Whole Track</Binding>
+          <Key>Alt + T</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Track in Block Loop Range</Binding>
+          <Key>Alt + Q</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Track Above Current Line</Binding>
+          <Key>Alt + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Track Below Current Line</Binding>
+          <Key>Alt + Z</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Whole Group</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Whole Pattern</Binding>
+          <Key>Control + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Pattern in Block Loop Range</Binding>
+          <Key>Alt + W</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Pattern Above Current Line</Binding>
+          <Key>Alt + S</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Pattern Below Current Line</Binding>
+          <Key>Alt + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Transpose One Note Up</Binding>
+          <Key>Alt + F2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Transpose One Note Down</Binding>
+          <Key>Alt + F1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Transpose One Octave Up</Binding>
+          <Key>Alt + F12</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Transpose One Octave Down</Binding>
+          <Key>Alt + F11</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Clear</Binding>
+          <Key>Shift + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Copy and Clear</Binding>
+          <Key>Alt + F3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Copy and Clear (2nd)</Binding>
+          <Key>Control + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Copy</Binding>
+          <Key>Alt + F4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Copy (2nd)</Binding>
+          <Key>Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Paste</Binding>
+          <Key>Alt + F5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Paste (2nd)</Binding>
+          <Key>Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Paste Continuously</Binding>
+          <Key>Control + P</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Flip</Binding>
+          <Key>Alt + F6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Flip (2nd)</Binding>
+          <Key>Control + F</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Shrink</Binding>
+          <Key>Alt + F8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Shrink (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Expand</Binding>
+          <Key>Alt + F9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Expand (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Randomize</Binding>
+          <Key>Alt + F7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Randomize (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Interpolate Linear</Binding>
+          <Key>Control + I</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Interpolate Logarithmic</Binding>
+          <Key>Control + L</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Interpolate Exponential</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Humanize</Binding>
+          <Key>Control + H</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Quantize Notes</Binding>
+          <Key>Control + Q</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Quantize Notes (Preserve Lengths)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Render Selection to Sample</Binding>
+          <Key>Shift + Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Create Phrase from Selection</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Transpose One Note Up</Binding>
+          <Key>Shift + Control + F2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Transpose One Note Down</Binding>
+          <Key>Shift + Control + F1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Transpose One Octave Up</Binding>
+          <Key>Shift + Control + F12</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Transpose One Octave Down</Binding>
+          <Key>Shift + Control + F11</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Clear and Copy</Binding>
+          <Key>Shift + Control + F3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Copy</Binding>
+          <Key>Shift + Control + F4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Paste</Binding>
+          <Key>Shift + Control + F5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Flip</Binding>
+          <Key>Shift + Control + F6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Shrink</Binding>
+          <Key>Shift + Control + F8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Expand</Binding>
+          <Key>Shift + Control + F9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Randomize</Binding>
+          <Key>Shift + Control + F7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Interpolate Linear</Binding>
+          <Key>Shift + Control + I</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Interpolate Logarithmic</Binding>
+          <Key>Shift + Control + L</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Interpolate Exponential</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Humanize</Binding>
+          <Key>Shift + Control + H</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Quantize Notes</Binding>
+          <Key>Shift + Control + Q</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Quantize Notes (Preserve Lengths)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Render Column to Sample</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Create Phrase from Column</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Transpose One Note Up</Binding>
+          <Key>Shift + F2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Transpose One Note Down</Binding>
+          <Key>Shift + F1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Transpose One Octave Up</Binding>
+          <Key>Shift + F12</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Transpose One Octave Down</Binding>
+          <Key>Shift + F11</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Clear Muted Columns</Binding>
+          <Key>Shift + Alt + F3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Clear and Copy</Binding>
+          <Key>Shift + F3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Copy</Binding>
+          <Key>Shift + F4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Paste</Binding>
+          <Key>Shift + F5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Flip</Binding>
+          <Key>Shift + F6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Shrink</Binding>
+          <Key>Shift + F8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Expand</Binding>
+          <Key>Shift + F9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Randomize</Binding>
+          <Key>Shift + F7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Interpolate Linear</Binding>
+          <Key>Shift + I</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Interpolate Logarithmic</Binding>
+          <Key>Shift + L</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Interpolate Exponential</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Humanize</Binding>
+          <Key>Shift + H</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Quantize Notes</Binding>
+          <Key>Shift + Q</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Quantize Notes (Preserve Lengths)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Render Track to Sample</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Operations</Topic>
+          <Binding>Create Phrase from Track</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Transpose One Note Up</Binding>
+          <Key>Shift + Alt + F2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Transpose One Note Down</Binding>
+          <Key>Shift + Alt + F1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Transpose One Octave Up</Binding>
+          <Key>Shift + Alt + F12</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Transpose One Octave Down</Binding>
+          <Key>Shift + Alt + F11</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Flip</Binding>
+          <Key>Shift + Alt + F6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Shrink</Binding>
+          <Key>Shift + Alt + F8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Expand</Binding>
+          <Key>Shift + Alt + F9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Randomize</Binding>
+          <Key>Shift + Alt + F7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Interpolate Linear</Binding>
+          <Key>Shift + Alt + I</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Interpolate Logarithmic</Binding>
+          <Key>Shift + Alt + L</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Interpolate Exponential</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Humanize</Binding>
+          <Key>Shift + Alt + H</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Quantize Notes</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Quantize Notes (Preserve Lengths)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Group Operations</Topic>
+          <Binding>Render Group to Sample</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Transpose One Note Up</Binding>
+          <Key>Control + F2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Transpose One Note Down</Binding>
+          <Key>Control + F1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Transpose One Octave Up</Binding>
+          <Key>Control + F12</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Transpose One Octave Down</Binding>
+          <Key>Control + F11</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Clear Muted Tracks</Binding>
+          <Key>Alt + Control + F3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Clear and Copy</Binding>
+          <Key>Control + F3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Copy</Binding>
+          <Key>Control + F4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Paste</Binding>
+          <Key>Control + F5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Flip</Binding>
+          <Key>Control + F6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Shrink</Binding>
+          <Key>Control + F8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Expand</Binding>
+          <Key>Control + F9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Randomize</Binding>
+          <Key>Control + F7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Interpolate Linear</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Interpolate Logarithmic</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Interpolate Exponential</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Humanize</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Quantize Notes</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Quantize Notes (Preserve Lengths)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Operations</Topic>
+          <Binding>Render Pattern to Sample</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Options</Topic>
+          <Binding>Toggle PatternWrap</Binding>
+          <Key>Shift + Scroll</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Options</Topic>
+          <Binding>Single Track Edit Mode</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Options</Topic>
+          <Binding>Toggle Show Track Colors</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Next Note/FX Column</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Previous Note/FX Column</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 1</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 2</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 3</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 4</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 5</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 6</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 7</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 8</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 9</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 10</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 11</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 12</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 13</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 14</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 15</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 16</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 17</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 18</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 19</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 20</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 21</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 22</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 23</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 24</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 25</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 26</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 27</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 28</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 29</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 30</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 31</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump to Track 32</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump between Note and FX Columns</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>∿ Jump between Note and FX Columns (2nd)</Binding>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+    <Category>
+      <Identifier>Sample Editor</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Cursor Left</Binding>
+          <Key>Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Cursor Right</Binding>
+          <Key>Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Cursor Up</Binding>
+          <Key>Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Cursor Down</Binding>
+          <Key>Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Cursor Left Big Step</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Cursor Right Big Step</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Cursor to Visible Start</Binding>
+          <Key>Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Cursor to Sample Start</Binding>
+          <Key>Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Cursor to Visible End</Binding>
+          <Key>Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Cursor to Sample End</Binding>
+          <Key>End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Cursor to Visible Start and Select</Binding>
+          <Key>Shift + Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Cursor to Visible End and Select</Binding>
+          <Key>Shift + Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Zoom In</Binding>
+          <Key>Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Zoom Out</Binding>
+          <Key>Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Zoom In Vertical</Binding>
+          <Key>Next</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Zoom Out Vertical</Binding>
+          <Key>Prior</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Zoom Selection</Binding>
+          <Key>Alt + Control + S</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Zoom Out Full</Binding>
+          <Key>Alt + Control + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Previous Sample</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Next Sample</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select All</Binding>
+          <Key>Control + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Unselect All</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select Loop</Binding>
+          <Key>Control + L</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select Current Slice</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Begin Selection</Binding>
+          <Key>Control + B</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>End Selection</Binding>
+          <Key>Control + E</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select All Slice Markers</Binding>
+          <Key>Shift + Control + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Snapping</Topic>
+          <Binding>Toggle Snapping</Binding>
+          <Key>Control + 0</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Snapping</Topic>
+          <Binding>Set Snap Mode1</Binding>
+          <Key>Control + 1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Snapping</Topic>
+          <Binding>Set Snap Mode2</Binding>
+          <Key>Control + 2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Snapping</Topic>
+          <Binding>Set Snap Mode3</Binding>
+          <Key>Control + 3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Snapping</Topic>
+          <Binding>Set Snap Mode4</Binding>
+          <Key>Control + 4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Snapping</Topic>
+          <Binding>Set Snap Mode5</Binding>
+          <Key>Control + 5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Snapping</Topic>
+          <Binding>Set Snap Mode6</Binding>
+          <Key>Control + 6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Snapping</Topic>
+          <Binding>Set Snap Mode7</Binding>
+          <Key>Control + 7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Snapping</Topic>
+          <Binding>Set Snap Mode8</Binding>
+          <Key>Control + 8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Snapping</Topic>
+          <Binding>Set Snap Mode9</Binding>
+          <Key>Control + 9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>View</Topic>
+          <Binding>Toggle Draw Mode</Binding>
+          <Key>Alt + Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Playback</Topic>
+          <Binding>Play Sample</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Playback</Topic>
+          <Binding>Play Selection</Binding>
+          <Key>Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Playback</Topic>
+          <Binding>Stop Playing Selection</Binding>
+          <Key>Escape</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Playback</Topic>
+          <Binding>Play/Stop Selection</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Clear Sample</Binding>
+          <Key>Control + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>2nd Clear Sample</Binding>
+          <Key>Control + Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete</Binding>
+          <Key>Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>2nd Delete</Binding>
+          <Key>Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Cut</Binding>
+          <Key>Control + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Trim</Binding>
+          <Key>Control + T</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Copy</Binding>
+          <Key>Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Copy Into New Sample</Binding>
+          <Key>Shift + Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Copy Into New Instrument</Binding>
+          <Key>Shift + Alt + Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Paste</Binding>
+          <Key>Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Mix Paste</Binding>
+          <Key>Shift + Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Insert Silence</Binding>
+          <Key>Control + I</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Load Sample</Binding>
+          <Key>Shift + Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Save Sample As</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Fade</Topic>
+          <Binding>Fade In</Binding>
+          <Key>Shift + Control + I</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Fade</Topic>
+          <Binding>Fade In Log</Binding>
+          <Key>Shift + Alt + Control + I</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Fade</Topic>
+          <Binding>Fade Out</Binding>
+          <Key>Shift + Control + O</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Fade</Topic>
+          <Binding>Fade Out Log</Binding>
+          <Key>Shift + Alt + Control + O</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Fade</Topic>
+          <Binding>Cross Fade</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Fade</Topic>
+          <Binding>Cross Fade Loop</Binding>
+          <Key>Control + F</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Toggle Undo Enabled</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Create or Adjust Type</Binding>
+          <Key>F11</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Adjust Volume</Binding>
+          <Key>F10</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>DC Adjust</Binding>
+          <Key>Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Normalize Volume</Binding>
+          <Key>Control + P</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Mute</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Invert Phase</Binding>
+          <Key>Shift + Control + P</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Swap Stereo Channels</Binding>
+          <Key>Control + W</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Reverse</Binding>
+          <Key>Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>XReverse</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Smooth</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Process Track DSPs</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Loop</Topic>
+          <Binding>Set Loop Start/Range</Binding>
+          <Key>Shift + Control + L</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Loop</Topic>
+          <Binding>Set Loop End/Range</Binding>
+          <Key>Shift + Control + E</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Slices</Topic>
+          <Binding>Toggle Slice Tool</Binding>
+          <Key>Control + G</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Slices</Topic>
+          <Binding>Toggle Single Slice Trigger</Binding>
+          <Key>Shift + Control + H</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Slices</Topic>
+          <Binding>Detect Beats</Binding>
+          <Key>Control + J</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Slices</Topic>
+          <Binding>Add Slice Marker</Binding>
+          <Key>Control + K</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Slices</Topic>
+          <Binding>Delete Slice Marker</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Slices</Topic>
+          <Binding>Delete All Slice Markers</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Slices</Topic>
+          <Binding>Destructively Render Slices</Binding>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+    <Category>
+      <Identifier>Mixer</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Left</Binding>
+          <Key>Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Right</Binding>
+          <Key>Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Up</Binding>
+          <Key>Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Down</Binding>
+          <Key>Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move One Page Up</Binding>
+          <Key>Prior</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move One Page Down</Binding>
+          <Key>Next</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to First Device</Binding>
+          <Key>Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Last Device</Binding>
+          <Key>End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to First Track</Binding>
+          <Key>Shift + Control + Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Master Track</Binding>
+          <Key>Shift + Control + End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Sends</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Next Track</Binding>
+          <Key>Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Previous Track</Binding>
+          <Key>Shift + Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete Device</Binding>
+          <Key>Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete Device (2nd)</Binding>
+          <Key>Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Cut Device</Binding>
+          <Key>Control + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Copy Device</Binding>
+          <Key>Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Insert Device</Binding>
+          <Key>Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Rename Device</Binding>
+          <Key>Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Move Device Up</Binding>
+          <Key>Alt + Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Move Device Down</Binding>
+          <Key>Alt + Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Copy Device Settings</Binding>
+          <Key>Shift + Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Paste Device Settings</Binding>
+          <Key>Shift + Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Init Device Settings</Binding>
+          <Key>Shift + Control + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Init Device Settings (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete All Devices</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Cut All Devices</Binding>
+          <Key>Shift + Alt + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Copy All Devices</Binding>
+          <Key>Shift + Alt + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Paste All Devices</Binding>
+          <Key>Shift + Alt + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Load DSP Chain...</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Save DSP Chain As...</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Bypass/Activate Device</Binding>
+          <Key>Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Open Editor</Binding>
+          <Key>Control + Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Show Track Colors</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Insert Track</Binding>
+          <Key>Control + T</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Insert Group</Binding>
+          <Key>Control + G</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Extend Group to Here</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Delete Track</Binding>
+          <Key>Shift + Control + T</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Delete Group</Binding>
+          <Key>Shift + Control + G</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Duplicate Track</Binding>
+          <Key>Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Duplicate Track (incl. Patterns)</Binding>
+          <Key>Alt + Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Rename Track</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Move Track Left</Binding>
+          <Key>Alt + Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Move Track Right</Binding>
+          <Key>Alt + Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Increase Volume</Binding>
+          <Key>Shift + Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Decrease Volume</Binding>
+          <Key>Shift + Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Increase Panning</Binding>
+          <Key>Shift + Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Decrease Panning</Binding>
+          <Key>Shift + Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Collapse/Expand Track</Binding>
+          <Key>Shift + Control + K</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Collapse/Expand Group</Binding>
+          <Key>Shift + Control + J</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Collapse All Tracks</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Expand All Tracks</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Collapse All Tracks in Group</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Track Control</Topic>
+          <Binding>Expand All Tracks in Group</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Increase Pattern Number</Binding>
+          <Key>Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Decrease Pattern Number</Binding>
+          <Key>Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Go Up in Sequencer</Binding>
+          <Key>Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Go Down in Sequencer</Binding>
+          <Key>Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Go to Prev Section in Sequencer</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Go to Next Section in Sequencer</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Go to Sequence Start</Binding>
+          <Key>Control + Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Go to Sequence End</Binding>
+          <Key>Control + End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Jump One Page Up</Binding>
+          <Key>Control + Prior</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Jump One Page Down</Binding>
+          <Key>Control + Next</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Insert Pattern</Binding>
+          <Key>Control + Insert</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Insert Pattern (2nd)</Binding>
+          <Key>Shift + Control + Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Insert Repeated Pattern</Binding>
+          <Key>Alt + Control + Insert</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Insert Repeated Pattern (2nd)</Binding>
+          <Key>Shift + Alt + Control + Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Delete Pattern</Binding>
+          <Key>Control + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Delete Pattern (2nd)</Binding>
+          <Key>Control + Back</Key>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+    <Category>
+      <Identifier>Pattern Sequencer</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Schedule Edited Sequence for Playback</Binding>
+          <Key>Control + Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Transport</Topic>
+          <Binding>Play from Edited Sequence</Binding>
+          <Key>Shift + Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Increase Pattern Number</Binding>
+          <Key>Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Decrease Pattern Number</Binding>
+          <Key>Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Previous Pos</Binding>
+          <Key>Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Next Pos</Binding>
+          <Key>Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Previous Section</Binding>
+          <Key>Alt + Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Next Section</Binding>
+          <Key>Alt + Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Start</Binding>
+          <Key>Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to End</Binding>
+          <Key>End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump One Page Up</Binding>
+          <Key>Prior</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump One Page Down</Binding>
+          <Key>Next</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Begin Selection</Binding>
+          <Key>Control + B</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>End Selection</Binding>
+          <Key>Control + E</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Unset Selection</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select All</Binding>
+          <Key>Control + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Sections</Topic>
+          <Binding>Create Section From Selection</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Sections</Topic>
+          <Binding>Remove Sections in Selection</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Sections</Topic>
+          <Binding>Remove All Selections</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Sections</Topic>
+          <Binding>Create/Remove Section at Current Pos</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Sections</Topic>
+          <Binding>Remove Section at Current Pos</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Sections</Topic>
+          <Binding>Rename Section at Current Pos</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Insert Pattern</Binding>
+          <Key>Insert</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Insert Pattern (2nd)</Binding>
+          <Key>Control + Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Insert Pattern at Selection</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Insert Repeated Pattern</Binding>
+          <Key>Alt + Insert</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Insert Repeated Pattern (2nd)</Binding>
+          <Key>Alt + Control + Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Insert Repeated Selection</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete Pattern</Binding>
+          <Key>Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete Pattern (2nd)</Binding>
+          <Key>Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete Selection</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Duplicate Current Pattern</Binding>
+          <Key>Control + K</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Set Pattern</Binding>
+          <Key>Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Rename Pattern</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Clear Muted Tracks in Selection</Binding>
+          <Key>Control + G</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Cut Selection</Binding>
+          <Key>Control + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Copy Selection</Binding>
+          <Key>Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Paste Selection</Binding>
+          <Key>Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Insert Selection</Binding>
+          <Key>Control + I</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Join Selection</Binding>
+          <Key>Control + J</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Duplicate Selection</Binding>
+          <Key>Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Make Selection Unique</Binding>
+          <Key>Control + U</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Loop Selection</Binding>
+          <Key>Control + L</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Sort Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Flatten &amp; Sort Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Cloning</Topic>
+          <Binding>Duplicate 1 Pattern Block</Binding>
+          <Key>Control + 1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Cloning</Topic>
+          <Binding>Duplicate 2 Pattern Block</Binding>
+          <Key>Control + 2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Cloning</Topic>
+          <Binding>Duplicate 3 Pattern Block</Binding>
+          <Key>Control + 3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Cloning</Topic>
+          <Binding>Duplicate 4 Pattern Block</Binding>
+          <Key>Control + 4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Cloning</Topic>
+          <Binding>Duplicate 5 Pattern Block</Binding>
+          <Key>Control + 5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Cloning</Topic>
+          <Binding>Duplicate 6 Pattern Block</Binding>
+          <Key>Control + 6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Cloning</Topic>
+          <Binding>Duplicate 7 Pattern Block</Binding>
+          <Key>Control + 7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Cloning</Topic>
+          <Binding>Duplicate 8 Pattern Block</Binding>
+          <Key>Control + 8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Cloning</Topic>
+          <Binding>Duplicate 9 Pattern Block</Binding>
+          <Key>Control + 9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Cloning</Topic>
+          <Binding>Duplicate Whole Song</Binding>
+          <Key>Control + 0</Key>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+    <Category>
+      <Identifier>Pattern Matrix</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Focus Pattern Editor</Binding>
+          <Key>Shift + Escape</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Previous Track</Binding>
+          <Key>Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Previous Track (2nd)</Binding>
+          <Key>Shift + Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Next Track</Binding>
+          <Key>Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Next Track (2nd)</Binding>
+          <Key>Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select First Track</Binding>
+          <Key>Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Last Track</Binding>
+          <Key>End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Previous Sequence</Binding>
+          <Key>Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Next Sequence</Binding>
+          <Key>Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Previous Sequence Page</Binding>
+          <Key>Prior</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Next Sequence Page</Binding>
+          <Key>Next</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select First Sequence</Binding>
+          <Key>Control + Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Last Sequence</Binding>
+          <Key>Control + End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Toggle Mute Selection</Binding>
+          <Key>Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Mute Selection</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Unmute Selection</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Deselect</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select All</Binding>
+          <Key>Control + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select Whole Pattern</Binding>
+          <Key>Alt + P</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select Whole Track</Binding>
+          <Key>Alt + T</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select Whole Previous Pattern</Binding>
+          <Key>Shift + Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select Whole Next Pattern</Binding>
+          <Key>Shift + Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Clear</Binding>
+          <Key>Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Clear (2nd)</Binding>
+          <Key>Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Cut</Binding>
+          <Key>Control + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Copy</Binding>
+          <Key>Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Paste</Binding>
+          <Key>Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Insert</Binding>
+          <Key>Control + I</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Duplicate Selection</Binding>
+          <Key>Control + K</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Create Alias</Binding>
+          <Key>Control + P</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Un-alias</Binding>
+          <Key>Control + U</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Set Slot Color</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Remove Slot Color</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Cut Track</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Copy Track</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Paste Track</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Insert Track</Binding>
+          <Key>Control + T</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Delete Track</Binding>
+          <Key>Shift + Control + T</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Duplicate Track</Binding>
+          <Key>Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Duplicate Track (incl. Patterns)</Binding>
+          <Key>Alt + Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Rename Track</Binding>
+          <Key>Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Move Track Left</Binding>
+          <Key>Alt + Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Move Track Right</Binding>
+          <Key>Alt + Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Clear Muted Slots in Selected Track</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Mute All Slots in Selected Track</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Unmute All Slots in Selected Track</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Collapse/Expand Track</Binding>
+          <Key>Shift + Control + K</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Collapse/Expand Group</Binding>
+          <Key>Shift + Control + J</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Collapse All Tracks</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Expand All Tracks</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Collapse All Tracks in Group</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tracks</Topic>
+          <Binding>Expand All Tracks in Group</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Cut Pattern</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Copy Pattern</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Paste Pattern</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Increase Pattern Number</Binding>
+          <Key>Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Decrease Pattern Number</Binding>
+          <Key>Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Insert Pattern</Binding>
+          <Key>Control + Insert</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Insert Pattern (2nd)</Binding>
+          <Key>Shift + Control + Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Insert Repeated Pattern</Binding>
+          <Key>Alt + Control + Insert</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Insert Repeated Pattern (2nd)</Binding>
+          <Key>Alt + Control + Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Delete Pattern</Binding>
+          <Key>Control + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Delete Pattern (2nd)</Binding>
+          <Key>Control + Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Duplicate Pattern</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Sort Pattern Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Flatten &amp; Sort Pattern Sequence</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Make Sequence Unique</Binding>
+          <Key>Shift + Control + U</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Clear Muted Slots in Sequence Selection</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Clear Muted Slots in Song</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Clear Muted Slots in Selected Pattern</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Loop Sequence</Binding>
+          <Key>Control + L</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Mute All Slots in Selected Pattern</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Unmute All Slots in Selected Pattern</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Rename Pattern</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Pattern Sequence</Topic>
+          <Binding>Rename Section</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Options</Topic>
+          <Binding>Decrease Slot Height</Binding>
+          <Key>Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Options</Topic>
+          <Binding>Increase Slot Height</Binding>
+          <Key>Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Options</Topic>
+          <Binding>Decrease Slot Width</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Options</Topic>
+          <Binding>Increase Slot Width</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Options</Topic>
+          <Binding>Toggle Track Names</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Options</Topic>
+          <Binding>Toggle Track Meters</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Options</Topic>
+          <Binding>Toggle Show Track Colors</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Options</Topic>
+          <Binding>Toggle Show Content Repeats</Binding>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+    <Category>
+      <Identifier>Phrase Editor</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Previous Column</Binding>
+          <Key>Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Next Column</Binding>
+          <Key>Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Previous Row</Binding>
+          <Key>Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Next Row</Binding>
+          <Key>Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Previous Row with EditStep</Binding>
+          <Key>Shift + Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Next Row with EditStep</Binding>
+          <Key>Shift + Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Previous Row with Note</Binding>
+          <Key>Shift + Control + Prior</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Next Row with Note</Binding>
+          <Key>Shift + Control + Next</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump 16 Rows Up</Binding>
+          <Key>Prior</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump 16 Rows Down</Binding>
+          <Key>Next</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to First Row</Binding>
+          <Key>Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Last Row</Binding>
+          <Key>End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Row 0</Binding>
+          <Key>F9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Row 16</Binding>
+          <Key>F10</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Row 32</Binding>
+          <Key>F11</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Row 48</Binding>
+          <Key>F12</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Previous Column</Binding>
+          <Key>Shift + Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Jump to Next Column</Binding>
+          <Key>Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Clear Current Note or Effect</Binding>
+          <Key>Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Clear Current Note or Effect (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Clear Whole Note or Effect</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Clear Whole Row</Binding>
+          <Key>Alt + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Insert New Row</Binding>
+          <Key>Insert</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Insert New Row (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Delete Current Row</Binding>
+          <Key>Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Delete Previous Row</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Insert New Row in Column</Binding>
+          <Key>Shift + Control + Insert</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Delete Current Row in Column</Binding>
+          <Key>Shift + Control + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Delete Previous Row in Column</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Increase Phrase Length</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Insert/Delete</Topic>
+          <Binding>Decrease Phrase Length</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Playback</Topic>
+          <Binding>Play/Stop Phrase</Binding>
+          <Key>Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Playback</Topic>
+          <Binding>Play/Stop Phrase from Cursor</Binding>
+          <Key>Shift + Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Playback</Topic>
+          <Binding>Stop Phrase</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Map</Topic>
+          <Binding>Select Next Phrase</Binding>
+          <Key>Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Map</Topic>
+          <Binding>Select Previous Phrase</Binding>
+          <Key>Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Map</Topic>
+          <Binding>Select First Phrase</Binding>
+          <Key>Control + Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Map</Topic>
+          <Binding>Select Last Phrase</Binding>
+          <Key>Control + End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Increase EditStep</Binding>
+          <Key>Control + Equals</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Decrease EditStep</Binding>
+          <Key>Control + Minus</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Double EditStep</Binding>
+          <Key>Alt + Equals</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Halve EditStep</Binding>
+          <Key>Alt + Minus</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 0</Binding>
+          <Key>Control + 0</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 1</Binding>
+          <Key>Control + 1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 2</Binding>
+          <Key>Control + 2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 3</Binding>
+          <Key>Control + 3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 4</Binding>
+          <Key>Control + 4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 5</Binding>
+          <Key>Control + 5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 6</Binding>
+          <Key>Control + 6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 7</Binding>
+          <Key>Control + 7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 8</Binding>
+          <Key>Control + 8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 9</Binding>
+          <Key>Control + 9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 12</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 16</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 18</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 24</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit Step</Topic>
+          <Binding>Set EditStep To 32</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Toggle Edit Mode</Binding>
+          <Key>Escape</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Toggle PatternWrap</Binding>
+          <Key>Shift + Scroll</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Toggle Record Quantized</Binding>
+          <Key>Shift + Control + Grave</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Increase Quantization</Binding>
+          <Key>Shift + Control + Equals</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Decrease Quantization</Binding>
+          <Key>Shift + Control + Minus</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 1</Binding>
+          <Key>Shift + Control + 1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 2</Binding>
+          <Key>Shift + Control + 2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 3</Binding>
+          <Key>Shift + Control + 3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 4</Binding>
+          <Key>Shift + Control + 4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 5</Binding>
+          <Key>Shift + Control + 5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 6</Binding>
+          <Key>Shift + Control + 6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 7</Binding>
+          <Key>Shift + Control + 7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 8</Binding>
+          <Key>Shift + Control + 8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 9</Binding>
+          <Key>Shift + Control + 9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 12</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 16</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 18</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 24</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Record</Topic>
+          <Binding>Set Quantization To 32</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Columns</Topic>
+          <Binding>Decrease Number of Columns</Binding>
+          <Key>Shift + Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Columns</Topic>
+          <Binding>Increase Number of Columns</Binding>
+          <Key>Shift + Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Columns</Topic>
+          <Binding>View/Hide Volume Column</Binding>
+          <Key>Shift + Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Columns</Topic>
+          <Binding>View/Hide Panning Column</Binding>
+          <Key>Shift + Control + P</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Columns</Topic>
+          <Binding>View/Hide Delay Column</Binding>
+          <Key>Shift + Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Begin Selection</Binding>
+          <Key>Control + B</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>End Selection</Binding>
+          <Key>Control + E</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Whole Column</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Column in Block Loop Range</Binding>
+          <Key>Shift + Alt + Q</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Column Above Current Line</Binding>
+          <Key>Shift + Alt + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Column Below Current Line</Binding>
+          <Key>Shift + Alt + Z</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Whole Phrase</Binding>
+          <Key>Control + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Phrase in Block Loop Range</Binding>
+          <Key>Alt + Q</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Phrase Above Current Line</Binding>
+          <Key>Alt + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Mark Phrase Below Current Line</Binding>
+          <Key>Alt + Z</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Transpose One Note Up</Binding>
+          <Key>Alt + F2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Transpose One Note Down</Binding>
+          <Key>Alt + F1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Transpose One Octave Up</Binding>
+          <Key>Alt + F12</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Transpose One Octave Down</Binding>
+          <Key>Alt + F11</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Clear</Binding>
+          <Key>Shift + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Copy and Clear</Binding>
+          <Key>Alt + F3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Copy and Clear (2nd)</Binding>
+          <Key>Control + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Copy</Binding>
+          <Key>Alt + F4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Copy (2nd)</Binding>
+          <Key>Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Paste</Binding>
+          <Key>Alt + F5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Paste (2nd)</Binding>
+          <Key>Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Paste Continuously</Binding>
+          <Key>Control + P</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Flip</Binding>
+          <Key>Alt + F6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Flip (2nd)</Binding>
+          <Key>Control + F</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Shrink</Binding>
+          <Key>Alt + F8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Shrink (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Expand</Binding>
+          <Key>Alt + F9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Expand (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Randomize</Binding>
+          <Key>Alt + F7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Randomize (2nd)</Binding>
+          <Key>Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Interpolate Linear</Binding>
+          <Key>Control + I</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Interpolate Logarithmic</Binding>
+          <Key>Control + L</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Interpolate Exponential</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Humanize</Binding>
+          <Key>Control + H</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Quantize Notes</Binding>
+          <Key>Control + Q</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Block Operations</Topic>
+          <Binding>Quantize Notes (Preserve Lengths)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Transpose One Note Up</Binding>
+          <Key>Shift + Control + F2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Transpose One Note Down</Binding>
+          <Key>Shift + Control + F1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Transpose One Octave Up</Binding>
+          <Key>Shift + Control + F12</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Transpose One Octave Down</Binding>
+          <Key>Shift + Control + F11</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Clear and Copy</Binding>
+          <Key>Shift + Control + F3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Copy</Binding>
+          <Key>Shift + Control + F4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Paste</Binding>
+          <Key>Shift + Control + F5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Flip</Binding>
+          <Key>Shift + Control + F6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Shrink</Binding>
+          <Key>Shift + Control + F8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Expand</Binding>
+          <Key>Shift + Control + F9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Randomize</Binding>
+          <Key>Shift + Control + F7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Interpolate Linear</Binding>
+          <Key>Shift + Control + I</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Interpolate Logarithmic</Binding>
+          <Key>Shift + Control + L</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Interpolate Exponential</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Humanize</Binding>
+          <Key>Shift + Control + H</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Quantize Notes</Binding>
+          <Key>Shift + Control + Q</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Column Operations</Topic>
+          <Binding>Quantize Notes (Preserve Lengths)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Transpose One Note Up</Binding>
+          <Key>Control + F2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Transpose One Note Up (2nd)</Binding>
+          <Key>Shift + F2</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Transpose One Note Down</Binding>
+          <Key>Control + F1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Transpose One Note Down (2nd)</Binding>
+          <Key>Shift + F1</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Transpose One Octave Up</Binding>
+          <Key>Control + F12</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Transpose One Octave Up (2nd)</Binding>
+          <Key>Shift + F12</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Transpose One Octave Down</Binding>
+          <Key>Control + F11</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Transpose One Octave Down (2nd)</Binding>
+          <Key>Shift + F11</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Clear and Copy</Binding>
+          <Key>Control + F3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Clear and Copy (2nd)</Binding>
+          <Key>Shift + F3</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Copy</Binding>
+          <Key>Control + F4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Copy (2nd)</Binding>
+          <Key>Shift + F4</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Paste</Binding>
+          <Key>Control + F5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Paste (2nd)</Binding>
+          <Key>Shift + F5</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Flip</Binding>
+          <Key>Control + F6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Flip (2nd)</Binding>
+          <Key>Shift + F6</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Shrink</Binding>
+          <Key>Control + F8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Shrink (2nd)</Binding>
+          <Key>Shift + F8</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Expand</Binding>
+          <Key>Control + F9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Expand (2nd)</Binding>
+          <Key>Shift + F9</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Randomize</Binding>
+          <Key>Control + F7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Randomize (2nd)</Binding>
+          <Key>Shift + F7</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Interpolate Linear</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Interpolate Logarithmic</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Interpolate Exponential</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Humanize</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Quantize Notes</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Phrase Operations</Topic>
+          <Binding>Quantize Notes (Preserve Lengths)</Binding>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+    <Category>
+      <Identifier>Phrase Map</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Previous</Binding>
+          <Key>Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Next</Binding>
+          <Key>Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to First</Binding>
+          <Key>Control + Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Last</Binding>
+          <Key>Control + End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Move Selection to Previous</Binding>
+          <Key>Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Move Selection to Next</Binding>
+          <Key>Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Move Selection to First</Binding>
+          <Key>Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Move Selection to Last</Binding>
+          <Key>End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select All</Binding>
+          <Key>Control + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Insert</Binding>
+          <Key>Insert</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Duplicate</Binding>
+          <Key>Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete</Binding>
+          <Key>Delete</Key>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+    <Category>
+      <Identifier>Instrument Box</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Previous Instrument</Binding>
+          <Key>Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Next Instrument</Binding>
+          <Key>Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Previous Instrument Page</Binding>
+          <Key>Prior</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Next Instrument Page</Binding>
+          <Key>Next</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select First Instrument</Binding>
+          <Key>Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Last Instrument</Binding>
+          <Key>End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Insert New Instrument</Binding>
+          <Key>Insert</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Insert New Instrument (2nd)</Binding>
+          <Key>Control + Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete Instrument</Binding>
+          <Key>Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete Instrument (2nd)</Binding>
+          <Key>Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Move Instrument Up</Binding>
+          <Key>Alt + Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Move Instrument Down</Binding>
+          <Key>Alt + Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Duplicate Instrument</Binding>
+          <Key>Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Copy Instrument</Binding>
+          <Key>Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Paste Instrument</Binding>
+          <Key>Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Copy and Clear Instrument</Binding>
+          <Key>Control + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Clear Instrument</Binding>
+          <Key>Shift + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Clear Instrument (2nd)</Binding>
+          <Key>Shift + Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Rename Instrument</Binding>
+          <Key>Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Render Plugin to Instrument</Binding>
+          <Key>Control + F</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Render Plugin to New Instrument</Binding>
+          <Key>Shift + Control + F</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Open Editor</Binding>
+          <Key>Return</Key>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+    <Category>
+      <Identifier>Sample Keyzones</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Previous by Note</Binding>
+          <Key>Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Next by Note</Binding>
+          <Key>Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Previous by Velocity</Binding>
+          <Key>Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Next by Velocity</Binding>
+          <Key>Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Select All</Binding>
+          <Key>Control + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete Selected</Binding>
+          <Key>Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete Selected (2nd)</Binding>
+          <Key>Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Generate</Topic>
+          <Binding>Drum Kit Map</Binding>
+          <Key>Control + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Generate</Topic>
+          <Binding>Distributed Range Map</Binding>
+          <Key>Control + E</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Generate</Topic>
+          <Binding>Layered Map</Binding>
+          <Key>Control + L</Key>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+    <Category>
+      <Identifier>Sample FX Mixer</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Left</Binding>
+          <Key>Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Right</Binding>
+          <Key>Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Up</Binding>
+          <Key>Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Down</Binding>
+          <Key>Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select First Device</Binding>
+          <Key>Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Last Device</Binding>
+          <Key>End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Next Chain</Binding>
+          <Key>Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Previous Chain</Binding>
+          <Key>Shift + Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device</Topic>
+          <Binding>Delete Device</Binding>
+          <Key>Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device</Topic>
+          <Binding>Delete Device (2nd)</Binding>
+          <Key>Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device</Topic>
+          <Binding>Cut Device</Binding>
+          <Key>Control + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device</Topic>
+          <Binding>Copy Device</Binding>
+          <Key>Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device</Topic>
+          <Binding>Insert Device</Binding>
+          <Key>Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device</Topic>
+          <Binding>Rename Device</Binding>
+          <Key>Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device</Topic>
+          <Binding>Move Device Left</Binding>
+          <Key>Alt + Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device</Topic>
+          <Binding>Move Device Right</Binding>
+          <Key>Alt + Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device</Topic>
+          <Binding>Copy Device Settings</Binding>
+          <Key>Shift + Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device</Topic>
+          <Binding>Paste Device Settings</Binding>
+          <Key>Shift + Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device</Topic>
+          <Binding>Init Device Settings</Binding>
+          <Key>Shift + Control + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device</Topic>
+          <Binding>Init Device Settings (2nd)</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device</Topic>
+          <Binding>Bypass/Activate Device</Binding>
+          <Key>Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device</Topic>
+          <Binding>Open Editor</Binding>
+          <Key>Control + Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Insert New Chain</Binding>
+          <Key>Control + T</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Delete Chain</Binding>
+          <Key>Shift + Control + T</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Rename Chain</Binding>
+          <Key>Shift + Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Cut All Devices</Binding>
+          <Key>Shift + Alt + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Copy All Devices</Binding>
+          <Key>Shift + Alt + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Paste All Devices</Binding>
+          <Key>Shift + Alt + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Delete All Devices</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Load DSP Chain...</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Save DSP Chain As...</Binding>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+    <Category>
+      <Identifier>Sample Modulation Matrix</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Left</Binding>
+          <Key>Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Right</Binding>
+          <Key>Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Up</Binding>
+          <Key>Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move Down</Binding>
+          <Key>Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select First Set</Binding>
+          <Key>Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Last Set</Binding>
+          <Key>End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Next Set</Binding>
+          <Key>Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Previous Set</Binding>
+          <Key>Shift + Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Sets</Topic>
+          <Binding>Insert New Set</Binding>
+          <Key>Control + T</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Delete Set</Binding>
+          <Key>Shift + Control + T</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Rename Set</Binding>
+          <Key>Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Cut All Devices</Binding>
+          <Key>Control + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Copy All Devices</Binding>
+          <Key>Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Paste All Devices</Binding>
+          <Key>Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Delete All Devices</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Load Set...</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Device Chain</Topic>
+          <Binding>Save Set As...</Binding>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+    <Category>
+      <Identifier>Automation</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Previous Line</Binding>
+          <Key>Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Next Line</Binding>
+          <Key>Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Start</Binding>
+          <Key>Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to End</Binding>
+          <Key>Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to Start and Select</Binding>
+          <Key>Shift + Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Move to End and Select</Binding>
+          <Key>Shift + Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Modify Points</Topic>
+          <Binding>Create/Delete Point</Binding>
+          <Key>Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Modify Points</Topic>
+          <Binding>Edit Point Time</Binding>
+          <Key>Control + T</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Modify Points</Topic>
+          <Binding>Edit Point Value</Binding>
+          <Key>Shift + Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Begin Selection</Binding>
+          <Key>Control + B</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>End Selection</Binding>
+          <Key>Control + E</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Select Whole Envelope</Binding>
+          <Key>Control + A</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Selection</Topic>
+          <Binding>Unselect Envelope</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tools</Topic>
+          <Binding>Draw Tool</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Tools</Topic>
+          <Binding>Line Tool</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Zoom</Topic>
+          <Binding>Lock Zoom</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Zoom</Topic>
+          <Binding>Zoom Out Fully</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Zoom</Topic>
+          <Binding>Zoom to Current</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Shift / Amplify</Topic>
+          <Binding>Shift Values Up</Binding>
+          <Key>Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Shift / Amplify</Topic>
+          <Binding>Shift Values Down</Binding>
+          <Key>Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Shift / Amplify</Topic>
+          <Binding>Shift Values Left</Binding>
+          <Key>Shift + Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Shift / Amplify</Topic>
+          <Binding>Shift Values Right</Binding>
+          <Key>Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Shift / Amplify</Topic>
+          <Binding>Amplify Values Up</Binding>
+          <Key>Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Shift / Amplify</Topic>
+          <Binding>Amplify Values Down</Binding>
+          <Key>Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Delete</Binding>
+          <Key>Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Cut</Binding>
+          <Key>Control + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Cut Time</Binding>
+          <Key>Control + K</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Copy</Binding>
+          <Key>Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Paste</Binding>
+          <Key>Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Paste Continuously</Binding>
+          <Key>Control + P</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Insert</Binding>
+          <Key>Control + I</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Delete Envelope</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Flip</Binding>
+          <Key>Control + F</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Mirror</Binding>
+          <Key>Shift + Control + F</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Process</Topic>
+          <Binding>Humanize</Binding>
+          <Key>Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Generate</Topic>
+          <Binding>Create Linear Ramp</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Generate</Topic>
+          <Binding>Create Exponential Ramp</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Generate</Topic>
+          <Binding>Create Random Points</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Generate</Topic>
+          <Binding>Create Sine Curve</Binding>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+    <Category>
+      <Identifier>DSP Chain</Identifier>
+      <KeyBindings>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Set Focus to List</Binding>
+          <Key>Tab</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Previous Device</Binding>
+          <Key>Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Next Device</Binding>
+          <Key>Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select First Device</Binding>
+          <Key>Home</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Select Last Device</Binding>
+          <Key>End</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Maximize Device</Binding>
+          <Key>Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Minimize Device</Binding>
+          <Key>Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Maximize All</Binding>
+          <Key>Control + Up</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Navigation</Topic>
+          <Binding>Minimize All</Binding>
+          <Key>Control + Down</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete Device Chain</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Cut Device Chain</Binding>
+          <Key>Shift + Alt + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Copy Device Chain</Binding>
+          <Key>Shift + Alt + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Paste Device Chain</Binding>
+          <Key>Shift + Alt + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Append Device Chain</Binding>
+          <Key>Shift + Alt + I</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Combine Devices into Doofer</Binding>
+          <Key>Shift + Alt + D</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Load DSP Chain</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Save DSP Chain</Binding>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete Device</Binding>
+          <Key>Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Delete Device (2nd)</Binding>
+          <Key>Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Cut Device</Binding>
+          <Key>Control + X</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Copy Device</Binding>
+          <Key>Control + C</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Paste Device</Binding>
+          <Key>Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Rename Device</Binding>
+          <Key>Control + R</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Move Device Left</Binding>
+          <Key>Alt + Control + Left</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Move Device Right</Binding>
+          <Key>Alt + Control + Right</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Init Device Settings</Binding>
+          <Key>Shift + Control + Delete</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Init Device Settings (2nd)</Binding>
+          <Key>Shift + Control + Back</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Paste Device Settings</Binding>
+          <Key>Shift + Control + V</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Bypass/Activate Device</Binding>
+          <Key>Return</Key>
+        </KeyBinding>
+        <KeyBinding>
+          <Topic>Edit</Topic>
+          <Binding>Open Editor</Binding>
+          <Key>Control + Return</Key>
+        </KeyBinding>
+      </KeyBindings>
+    </Category>
+  </Categories>
+</KeyboardBindings>

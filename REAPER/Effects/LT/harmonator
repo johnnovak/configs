@@ -1,0 +1,354 @@
+desc:Semi-Thoughtful MIDI Harmonator
+//It only works on a single MIDI channel at a time. Everything else passes through, as should anything that's not a note-on or note-off.
+//It allows you to specify a sequence of intervals for it to walk through with each successive MIDI note input. Currently, it's a four step pattern, and all of the intervals are positive - in the upward direction.
+//But it's semi-intelligent in a couple of ways.
+//1) It only ever plays out notes whose names it's heard before. It doesn't care what octave you're in. If it has heard a C before, and you ask it to play a C (based on input + interval) it'll play that C. If it can't play the note it wants to, it moves through the sequence until it finds a note it can play, or gets back around to where it started, in which case it just plays unison*, except...
+//B) If it can't find the note it wants, it will look for nearby notes that it can play, based on certain rules encoded in the interval sliders. If you ask it for a third, it might try the major third first, and if it can't do that, check to see if the minor third is available, but what if you want it to try the minor first?...
+//Currently, the sliders to set the intervals go from 0 to 13 in steps of 0.5 and desperately need to be aliased into a dropdown.
+//0 = off - this step does not exist
+//0.5 = skip - record the input as heard, but play nothing
+//1 = unison - we've obviously heard this note, so play it
+//1.5 = b2, 2 - try the minor 2nd, then the major
+//2 = 2, b2
+//2.5 = b3, 3
+//3 = 3, b3
+//3.5 = 4, b4
+//4 = 4 - if you can't find the fourth, you can't find a note, move on
+//4.5 = 4, #4
+//5 = 5, b5
+//5.5 = 5, #5
+//6 = b6, 6
+//6.5 = 6, b6
+//7 = b7, 7
+//7.5 = 7, b7
+//from 8 to 13, it just repeats, except the output is an octave higher.
+
+slider1:0<1,16,1>MIDI channel
+slider2:1<1, 13, 0.5>first (scale degree)
+slider3:3<0, 13, 0.5>second
+slider4:5<0, 13, 0.5>third
+slider5:7<0, 13, 0.5>fourth
+slider6:0<0, 1, 1>reset
+
+in_pin:none
+out_pin:none
+@init
+notes_sent = 0;
+notes_sent_length = 128;
+notes_heard = 256;
+notes_heard_length = 12;
+degrees = 384;
+degrees_length = 4;
+last_samplepos = 0;
+position = 0;
+first_position = 0;
+sequence_length = 4;
+function reset_notes_heard()
+  (i = 0;
+   loop
+     (notes_heard_length,
+      notes_heard[i] = 0;
+      i += 1;
+      1;
+      )
+   );
+   
+function reset_notes_sent()
+  (i = 0;
+   loop
+     (notes_sent_length,
+      notes_sent [i] > 0 ?
+      (midisend(0, $x80|channel, i); // clear the sustaining transposed note
+      notes_sent[i] = 0;);
+      i += 1;
+      1;
+      )
+   );
+function note_heard(in_note)
+  (set_note = in_note % 12;
+   notes_heard [set_note] = 1;
+   set_note;
+   );
+     
+function harmonate (in_note)
+  (set = note_heard (in_note);
+   out_note = -1;
+   first_position = position;
+   while (
+     degrees[position] == 0 ?
+      (position += 1;
+       position %= sequence_length;
+       );
+     degree = degrees[position];
+     degree == 1 ? out_note = in_note;  
+     degree == 0.5 ? out_note = 1000 + in_note;       
+     degree == 1.5 ? 
+       (check_note = (in_note + 1) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 1;):
+          (check_note = (check_note + 1) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 2;
+           );
+         );  
+     degree == 2 ? 
+       (check_note = (in_note + 2) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 2;):
+          (check_note = (check_note + 11) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 1;
+           );
+         );  
+     degree == 2.5 ? 
+       (check_note = (in_note + 3) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 3;):
+          (check_note = (check_note + 1) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 4;
+           );
+         );           
+     degree == 3 ? 
+       (check_note = (in_note + 4) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 4;):
+          (check_note = (check_note + 11) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 3;
+           );
+         );         
+     degree == 3.5 ? 
+       (check_note = (in_note + 5) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 5;):
+          (check_note = (check_note + 11) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 4;
+           );
+         );                  
+     degree == 4 ? 
+       (check_note = (in_note + 5) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 5;)
+         );                        
+     degree == 4.5 ? 
+       (check_note = (in_note + 5) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 5;):
+          (check_note = (check_note + 1) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 6;
+           );
+         );                              
+     degree == 5 ? 
+       (check_note = (in_note + 7) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 7;):
+          (check_note = (check_note + 11) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 6;
+           );
+         );                           
+     degree == 5.5 ? 
+       (check_note = (in_note + 7) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 7;):
+          (check_note = (check_note + 1) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 8;
+           );
+         );                           
+     degree == 6 ? 
+       (check_note = (in_note + 8) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 8;):
+          (check_note = (check_note + 1) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 9;
+           );
+         );                           
+     degree == 6.5 ? 
+       (check_note = (in_note + 9) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 9;):
+          (check_note = (check_note + 11) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 8;
+           );
+         );                           
+     degree == 7 ? 
+       (check_note = (in_note + 10) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 10;):
+          (check_note = (check_note + 1) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 11;
+           );
+         ); 
+     degree == 7.5 ? 
+       (check_note = (in_note + 11) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 11;):
+          (check_note = (check_note + 11) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 10;
+           );
+         );  
+     degree == 8 ? 
+       (out_note = in_note + 12;
+        );
+     degree == 8.5 ? 
+       (check_note = (in_note + 1) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 13;):
+          (check_note = (check_note + 1) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 14;
+           );
+         ); 
+     degree == 9 ? 
+       (check_note = (in_note + 2) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 14;):
+          (check_note = (check_note + 11) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 13;
+           );
+         );  
+     degree == 9.5 ? 
+       (check_note = (in_note + 3) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 15;):
+          (check_note = (check_note + 1) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 16;
+           );
+         );           
+     degree == 10 ? 
+       (check_note = (in_note + 4) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 16;):
+          (check_note = (check_note + 11) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 15;
+           );
+         );         
+     degree == 10.5 ? 
+       (check_note = (in_note + 5) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 17;):
+          (check_note = (check_note + 11) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 16;
+           );
+         );                  
+     degree == 11 ? 
+       (check_note = (in_note + 5) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 17;)
+         );                        
+     degree == 11.5 ? 
+       (check_note = (in_note + 5) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 17;):
+          (check_note = (check_note + 1) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 18;
+           );
+         );                              
+     degree == 12 ? 
+       (check_note = (in_note + 7) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 19;):
+          (check_note = (check_note + 11) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 18;
+           );
+         );                           
+     degree == 12.5 ? 
+       (check_note = (in_note + 7) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 19;):
+          (check_note = (check_note + 1) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 20;
+           );
+         );                           
+     degree == 13 ? 
+       (check_note = (in_note + 8) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 20;):
+          (check_note = (check_note + 1) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 21;
+           );
+         );                           
+     degree == 13.5 ? 
+       (check_note = (in_note + 9) % 12;
+        notes_heard[check_note] == 1 ?
+          (out_note = in_note + 21;):
+          (check_note = (check_note + 11) % 12;
+           notes_heard[check_note] == 1 ? out_note = in_note + 20;
+           );
+         );                   
+     position += 1;    
+     position %= sequence_length;
+     position == first_position && out_note < 0 ? 
+       out_note = in_note;
+     out_note < 0 ;); 
+     
+   out_note < 256 ? 
+    out_note = min(max(out_note, 0), 127);
+   out_note;
+   );
+function send_harmony (out_note in_note velocity)
+  (notes_sent[out_note] > 0 ?
+    (midisend(0, $x80|channel, out_note);
+     notes_sent[out_note] = 0;
+     );
+    midisend(0, $x90|channel, (velocity*256)|out_note);     
+    notes_sent[out_note] = in_note + 1;
+    1;
+   );
+function note_off (in_note)
+  (i = 0;
+   loop 
+    (notes_sent_length,
+     notes_sent[i] == in_note + 1 ?
+     (midisend(0, $x80|channel, i);
+       notes_sent[i] = 0;
+      );
+     i += 1;
+     );
+   1;  
+   );
+   
+   
+@slider
+channel = slider1 - 1;
+degrees[0] = slider2;
+degrees[1] = slider3;
+degrees[2] = slider4;
+degrees[3] = slider5;
+reset_button = slider6;
+@block
+samplepos = play_position*srate;
+samplechg = samplepos-last_samplepos;
+samplechg < -samplesblock/2.0 || samplechg > samplesblock*3.0/2.0 ?
+(
+reset_sent = reset_notes_sent();
+reset_heard = reset_notes_heard();
+);
+last_samplepos = samplepos;
+while 
+(
+  input = midirecv(offs, m1, m2);
+  input ?
+  send_it = 0;
+   in_channel = m1&$xF;
+   in_channel == channel ?
+   (message = m1&$xF0;
+    velocity = (m2&$xFF00)/256; 
+    message == $x80 ? 
+      (this_note = m2&$xFF; 
+       send_it = note_off(this_note);
+       noteoff = 1;
+       );
+    message == $x90 && velocity > 0  ?
+      (this_note = m2&$xFF; 
+       heard = note_heard(this_note);
+       that_note = harmonate(this_note);
+       that_note < 256 ?
+         send_it = send_harmony(that_note, this_note, velocity):
+         send_it = 1;
+       );   
+    send_it == 0 ? midirecv(offs, m1, m2)       
+    
+  );
+  input;
+);  
+@sample
+reset_button == 1 ?
+  (reset_heard = reset_notes_heard();
+   slider6 = reset_button = 0;
+  );

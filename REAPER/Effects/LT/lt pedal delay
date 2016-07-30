@@ -1,0 +1,262 @@
+// This effect Copyright (C) 2004 and later Cockos Incorporated
+// License: GPL - http://www.gnu.org/licenses/gpl.html
+desc: companded tap tempo delay with infinite repeat
+slider1:0<0,0,0>
+slider2:-6<-30,0,0.01>feedback (dB)
+slider3:1 <0, 1, 1{off, on}>mix in / bypass
+slider4:-3<-120,0,1>output wet (dB)
+slider5:0<0,0,0>output dry (dB)
+slider6:1<0,1,1{off,on}>resample on length change
+slider7:1<1,8,8>beatsync - fraction of whole note
+slider8:0 <0, 1, 1{off, on}>feedback dump
+
+
+@init
+delaypos=0;
+ damp=3.01;
+  c = 1/tan($pi*7000/srate);
+  fk = 1 / (1 + c*(c+damp));
+  fa1 = 2 * (1 - c*c) * fk;
+  fa0 = (1 + c*(c-damp)) * fk;
+  oldamp=damp;
+ damp2=3.01;
+  c2 = 1/tan($pi*14000/srate);
+  fk2 = 1 / (1 + c2*(c2+damp2));
+  fa1_2 = 2 * (1 - c2*c2) * fk2;
+  fa0_2 = (1 + c2*(c2-damp2)) * fk2;
+  oldamp2=damp2;
+  log2db = 8.6858896380650365530225783783321; // 20 / ln(10)
+  db2log = 0.11512925464970228420089957273422; // ln(10) / 20 
+  attime=0.010;
+  reltime=0.100;
+  rundb=0;
+  overdb=0;
+  ratatcoef = exp(-1/(0.00001 * srate));
+  ratrelcoef = exp(-1/(0.5 * srate));
+  atcoef=exp(-1/(attime * srate));
+  relcoef=exp(-1/(reltime * srate));
+  mix=1;
+  thresh = -18;
+  threshv = exp(thresh * db2log);
+  ratio = 16 ;
+  allin=0; 
+  cratio = ratio;
+  cthresh = thresh;
+  cthreshv = exp(cthresh * db2log);
+  makeup = 0;
+  makeupv = exp((makeup+autogain) * db2log);
+  attime = 2/ 1000000;
+  reltime = 2 / 1000;
+  atcoef=exp(-1/(attime * srate));
+  relcoef=exp(-1/(reltime * srate));
+  mix=1;
+  pregain = 20; 
+  in_volt= 27.6/2;
+  top_drop = 4.3;
+  bottom_drop = 4.2; 
+  top_ideal = 0;
+  bottom_ideal = 0;
+  flip_bottom = 0;
+  out_volt = 27.6/2;
+  remove_dc = 1;
+  
+
+
+@slider
+beat = 120 * slider7;
+wetmix = (1 - slider8) * 2 ^((slider2)/6);
+drymix = slider3;
+wetmix2 = 2 ^(slider4/6);
+drymix2 = 2 ^(slider5/6);
+
+
+@block
+odelay=delaylen;
+slider1==0 ? (
+  delaylen=min((beat / tempo)*srate,500000);
+):(
+  delaylen=min(slider1 * srate / 1000,500000);
+);
+odelay != delaylen ? (
+  slider6 && odelay > delaylen ? (
+      // resample down delay buffer, heh
+      rspos=0; rspos2=0;
+      drspos=odelay/delaylen;
+      loop(delaylen,
+         
+         tpos = ((rspos)|0)*2;
+         rspos2[0]=tpos[0];
+         rspos2[1]=tpos[1];
+
+         rspos2+=2;
+         rspos+=drspos;
+      );
+      delaypos /= drspos;
+      delaypos|=0;
+      delaypos<0?delaypos=0;
+  ) : (
+    slider6 && odelay < delaylen ? (
+        // resample up delay buffer, heh
+        drspos=odelay/delaylen;
+        rspos=odelay; 
+        rspos2=delaylen*2;
+        loop(delaylen,
+           rspos-=drspos;
+           rspos2-=2;
+         
+           tpos = ((rspos)|0)*2;
+           rspos2[0]=tpos[0];
+           rspos2[1]=tpos[1];
+
+        );
+        delaypos /= drspos;
+        delaypos|=0;
+        delaypos<0?delaypos=0;
+    ) : (!slider6 && delaypos >= delaylen ? delaypos = 0);
+  );
+  freembuf(delaylen*2);
+);
+
+@sample
+fd0l = (fk*spl0) - (fa1*fd1l) - (fa0*fd2l);
+fd0r = (fk*spl1) - (fa1*fd1r) - (fa0*fd2r);
+
+spl0 = fd0l + fd1l + fd1l + fd2l;
+spl1 = fd0r + fd1r + fd1r + fd2r;
+
+fd2l = fd1l;
+fd2r = fd1r;
+
+fd1l = fd0l;
+fd1r = fd0r;
+
+inl=spl0*in_volt;
+inr=spl1*in_volt;
+input = inl;
+s = sign(input);
+abs_in = abs(input);
+s == -1 ? (drop = bottom_drop; ideal = bottom_ideal):
+         (drop = top_drop; ideal = top_ideal);         
+ideal == 1 ? (abs_out = min(abs_in, drop)):
+(exp_var = exp ((-2/drop)*abs_in);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+abs_out = drop * equ_top / equ_bot);
+flip_bottom == 1 ? 
+  (s = 1;);
+output = s * abs_out;
+spl0 = output/out_volt;
+input = inr;
+s = sign(input);
+abs_in = abs(input);
+s == -1 ? (drop = bottom_drop; ideal = bottom_ideal):
+         (drop = top_drop; ideal = top_ideal);         
+ideal == 1 ? (abs_out = min(abs_in, drop)):
+(exp_var = exp ((-2/drop)*abs_in);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+abs_out = drop * equ_top / equ_bot);
+flip_bottom == 1 ? 
+  (s = 1;);
+output = s * abs_out;
+spl1 = output/out_volt;
+
+
+
+dpint = delaypos*2;
+os1= dpint[0] / (pregain * grv );
+os2= dpint[1] / (pregain * grv );
+
+dpint[0]=min(max(spl0*drymix + os1*wetmix,-4),4);
+dpint[1]=min(max(spl1*drymix + os2*wetmix,-4),4);
+thisthing = dpint[0]; 
+thatthing = os1; 
+ 
+  comp_spl0 = dpint[0] * pregain;
+  comp_spl1 = dpint[1] * pregain;
+  ospl0 = comp_in0;
+  ospl1 = comp_in1;
+  aspl0 = abs(comp_in0);
+  aspl1 = abs(comp_in1);
+  maxspl = max(aspl0, aspl1);
+  maxspl = maxspl * maxspl;
+  runave = maxspl + rmscoef * (runave - maxspl);
+  det = sqrt(max(0,runave));
+
+  overdb = 2.08136898 * log(det/cthreshv) * log2db;
+  overdb = max(0,overdb);
+ 
+  overdb - rundb > 5 ? (averatio = 4;);
+
+  overdb > rundb ? (
+    rundb = overdb + atcoef * (rundb - overdb);
+    runratio = averatio + ratatcoef * (runratio - averatio);
+  ) : (
+    rundb = overdb + relcoef * (rundb - overdb);
+    runratio = averatio + ratrelcoef * (runratio - averatio);
+  );
+  overdb = rundb;
+  averatio = runratio;
+
+    cratio = ratio;
+  
+  gr = -overdb * (cratio-1)/cratio;
+  grv = exp(gr * db2log);
+  
+  runmax = maxover + relcoef * (runmax - maxover);  // highest peak for setting att/rel decays in reltime
+  maxover = runmax;
+
+
+  comp_spl0 *= grv * makeupv;
+  comp_spl1 *= grv * makeupv;  
+dpint[0] = comp_spl0;
+dpint[1] = comp_spl1;
+
+in1l=dpint[0]*in_volt/pregain;
+in1r=dpint[1]*in_volt/pregain;
+input = in1l;
+s = sign(input);
+abs_in = abs(input);
+s == -1 ? (drop = bottom_drop; ideal = bottom_ideal):
+         (drop = top_drop; ideal = top_ideal);         
+ideal == 1 ? (abs_out = min(abs_in, drop)):
+(exp_var = exp ((-2/drop)*abs_in);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+abs_out = drop * equ_top / equ_bot);
+flip_bottom == 1 ? 
+  (s = 1;);
+output = s * abs_out;
+dpint[0] = (output/ out_volt) *pregain ;
+input = in1r;
+s = sign(input);
+abs_in = abs(input);
+s == -1 ? (drop = bottom_drop; ideal = bottom_ideal):
+         (drop = top_drop; ideal = top_ideal);         
+ideal == 1 ? (abs_out = min(abs_in, drop)):
+(exp_var = exp ((-2/drop)*abs_in);
+equ_top = 1 - exp_var;
+equ_bot = 1 + exp_var;
+abs_out = drop * equ_top / equ_bot);
+flip_bottom == 1 ? 
+  (s = 1;);
+output = s * abs_out;
+dpint[1] = (output/ out_volt) *pregain;
+
+
+(delaypos+=1) >= delaylen ? delaypos=0;
+
+spl0=spl0*drymix2 + os1*wetmix2;
+spl1=spl1*drymix2 + os2*wetmix2;
+
+fd0l2 = (fk2*spl0) - (fa1_2*fd1l2) - (fa0_2*fd2l2);
+fd0r2 = (fk2*spl1) - (fa1_2*fd1r2) - (fa0_2*fd2r2);
+
+spl0 = fd0l2 + fd1l2 + fd1l2 + fd2l2;
+spl1 = fd0r2 + fd1r2 + fd1r2 + fd2r2;
+
+fd2l2 = fd1l2;
+fd2r2 = fd1r2;
+
+fd1l2 = fd0l2;
+fd1r2 = fd0r2;

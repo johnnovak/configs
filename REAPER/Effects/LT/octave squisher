@@ -1,0 +1,84 @@
+desc:MIDI transpose
+
+slider1:36<0,127,1>lowest note (midi note number)
+slider2:1<1,4,1>span (octaves)
+slider3:1<1, 16, 1>MIDI channel
+
+// these lines tell Reaper the effect has no audio input/output,
+// which enables processing optimizations.
+// MIDI-only FX should always have these lines.
+in_pin:none
+out_pin:none
+
+@init
+
+note_buffer = 0; // 4 entries per open note: orignote, channel, vel, transnote
+buffer_length = 127;
+
+last_low_note = 0;
+last_span = 0;
+
+@slider
+low_note = slider1;
+span = slider2;
+high_note= low_note + (span * 12);
+channel = slider3;
+
+@block
+
+channel != last_channel ?
+  (i = 0;
+   loop
+     (buffer_length,
+      midisend(0, $x80|last_channel, i); // clear the sustaining transposed note      
+      note_buffer[i] = 0;
+      i += 1;
+      );
+   last_channel = channel;   
+   );
+low_note != last_low_note || high_note != last_high_note ?
+  (i = 0;
+   loop
+    (buflen,
+     i < low_note || i > high_note ?
+      (midisend(0, $x80|last_channel, i); // clear the sustaining transposed note            
+      note_buffer[i] = 0;
+       );
+     i +=1;
+     );
+    last_low_note = low_note;
+    last_high_note = high_note;
+    );  
+while 
+(
+  midirecv(offs, m1, m2) ?
+  (
+    in_channel = m1&$xF; // channel
+    in_message = m1&$xF0;
+    in_note = m2&$xFF; // original note
+    velocity = (m2&$xFF00)/256; // velocity
+    note_difference =  in_note - low_note ;
+    note_shift = note_difference % (span * 12);
+    note_difference < 0 && note_shift != 0 ? 
+      (new_note = high_note - note_shift) :
+      (new_note = low_note + note_shift);
+    note_change = new_note-in_note;  
+    channel == in_channel + 1 ?
+      (in_message == $x80 ?  //note-off
+        (note_buffer[new_note] = 0;
+          m2 += note_change;
+        )
+        : 
+       (in_message == $x90 ? // note-on or note-off
+        (note_buffer[new_note] == 1 ?
+           (midisend(0, $x80|channel, new_note);); // clear the sustaining transposed note            
+         note_buffer[new_note] = 1;
+         m2 += note_change;
+         );
+        );  
+        );
+    midisend(offs, m1, m2);
+  );
+);
+
+       
