@@ -62,8 +62,9 @@ g_nchan = 8;
 g_max_alloc = __memtop(); // JSFX memory available
 g_latchq_len = 1024; // 1024 midi events queueable for latch mode
 g_maxlen = ((g_max_alloc-4096 - g_latchq_len*3)/(g_nchan+1))|0; // use nearly all of available memory
-g_fadespeed = 0.99;
-g_fadespeed2 = 1.0-g_fadespeed;
+g_fadespeed = exp(-1/(srate * 0.002));  // fade speed for playback/monitoring
+g_slope_recin = 1/(srate * 0.001); // fade length for starting rec
+g_slope_recout = 1/(srate * 0.030); // fade length for ending rec
 g_infthreshdb = -120;
 g_infthresh = 10^(g_infthreshdb/20);
 g_latchmode=0;
@@ -101,10 +102,11 @@ function updatefromrec() instance(rec)
 );
 
 function init(x, n1,n2,n3) 
-  instance(idx rec buf monvol fpos fpos2 sk_fpos sk_fpos2 dirty_top) 
+  instance(idx rec buf monvol fpos fpos2 fpos_slope sk_fpos2 dirty_top) 
 (
-  idx = x;  
-  monvol = fpos = fpos2 = sk_fpos = sk_fpos2 = 0;
+  idx = x;
+  monvol = fpos = fpos2 = sk_fpos2 = 0;
+  fpos_slope = g_slope_recin;
   dirty_top = -1;
   buf = alloc(g_maxlen);
   
@@ -135,7 +137,7 @@ function get_zero_buffer(buf,buftop) (
   buf;
 );
 
-function setstate(st) instance(sk_fpos, sk_fpos2, rec) local(dt)
+function setstate(st) instance(fpos_slope, sk_fpos2, rec) local(dt)
 (
   rec[st_state] ? (
     st==0 ? ( 
@@ -165,14 +167,19 @@ function setstate(st) instance(sk_fpos, sk_fpos2, rec) local(dt)
   rec[st_state] = st;
   rec[st_dirty] = max(max(rec[st_dirty],this.dirty_top+1),st==2);
   
-  sk_fpos = st == 2 ? g_fadespeed2 : 0;
-  sk_fpos2 = st > 0 ? g_fadespeed2 : 0;
+  st == 2 ? (
+    fpos_slope = g_slope_recin;
+    sk_fpos2 = 1 - g_fadespeed;
+  ) : (
+    fpos_slope = -g_slope_recout;
+    sk_fpos2 = st > 0 ? (1 - g_fadespeed) : 0;
+  );
 );
 
 
 function process(s) instance(buf, fpos, fpos2, monvol, monmode, rec, peak_in) local(r,wrpos) (
   g_recstart_gate==0 ? (
-    fpos = fpos*g_fadespeed + this.sk_fpos;
+    fpos = min(max(0,fpos+this.fpos_slope),1);
     fpos2 = fpos2*g_fadespeed + this.sk_fpos2;
   ) : (
     fpos = fpos2 = 0;
@@ -197,8 +204,12 @@ function process(s) instance(buf, fpos, fpos2, monvol, monmode, rec, peak_in) lo
     ) : 0;
     
   ) : ( 
-    monvol = monvol*g_fadespeed + (monmode>=2 || g_chan_selected == this.idx)*g_fadespeed2;
-  
+    (monmode>=2 || g_chan_selected == this.idx) ? (
+      monvol = 1 + (monvol-1)*g_fadespeed;
+    ) : ( 
+      monvol *= g_fadespeed;
+    );
+    
     fpos > 0.0001 ? (
       this.dirty_top = max(this.dirty_top,wrpos);
       wrpos == g_pos ? (
@@ -262,8 +273,10 @@ function repeatbuf(buf,osz, nsz) local(p,s)
 
 function xfadebuf(buf, osz, nsz) local(fsz,s,ds)
 (
+  fsz = (0.001*mem_gen_cfg[5]*srate)|0;
   s=0;
-  fsz = min(0.001*mem_gen_cfg[5]*srate,osz-nsz)|0;
+  osz>0 && osz == nsz ? osz += fsz;
+  fsz = min(fsz,osz-nsz)|0;
   ds=1/fsz;
   // fade buf[0..fsz] with buf[nsz..nsz+fsz] 
   loop(fsz,
@@ -351,7 +364,8 @@ function gen_action(i)
   i == 1 ? adjustsizes(0.5,1) : 
   i == 2 ? adjustsizes(2,1) : 
   i == 3 ? adjustsizes(2,0) : 
-  i == 7 ? g_need_export=1; 
+  i == 7 ? g_need_export=1 : 
+  i == 11 ? adjustsizes(1, 0);
 );
 
 
@@ -365,7 +379,7 @@ ext_noinit == 0 ? (
   g_latchq = alloc(g_latchq_len*3);
   g_latchq_used=0;
   
-  mem_gen_sz=11;
+  mem_gen_sz=12;
   mem_gen_cfg = alloc(mem_gen_sz);
   memset(mem_gen_cfg,128,mem_gen_sz);
   mem_gen_cfg[4]=g_infthreshdb; // gate threshold
@@ -387,6 +401,7 @@ ext_noinit == 0 ? (
   mem_gen_names[8] = "";  
   mem_gen_names[9] = "";  
   mem_gen_names[10] = "";  
+  mem_gen_names[11] = "x-fade\nshortened\nloop";
  
   mem_gen_order = alloc(mem_gen_sz);
   mem_gen_order[0]=0;
@@ -394,12 +409,13 @@ ext_noinit == 0 ? (
   mem_gen_order[2]=2;
   mem_gen_order[3]=3;
   mem_gen_order[4]=7;
-  mem_gen_order[5]=-1;
+  mem_gen_order[5]=11;
   mem_gen_order[6]=-1;
   mem_gen_order[7]=-1;
   mem_gen_order[8]=-1;
   mem_gen_order[9]=-1;
   mem_gen_order[10]=-1;
+  mem_gen_order[11]=-1;
   
   mem_stlist = alloc(g_nchan * st_num);
 
@@ -608,6 +624,7 @@ while (sidx == nextmsg_offs)
     nextmsg_2 == mem_gen_cfg[2] ? gen_action(2);
     nextmsg_2 == mem_gen_cfg[3] ? gen_action(3); 
     nextmsg_2 == mem_gen_cfg[7] ? gen_action(7);
+    nextmsg_2 == mem_gen_cfg[11] ? gen_action(11);
       
     nextmsg_2 < 128 ? g_lastmsg = nextmsg_2;
   );
@@ -908,6 +925,7 @@ function draw(xpos, ypos) local(i w h gap rec mode force_redraw rowsize mx my mw
         i == 2 ? gfx_set(0.0, 0.6, 0.5) : 
         i == 3 ? gfx_set(0.0, 0.6, 0.4) : 
         i == 7 ? gfx_set(0.7, 0.6, 0.7) :
+        i == 11 ? gfx_set(0,0.5,0.5) :
                  gfx_set(0.5, 0.0, 0.0);
           
         draw_button(xpos,ypos,w,h,0);
@@ -1031,7 +1049,7 @@ function draw_topbar(need_ref) local(s,i,t, lastlen, lastgate, lastlatch,lasthal
         mem_gen_cfg[4] = min(max(mem_gen_cfg[4]-(mouse_y-cap_last_y)*.2,g_infthreshdb),-1);        
         cap_last_y=mouse_y;
       ) : cap_mode == mem_gen_cfg + 6 ? (
-        t = ((mouse_y-cap_last_y)*0.25)|0;
+        t = ((mouse_y-cap_last_y)*((mouse_cap&8)?4:100))|0;
         t ? (
           g_length = max(g_length-t,1);
           g_pos %= g_length;
