@@ -20,6 +20,11 @@ slider13:75<0,100,1>Love (%)
 slider14:15<0,150,1>Jive (%) 
 slider15:1<0,3,1{No,Murky,Confused,Unpleasant}>Attitude
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 itm1=itm2=otm1=otm2=0;
 

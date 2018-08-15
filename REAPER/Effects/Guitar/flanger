@@ -11,6 +11,11 @@ slider3:-6<-120,6,1>Wet Mix (dB)
 slider4:-6<-120,6,1>Dry Mix (dB)
 slider5:0.6<0.001,100,0.1>Rate (Hz)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 delaypos=0;
 

@@ -31,6 +31,11 @@ slider6:100<0,100,0.01>Mix (%)
 slider7:0<-40,40,0.01>Output (-inf/+40dB)
 slider8:0<0,1,1{Off,On}>Oversample (x2)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 //=================================================
 @init
 //=================================================

@@ -7,6 +7,10 @@ desc:Goniometer [LOSER]
 
 slider1:0<0,2,1{Dots,Lines,Rays}>Display
 
+in_pin:left input
+in_pin:right input
+out_pin:none
+
 @init
 gfx_clear=-1;
 off = 500000;

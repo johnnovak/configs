@@ -20,6 +20,11 @@ desc:Transient Killer (Instant Compressor) [LOSER]
 slider1:0<-12,1,.1>Threshold (dB)
 slider2:1<1,50,.1>Ratio
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 cAmpDB_ = 8.65617025;
 

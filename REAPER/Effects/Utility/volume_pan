@@ -6,6 +6,11 @@ slider1:0<-60,12,0.1>Volume (dB)
 slider2:0<-100,100,0.1>Pan
 slider3:0<-6,6,0.5>Pan Law (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 
 AMP_dB = 8.68588963806504;

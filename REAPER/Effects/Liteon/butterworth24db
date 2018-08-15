@@ -32,6 +32,11 @@ slider4:0<0,0.9>Resonance
 slider5:0<-25,25,0.05>Output (dB)
 slider6:0<0,1,1{On,Off}>Limiter
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 mv=2^(-0.2/6);
 history1=history2=history3=history4=0;

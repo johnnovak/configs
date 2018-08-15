@@ -17,6 +17,12 @@ desc:Time Difference Pan
 //author: LOSER
 
 slider1:0<-100,100,1>Pan (%)
+
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 b=0;
 @slider

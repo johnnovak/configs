@@ -9,6 +9,11 @@ slider1:4<0,100,1>Frequency (Hz)
 slider2:-6<-60,0,1>Amount (dB)
 slider3:0<0,1>Stereo Seperation
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @slider
   adv=$pi*2*slider1/srate;
   sep=slider3*$pi;

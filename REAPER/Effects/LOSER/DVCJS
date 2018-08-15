@@ -24,6 +24,11 @@ slider4:200<0,1000,1>Release ( ms)
 slider5:1<0,1,1{No,Yes}>Auto Make-Up
 slider6:0<-12,12,.1>Output (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 gain = seekgain = 1;
 c = 8.65617025;

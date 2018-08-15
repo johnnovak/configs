@@ -22,6 +22,11 @@ slider1:0<-30,0,0.1>Threshold (dB)
 slider2:200<0,500,1>Release (ms)
 slider3:-0.1<-6,0,0.1>Ceiling
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 HOLDTIME = srate/128;
 

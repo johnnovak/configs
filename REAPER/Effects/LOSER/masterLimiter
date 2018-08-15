@@ -25,6 +25,10 @@ slider5:250<0,1000,1>Release (ms)
 slider6:-.1<-6,0,.01>Limit (dB)
 slider7:0,Reduction
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
 
 @init
 gain = seekgain = 1;

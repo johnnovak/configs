@@ -32,6 +32,11 @@ slider2:1<0,3,0.01>Scale Factor
 slider3:0<-127,127,1>Volume Offset
 slider4:0<0,100,0.1>Mix (%)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   note_on = 9*16;
   note_off = 8*16;

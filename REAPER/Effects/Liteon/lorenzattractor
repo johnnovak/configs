@@ -32,6 +32,10 @@ slider5:0.5<0,1,0.01>Color (Mod Min/Max)
 slider6:0<-4,4,0.1>Tune
 slider7:0<-25,25,0.05>Gain (-inf/25dB)
 
+in_pin:none
+out_pin:output (mono)
+out_pin:output (mono)
+
 @init
 gfx_clear = -1;
 gfx_mode = 1;

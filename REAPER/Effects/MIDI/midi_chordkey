@@ -8,6 +8,9 @@ slider4:1<0,1>Velocity Scale For Additional Notes
 slider5:0<0,127,1>Lowest Key (MIDI Note #)
 slider6:127<0,127,1>Highest Key (MIDI Note #)
 
+in_pin:none
+out_pin:none
+
 @init 
 
 // maps a in-key note to a semitone note

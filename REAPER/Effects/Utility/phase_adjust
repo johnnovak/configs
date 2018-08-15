@@ -4,6 +4,11 @@ desc:Phase Rotator
 slider1:0<-180,180,1.0>Phase Adjustment
 slider2:2<0,4,1{1024,2048,4096,8192}>FFT Size
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init 
 
   fftsize = -1;

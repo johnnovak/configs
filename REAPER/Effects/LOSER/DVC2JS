@@ -26,6 +26,11 @@ slider6:0<0,1,1{No,Yes}>Auto Make-Up
 slider7:0<-12,12,.1>Output (dB)
 slider8:0<0,1,1{Compress,Limit}>Character
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 gain = seekgain = 1;
 c = 8.65617025;

@@ -23,6 +23,11 @@ slider10:0<0,4,1{Off,Major,Minor,Fifths,Octaves}>Arpeggiator Mode
 slider11:0<0,64,1>Tempo Sync (64th notes, 0 to disable)
 //slider12:0<0,100,1>Modulate Buffer Length
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 pi = 3.141592653589793;
 fade_samples = 48; // controls fade in/out on buffer playback

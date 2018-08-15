@@ -51,6 +51,13 @@ slider12:1<0,1,1{Stereo,Mono}>Detector Mode
 slider13:0<0,1,1{Normal (1+2),Sidechain (3+4)}>Detector Input
 slider14:0<0,1,1{Off,On}>Hard Clip
 
+in_pin:left input
+in_pin:right input
+in_pin:sidechain left input
+in_pin:sidechain right input
+out_pin:left output
+out_pin:right output
+
 //=============================================================================
 @init
 //=============================================================================

@@ -30,6 +30,13 @@ slider8:1<0,1,1{No,Yes}>Auto Make-Up
 slider9:0<-120,60,1>Output (dB)
 slider10:0,Reduction (dB)
 
+in_pin:left input
+in_pin:right input
+in_pin:sidechain left input
+in_pin:sidechain right input
+out_pin:left output
+out_pin:right output
+
 @init
 gain = seekgain = 1;
 c_ampdB = 8.65617025;

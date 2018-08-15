@@ -24,6 +24,11 @@ slider1:50<10,200,1>Freqency (Hz)
 slider2:-12<-120,12,1>Wet (dB)
 slider3:-3<-120,12,1>Dry (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 b1Det = -exp(-300 / srate );
 a0Det = 1.0 + b1Det;

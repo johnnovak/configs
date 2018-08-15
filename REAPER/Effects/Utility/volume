@@ -8,6 +8,11 @@ desc: Volume Adjustment
 slider1:6<-150,150,1>Adjustment (dB)
 slider2:0<-150,150,1>Max Volume (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @slider
   adj1=2 ^ (slider1/6); 
   adj2=2 ^ (slider2/6);

@@ -36,6 +36,11 @@ slider6:0<-12,12,0.1>High Gain (dB)
 slider7:240<60,680,1>Low-Mid Freq (Hz)
 slider8:2400<720,12000,10>Mid-High Freq (Hz)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   log2db = 8.6858896380650365530225783783321; // 20 / ln(10)
   db2log = 0.11512925464970228420089957273422; // ln(10) / 20 

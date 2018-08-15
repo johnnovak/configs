@@ -1,6 +1,6 @@
 desc:ADPCM Simulator
 //tags: processing lo-fi
-//author: Unknown
+//author: Cockos 
 
 // encodes/decodes to IMA ADPCM to give it that "crunchy" sound
 
@@ -8,6 +8,12 @@ slider1:4<1,4,1>Bits
 slider2:4096<2,65538,128>Block Size
 slider3:0<0,7,1>Bit Bias (mostly for 1-bit)
 slider4:0<-60,60,1>Gain (dB)
+
+
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
 
 @init
 a=1000000;

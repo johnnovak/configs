@@ -13,6 +13,11 @@ slider5:1<0.001,1>Overlap Size
 slider6:0<-120,6,1>Wet Mix (dB)
 slider7:-120<-120,6,1>Dry Mix (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @slider
   lbufsize=bufsize; bufsize=(srate*0.001*slider4)&65534; 
   lbufsize!=bufsize ? bufpos=0;

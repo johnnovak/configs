@@ -1,6 +1,10 @@
 desc:Dynamic Range Meter
 //tags: analysis utility dynamics
 
+in_pin:left input
+in_pin:right input
+out_pin:none
+
 @init
 
 // change these if you like 

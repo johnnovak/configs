@@ -1,0 +1,29 @@
+//! g="LA Scoring Strings" n="All articulations"
+Bank 42 1 LA Scoring Strings - All articulations
+
+//! c=legato i=legato o=@1
+20 legato
+
+//! c=legato-light i=tremolo o=@2
+30 tremolo
+
+//! c=legato-light i=trill o=@3
+70 trill
+
+//! c=legato-dark i=con-sord o=@4
+26 sordino
+
+//! c=textured i=harmonics o=@5
+29 harmonics
+
+//! c=short i=staccato o=@6
+40 staccato
+
+//! c=short-light i=spiccato o=@7
+42 spiccato
+
+//! c=short-dark i=pizz o=@8
+56 pizz
+
+//! c=fx i=pizz-bartok o=@9
+57 bartok pizz

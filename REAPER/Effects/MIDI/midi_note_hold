@@ -3,6 +3,9 @@ desc:MIDI Note Hold
 
 slider1:0<0,16,1>Channel (0=omni)
 
+in_pin:none
+out_pin:none
+
 @init
 held=-1;
 

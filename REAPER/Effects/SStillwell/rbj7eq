@@ -36,6 +36,11 @@ slider6:0<-15,15,0.1>2.5 kHz
 slider7:0<-15,15,0.1>6 kHz
 slider8:0<-15,15,0.1>12 kHz
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   gain0 = 0;
   freq0 = 20;

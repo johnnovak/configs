@@ -33,6 +33,11 @@ slider3:48<0,127,1>Lowest Output Note
 slider4:72<0,127,1>Highest Output Note
 slider5:0<0,100,.1>Mix (%)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   note_on = 9*16;
   note_off = 8*16;

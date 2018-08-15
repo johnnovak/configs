@@ -30,6 +30,9 @@ slider5:/ix_scales:none:Scale File
 slider6:1<0,1,1{Block,Remap}>Mode
 slider7:1<0,1,1{Off,On}>On/Off
 
+in_pin:none
+out_pin:none
+
 ////////////////////////////////////////////////////////////////////////////////
 @init
 

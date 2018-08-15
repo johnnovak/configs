@@ -29,6 +29,9 @@ slider5:0<0,100>Variation (%)
 slider6:/ix_sequences:none:Sequence File
 slider7:1<0,1,1{Off,On}>On/Off
 
+in_pin:none
+out_pin:none
+
 ////////////////////////////////////////////////////////////////////////////////
 @init
 

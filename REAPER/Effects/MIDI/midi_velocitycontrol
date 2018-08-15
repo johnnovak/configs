@@ -8,6 +8,9 @@ slider4:127<0,127,1>Max Velocity
 slider5:0<0,127,1>Lowest Key (MIDI Note #)
 slider6:127<0,127,1>Highest Key (MIDI Note #)
 
+in_pin:none
+out_pin:none
+
 @init
 
 @slider

@@ -8,6 +8,11 @@ slider3:0<-120,0,1>Wet Mix (dB)
 slider4:-60<-120,0,1>Dry Mix (dB)
 slider5:0<0,2,1{Left,Right,Stereo}>Channel Mode
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 @slider
 maxv=2 ^ (slider2/6);

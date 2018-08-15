@@ -37,6 +37,9 @@ slider13:1<0,1,1{No,Yes}>Pitch Reset
 slider14:0<0,16,1{Original,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}>Output Channel
 slider15:0<0,2,1{Original,Destination,Both}>Controller Routing
 
+in_pin:none
+out_pin:none
+
 ////////////////////////////////////////////////////////////////////////////////////////////
 @init
 

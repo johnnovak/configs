@@ -8,6 +8,10 @@ desc: MDCT Shifter
 slider1:128<32,512,153.6>Bands
 slider2:4<-512,512,1>Band Shift (neg=down, pos=up)
 
+in_pin:input 
+out_pin:output (mono)
+out_pin:output (mono)
+
 @slider
 slider1=2 ^ (0|(0.5+log10(slider1)/log10(2)))|0; 
 slider1=min(512,max(slider1,32));

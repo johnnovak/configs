@@ -35,6 +35,11 @@ slider4:-6<-120,6,1>Wet Mix (dB)
 slider5:-6<-120,6,1>Dry Mix (dB)
 slider6:100<0,100>Pan Spread (%)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   bufsize = srate|0;
   xfade=(srate*0.10)|0; // 100ms xfade

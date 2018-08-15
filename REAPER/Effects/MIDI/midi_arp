@@ -10,6 +10,9 @@ slider6:0<-64,64,1>Variant 2
 slider7:0<-64,64,1>Variant 3
 slider8:127<0,127,1>Velocity (0=use played velocity)
 
+in_pin:none
+out_pin:none
+
 @init 
 notelist=0;
 notecnt=0;

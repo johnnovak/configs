@@ -6,6 +6,11 @@ desc:DC Filter
 //tags: filter repair
 //author: Cockos
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 itm1=itm2=otm1=otm2=0;
 

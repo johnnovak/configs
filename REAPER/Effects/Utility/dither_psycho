@@ -8,6 +8,11 @@ slider2:1<0,3,1{Off,On,Disabled (Sample Rate Not Supported),Disabled (Overload)}
 slider3:2<0,1,2{Off (Truncate),On (TPDF),On (Highpass TPDF)}>Dither
 slider4:2<1,2,0.1>Dither Bit Width (LSB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 
 N = 0;

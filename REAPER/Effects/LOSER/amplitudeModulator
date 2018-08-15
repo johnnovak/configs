@@ -19,6 +19,11 @@ desc:Amplitude Modulator
 
 slider1:440<80,1000,1>Frequency (Hz)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @slider
 x=(2*$pi*slider1)/srate;
 

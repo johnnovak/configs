@@ -25,6 +25,11 @@ slider9:0<0,64,1>Tempo Sync (32nd notes, 0 to disable)
 slider10:98<70,100,1>L/R Offset (%)
 slider11:6<-12,12,0.1>Pre-Filter Clamp (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 pi = 3.141592653589793;
 old_delaysiz = -1; 

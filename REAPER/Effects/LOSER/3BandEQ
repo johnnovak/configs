@@ -24,6 +24,11 @@ slider4:2000<0,22000,1>Frequency (Hz)
 slider5:0<-24,24,1>High (dB)
 slider6:0<-24,24,1>Output (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 cDenorm = 10^-30;
 cAmpDB = 8.65617025;

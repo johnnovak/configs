@@ -10,6 +10,11 @@ slider2:6<1,10,1>Hardness
 slider3:-12<-40,0,1>Max Volume (dB)
 slider4:0<0,2,1{Left,Right,Stereo}>Channel Mode
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 @slider
 preamp=2^(slider1/6);

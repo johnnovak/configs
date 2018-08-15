@@ -36,6 +36,11 @@ slider3:0<-20,20>Gain (dB)
 slider4:0<-100,100>Width Balance (%)
 slider5:0<-90,90>Width Rotation (°)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   log2db = 8.6858896380650365530225783783321; // 20 / ln(10)
   db2log = 0.11512925464970228420089957273422; // ln(10) / 20 

@@ -12,6 +12,10 @@ slider3:-6<-120,6,1>Dry Mix (dB)
 slider4:0.1<0,1>Edge Overlap
 slider5:0<0,1,1{Off,On}>Old Compatible And Clicky Mode
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
 
 @init
   pos=0;

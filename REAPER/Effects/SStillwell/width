@@ -29,6 +29,11 @@ desc:Subtractive Stereo Enhancer
 slider1:0<0,100,1>Effect (%)
 slider2:0<0,20,0.1>Make-Up Gain (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   log2db = 8.6858896380650365530225783783321; // 20 / ln(10)
   db2log = 0.11512925464970228420089957273422; // ln(10) / 20 

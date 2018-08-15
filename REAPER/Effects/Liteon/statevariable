@@ -37,6 +37,11 @@ slider6:100<0,100,0.01>Filter Amount (%)
 //slider7:0<0,100,0.01>Flux (%)
 slider7:0<-26,26,0.01>Output (-inf/+26dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 step = 200;
 old_f_x = 39;

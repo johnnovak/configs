@@ -23,6 +23,11 @@ slider8:10<1,100,5>Fade In Response (ms)
 slider9:100<1,1000,10>Fade Out Response (ms)
 slider10: 0<0,4,1{Normal,Div 2,Div 4,Mult 2,Mult 4}>Dynamic Pitch
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 // sin
 silentcnt=0;

@@ -12,6 +12,11 @@ slider5:0<-60,60,0.1>Treble Gain (dB)
 slider6:4000<20,24000,10>Treble Frequency (Hz)
 slider7:0.5<0,1,0.01>Output Mix
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 delaypos=0;
 Bc0=Bc1=Bc2=0;

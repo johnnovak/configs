@@ -10,6 +10,9 @@ slider2:0.7<0,1>Resonance (Top) (0..1)
 slider3:0.1<0,1>Resonance (Bottom) (0..1)
 slider4:0.05<0,0.1>Filter Distortion
 
+in_pin:input
+out_pin:output
+
 @slider
 
 maxfreq=2000;

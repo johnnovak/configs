@@ -11,6 +11,11 @@ slider3:1600<40,20000>Range Max (Hz)
 slider4:-3<-120,-1,1>Feedback (dB)
 slider5:0<-120,12,1>Wet Mix (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 
 @slider

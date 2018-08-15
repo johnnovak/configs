@@ -9,6 +9,11 @@ slider4:0<-120,12,1>Right Volume (dB)
 slider5:1<-1,1,0.01>Right Pan
 slider6:0<0,1,1{Normal,Invert}>Right Phase
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @slider
 
 llv=(2^(slider1/6))*min(1-slider2,1);

@@ -11,6 +11,10 @@ slider3:1000<10,30000,20>Sweep Interval (ms)
 slider4:-6<-120,120,1>Low Gain (dB)
 slider5:12<-120,120,1>High Gain (dB)
 
+in_pin:input
+out_pin:output (mono)
+out_pin:output (mono)
+
 @init
   fftsize=1024;
   bufpos=0; bi1=0; bi2=fftsize*2; halfsize=fftsize*0.5;

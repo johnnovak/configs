@@ -19,6 +19,11 @@ desc:Ping Pong Pan
 slider1:.25<0,20,.1>Frequency (Hz)
 slider2:75<0,100,1>Width (%)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @slider
 x=(2*$pi*slider1)/srate;
 width = slider2/100;

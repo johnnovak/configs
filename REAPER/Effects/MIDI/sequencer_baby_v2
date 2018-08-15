@@ -7,6 +7,9 @@ slider3:16<4,128,1>Sequence Length
 slider4:16<1,32,1>Number Of Notes
 slider5:1<0.125,4.0,.125>Rate
 
+in_pin:none
+out_pin:none
+
 @init
 listlength=16;
 numnotes=16;

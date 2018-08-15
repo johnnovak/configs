@@ -31,6 +31,11 @@ slider1:0.0<-30.0,0.0,0.1>Threshold
 slider2:-0.1<-20.0,0.0,0.1>Ceiling
 slider3:0<0,1200,1>Release (ms) (0=auto)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   pi = 3.1415926535;
   log2db = 8.6858896380650365530225783783321; // 20 / ln(10)

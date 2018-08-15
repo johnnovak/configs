@@ -29,6 +29,11 @@ slider2:50<0,100,0.01>Fluctuation Amount (%)
 slider3:16<0,32,1>Noise Floor At (Bits)
 slider4:0<-24,24,0.01>Output (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 //==============================================================================
 @init
 //==============================================================================

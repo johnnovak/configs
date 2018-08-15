@@ -36,6 +36,11 @@ slider6:100<0,100,0.01>LP Cutoff (Scale)
 slider7:0<-16,16,0.01>LP Resonance (dB)
 slider8:0<-24,24,0.01>Output (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @slider
 mono = slider1;
 outgain = 10^(slider8/20);

@@ -23,6 +23,11 @@ slider9:0<-32,32,1>Volume (dB)
 slider10:0<0,4,1{Freq Peak,Freq Low Shelf,Freq High Shelf,Gate,Pump}> Mode
 slider11:0<0,1,1{No,Yes}>Gate/Pump React To MIDI Velocity
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 pos = vol_s = 0;
 

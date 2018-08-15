@@ -10,6 +10,10 @@ slider2:4<0,512,1>Start Band
 slider3:8<0,512,1>End Band
 slider4:0.0<-120,120,1>Adjust (dB)
 
+in_pin:input
+out_pin:output (mono)
+out_pin:output (mono)
+
 @slider
   slider1=2 ^ (0|(0.5+log10(slider1)/log10(2)))|0; 
   slider1=min(512,max(slider1,32));

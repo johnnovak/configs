@@ -15,6 +15,11 @@ slider6:-6<-100,12,1>Dry Mix (dB)
 slider7:0.0<-1,1,0.01>Channel Rate Offset (Hz)
 slider8:0.25<0.0625,4,0.0625>Tempo Sync (fraction of whole note)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 
 bpos=0;

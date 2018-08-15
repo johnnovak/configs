@@ -23,6 +23,17 @@ slider3:0<-60,30,0.1>Level 3+4 (dB)
 slider4:0<-60,30,0.1>Level 5+6 (dB)
 slider5:0<-60,30,0.1>Level 7+8 (dB)
 
+in_pin:input 1
+in_pin:input 2
+in_pin:input 3
+in_pin:input 4
+in_pin:input 5
+in_pin:input 6
+in_pin:input 7
+in_pin:input 8
+out_pin:output L
+out_pin:output R
+
 @init
 gainMin = -60;
 gainMax = 30;

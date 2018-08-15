@@ -32,6 +32,11 @@ slider2:-0.1<-20.0,0.0,0.1>Ceiling (dB)
 slider3:2.0<0,6.0,0.01>Soft Clip (dB)
 //slider4:10<3,20,0.1>Soft Clip Ratio
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   pi = 3.1415926535;
   log2db = 8.6858896380650365530225783783321; // 20 / ln(10)

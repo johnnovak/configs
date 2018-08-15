@@ -7,6 +7,9 @@ slider3:0<0,127,1>LSB
 slider4:0<0,127,1>Program
 slider5:0<0,1,1{No,Yes}>Has Sent
 
+in_pin:none
+out_pin:none
+
 @init
 ext_noinit=1;
 has_sent = 0;

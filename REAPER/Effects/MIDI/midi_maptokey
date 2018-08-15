@@ -5,6 +5,10 @@ desc:MIDI Map To Key
 slider1:0<0,11,1{C,C#,D,D#,E,F,F#,G,G#,A,A#,B}>Key
 slider3:0<0,127,1>Lowest Key (MIDI Note #)
 slider4:127<0,127,1>Highest Key (MIDI Note #)
+
+in_pin:none
+out_pin:none
+
 @init 
 // maps a note to its nearest in-Cmaj note
 tab2=16;

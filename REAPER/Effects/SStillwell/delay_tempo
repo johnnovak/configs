@@ -14,6 +14,11 @@ slider5:0<-120,6,1>Output Dry (dB)
 slider6:0<0,1,1{Off,On}>Resample On Length Change
 slider7:0.25<0.0625,4,0.0625>Tempo Sync (fraction of whole note)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 delaypos=0;
 

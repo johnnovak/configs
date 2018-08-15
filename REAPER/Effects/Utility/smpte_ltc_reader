@@ -1,6 +1,9 @@
 desc:SMPTE LTC Reader/Meter
 //tags: utility visualization
 
+in_pin:input
+out_pin:none
+
 slider1:0<0,3,1.0{30,24,25,29.97}>Frame Rate
 
 @init

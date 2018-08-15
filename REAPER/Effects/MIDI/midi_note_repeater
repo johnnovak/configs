@@ -3,6 +3,9 @@ desc:MIDI Note Repeater
 
 slider1:1<0.1,4>Size (beats)
 
+in_pin:none
+out_pin:none
+
 @init 
 status=0;
 status2=128;

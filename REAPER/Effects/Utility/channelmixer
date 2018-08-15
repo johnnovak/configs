@@ -10,6 +10,11 @@ slider2:-6<-120,6,1>R->R Mix (dB)
 slider3:-6<-120,6,1>L->R Mix (dB)
 slider4:-6<-120,6,1>R->L Mix (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 @slider
 ll=2^(slider1/6);

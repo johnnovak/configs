@@ -7,6 +7,9 @@ slider3:0<0,127,1>Clamp Low Value
 slider4:127<0,127,1>Clamp High Value
 slider5:0<0,1,1{No, Yes}>Pass Through CC Source
 
+in_pin:none
+out_pin:none
+
 @init
 
 CC_MSG = 11;

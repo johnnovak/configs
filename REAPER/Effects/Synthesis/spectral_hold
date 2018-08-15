@@ -18,6 +18,14 @@ slider7:slider_phasemul=0<0,12,.5>phase increase
 slider8:slider_hold=0<0,2,1{off,hold,hold (do not update on switch)}>hold
 slider9:slider_update=1<0,1,1{-,update}>update state
 slider10:0<0,1,1{clear hold,preserve hold}>transport start behavior
+slider11:slider_mixin=1<0,1,.001>mix-in on update
+slider12:slider_autoupdate=0<0,30,.05>auto-update every (s)
+
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init 
 
 
@@ -104,13 +112,18 @@ file_avail(0);
     last_slider_update=slider_update;
     slider_update ? hold_state=1;
   );
+  
+  autoupdate_pos == 0 ? autoupdate_pos = slider_autoupdate;
+  
+  autoupdate_pos += samplesblock/srate;
   (trigger&1) ? (
     last_slider_hold = slider_hold = hold_state=1;
     last_slider_update = slider_update=0;
   ) : (trigger&8) ? (
     last_slider_hold = slider_hold = hold_state=0;
-  ) : (trigger&4) ? (
+  ) : (trigger&4) || (slider_autoupdate>0 && autoupdate_pos>=slider_autoupdate) ? (
     last_slider_update=slider_update=hold_state=1;    
+    autoupdate_pos=0.0001;
   ) : (trigger&2) ? (
     last_slider_hold = slider_hold = hold_state= (slider_hold?0:2);
     last_slider_update = slider_update=0;
@@ -120,8 +133,10 @@ file_avail(0);
   hold_state == 1 ? (
     chan = 0;
     overlap_sampleoffs = max(1,min(in_fftsize,(in_fftsize * (1-slider2))|0));
+    mixin1 = outstate_fftsize == in_fftsize ? slider_mixin : 1.0;
+    mixin2 = 1.0-mixin1;
     wr_st = outstate_buf;
-    wr_ph = outstate_diff_buf;    
+    wr_ph = outstate_diff_buf;
     loop(2, // per channel
     
       // analyze two blocks in fft_buf
@@ -149,8 +164,10 @@ file_avail(0);
       loop(in_fftsize*.5,
         real = rd[0];
         imag = rd[1];
-        wr_st[0] = sqrt(sqr(real)+sqr(imag));
-        wr_ph[0] = ((wr_st[1] = atan2(imag,real)) - atan2(rd_prev[1],rd_prev[0])) * sc;
+        wr_st[0] = sqrt(sqr(real)+sqr(imag)) * mixin1 + mixin2*wr_st[0];
+        ang1 = atan2(imag,real);
+        wr_st[1] = ang1 * mixin1 + mixin2*wr_st[1];
+        wr_ph[0] = (ang1 - atan2(rd_prev[1],rd_prev[0])) * sc * mixin1 + mixin2*wr_ph[0];
         rd+=2;
         rd_prev+=2;
         wr_ph+=1;
@@ -160,7 +177,9 @@ file_avail(0);
     );
     memcpy(window_out,window_in,in_fftsize);
     outstate_fftsize = in_fftsize;
-    outstate_procpos = outstate_fftsize;
+    slider_autoupdate == 0.0 ? (
+      outstate_procpos = outstate_fftsize;
+    );
     hold_state=2;
   );
 

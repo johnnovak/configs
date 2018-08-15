@@ -22,6 +22,17 @@ slider2:0<-24,24,.1>Mid (dB)
 slider3:0<-24,24,.1>High (dB)
 slider4:0<-24,24,.1>UberHigh (dB)
 
+in_pin:low input left
+in_pin:low input right
+in_pin:mid input left
+in_pin:mid input right
+in_pin:high input left
+in_pin:high input right
+in_pin:uberhigh input left
+in_pin:uberhigh input right
+out_pin:left output
+out_pin:right output
+
 @init
 c_ampdB = 8.65617025;
 

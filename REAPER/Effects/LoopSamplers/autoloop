@@ -14,6 +14,11 @@ slider6:100<0,4000,30>Minimum Length (ms)
 slider7:0<-100,6,1>Decay (dB)
 slider8:1<0,1,1{Disabled,Enabled}>Record
 slider9:0<0,1,1,{Disabled,Enabled}>Flush Loop On Playback Start
+
+in_pin:input
+out_pin:output (mono)
+out_pin:output (mono)
+
 @init
     isplay=1; 
     silcnt=rbufpos=pbuflen=pbuf=0; 

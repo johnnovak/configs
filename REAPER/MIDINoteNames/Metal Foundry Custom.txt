@@ -1,0 +1,96 @@
+20  -
+21  -
+22  -
+23  -
+24  -
+25  -
+26  -
+27  -
+28  -
+29  -
+30  -
+31  -
+32  -
+33  -
+34  -
+35  -
+36  HH Closed Edge
+37  HH Closed Tip
+38  HH Tight Edge
+39  HH Tight Tip
+40  HH Seq Hits
+41  HH Open 0
+42  HH Open 1
+43  HH Open 2
+44  HH Open 3
+45  HH Open 4
+46  HH Open 5
+47  HH Open Pedal
+48  HH Closed Pedal
+49  -
+50  Kick L
+51  Kick R
+52  Snare Center
+53  Snare Edge
+54  Snare Rimshot
+55  Snare Flams
+56  Snare Ruffs
+57  Snare Sidestick
+58  -
+59  Floor Tom 2
+60  Floor Tom 1
+61  Rack Tom 3
+62  Rack Tom 2
+63  Rack Tom 1
+64  -
+65  R Crash2 Mute
+66  R Crash2
+67  R China Mute
+68  R China
+69  R Crash1 Mute
+70  R Crash1
+71  R Ride2 Mute
+72  R Ride2 Edge
+73  R Ride2 Bell Shank
+74  R Ride2 Bell Tip
+75  R Ride2 Shank
+76  R Ride2 Tip
+77  R Ride1 Mute
+78  R Ride1 Edge
+79  R Ride1 Bell Shank
+80  R Ride1 Bell Tip
+81  R Ride1 Shank
+82  R Ride1 Tip
+83  R Splash Mute
+84  R Splash
+85  M China -----------
+86  L Crash1 Mute
+87  L Crash1
+88  L Splash Mute
+89  L Splash
+90  L Crash2 Mute
+91  L Crash2
+92  L Crash3 Mute
+93  L Crash3
+94  L Ride Mute
+95  L Ride Edge
+96  L Ride Bell Shank
+97  L Ride Bell Tip
+98  L Ride Shank
+99  L Ride Tip
+100 L China Mute
+101 L China
+102 -
+103 Sticks
+104 -
+105 -
+106 -
+107 -
+108 -
+109 -
+110 -
+111 -
+112 -
+113 -
+114 -
+115 -

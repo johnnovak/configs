@@ -36,6 +36,11 @@ slider6:0<0,5,0.01>Channel Offset
 slider7:0.25<0.0625,4,0.0625>Tempo Sync (fraction of whole note)
 slider8:0<0,1,1{Triangle,Sine}>LFO Waveform
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   MAX_WG_DELAY = 16384;
   i = 0;

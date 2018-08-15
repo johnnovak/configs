@@ -29,6 +29,11 @@ desc:ReaLoud [Stillwell]
 
 slider1:0<0,100,0.1>Mix (%)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 
   pi = 3.1415926535;

@@ -12,6 +12,11 @@ slider5:0<-120,0,1>Maximum Mixing (dB)
 slider6:0<-120,6,1>Output Wet (dB)
 slider7:0<-120,6,1>Output Dry (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 delaypos=0;
 env=0;

@@ -6,6 +6,10 @@ slider1:0<-120,24,1>Center Level (dB)
 slider2:0<0,1,1>Output Swap
 slider3:0<-1,1,0.01>Center Position
 
+in_pin:mid input
+in_pin:side input
+out_pin:left output
+out_pin:right output
 
 @slider
 // so we'll set our multiplier to be used later

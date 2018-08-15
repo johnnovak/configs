@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index version="1" name="ReaTeam Themes" commit="a58b4180de62c8fe88112632d61fffc104e49017">
+  <category name="Mods">
+    <reapack name="cfillion_Default v4.0 + width.theme" type="theme" desc="Default v4.0 theme + width knob">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 This is a modification of the default REAPER v4.0 theme to enable the width knob in the "Stereo balance" pan mode.\par}
+}
+]]></description>
+        <link rel="website" href="http://forum.cockos.com/showthread.php?t=175565">Forum Thread</link>
+        <link rel="website" href="http://stash.reaper.fm/theme/1777/Default_4.0_width.ReaperThemeZip">Stash Page</link>
+        <link rel="screenshot">https://i.imgur.com/irCO9qZ.png</link>
+      </metadata>
+      <version name="1.0" author="cfillion" time="2016-10-22T00:44:50Z">
+        <source file="Default_4.0 + width.ReaperThemeZip">http://stash.reaper.fm/27310/Default_4.0_width.ReaperThemeZip</source>
+      </version>
+    </reapack>
+    <reapack name="Pet_Default_v5_Dark.theme" type="theme" desc="Default v5 Dark Theme">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 This is my dark version of the v5 default theme. It has the same functionality as the original theme and includes all layouts. The colors you choose for your tracks are more visible. If you want it pastel-colored or saturated colors, it looks more like you've chosen it . But its overall appearance is dark.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 There are some differences I want to mention:\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This has changed:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab if you use the "Dual Pan"-Mode, the color of the right channel is red, the left channel is blue, according to the other pan colors\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab the Transport Play/Pause buttons: if stopped, they are "unlit", if on/pause is active, they are "lit"\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab the meters are 3-color-style (green/yellow/red)\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This has been added:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab a layout named "Standard bottom" for the Transport Bar, which can be useful when you have the Transport Bar docked at the bottom of the main window. This layout adds a little space below the Play Buttons.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab a drum toolbar button for the MIDI Editor. If you use the "Named Notes Mode" for drums and want a drum icon there, you can take this one. There's actually a drum icon in the default theme, but in the MIDI Editor there is now a nice frame around these four Mode-Icons. I added this frame to that toolbar icon.\sa180\par}
+}
+]]></description>
+        <link rel="website" href="http://forum.cockos.com/showthread.php?t=172024">Forum Thread</link>
+        <link rel="screenshot" href="http://stash.reaper.fm/29517/Default%20v5%20Dark%20Overview%20HiRes.PNG">Overview</link>
+        <link rel="screenshot" href="http://stash.reaper.fm/29516/Default%20v5%20Dark%20Mixer%20HiRes.png">Mixer</link>
+        <link rel="screenshot" href="http://stash.reaper.fm/29518/Default%20v5%20Dark%20tcp%20and%20Arrange%20HiRes.PNG">Arrange and TCP with "Standard bottom"</link>
+        <link rel="screenshot" href="http://stash.reaper.fm/29515/Default%20v5%20Dark%20Midi%20Editor%20HiRes.PNG">MIDI Editor</link>
+      </metadata>
+      <version name="1.2" author="Pet" time="2017-08-28T21:52:00Z">
+        <changelog><![CDATA[- "Record Arm" buttons in TrackControlPanel adapted to other record buttons
+- Fixed "Record Arm" button shadow in tcp-small layouts 
+- Fader buttons in mixer reworked  ]]></changelog>
+        <source file="Default_5_Dark.ReaperThemeZip">http://stash.reaper.fm/29513/Default_5_Dark.ReaperThemeZip</source>
+      </version>
+      <version name="1.3" author="Pet" time="2017-12-20T00:40:14Z">
+        <changelog><![CDATA[- Midi Editor colors for musical notation mode attuned
+- some images corrected ]]></changelog>
+        <source file="Default_5_Dark.ReaperThemeZip">http://stash.reaper.fm/29513/Default_5_Dark.ReaperThemeZip</source>
+      </version>
+    </reapack>
+    <reapack name="Pet_Default_v5_Dark_Extended.theme" type="theme" desc="Default v5 Dark Extended Theme">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 This is the extended version of my Default 5 Dark Theme, a darker version of the original default theme with more layouts. (see the thread in the forum)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 There are some differences I want to mention:\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This has changed:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab if you use the "Dual Pan"-Mode, the color of the right channel is red, the left channel is blue, according to the other pan colors\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab the Transport Play/Pause buttons: if stopped, they are "unlit", if on/pause is active, they are "lit"\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab the meters are 3-color-style (green/yellow/red)\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This has been added:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab a layout named "Standard bottom" for the Transport Bar, which can be useful when you have the Transport Bar docked at the bottom of the main window. This layout adds a little space below the Play Buttons.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab a drum toolbar button for the MIDI Editor. If you use the "Named Notes Mode" for drums and want a drum icon there, you can take this one. There's actually a drum icon in the default theme, but in the MIDI Editor there is a small frame around these four Mode-Icons. I added this frame to that toolbar icon.\sa180\par}
+}
+]]></description>
+        <link rel="website" href="http://forum.cockos.com/showthread.php?t=172024">Forum Thread</link>
+        <link rel="screenshot" href="http://stash.reaper.fm/29517/Default%20v5%20Dark%20Overview%20HiRes.PNG">Overview</link>
+        <link rel="screenshot" href="http://stash.reaper.fm/29516/Default%20v5%20Dark%20Mixer%20HiRes.png">Mixer</link>
+        <link rel="screenshot" href="http://stash.reaper.fm/29518/Default%20v5%20Dark%20tcp%20and%20Arrange%20HiRes.PNG">Arrange and TCP with "Standard bottom"</link>
+        <link rel="screenshot" href="http://stash.reaper.fm/29515/Default%20v5%20Dark%20Midi%20Editor%20HiRes.PNG">MIDI Editor</link>
+      </metadata>
+      <version name="1.1" author="Pet" time="2017-08-28T21:52:12Z">
+        <changelog><![CDATA[- "Record Arm" buttons in TrackControlPanel adapted to other record buttons
+- Fixed "Record Arm" button shadow in tcp-small layouts  
+- Fader buttons in mixer reworked   ]]></changelog>
+        <source file="Default_5_Dark_Extended.ReaperThemeZip">http://stash.reaper.fm/30492/Default_5_Dark_Extended.ReaperThemeZip</source>
+      </version>
+      <version name="2.0" author="Pet" time="2017-12-20T01:15:10Z">
+        <changelog><![CDATA[- Horizontal Meter Layouts added in TCP
+- "Foldermeter" for minimized folder child tracks added
+- "Automation Record Arm" buttons reworked
+- Midi Editor colors for musical notation mode attuned]]></changelog>
+        <source file="Default_5_Dark_Extended.ReaperThemeZip">http://stash.reaper.fm/30492/Default_5_Dark_Extended.ReaperThemeZip</source>
+      </version>
+    </reapack>
+  </category>
+  <metadata>
+    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 ReaTeam Themes Repository\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\field{\*\fldinst{HYPERLINK "https://travis-ci.org/ReaTeam/Themes"}}{\fldrslt{\ul
+{\cf1 [image: https://travis-ci.org/ReaTeam/Themes.svg?branch=master]\cf0}
+}}}
+\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Community-maintained collection of themes for REAPER\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Contributors\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "http://forum.cockos.com/member.php?u=98780"}}{\fldrslt{\ul
+cfillion
+}}}
+\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "http://forum.cockos.com/member.php?u=103730"}}{\fldrslt{\ul
+Pet
+}}}
+\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Installation\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Copy and paste this URL in Extensions > ReaPack > Import a repository:\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 https://github.com/ReaTeam/Themes/raw/master/index.xml\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Contributing\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Check out the {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-index/wiki/Examples"}}{\fldrslt{\ul
+package examples
+}}}
+ and reapack-index's {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-index/wiki/Packaging-Documentation"}}{\fldrslt{\ul
+packaging documentation
+}}}
+. Ensure the download URL (specified in the {\f1 @provides} tag) is unique for each version of your theme.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab {\field{\*\fldinst{HYPERLINK "https://github.com/ReaTeam/Themes/new/master"}}{\fldrslt{\ul
+Create
+}}}
+ a package file for your theme named {\f1 Category/username_Name of the theme.theme}\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Click on "Propose new file" and create a Pull Request\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Wait for a team member to validate the request (it should be quick)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab If everything is ok... it's done!\sa180\par}
+}
+]]></description>
+  </metadata>
+</index>

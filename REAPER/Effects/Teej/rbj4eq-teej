@@ -49,6 +49,11 @@ slider13:0<-12,6,0.5>Gain 4 (dB)
 slider14:22000<400,22000,5>LPF (Hz)
 slider15:0<-12,12,0.5>Output Gain (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   cDcAdd = 10^-30;
   cDenorm = 10^-30;

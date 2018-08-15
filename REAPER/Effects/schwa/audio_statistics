@@ -19,6 +19,10 @@ slider14:0<-44,3,0.1>RMS Total Loudness R (dB)
 slider15:0<-1,1,0.0001>DC Offset L
 slider16:0<-1,1,0.0001>DC Offset R
 
+in_pin:left input
+in_pin:right input
+out_pin:none
+
 @init
  
 AMP_dB = 8.6562;

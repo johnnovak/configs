@@ -21,6 +21,11 @@ slider1:0<-12,0,.1>Threshold (dB)
 slider2:0<-12,0,.1>Ceiling (dB)
 slider3:500<250,1000,1>Buffer Size (ms)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @slider
 thresh = 2^(slider1/6);
 buffer = 0;

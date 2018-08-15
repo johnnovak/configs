@@ -24,6 +24,11 @@ slider2:50<0,100,0.05>Center Frequency (Scale)
 slider3:0<-6,6,0.05>Tilt (Low/High) (dB)
 slider4:0<-25,25,0.05>Output Gain (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 amp = 6/log(2);
 denorm = 10^-30;

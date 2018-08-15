@@ -46,6 +46,11 @@ slider14:0<0,100,0.05>Saturation (%)
 slider15:0<-24,24,0.01>Output
 slider16:0<0,1,1{Off,On}>Oversample (x2)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 //=============================================================
 @init
 //fir restoration

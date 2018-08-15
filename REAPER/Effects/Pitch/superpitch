@@ -11,6 +11,11 @@ slider6:0<-120,6,1>Wet Mix (dB)
 slider7:-120<-120,6,1>Dry Mix (dB)
 slider8:1<0,1,1{No,Yes}>Filter
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   bufsize = srate|0;
   xfade=100;

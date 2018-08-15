@@ -22,6 +22,11 @@ slider2:0<0,6,.1>Clip Boost (dB)
 slider3:0<0,100,1>Harmonics (%)
 slider4:-6<-120,0,.1>Mix Back (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 c_ampDB = 8.65617025;
 cDenorm=10^-30;

@@ -8,6 +8,11 @@ slider2:0<-120,12,1>Wet Mix (dB)
 slider3:-120<-120,12,1>Dry Mix (dB)
 slider4:0<-40000,40000,1>Additional Delay Amount (spls)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 bpos=0;
 

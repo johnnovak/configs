@@ -13,6 +13,7 @@
 
 desc: MIDI CC LFO Generator
 desc: MIDI CC LFO Generator [IXix]
+
 //tags: MIDI modulation generator LFO
 //author: IXix
 
@@ -27,6 +28,10 @@ slider7:1<0,32,0.1>LFO Frequency
 slider8:0<0,1,1{Hz,Beats}>LFO Units
 slider9:6<0,9,1{1,2,4,8,16,32,64,128,256,512}>Updates Per Beat
 slider10:1<0,1,1{Off,On}>On/Off
+
+in_pin:none
+out_pin:none
+
 
 ////////////////////////////////////////////////////////////////////////////////
 @init

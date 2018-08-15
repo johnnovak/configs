@@ -20,6 +20,11 @@ slider1:0,Sample Rate
 slider2:0<0,1,1{Mono,Stereo}>Output
 slider3:0<0,2,1{Out Of Phase,In Phase,-}>Stereo Channels
 slider4:200<0,1000,1>Check Interval (ms)
+
+in_pin:left input
+in_pin:right input
+out_pin:none
+
 @slider
 a = srate/1000 * slider4;
 @block

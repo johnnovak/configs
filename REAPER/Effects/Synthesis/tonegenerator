@@ -13,6 +13,11 @@ slider5:0<-4,4,1>Octave
 slider6:0<-100,100,1>Fine Tune (cents)
 slider7:0<0,2,1{Sine,Triangle,Saw}>Shape
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @slider
   vol=2 ^ (slider1/6); 
   dry=2 ^ (slider2/6); 

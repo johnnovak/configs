@@ -37,6 +37,11 @@ slider6:0<-15,15,0.1>Boost/Cut (dB)
 slider7:3<1,5,1{1.6k,3.2k,6.4k,9k,12k}>Frequency 4 (Hz)
 slider8:0<-15,15,0.1>Boost/Cut (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   gain1 = 0;
   freq1 = 160;

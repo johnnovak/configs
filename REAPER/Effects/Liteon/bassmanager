@@ -37,6 +37,11 @@ slider8:0<0,4,1{Off,30,50,70,90,150,200,300}>Highpass (Hz)
 slider9:0<0,1,1{On,Off}>Limiter
 slider10:0<0,1,1{Off,On}>Oversample (x2)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 lp_output = 0;
 nrml=nrml=onrml=onrml=nrmr=nrmr=onrmr=onrmr=0;

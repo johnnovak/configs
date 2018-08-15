@@ -10,6 +10,11 @@ slider2:0.4<0,1>Overlap
 slider3:0<-120,6,1>Wet Mix (dB)
 slider4:-120<-120,6,1>Dry Mix (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 bufsize=-1;
 

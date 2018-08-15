@@ -15,6 +15,12 @@ slider6:100<0,20000>auto shift min frequency (Hz)
 slider7:1000<0,20000>auto shift max frequency (Hz)
 slider8:0,Output frequency (Hz)
 
+
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @slider
   lbsize=bsize;
   bsize=(slider3*srate*0.001)|0; 

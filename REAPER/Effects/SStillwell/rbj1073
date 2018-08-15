@@ -35,6 +35,11 @@ slider5:0<-20,20,0.1>Mid Boost/Cut (dB)
 slider6:0<-20,20,0.1>High Shelf (12k) Boost/Cut (dB)
 slider7:0<-20,10,0.1>Gain (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   hpf = 0;
   gain1 = 0;

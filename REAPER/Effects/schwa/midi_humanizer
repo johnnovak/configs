@@ -11,6 +11,9 @@ slider6:0<0,16,1>MIDI Channel (0=omni)
 slider7:0<-30,30>Output Timing Humanization (ms) (read-only)
 slider8:0<-64,64,1>Output Velocity Humanization (read-only)
 
+in_pin:none
+out_pin:none
+
 @init
 
   // We are "humanizing" not "crapifying"

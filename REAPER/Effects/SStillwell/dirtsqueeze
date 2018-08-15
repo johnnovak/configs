@@ -32,6 +32,11 @@ slider2:1<1,20,0.1>Ratio
 slider3:0<0,1,1{No,Yes}>Automatic Make-Up
 slider4:0<-20,20,0.1>Manual Gain
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   i=0;
   loop(

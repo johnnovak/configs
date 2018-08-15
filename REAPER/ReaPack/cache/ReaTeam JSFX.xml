@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index version="1" name="ReaTeam JSFX" commit="966e57c82d5d555d55880143ac1114611df30dbd">
+  <category name="Distortion">
+    <reapack name="TiaR_Ze Morpho Dist.jsfx" type="effect" desc="Ze Morpho Dist">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 This is a LFO controlled Stereo Distortion Effect\par}
+}
+]]></description>
+        <link rel="website">http://forum.cockos.com/showthread.php?t=173611</link>
+      </metadata>
+      <version name="1.0" author="T.Rochebois" time="2016-08-08T20:52:46Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Distortion/TiaR_Ze%20Morpho%20Dist.jsfx</source>
+        <source file="TiaR_Ze Morpho Dist/ZeMorphoDistIII.RPL">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Distortion/TiaR_Ze%20Morpho%20Dist/ZeMorphoDistIII.RPL</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Filter">
+    <reapack name="TiaR_Lattice Filter.jsfx" type="effect" desc="Lattice Filter">
+      <version name="1.0" author="T.Rochebois" time="2016-08-08T20:46:50Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Filter/TiaR_Lattice%20Filter.jsfx</source>
+        <source file="TiaR_Lattice Filter/TiaR_LFX_01.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Filter/TiaR_Lattice%20Filter/TiaR_LFX_01.jsfx-inc</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="MIDI">
+    <reapack name="cfillion_MIDI Note Length Control.jsfx" type="effect" desc="MIDI Note Length Control">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 MIDI Note Length Control\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Set a minimum length in beats and/or a maximum length to incoming MIDI notes. This plugin supports input channel selection and choosing a range of notes on which to apply the processing on.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Putting the minimum or maximum length sliders to 0 will disable that specific feature.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="cfillion" time="2017-04-21T19:20:48Z">
+        <source>https://github.com/ReaTeam/JSFX/raw/b858e8ace51ac0be8d0cbb0d995ca8efa82175f4/MIDI/cfillion_MIDI%20Note%20Length%20Control.jsfx</source>
+      </version>
+      <version name="1.0.1" author="cfillion" time="2017-04-23T15:29:14Z">
+        <changelog><![CDATA[Fix for subsequent notes being cut early.]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/b95520767d8de9aa7ae8b79a63e443a30f9e0ac9/MIDI/cfillion_MIDI%20Note%20Length%20Control.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="cfillion_MIDI Taps Repeater.jsfx" type="effect" desc="MIDI Taps Repeater">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 MIDI Taps Repeater\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Repeat MIDI notes {\i n} times after a delay set in beats until released.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 If the "Taps" parameter is set to 0 the note is repeated forever (or until velocity reaches zero).\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="cfillion" time="2018-03-18T17:04:24Z">
+        <source>https://github.com/ReaTeam/JSFX/raw/6c28b721dcd622b0aa7421dfc18678b9392c51bd/MIDI/cfillion_MIDI%20Taps%20Repeater.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="cfillion_Note Duplicator.jsfx" type="effect" desc="Note Duplicator">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Note Duplicator\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This effect repeats the previous MIDI notes when they are released, preserving the original duration. Useful for playing 16th notes while actually only playing 8th on the keyboard.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="cfillion" time="2017-03-22T21:49:14Z">
+        <source>https://github.com/ReaTeam/JSFX/raw/f5af11d7b40782c8078ef8ba468732e8b1872dde/MIDI/cfillion_Note%20Duplicator.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="mathphreak_Learningbaby.jsfx" type="effect" desc="Learningbaby">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Learningbaby\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The Learningbaby is a Sequencer Baby v2 that learns. It will add incoming MIDI notes to the pattern.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Video demonstration/tutorial {\field{\*\fldinst{HYPERLINK "https://youtu.be/dMTiWafJFmg"}}{\fldrslt{\ul
+here
+}}}
+.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b NOTE:} If you use automation to change the selected pattern, you will get incorrect results. Change the "Next Pattern" during a loop and you'll get a correct transition.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Features added to Sequencer Baby v2:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Select between retriggering notes if sequenced on adjacent ticks and extending (retriggering makes sense for drums, extending for everything else)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Clear current pattern by just moving a slider\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Better automated pattern switching\sa180\par}
+}
+]]></description>
+        <link rel="website" href="http://forum.cockos.com/showthread.php?p=1845408">Forum Thread</link>
+        <link rel="website" href="https://youtu.be/dMTiWafJFmg">Video demonstration/tutorial</link>
+      </metadata>
+      <version name="1.0" author="Matt Horn" time="2017-05-17T06:09:39Z">
+        <changelog><![CDATA[- Released Learningbaby]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/6fee80c6f700aac85ae85bbfb1fde81ee8b5d639/MIDI/mathphreak_Learningbaby.jsfx</source>
+      </version>
+      <version name="2.0" author="Matt Horn" time="2017-06-14T00:59:38Z">
+        <changelog><![CDATA[- Added "Next Pattern" for better automation of pattern switching]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/c007e71f7caeed0d85a3bb665fd092540e228798/MIDI/mathphreak_Learningbaby.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="mbncp_Legato Control.jsfx" type="effect" desc="Legato control">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Holds each note until next note is pressed.\sa180\par}
+}
+]]></description>
+        <link rel="website">http://forum.cockos.com/showthread.php?p=176566</link>
+      </metadata>
+      <version name="0.3" author="mbncp" time="2017-10-01T00:56:44Z">
+        <changelog><![CDATA[April 18 2008
++ initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/82ceb72da14753dcb3ce9be5722c07ff7a1aedad/MIDI/mbncp_Legato%20Control.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="mbncp_PitchWheel.jsfx" type="effect" desc="PitchWheel Control Center">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 can convert pitch ranges (see linked forum thread)\par}
+}
+]]></description>
+        <link rel="website">http://forum.cockos.com/showthread.php?p=181581</link>
+      </metadata>
+      <version name="0.2" author="mbncp" time="2017-10-01T00:56:44Z">
+        <changelog><![CDATA[May 02 2008
++ initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/82ceb72da14753dcb3ce9be5722c07ff7a1aedad/MIDI/mbncp_PitchWheel.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="urtzurd_MIDI Glissando.jsfx" type="effect" desc="MIDI Glissando">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Mono/poly MIDI chromatic glissando FX with adjustable note delay\par}
+}
+]]></description>
+      </metadata>
+      <version name="0.1" author="urtzurd (Urtzi Urdapilleta Roy)" time="2017-10-07T23:49:35Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/e7ed9a1ccc661d901153d5e07d8357142d864a4b/MIDI/urtzurd_MIDI%20Glissando.jsfx</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Misc">
+    <reapack name="TiaR_PM_Resynth.jsfx" type="effect" desc="MIDI PM Resynth">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 This is an experimental midi controlled effect. So, even if its internals ar synth like, it needs an audio input (a synth, a chaos oscillator, an audio track) and midi control.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The incoming signal is sampled, windowed, phase modulated and looped and crossfaded with incoming signal that is again sampled, windowed phase modulated and looped and crossfaded with incoming signal that is again sampled, windowed phase modulated and looped and crossfaded. until you stop pressing the keys.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 So the output pitch is controlled by the keyboard, whatever the incoming signal is.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Feed it with whatever you want.\par}
+}
+]]></description>
+        <link rel="website">http://stash.reaper.fm/v/22117/TiaR_PM_Resynth.zip</link>
+      </metadata>
+      <version name="1.0" author="T.Rochebois" time="2016-08-14T06:59:32Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Misc/TiaR_PM_Resynth.jsfx</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Modulation">
+    <reapack name="mschnell_Delay_Modulator.jsfx" type="effect" desc="Delay Modulator">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Description\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The plugin introduces a delay that can be set by the "Center Delay" sliders either in Milliseconds or in Samples.\line The other slider always moves appropriately. (Remember that you also can type in values outside the regular range of the sliders.) This delay will be set as "pdc-delay" and hence automatically be compensated by the Reaper.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The center delay can be modulated between 0 and twice the "Center" value. Requesting a greater modulation results in clipping the modulation amount appropriately. The amount of modulation can be set between 0 and 100 % (100 % = maximum possible modulation with the sum of the side chain inputs = 0 db)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The Modulation Type selection allows for using either the straight side chain signals to modulate the delay, resulting in a kind of Phase Modulation or to use the interal of the site chain signal resulting in a kind of Frequency Modulation.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 "Dry" and "wet" sliders are provide the obvious functionality and can be set between 0 and 100 %\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A graphic shows the delay from left to right and the amplitude of the carrier upwards. The original (red), dry (blue) and wet (green) signals connected by white lines.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 usage\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The plugin can be used as a very versatile vibrato when recording a low frequency wave form and providing same as the side chain input.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 In the same way a creative Flanger can be done by mixing the dry and wet signals.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Vice versa, a versatile kind of Tremolo can be done by using the side chain input for the audio and sending a low frequency value to the input 1 or 2.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Very creative effects can be accomplished by sending different audio streams to the input and to the site chain (beware that the "carrier" input (1+2) is stereo, while the side chain input (3+4) is mixed to a single mono signal.\par}
+}
+]]></description>
+        <link rel="donation" href="http://www.unfoundation.org/">United Nations Foundation</link>
+      </metadata>
+      <version name="1.0" author="Michael Schnell (mschnell@bschnell.de)" time="2017-12-20T00:02:53Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/f74027d1e393e61f3687aae209014342bf727c2a/Modulation/mschnell_Delay_Modulator.jsfx</source>
+      </version>
+      <version name="1.1" author="Michael Schnell (mschnell@bschnell.de)" time="2017-12-20T23:54:09Z">
+        <changelog><![CDATA[bug fixes, added graphics for fun and to start to gain compatibility with ReaRack]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/292c9214c8891815c5abfd50b51580226f8886f8/Modulation/mschnell_Delay_Modulator.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="TiaR_ChopChop.jsfx" type="effect" desc="Stereo Chop chop">
+      <metadata>
+        <link rel="website">https://www.youtube.com/watch?v=LHbSUXsJ82M</link>
+      </metadata>
+      <version name="1.0" author="T.Rochebois" time="2016-08-20T19:09:22Z">
+        <changelog><![CDATA[Initial Release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/7691aab88e23bba10e4e17c7915f3563654dd3b9/Modulation/TiaR_ChopChop.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="TiaR_Ze Big Chorus.jsfx" type="effect" desc="Ze Big Chorus">
+      <version name="1.0" author="T.Rochebois" time="2016-08-08T20:46:50Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Modulation/TiaR_Ze%20Big%20Chorus.jsfx</source>
+        <source file="TiaR_Ze Big Chorus/TiaR_SCP_01.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Modulation/TiaR_Ze%20Big%20Chorus/TiaR_SCP_01.jsfx-inc</source>
+        <source file="TiaR_Ze Big Chorus/TiaR_ZeBigChorus_03.RPL">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Modulation/TiaR_Ze%20Big%20Chorus/TiaR_ZeBigChorus_03.RPL</source>
+        <source file="TiaR_Ze Big Chorus/TiaR_ZeBigChorus_03.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Modulation/TiaR_Ze%20Big%20Chorus/TiaR_ZeBigChorus_03.jsfx-inc</source>
+      </version>
+    </reapack>
+    <reapack name="TiaR_Ze Little Scanner Chorus.jsfx" type="effect" desc="Ze Scanner Chorus">
+      <version name="1.06" author="T.Rochebois" time="2016-08-08T20:46:50Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Modulation/TiaR_Ze%20Little%20Scanner%20Chorus.jsfx</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Reverb">
+    <reapack name="TiaR_HadamVerb.jsfx" type="effect" desc="Hadamard Variable Delay Array">
+      <metadata>
+        <link rel="website">http://stash.reaper.fm/v/23730/TiaR_HadamVerb.zip</link>
+      </metadata>
+      <version name="1.0" author="T.Rochebois" time="2016-08-14T06:59:32Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Reverb/TiaR_HadamVerb.jsfx</source>
+        <source file="TiaR_HadamVerb/HadamVerb.RPL">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Reverb/TiaR_HadamVerb/HadamVerb.RPL</source>
+        <source file="TiaR_HadamVerb/TiaR_HAD_00.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Reverb/TiaR_HadamVerb/TiaR_HAD_00.jsfx-inc</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Routing">
+    <reapack name="MDF_51 to DMS.jsfx" type="effect" desc="5.1 to DoubleMidSide">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 ENcodes 5.1 surround recodrings into double mid side recordings\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Michael Fewkes" time="2017-10-25T09:40:53Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/f68071f3067f41a55c6400965b171e64a5d1f7d2/Routing/MDF_51%20to%20DMS.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="MDF_DMS to 51.jsfx" type="effect" desc="DoubleMidSide to 5.1">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Decodes double mid side recodrings into 5.1 surround recordings\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Michael Fewkes" time="2017-10-25T09:40:53Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/f68071f3067f41a55c6400965b171e64a5d1f7d2/Routing/MDF_DMS%20to%2051.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="MDF_DMS to FOA.jsfx" type="effect" desc="DoubleMidSide to FOA">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Decodes double mid sidefirst order ambisonic recodrings into first order ambisonic recordings (no vertical)\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Michael Fewkes" time="2017-10-25T09:40:53Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/f68071f3067f41a55c6400965b171e64a5d1f7d2/Routing/MDF_DMS%20to%20FOA.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="MDF_DMS to Quad.jsfx" type="effect" desc="DoubleMidSide to Quadraphonic">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Decodes double mid side recodrings into quadraphonic surround recordings\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Michael Fewkes" time="2017-10-25T09:40:53Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/f68071f3067f41a55c6400965b171e64a5d1f7d2/Routing/MDF_DMS%20to%20Quad.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="MDF_DMS to Stereo.jsfx" type="effect" desc="DoubleMidSide to Stereo">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Decodes double mid side recodrings into stereo recordings\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Michael Fewkes" time="2017-10-25T09:40:53Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/f68071f3067f41a55c6400965b171e64a5d1f7d2/Routing/MDF_DMS%20to%20Stereo.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="MDF_FOA to DMS.jsfx" type="effect" desc="FOA to DoubleMidSide">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Decodes first order ambisonic recodrings into double mid side recordings (loose vertical)\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Michael Fewkes" time="2017-10-25T09:40:53Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/f68071f3067f41a55c6400965b171e64a5d1f7d2/Routing/MDF_FOA%20to%20DMS.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="MDF_Quad to DMS.jsfx" type="effect" desc="Quadraphonic to DoubleMidSide">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Encodes quadraphonic recodrings into double mid side recordings\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="Michael Fewkes" time="2017-10-25T09:40:53Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/f68071f3067f41a55c6400965b171e64a5d1f7d2/Routing/MDF_Quad%20to%20DMS.jsfx</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Synth">
+    <reapack name="TiaR_2op PM Synth.jsfx" type="effect" desc="2op PM Synth">
+      <metadata>
+        <link rel="website">http://forum.cockos.com/showthread.php?p=1385314&amp;posted=1#post1385314</link>
+      </metadata>
+      <version name="1.0" author="T.Rochebois" time="2016-08-14T06:59:32Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_2op%20PM%20Synth.jsfx</source>
+        <source file="TiaR_2op PM Synth/TiaR_ADSR.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_2op%20PM%20Synth/TiaR_ADSR.jsfx-inc</source>
+        <source file="TiaR_2op PM Synth/TiaR_HSL.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_2op%20PM%20Synth/TiaR_HSL.jsfx-inc</source>
+        <source file="TiaR_2op PM Synth/TiaR_KBD.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_2op%20PM%20Synth/TiaR_KBD.jsfx-inc</source>
+        <source file="TiaR_2op PM Synth/TiaR_LFO.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_2op%20PM%20Synth/TiaR_LFO.jsfx-inc</source>
+        <source file="TiaR_2op PM Synth/TiaR_PMX.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_2op%20PM%20Synth/TiaR_PMX.jsfx-inc</source>
+        <source file="TiaR_2op PM Synth/TiaR_PMXsliders.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_2op%20PM%20Synth/TiaR_PMXsliders.jsfx-inc</source>
+        <source file="TiaR_2op PM Synth/TiaR_SCH.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_2op%20PM%20Synth/TiaR_SCH.jsfx-inc</source>
+        <source file="TiaR_2op PM Synth/TiaR_Scope.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_2op%20PM%20Synth/TiaR_Scope.jsfx-inc</source>
+        <source file="TiaR_2op PM Synth/js-TiaR_PMX_js.ini">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_2op%20PM%20Synth/js-TiaR_PMX_js.ini</source>
+      </version>
+    </reapack>
+    <reapack name="TiaR_Chua Oscillator.jsfx" type="effect" desc="Chua Oscillator">
+      <metadata>
+        <link rel="website">http://stash.reaper.fm/v/21646/TiaR_chua_02.zip</link>
+      </metadata>
+      <version name="0.2" author="T.Rochebois" time="2016-08-14T06:59:32Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Chua%20Oscillator.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="TiaR_Complex X Filter Synth.jsfx" type="effect" desc="Complex X Filter Synth">
+      <metadata>
+        <link rel="website">http://stash.reaper.fm/v/22067/TiaR_CXF_synth_deluxe.zip</link>
+      </metadata>
+      <version name="1.0" author="T.Rochebois" time="2016-08-08T20:59:58Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Complex%20X%20Filter%20Synth.jsfx</source>
+        <source file="TiaR_Complex X Filter Synth/TiaR_ADSR_03.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Complex%20X%20Filter%20Synth/TiaR_ADSR_03.jsfx-inc</source>
+        <source file="TiaR_Complex X Filter Synth/TiaR_CXF_10.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Complex%20X%20Filter%20Synth/TiaR_CXF_10.jsfx-inc</source>
+        <source file="TiaR_Complex X Filter Synth/TiaR_DC5.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Complex%20X%20Filter%20Synth/TiaR_DC5.jsfx-inc</source>
+        <source file="TiaR_Complex X Filter Synth/TiaR_KBD_03.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Complex%20X%20Filter%20Synth/TiaR_KBD_03.jsfx-inc</source>
+        <source file="TiaR_Complex X Filter Synth/TiaR_LFO_00.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Complex%20X%20Filter%20Synth/TiaR_LFO_00.jsfx-inc</source>
+        <source file="TiaR_Complex X Filter Synth/TiaR_SCP_01.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Complex%20X%20Filter%20Synth/TiaR_SCP_01.jsfx-inc</source>
+        <source file="TiaR_Complex X Filter Synth/TiaR_SIN_01.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Complex%20X%20Filter%20Synth/TiaR_SIN_01.jsfx-inc</source>
+      </version>
+    </reapack>
+    <reapack name="TiaR_Shepard Paradoxical Synth.jsfx" type="effect" desc="Shepard Paradoxical Synth">
+      <metadata>
+        <link rel="website">http://stash.reaper.fm/v/22090/TiaR_SHP_synth_00.zip</link>
+      </metadata>
+      <version name="1.02" author="T.Rochebois" time="2016-08-14T06:59:32Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Shepard%20Paradoxical%20Synth.jsfx</source>
+        <source file="TiaR_Shepard Paradoxical Synth/TiaR_ADSR_03.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Shepard%20Paradoxical%20Synth/TiaR_ADSR_03.jsfx-inc</source>
+        <source file="TiaR_Shepard Paradoxical Synth/TiaR_KBD_03.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Shepard%20Paradoxical%20Synth/TiaR_KBD_03.jsfx-inc</source>
+        <source file="TiaR_Shepard Paradoxical Synth/TiaR_LFO_00.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Shepard%20Paradoxical%20Synth/TiaR_LFO_00.jsfx-inc</source>
+        <source file="TiaR_Shepard Paradoxical Synth/TiaR_LPF_00.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Shepard%20Paradoxical%20Synth/TiaR_LPF_00.jsfx-inc</source>
+        <source file="TiaR_Shepard Paradoxical Synth/TiaR_SHP_02.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Shepard%20Paradoxical%20Synth/TiaR_SHP_02.jsfx-inc</source>
+        <source file="TiaR_Shepard Paradoxical Synth/TiaR_SLD_00.jsfx-inc">https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Shepard%20Paradoxical%20Synth/TiaR_SLD_00.jsfx-inc</source>
+      </version>
+    </reapack>
+    <reapack name="TiaR_Ze Cheesy Harmonic Synth.jsfx" type="effect" desc="Ze Cheesy Harmonic Synth">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 An additive synth based on Walsh functions\par}
+}
+]]></description>
+      </metadata>
+      <version name="0.2" author="T.Rochebois" time="2016-08-14T06:59:32Z">
+        <changelog><![CDATA[+ improved keyboard (priority to last or highest note)
++ added    tremolo
++ added    ModWheel/Aftertouch vibrato depth
++ added    Pitch bend +- 1 octave
++ modified Seq gains can be negative (opposite phase)
++ modified Seq. init to fundamental seq]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Synth/TiaR_Ze%20Cheesy%20Harmonic%20Synth.jsfx</source>
+      </version>
+      <version name="0.3" author="T.Rochebois" time="2016-08-14T20:23:36Z">
+        <changelog><![CDATA[# Note off bug corrected
++ improved keyboard (priority to last or highest note)
++ added    tremolo
++ added    ModWheel/Aftertouch vibrato depth
++ added    Pitch bend +- 1 octave
++ modified Seq gains can be negative (opposite phase)
++ modified Seq. init to fundamental seq]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/f51e3fcc00cf854983cf470e67c0bfd1c6a935ec/Synth/TiaR_Ze%20Cheesy%20Harmonic%20Synth.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="TiaR_Ze DigiThArmOrgan.jsfx" type="effect" desc="Ze DigiThArmOrgan">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Ze DigiThArmOrgan\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This is a fully polyphonic synthesizer based on Digital Harmonics i.e. Walsh functions. It features 3 detuned oscillator and a two pole low pass filter per voice. It is antialiased by third order integration/differentiation scheme.\par}
+}
+]]></description>
+      </metadata>
+      <version name="0.1" author="T.Rochebois" time="2016-09-12T21:18:14Z">
+        <changelog><![CDATA[version 0.1 first release 12th september 2016]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/f66440945bb5726d469f050032c6d37bf9f7ab59/Synth/TiaR_Ze%20DigiThArmOrgan.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="TiaR_Ze Musette Organ.jsfx" type="effect" desc="Ze Musette Organ">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Ze Musette Organ\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 An {\b easy to use} jsfx instrument reminiscent of some italian electronic organs of the late 70s.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Features\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Full polyphony}\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Smooth sound\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Five tone "characters"\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Adjustable "brilliance"\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Vibrato controlled by the Modulation Wheel and Aftertouch\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab +- one octave pitch bend\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Anti aliased sound generation\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Stackable:\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Many Ze Musette Organ can be stacked, their outputs will be added together.\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab different Gain and Pan settings can be used to widden the stereo field.\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab The keyboard range for every Musette Organ can be set with transition zones.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Controls:\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Character\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Brilliance\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Pan and Gain\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Transposition/Detune\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Vibrato depth\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Velocity sensitivity\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Attack, Decay, Sustain and Release\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Keyboard range (Low and High notes and transition zones).\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Optional Extension of MIDI control (since version 1.2):\par}
+{\pard \ql \f0 \sa0 \li1080 \fi-360 \bullet \tx360\tab Attack is controlled by CC 73\par}
+{\pard \ql \f0 \sa0 \li1080 \fi-360 \bullet \tx360\tab Decay is controlled by CC 75\par}
+{\pard \ql \f0 \sa0 \li1080 \fi-360 \bullet \tx360\tab Sustain is controlled by CC 76\par}
+{\pard \ql \f0 \sa0 \li1080 \fi-360 \bullet \tx360\tab Release is controlled by CC 72\par}
+{\pard \ql \f0 \sa0 \li1080 \fi-360 \bullet \tx360\tab Brilliance is controlled by CC 74\par}
+{\pard \ql \f0 \sa0 \li1080 \fi-360 \bullet \tx360\tab Character is controlled by CC 71\sa180\sa180\sa180\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="T.Rochebois" time="2016-08-15T11:19:11Z">
+        <changelog><![CDATA[+ ADSR enveloppe
++ Selectable velocity curve
+# Brilliance and Character
++ modwheel Vibrato depth
++ After touch sensitive Vibrato speed
++ Pitch bend +-1 octave
++ Tremulant rate (detune between operators)
++ phase modulation synthesis (3 operators per note) 
++ Per note index limitation (anti aliasing)]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/b09371c49ff8d628d1d5cd7680ba906c5c6756b9/Synth/TiaR_Ze%20Musette%20Organ.jsfx</source>
+      </version>
+      <version name="1.1" author="T.Rochebois" time="2016-08-16T18:53:04Z">
+        <changelog><![CDATA[# note off bug
++ ADSR enveloppe
++ Selectable velocity curve
+# Brilliance and Character
++ modwheel Vibrato depth
++ After touch sensitive Vibrato speed
++ Pitch bend +-1 octave
++ Tremulant rate (detune between operators)
++ phase modulation synthesis (3 operators per note) 
++ Per note index limitation (anti aliasing)]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/86ab5336313da589bb54c8e2a42583fe827f1133/Synth/TiaR_Ze%20Musette%20Organ.jsfx</source>
+      </version>
+      <version name="1.2" author="T.Rochebois" time="2016-09-20T19:40:37Z">
+        <changelog><![CDATA[version 1.2
+# 4 New "Characters": Bell, Reed, Harmonica and Nasillard.
++ Velocity sensitive atteck time
++ MIDI control of A D S R Brilliance and Character (CC 73 75 76 72 74 and 71)
++ All notes off on play_state != 1 && play_state != 5
++ All notes off on "All Sounds Off" (CC 120)
+version 1.1
+# Off gate -20dB than before
+version 1.02
++ ADSR enveloppe
++ Selectable velocity curve
+# Brilliance and Character
++ modwheel Vibrato depth
++ After touch sensitive Vibrato speed
++ Pitch bend +-1 octave
++ Tremulant rate (detune between operators)
++ phase modulation synthesis (3 operators per note) 
++ Per note index limitation (anti aliasing)]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/b9dc7ab99b783fe5366863def0a9ef6798e67c06/Synth/TiaR_Ze%20Musette%20Organ.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="TimeWaster_ReaRack Modular Synth.jsfx" type="effect" desc="ReaRack Modular Synth">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 ReaRack Modular Synth\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 ReaRack is a modular MIDI controlled digital synth system. There are currently 18 modules- Oscillator - Trapezoidal Oscillator - Twin-Saw Oscillator - Additive Oscillator - Noise LFO Envelope Generator Filter Filter - Moog 24 db CC mixer Trigger Key Follower Poly Splitter Sample and Hold MIDI Nonlinerizer Karplus-Strong Delay Note Filter Audio-MIDI converter Note Scope\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 User Guide\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 http://stash.reaper.fm/28621/ReaRack_Manual.pdf\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.1" author="Malcolm Smith" time="2016-10-16T23:00:30Z">
+        <changelog><![CDATA[See separate changelogs in each module]]></changelog>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Amplifier.jsfx">https://github.com/ReaTeam/JSFX/raw/db23b7f8a766f430c03420e485b1b34415e40cb1/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Amplifier.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack CCmixer.jsfx">https://github.com/ReaTeam/JSFX/raw/db23b7f8a766f430c03420e485b1b34415e40cb1/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20CCmixer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen.jsfx">https://github.com/ReaTeam/JSFX/raw/db23b7f8a766f430c03420e485b1b34415e40cb1/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Filter.jsfx">https://github.com/ReaTeam/JSFX/raw/db23b7f8a766f430c03420e485b1b34415e40cb1/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Filter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack KeyFollower.jsfx">https://github.com/ReaTeam/JSFX/raw/db23b7f8a766f430c03420e485b1b34415e40cb1/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20KeyFollower.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack LFO.jsfx">https://github.com/ReaTeam/JSFX/raw/db23b7f8a766f430c03420e485b1b34415e40cb1/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20LFO.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator.jsfx">https://github.com/ReaTeam/JSFX/raw/db23b7f8a766f430c03420e485b1b34415e40cb1/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack PolySplitter.jsfx">https://github.com/ReaTeam/JSFX/raw/db23b7f8a766f430c03420e485b1b34415e40cb1/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20PolySplitter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Trigger.jsfx">https://github.com/ReaTeam/JSFX/raw/db23b7f8a766f430c03420e485b1b34415e40cb1/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Trigger.jsfx</source>
+      </version>
+      <version name="1.2" author="Malcolm Smith" time="2017-01-25T14:43:29Z">
+        <changelog><![CDATA[See separate changelogs in each module]]></changelog>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Amplifier.jsfx">https://github.com/ReaTeam/JSFX/raw/88b8c57c37d9d0b7209c6137dc161f033e6e6ff9/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Amplifier.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack CCmixer.jsfx">https://github.com/ReaTeam/JSFX/raw/88b8c57c37d9d0b7209c6137dc161f033e6e6ff9/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20CCmixer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen.jsfx">https://github.com/ReaTeam/JSFX/raw/88b8c57c37d9d0b7209c6137dc161f033e6e6ff9/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Filter.jsfx">https://github.com/ReaTeam/JSFX/raw/88b8c57c37d9d0b7209c6137dc161f033e6e6ff9/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Filter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack KSDelay.jsfx">https://github.com/ReaTeam/JSFX/raw/88b8c57c37d9d0b7209c6137dc161f033e6e6ff9/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20KSDelay.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack KeyFollower.jsfx">https://github.com/ReaTeam/JSFX/raw/88b8c57c37d9d0b7209c6137dc161f033e6e6ff9/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20KeyFollower.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack LFO.jsfx">https://github.com/ReaTeam/JSFX/raw/88b8c57c37d9d0b7209c6137dc161f033e6e6ff9/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20LFO.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator.jsfx">https://github.com/ReaTeam/JSFX/raw/88b8c57c37d9d0b7209c6137dc161f033e6e6ff9/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack PolySplitter.jsfx">https://github.com/ReaTeam/JSFX/raw/88b8c57c37d9d0b7209c6137dc161f033e6e6ff9/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20PolySplitter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Trigger.jsfx">https://github.com/ReaTeam/JSFX/raw/88b8c57c37d9d0b7209c6137dc161f033e6e6ff9/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Trigger.jsfx</source>
+        <source file="ReaRack Modular Synth/Timewaster_ReaRack SampleAndHold.jsfx">https://github.com/ReaTeam/JSFX/raw/88b8c57c37d9d0b7209c6137dc161f033e6e6ff9/Synth/ReaRack%20Modular%20Synth/Timewaster_ReaRack%20SampleAndHold.jsfx</source>
+      </version>
+      <version name="1.4" author="Malcolm Smith" time="2017-08-10T09:04:20Z">
+        <changelog><![CDATA[See separate changelogs in each module]]></changelog>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Amplifier.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Amplifier.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack CCmixer.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20CCmixer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen2.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen2.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen2Max.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen2Max.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Filter.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Filter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack KSDelay.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20KSDelay.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack KeyFollower.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20KeyFollower.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack LFO2.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20LFO2.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack NoteFilter.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20NoteFilter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Additive.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Additive.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Noise.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Noise.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Trapezoidal.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Trapezoidal.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-TwinSaw.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-TwinSaw.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack PolySplitter.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20PolySplitter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Trigger.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Trigger.jsfx</source>
+        <source file="ReaRack Modular Synth/Timewaster_ReaRack SampleAndHold.jsfx">https://github.com/ReaTeam/JSFX/raw/e0d1bca08a5af73257297556fcbb74f7b2ea5329/Synth/ReaRack%20Modular%20Synth/Timewaster_ReaRack%20SampleAndHold.jsfx</source>
+      </version>
+      <version name="1.4.1" author="Malcolm Smith" time="2017-08-12T16:39:16Z">
+        <changelog><![CDATA[See separate changelogs in each module]]></changelog>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Amplifier.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Amplifier.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack CCmixer.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20CCmixer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen2.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen2.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen2Max.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen2Max.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Filter.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Filter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack KSDelay.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20KSDelay.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack KeyFollower.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20KeyFollower.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack LFO.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20LFO.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack LFO2.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20LFO2.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack NoteFilter.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20NoteFilter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Additive.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Additive.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Noise.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Noise.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Trapezoidal.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Trapezoidal.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-TwinSaw.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-TwinSaw.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack PolySplitter.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20PolySplitter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Trigger.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Trigger.jsfx</source>
+        <source file="ReaRack Modular Synth/Timewaster_ReaRack SampleAndHold.jsfx">https://github.com/ReaTeam/JSFX/raw/530670e87761888074855d9e76d62fc2ee51264e/Synth/ReaRack%20Modular%20Synth/Timewaster_ReaRack%20SampleAndHold.jsfx</source>
+      </version>
+      <version name="1.4.2" author="Malcolm Smith" time="2017-08-23T04:57:22Z">
+        <changelog><![CDATA[Bug fix for Additive Oscillator, the master/slave function was not working, now fixed.]]></changelog>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Amplifier.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Amplifier.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack CCmixer.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20CCmixer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen2.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen2.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen2Max.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen2Max.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Filter.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Filter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack KSDelay.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20KSDelay.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack KeyFollower.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20KeyFollower.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack LFO.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20LFO.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack LFO2.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20LFO2.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack NoteFilter.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20NoteFilter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Additive.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Additive.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Noise.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Noise.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Trapezoidal.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Trapezoidal.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-TwinSaw.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-TwinSaw.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack PolySplitter.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20PolySplitter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Trigger.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Trigger.jsfx</source>
+        <source file="ReaRack Modular Synth/Timewaster_ReaRack SampleAndHold.jsfx">https://github.com/ReaTeam/JSFX/raw/1474662fc8cfeecbe27847ef347eace2a2c98f4c/Synth/ReaRack%20Modular%20Synth/Timewaster_ReaRack%20SampleAndHold.jsfx</source>
+      </version>
+      <version name="1.4.3" author="Malcolm Smith" time="2017-08-29T15:38:30Z">
+        <changelog><![CDATA[Various bug fixes for LFO 2 frequency modulation function.]]></changelog>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Amplifier.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Amplifier.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack CCmixer.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20CCmixer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen2.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen2.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen2Max.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen2Max.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Filter.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Filter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack KSDelay.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20KSDelay.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack KeyFollower.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20KeyFollower.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack LFO.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20LFO.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack LFO2.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20LFO2.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack NoteFilter.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20NoteFilter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Additive.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Additive.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Noise.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Noise.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Trapezoidal.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Trapezoidal.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-TwinSaw.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-TwinSaw.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack PolySplitter.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20PolySplitter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Trigger.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Trigger.jsfx</source>
+        <source file="ReaRack Modular Synth/Timewaster_ReaRack SampleAndHold.jsfx">https://github.com/ReaTeam/JSFX/raw/63b9ae279e4a1eabdfd5104b25bced8a562bf79e/Synth/ReaRack%20Modular%20Synth/Timewaster_ReaRack%20SampleAndHold.jsfx</source>
+      </version>
+      <version name="1.4.4" author="Malcolm Smith" time="2017-09-03T17:51:46Z">
+        <changelog><![CDATA[Bug fixes for LFO 2, trapezoidal oscillator and additive oscillator.]]></changelog>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Amplifier.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Amplifier.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack CCmixer.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20CCmixer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen2.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen2.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack EnvGen2Max.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20EnvGen2Max.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Filter.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Filter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack KSDelay.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20KSDelay.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack KeyFollower.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20KeyFollower.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack LFO.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20LFO.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack LFO2.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20LFO2.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack NoteFilter.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20NoteFilter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Additive.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Additive.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Noise.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Noise.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-Trapezoidal.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-Trapezoidal.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator-TwinSaw.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator-TwinSaw.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Oscillator.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Oscillator.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack PolySplitter.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20PolySplitter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack Trigger.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack%20Trigger.jsfx</source>
+        <source file="ReaRack Modular Synth/Timewaster_ReaRack SampleAndHold.jsfx">https://github.com/ReaTeam/JSFX/raw/94ccb906ef7eb6392b8b7a7ece99de768eca7088/Synth/ReaRack%20Modular%20Synth/Timewaster_ReaRack%20SampleAndHold.jsfx</source>
+      </version>
+      <version name="2.0.0" author="Malcolm Smith" time="2017-12-13T11:53:50Z">
+        <changelog><![CDATA[All modules updated to version 2.0.0.]]></changelog>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Amplifier.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Amplifier.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Audio-MIDI.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Audio-MIDI.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 CCmixer.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20CCmixer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 EnvGen.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20EnvGen.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Filter.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Filter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 KSDelay.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20KSDelay.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 KeyFollower.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20KeyFollower.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 LFO.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20LFO.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 NoteFilter.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20NoteFilter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 NoteScope.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20NoteScope.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Additive.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Additive.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Noise.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Noise.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Trapezoidal.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Trapezoidal.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-TwinSaw.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-TwinSaw.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 PolySplitter.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20PolySplitter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Trigger.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Trigger.jsfx</source>
+        <source file="ReaRack Modular Synth/Timewaster_ReaRack2 SampleAndHold.jsfx">https://github.com/ReaTeam/JSFX/raw/dce7e605f690d487da4bc983d07fd157098ff214/Synth/ReaRack%20Modular%20Synth/Timewaster_ReaRack2%20SampleAndHold.jsfx</source>
+      </version>
+      <version name="2.0.1" author="Malcolm Smith" time="2018-01-16T10:03:06Z">
+        <changelog><![CDATA[Version 2.0.1 - 16/01/2018 Added Moog Filter  module.
+Version 2.0.0 - 12/12/2017 All modules updated to version 2.0.0.]]></changelog>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Amplifier.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Amplifier.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Audio-MIDI.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Audio-MIDI.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 CCmixer.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20CCmixer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 EnvGen.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20EnvGen.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Filter.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Filter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 FilterMoog24db.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20FilterMoog24db.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 KSDelay.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20KSDelay.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 KeyFollower.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20KeyFollower.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 LFO.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20LFO.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 NoteFilter.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20NoteFilter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 NoteScope.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20NoteScope.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Additive.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Additive.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Noise.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Noise.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Trapezoidal.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Trapezoidal.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-TwinSaw.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-TwinSaw.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 PolySplitter.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20PolySplitter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Trigger.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Trigger.jsfx</source>
+        <source file="ReaRack Modular Synth/Timewaster_ReaRack2 SampleAndHold.jsfx">https://github.com/ReaTeam/JSFX/raw/6c57c2543bb3df5e1c83e807e6366e513e99d24a/Synth/ReaRack%20Modular%20Synth/Timewaster_ReaRack2%20SampleAndHold.jsfx</source>
+      </version>
+      <version name="2.0.2" author="Malcolm Smith" time="2018-01-17T12:49:47Z">
+        <changelog><![CDATA[Version 2.0.2 - 17/01/2018 Moog Filter module zipper noised fixed.
+Version 2.0.1 - 16/01/2018 Added Moog Filter  module.
+Version 2.0.0 - 12/12/2017 All modules updated to version 2.0.0.]]></changelog>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Amplifier.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Amplifier.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Audio-MIDI.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Audio-MIDI.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 CCmixer.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20CCmixer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 EnvGen.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20EnvGen.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Filter.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Filter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 FilterMoog24db.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20FilterMoog24db.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 KSDelay.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20KSDelay.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 KeyFollower.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20KeyFollower.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 LFO.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20LFO.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 NoteFilter.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20NoteFilter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 NoteScope.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20NoteScope.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Additive.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Additive.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Noise.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Noise.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Trapezoidal.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Trapezoidal.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-TwinSaw.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-TwinSaw.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 PolySplitter.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20PolySplitter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Trigger.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Trigger.jsfx</source>
+        <source file="ReaRack Modular Synth/Timewaster_ReaRack2 SampleAndHold.jsfx">https://github.com/ReaTeam/JSFX/raw/6ad76fa04939c5a2c70ab03b67b86960436472b6/Synth/ReaRack%20Modular%20Synth/Timewaster_ReaRack2%20SampleAndHold.jsfx</source>
+      </version>
+      <version name="2.1.0" author="Malcolm Smith" time="2018-02-14T10:46:09Z">
+        <changelog><![CDATA[Version 2.1.0 - 14/02/2018 Added MIDI Nonlinearizer module. Added latch trigger mode
+to envelope generator. Fixed a bug in envelope generator which prevented legato trigger
+modes from working. 15 modules updated to improve CC encoding/decoding accuracy (bug led
+to CC vales of 128 being output occasionally). Fixed a bug in CC Mixer module (wrong output
+channel).]]></changelog>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Amplifier.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Amplifier.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Audio-MIDI.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Audio-MIDI.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 BezierEnvelope.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20BezierEnvelope.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 CCmixer.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20CCmixer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 EnvGen.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20EnvGen.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Filter.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Filter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 FilterMoog24db.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20FilterMoog24db.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 KSDelay.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20KSDelay.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 KeyFollower.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20KeyFollower.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 LFO.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20LFO.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Nonlinearizer.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Nonlinearizer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 NoteFilter.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20NoteFilter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 NoteScope.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20NoteScope.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Additive.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Additive.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Noise.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Noise.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Trapezoidal.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Trapezoidal.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-TwinSaw.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-TwinSaw.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 PolySplitter.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20PolySplitter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Trigger.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Trigger.jsfx</source>
+        <source file="ReaRack Modular Synth/Timewaster_ReaRack2 SampleAndHold.jsfx">https://github.com/ReaTeam/JSFX/raw/73384109969df820d753c9f766a081592b9926bf/Synth/ReaRack%20Modular%20Synth/Timewaster_ReaRack2%20SampleAndHold.jsfx</source>
+      </version>
+      <version name="2.2.0" author="Malcolm Smith" time="2018-02-21T15:55:36Z">
+        <changelog><![CDATA[Version 2.2.0 - 21/02/2018 Important - Fixed a bug in CC Mixer module (no output).
+                           Features added - Oscillators (except Noise) and KS Delay now
+                           respond to MIDI pitch bend messages for pitch control. Pitch bend
+                           and pitch modulation by CC can be summed together. Oscillators have
+                           an additional 'Master pitch modulation range' slider.]]></changelog>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Amplifier.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Amplifier.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Audio-MIDI.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Audio-MIDI.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 BezierEnvelope.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20BezierEnvelope.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 CCmixer.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20CCmixer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 EnvGen.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20EnvGen.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Filter.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Filter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 FilterMoog24db.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20FilterMoog24db.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 KSDelay.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20KSDelay.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 KeyFollower.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20KeyFollower.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 LFO.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20LFO.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Nonlinearizer.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Nonlinearizer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 NoteFilter.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20NoteFilter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 NoteScope.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20NoteScope.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Additive.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Additive.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Noise.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Noise.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Trapezoidal.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Trapezoidal.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-TwinSaw.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-TwinSaw.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 PolySplitter.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20PolySplitter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Trigger.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Trigger.jsfx</source>
+        <source file="ReaRack Modular Synth/Timewaster_ReaRack2 SampleAndHold.jsfx">https://github.com/ReaTeam/JSFX/raw/3f54bb063e39deb63f28a22a0fffc69cf090e82f/Synth/ReaRack%20Modular%20Synth/Timewaster_ReaRack2%20SampleAndHold.jsfx</source>
+      </version>
+      <version name="2.2.1" author="Malcolm Smith" time="2018-02-25T13:59:26Z">
+        <changelog><![CDATA[Version 2.2.1 - 25/02/2018 Updated the Poly Splitter module to accept note-on with velocity = 0 as note-off.]]></changelog>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Amplifier.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Amplifier.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Audio-MIDI.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Audio-MIDI.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 BezierEnvelope.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20BezierEnvelope.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 CCmixer.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20CCmixer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 EnvGen.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20EnvGen.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Filter.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Filter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 FilterMoog24db.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20FilterMoog24db.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 KSDelay.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20KSDelay.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 KeyFollower.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20KeyFollower.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 LFO.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20LFO.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Nonlinearizer.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Nonlinearizer.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 NoteFilter.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20NoteFilter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 NoteScope.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20NoteScope.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Additive.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Additive.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Noise.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Noise.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-Trapezoidal.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-Trapezoidal.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Oscillator-TwinSaw.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Oscillator-TwinSaw.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 PolySplitter.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20PolySplitter.jsfx</source>
+        <source file="ReaRack Modular Synth/TimeWaster_ReaRack2 Trigger.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/TimeWaster_ReaRack2%20Trigger.jsfx</source>
+        <source file="ReaRack Modular Synth/Timewaster_ReaRack2 SampleAndHold.jsfx">https://github.com/ReaTeam/JSFX/raw/7e29ae8f8114202f71fd742a502cedd8d5585f89/Synth/ReaRack%20Modular%20Synth/Timewaster_ReaRack2%20SampleAndHold.jsfx</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Utility">
+    <reapack name="mschnell_Dual Time adjustment.jsfx" type="effect" desc="Dual Time adjustment +/- Delay">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Description\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Apply a positive or negative delay to up tp two channel in a track modes:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Stereo: All Sliders ar coupled\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Dual: Two channels with two coupled sliders each\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Acknowlages:\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Based on "Channel Time Delayer [LOSER]" by Michael Gruhn, 2007\par}
+}
+]]></description>
+        <link rel="donation" href="http://www.unfoundation.org/">United Nations Foundation</link>
+      </metadata>
+      <version name="1.0" author="Michael Schnell (mschnell@bschnell.de)" time="2017-12-03T07:54:52Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/279ccf5f5eab5f1cbd31068c5d6483964206131a/Utility/mschnell_Dual%20Time%20adjustment.jsfx</source>
+      </version>
+      <version name="1.1" author="Michael Schnell (mschnell@bschnell.de)" time="2018-02-05T16:08:54Z">
+        <changelog><![CDATA[fix positive delays - Paweł Łyżwa (palyzwa@gmail.com)]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/c94c4a8bda06b37541da6cb151674fb446413947/Utility/mschnell_Dual%20Time%20adjustment.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="mschnell_Midi Auto Engage.jsfx" type="effect" desc="Midi Auto Engage">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Description\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Primary use: control on/off function of plugins that are controlled by a midi controller according to the value of the modulation CC that is sent to it.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The "Midi Channel" and "CC input" select the CC No to be adhered to.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The "CC Output" selects the CC No the on/off switch is to be accessed on. Only the values 0 and 127 will be sent out.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The "Threshold" and "Hysteresis" slider define the switching point and the dead zone that allows for safely switching. The "on" and "off dwell time" inhibit the appropriate switching to enhance the safety.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The "Output" selection allows for inverting the output. (This influences the selection of the dwell times.)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The "original CC" allows for stretching the selected range of the input CC before propagating it to a full range of 0 ... 127 when the input is within the zone to be selected.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A graph is displayed that shows lines for the input CC value (yellow) and the lower and upper switching limits (red). A green rectangle shows the current on/off state. If appropriate the stretching slope and the output CC value is shown.\par}
+}
+]]></description>
+        <link rel="donation" href="http://www.unfoundation.org/">United Nations Foundation</link>
+      </metadata>
+      <version name="3.2" author="Michael Schnell (mschnell@bschnell.de)" time="2018-02-24T17:28:37Z">
+        <changelog><![CDATA[initial release1]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/3595ffcaf00633ec9cdd314e78a7fcd23e00f6ad/Utility/mschnell_Midi%20Auto%20Engage.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="mschnell_Midi CC Table.jsfx" type="effect" desc="Midi CC Table">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Description\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The JSFX receives Midi CC messages with a Midi channel and CC # defined by the sliders in the GUI. The value of this message selects a row in the active configuration file and according to this, up to 32 Midi CC message with channel, CC # and CC value as defined in that row are sent.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 In "Map" mode, the messages defined in the appropriate row are sent whenever a fitting message is received. In "Configs" mode a row is selected according to the received message. Messages are only sent when the selection is changed. Now the "deselect" messages of the previously selected row are sent and after that the "select" messages of the newly selected row are sent.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 You can define a "Delay" and a "No Delay" channel to send out messages in in sequenced way: Id delay is not zero, the messages to the "No Delay" channel are sent at once, the other messages are sent after the delay time has passed. The main purpose of the Delay feature is using this plugin for configuration of plugins in a channel: the channel needs to be unmuted (by an appropriate ReaSctipt) before the plugins in that channel arfe ready to accept Midi Messages.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The slider "CC Table" selects the configuration file to be used. Same needs to be located in Reaper's "Data" folder (right besides "Effects") in a sub-folder "cc table", and needs to have the extension ".txt".\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The slider "Function" selects the function mode to be "Map" or "Configs"\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The slider "Input Channel" defines the Channel the messages to be adhered to are expected in.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The slider "CC Input" defines the message # of the messages to be adhered to.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The slider "No Delay Channel" defines the channel to vbe sent out without delay. (All other channels 2will be delayed)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The slider "Delay" defines the send delay in milliseconds.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 File format\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Each line of the files defines a row in the mapping table. The first row will be accessed by a message with Value 0, the second row will be accessed by a message with Value 1, ...\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Each line can define messages to be sent when the row is accessed, and optionally messages that will be sent when the row is deseected. The "select" messages are defined first, and after a "<" character the "deselect" messages are defined.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Each message is defined by a block of characters, containing two or three decimal numbers). The message definitions aer separated by (one or more) blanks.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The message definitions start with the Midi channel followed by a colon (":"). The number after the colon defines the CC #. After the CC number optionally a "=" and a value definition can be set. if the "=" is missing, the value Zero is assumed.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Any character after (and including) a "/" in a line will be ignored as a comment.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Example:\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 1:1=1 1:1=2 // CC value 0 2:2=2 // CC value 2 -> empty // CC value 3 3:3=1 3:3=2 3:3=3 3:3=4<10:11 15:127=127 7:7=2 7:7=3 7:7=4 7:7=5 7:7=6 7:7=7 7:7=8<16:124=125 9:9=9 15:127=127 7:7=2 7:7=3 7:7=4 7:7=5 7:7=6 7:7=7 7:7=8 < 16:124=125 9:9=9 <15:15=15 // CC value 7\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Graphics\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The graphics will show as many of the rows in the mapping table as possible. Empty rows are not shown.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 If "deselect" messages are defined the fields for that row will contain two lines.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The first column shows the CC to be received to select the row. The other columns how the messages to be sent.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 in "Configs" mode, the currently selected row is highlighted in yellow.\par}
+}
+]]></description>
+        <link rel="donation" href="http://www.unfoundation.org/">United Nations Foundation</link>
+      </metadata>
+      <version name="1.0" author="Michael Schnell (mschnell@bschnell.de)" time="2018-03-29T05:47:14Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/fb32cf664c09c8d6f58ab8a4beefc512bd23d333/Utility/mschnell_Midi%20CC%20Table.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="mschnell_MIDI Convert to CC.jsfx" type="effect" desc="MIDI convert to CC">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Description\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Midi CC, PS, Note On or Note Off messages are converted to Midi CC messages with a predefined Channel and CC #. The CC value is calculated from the incoming value.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 All midi messages that don't fit the "In" specifications are passed through.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The slider "In Channel" defines the channel the messages to be converted are expected in.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The slider "Midi Message" selects if CC, PS, Note on or Note Off messages are converted.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The slider "In CC" is only used when "CC" is selected and defines the CC# of the eligible input messages.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The sliders "Min Input Value" and "Max Input Value" d3efine the range of the eligible input values.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The slider "Out Channel" defines the Channel the converted messages are sent in.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The slider "Out CC" defines the Midi CC message # to be sent\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The slider "Min CC Value" defines the value to be sent when the Min Input Value is received. Hence there will be an offset of Min_Input_Value - Min_Outout_Value.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Limitation\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 With this version, no linear function (using min and max output value) is calculated. This feature might be added with a future version.\par}
+}
+]]></description>
+        <link rel="donation" href="http://www.unfoundation.org/">United Nations Foundation</link>
+      </metadata>
+      <version name="1.0" author="Michael Schnell (mschnell@bschnell.de)" time="2018-04-01T05:37:58Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/b921919e9511e043edb5aa43e108307b217ccf19/Utility/mschnell_MIDI%20Convert%20to%20CC.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="mschnell_Midi Fade.jsfx" type="effect" desc="Midi Fade X">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Description\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The midi CC values 0 ... 127 are mapped to an "amplifier" curve that consists of a linear and an exponential part in a way, that with CC = 0 the amplification is 0 (-inf dB) and with CC = 127 the amplification is 1 (0db).\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A slider defines the amount (in dB), the amplification is reduced with each CC step.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 According to that, the breakpoint between the exponential and the linear part is set so that at this point the value and the slope of the curves match.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Below the breakpoint, a linear curve is used so that with CC = 0 the amplification is Zero (-infinity dB).\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Two sliders defines the maximum fade-in (up) and fade-out (down) speed the amplification is modulated. This is set in dB per modulation step. Moreover the maximum speed used is reaching a new defined level in as many steps a samples in a block.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The slider "start fade in" defines the starting point of the upwards move of the amplification. Same is given as the equivalent of an input CC value (1 ... 31)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The "Muting Notification" sets a CC # which is sent out with a value of "Muting Notification CC value", when the amplification drops below the mute level (equivalent to an input CC value of one tenth of that defined for "start fade in").\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The "send CC = 127" setting defines whether this CC is sent with value 127, when the amplification rises above the mute level or when it reaches 0 dB.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A graph shows as well the curve (linear, Amplification vs. CC steps), as the dynamic movement of the input CC and the amplification level.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Moreover, the fade in start and - if appropriate - the mute level is shown.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 If the "Muting Notification CC" is set, the mute state is visualized by a green rectangle.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Limitations\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 As due the the description above, the modulation speed is limited to reaching the target level in a timespan at least as the duration of a sample block, the current version of this plugin is not suitable for synth-like application that intend to implement a VCA.\par}
+}
+]]></description>
+        <link rel="donation" href="http://www.unfoundation.org/">United Nations Foundation</link>
+      </metadata>
+      <version name="1.1" author="Michael Schnell (mschnell@bschnell.de)" time="2018-02-24T17:27:59Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/64f6efb468c4fe4f1c0478d6d42be89fb9fa345d/Utility/mschnell_Midi%20Fade.jsfx</source>
+      </version>
+      <version name="2.1" author="Michael Schnell (mschnell@bschnell.de)" time="2018-03-28T00:34:03Z">
+        <changelog><![CDATA[Added Muting Notification CC value slider]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/98c128b768bb1c8ed1dbed002f441414b6813e5c/Utility/mschnell_Midi%20Fade.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="mschnell_MIDI Trigger CC.jsfx" type="effect" desc="MIDI Trigger CC">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Description\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A Midi function testing utility. Usable e.g. as a "virtual Pedal Bar".\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Pushing one of the buttons 0 ... 9 will send a CC value as set in the "CC Val x" sliders with the Midi channel and CC # as set in the appropriate sliders\par}
+}
+]]></description>
+        <link rel="donation" href="http://www.unfoundation.org/">United Nations Foundation</link>
+      </metadata>
+      <version name="1.0" author="Michael Schnell (mschnell@bschnell.de)" time="2018-04-01T05:39:31Z">
+        <changelog><![CDATA[Added Muting Notification CC value slider]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/966e57c82d5d555d55880143ac1114611df30dbd/Utility/mschnell_MIDI%20Trigger%20CC.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="mschnell_MIDI Volume Control.jsfx" type="effect" desc="Midi Volume Control">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Description\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The midi CC values 0 ... 127 are mapped to an "amplifier" curve that consists of a linear and an exponential part in a way, that with CC = 0 the amplification is 0 (-inf dB) and with CC = 127 the amplification is 1 (0db).\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A slider defines the amount (in dB), the amplification is reduced with each CC step.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 According to that, the breakpoint between the exponential and the linear part is set so that at this point the value and the slope of the curves match.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Below the breakpoint, a linear curve is used so that with CC = 0 the amplification is Zero (-infinity dB).\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Another slider defines the maximum speed the amplification is modulated. This is set in dB per modulation step.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Moreover the maximum speed used is reaching a new defined level in as many steps a samples in a block.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A graph shows as well the curve (Amplification vs CC steps), as the dynamic movement of the amplification level.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Limitations\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 As due the the description above, the modulation speed is limited to reaching the target level in a timespan at least as the duration of a sample block, the current version of this plugin is not suitable for synth-like application that intend to implement a VCA.\par}
+}
+]]></description>
+        <link rel="donation" href="http://www.unfoundation.org/">United Nations Foundation</link>
+      </metadata>
+      <version name="1.0" author="Michael Schnell (mschnell@bschnell.de)" time="2016-10-10T20:08:03Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/c8ab3584eea4e9532c9aa37eab1cfc5a5f9406b7/Utility/mschnell_MIDI%20Volume%20Control.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="mschnell_Slider to Midi PS.jsfx" type="effect" desc="Slider to Midi PS">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Description\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 While the VST/Reaper-Plugin "MIDItoReaControlPath" can transfer live Midi data from a track to the "guts" of Reaper to be handled by Reaper Extensions and ReaScripts, Slider_to_Midi_PS is supposed to work the other way round and generate Midi messages in a track on request of Reaper Extensions (such as SWS "LiveConfigs") and ReaScripts. The Midi "Program Change" Messages can be used to switch the patch of appropriate plugins that internally hold a list of multiple patches (aka "programs", "sounds", "instruments"...) Whenever the "PS" slider is moved (manually or by a preset change), Slider to Midi PS sends out the appropriate Midi PS message exactly once. Slider to Midi PS passes through all midi messages it receives.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Main Purpose\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 With many VSTs (e.g. Kontakt), switching patches is a lot faster than loading a new preset for the VST itself. Moreover it preserves internal states, that would be reloaded with a new preset.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Usage\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The JSFX plugin "Slider to Midi PS" is placed in the track "above" plugin that is supposed to react on the program change request. Usually you statically set the Midi channel that the VST reacts to. Now (for each instance you created) you generate multiple presets, one for each program change (patch) number you want to send. With appropriate Reaper Actions / Scripts - or with SWS LiveConfigs - you can request a preset change for a Slider to Midi PS instance and hence a Midi PS Message will be generated in that track.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Possible Extension\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 It would be rather easy to extend the plugin to optionally send out CC ore Note On messages.\par}
+}
+]]></description>
+        <link rel="donation" href="http://www.unfoundation.org/">United Nations Foundation</link>
+      </metadata>
+      <version name="1.0" author="Michael Schnell (mschnell@bschnell.de)" time="2016-10-21T17:50:51Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/ce5f775585f977c96e98aa22e6c7c557a12e48c5/Utility/mschnell_Slider%20to%20Midi%20PS.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Volume utility +-10db (sample accurate automation).jsfx" type="effect" desc="Volume utility +-10db (sample accurate automation)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 simple volume adjustment utility modded from Cockos "Volume/Pan Smoother v5" JS I like to use this one for volume automation instead of Reaper's native volume envelope because\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab I rarely make changes > +- 10db so it gives me more 'resolution' in the envelope\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Reaper's fader are kept free for trim adjustments\sa180\par}
+}
+]]></description>
+        <link rel="website">http://forum.cockos.com/member.php?u=6870</link>
+      </metadata>
+      <version name="1.0" author="Cockos, mod by nofish" time="2016-12-30T00:04:06Z">
+        <changelog><![CDATA[version 1.0
++ initial release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/2e2341f8d03374a1b29eb2f12f25f751856266d0/Utility/nofish_Volume%20utility%20+-10db%20(sample%20accurate%20automation).jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="ReaperBlog_-12dB Dim.jsfx" type="effect" desc="-12dB Dim">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 No controls needed, shift-click the plugin from the mixer to disable.\line Insert on master as a secondary monitor reference level.\line Insert after a particularly loud plugin to get closer to sensible levels.\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="The REAPER Blog" time="2016-08-08T14:07:30Z">
+        <changelog><![CDATA[Initial Release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/4a33bbe6110bf1c5f37430bf245bbd058512148e/Utility/ReaperBlog_-12dB%20Dim.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="ReaperBlog_Macro Controller.jsfx" type="effect" desc="Macro controller">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Dummy controls to use with Parameter link/modulation\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="The REAPER Blog" time="2018-03-14T19:36:01Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source>https://github.com/ReaTeam/JSFX/raw/82faf67f48b2c7cac642ae097688e970d6e35bd8/Utility/ReaperBlog_Macro%20Controller.jsfx</source>
+      </version>
+    </reapack>
+  </category>
+  <metadata>
+    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 ReaTeam JSFX Repository\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Community-maintained collection of JS effects for REAPER\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\field{\*\fldinst{HYPERLINK "https://travis-ci.org/ReaTeam/JSFX"}}{\fldrslt{\ul
+{\cf1 [image: https://travis-ci.org/ReaTeam/JSFX.svg?branch=master]\cf0}
+}}}
+\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Contributors\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The JS effects in this repository were brought to you by these generous people:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "http://forum.cockos.com/member.php?u=6341"}}{\fldrslt{\ul
+anomaly
+}}}
+ (Stige T) ({\field{\*\fldinst{HYPERLINK "http://sonic.supermaailma.net/plugins"}}{\fldrslt{\ul
+website
+}}}
+)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "http://forum.cockos.com/member.php?u=15127"}}{\fldrslt{\ul
+EpicSounds
+}}}
+ (The REAPER Blog/Jon Tidey) ({\field{\*\fldinst{HYPERLINK "http://reaperblog.net/"}}{\fldrslt{\ul
+website
+}}}
+)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "http://forum.cockos.com/member.php?u=60721"}}{\fldrslt{\ul
+mschnell
+}}}
+ (Michael Schnell)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "http://forum.cockos.com/member.php?u=92538"}}{\fldrslt{\ul
+Smashed Transistors
+}}}
+ (TiaR)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "http://forum.cockos.com/member.php?u=63705"}}{\fldrslt{\ul
+Time Waster
+}}}
+ (Malcolm Smith)\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Installation\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Copy and paste this URL in Extensions > ReaPack > Import a repository:\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 https://github.com/ReaTeam/JSFX/raw/master/index.xml\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Contributing\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Check out the {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-index/wiki/Examples"}}{\fldrslt{\ul
+package examples
+}}}
+ and reapack-index's {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-index/wiki/Packaging-Documentation"}}{\fldrslt{\ul
+packaging documentation
+}}}
+.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab {\field{\*\fldinst{HYPERLINK "https://github.com/ReaTeam/JSFX/new/master"}}{\fldrslt{\ul
+Create
+}}}
+ a file for your effect named {\f1 Category Name/username_Name of the Effect.jsfx}\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Click on "Propose new file" and create a Pull Request\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Wait for a team member to validate the request (it should be quick)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab If everything is ok... it's done!\sa180\par}
+}
+]]></description>
+  </metadata>
+</index>

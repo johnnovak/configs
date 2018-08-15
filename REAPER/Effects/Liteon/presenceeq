@@ -35,6 +35,11 @@ slider3:0<-15,15,0.01>Cut/Boost (dB)
 slider4:0.20<0.07,0.40,0.0001>Bandwidth
 slider5:0<-25,25,0.05>Output (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 
 yl=x1l=x2l=y1l=y2l=yr=x1r=x2r=y1r=y2r=SPN=0;

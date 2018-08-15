@@ -4,6 +4,9 @@ desc:MIDI Sequencer Baby
 slider1:0<0,15,1{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}>Pattern
 slider2:60<0,127,1>Note Start
 
+in_pin:none
+out_pin:none
+
 @init
 listlength=16;
 numnotes=16;

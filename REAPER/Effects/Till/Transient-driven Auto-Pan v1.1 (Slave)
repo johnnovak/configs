@@ -24,6 +24,10 @@ slider8:0<0,10,1>Max Delay (ms)
 slider9:0<0,100,1>Look Ahead (ms)
 slider10:0<-100,100,1>Current Pan
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
 
 /////////////////
 ///           ///

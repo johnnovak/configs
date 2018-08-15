@@ -31,6 +31,12 @@ slider1:0<0,100,0.1>Mix (%)
 slider2:0<0,100,0.1>Drive (%)
 slider3:5000<2000,10000,100>Frequency (Hz)
 
+
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 
   gain1 = 0;

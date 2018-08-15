@@ -9,6 +9,9 @@ License: LGPL - http://www.gnu.org/licenses/lgpl.html
 
 
 slider1:8<1,100,1>Approx Sweep Length (sec)
+in_pin:none
+out_pin:output (mono)
+out_pin:output (mono)
 
 @init
 @slider

@@ -11,6 +11,11 @@ slider6:-120<-120,24,1>Non-Peak Gain (dB)
 slider7:120<0,1000,1>FiltEr Position Attack Time (ms)
 slider8:1.29<0.5,1.5,0.01>High End Slope
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init 
 fftsize=-1;
 curfilterpos=-1;

@@ -20,6 +20,13 @@ slider10:20<20,20000,10>Director HP (Hz)
 slider11:20000<20,20000,10>Director LP (Hz)
 slider12:0<0,1,1{No,Yes}>Preview Director
 
+in_pin:left input
+in_pin:right input
+in_pin:sidechain left input
+in_pin:sidechain right input
+out_pin:left output
+out_pin:right output
+
 /////////////////
 ///           ///
 ///  I N I T  ///

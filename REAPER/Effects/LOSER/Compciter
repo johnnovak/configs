@@ -23,6 +23,10 @@ slider3:5000<800,12000,1>Highpass (Hz)
 slider4:-6<-60,24,1>Wet (dB)
 slider5:0<-120,0,1>Dry (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
 
 @init
 gain = seekgain = 1;

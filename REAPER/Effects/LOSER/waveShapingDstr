@@ -18,6 +18,11 @@ desc:Waveshaping Distortion
 
 slider1:0<0,100,.1>Distortion (%)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @slider
 hdistr = min(slider1/100,.999);
 foo = 2*hdistr/(1-hdistr);

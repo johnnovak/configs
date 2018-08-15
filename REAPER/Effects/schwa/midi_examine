@@ -12,6 +12,9 @@ slider5:0<0,16,1>Status High Bits
 slider6:0<0,16,1>Status Low Bits
 slider7:0<0,8,1{-,Note Off,Note On,Poly Aftertouch,Control Change,Program Change,Channel Aftertouch,Pitch Wheel,System Special}>Status High Bits Interpretation
 
+in_pin:none
+out_pin:none
+
 // Data byte high bit is used for system exclusive messages, 
 // we're ignoring it here.
 

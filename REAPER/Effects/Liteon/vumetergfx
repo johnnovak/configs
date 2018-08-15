@@ -26,6 +26,10 @@ desc: VU Meter
 slider1:50<1,300,1>Response (ms)
 slider2:5<1,10,0.1>Release (Slow/Fast)
 
+in_pin:left input
+in_pin:right input
+out_pin:none
+
 @init
 //st - sample time, sc - db scale, rp - right channel y pading, r - radius
 sc = 6/log(2);

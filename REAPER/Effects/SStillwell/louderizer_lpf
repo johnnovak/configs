@@ -33,6 +33,11 @@ slider3:22000<1,22000>LP Frequency (Hz)
 slider4:0.2<0,1>LP Size (1/Q) (0=resonant, 1=dull)
 slider5:1<0,1,1{Pre-filter,Post-filter}>Drive Circuit
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @slider
 
   mix=slider1 / 100;

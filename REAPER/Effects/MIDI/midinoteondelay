@@ -4,6 +4,9 @@ desc:MIDI Note-On Delay
 slider1:0<0,4096>Max Delay Samples (limited to blocksize)
 slider2:0,--Poo
 
+in_pin:none
+out_pin:none
+
 @init 
 slider2=1;
 

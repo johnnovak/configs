@@ -8,6 +8,17 @@ slider3:0<0,4,1{1/2,3/4,5/6,7/8}>Low Band Destination
 slider4:1<0,4,1{1/2,3/4,5/6,7/8}>High Band Destination
 // slider5:0<0,1,0.1>Debug
 
+in_pin:left input
+in_pin:right input
+out_pin:output 1
+out_pin:output 2
+out_pin:output 3
+out_pin:output 4
+out_pin:output 5
+out_pin:output 6
+out_pin:output 7
+out_pin:output 8
+
 @init 
 
   fftsize = -1;

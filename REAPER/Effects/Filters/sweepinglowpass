@@ -10,6 +10,11 @@ slider2:2000<20,20000>Frequency 2 (Hz)
 slider3:2<0.1,30,0.05>Sweep Time (sec)
 slider4:0.8<0,1>Resonance
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
   spos=0; israte2=2/srate; 
 

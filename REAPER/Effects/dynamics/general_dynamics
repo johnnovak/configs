@@ -23,6 +23,7 @@ out_pin:main R
 
 @init
 gfx_clear=-1;
+gfx_ext_retina = 1;
 tab=0; // gain amount in dB, evenly divided over db_bottom..db_top
 tab.size == 0 ? (
   // first-time initialization
@@ -239,6 +240,7 @@ wet.parmchg.val += wet.parmchg.dval;
 dry.parmchg.val += dry.parmchg.dval;
 
 @gfx 400 400
+gfx_ext_retina>1 ? gfx_setfont(1,"Arial",16*gfx_ext_retina,'b') : gfx_setfont(0);
 
 function view.zoom(xpos,ypos, amt) local(newsz) instance(zoom pan_x pan_y)
 (
@@ -305,7 +307,7 @@ gfx_w != last_w || gfx_h != last_h || (mouse_cap&3) || last_mouse_cap ? (
     top+j < gfx_h-gfx_texth-4 ? gfx_line(left,top+j,right,top+j);
     gfx_x < gfx_w-50 ? gfx_line(gfx_x,top,gfx_x,bottom);
 
-    gfx_x > lx+60 && gfx_x < right-90 ? (
+    gfx_x > lx+60*gfx_ext_retina && gfx_x < right-90*gfx_ext_retina ? (
       lx = gfx_x;
       gfx_y = min(bottom + 2,gfx_h-gfx_texth-2);
       gfx_line(gfx_x,min(bottom,gfx_y),gfx_x,bottom+gfx_texth+2);

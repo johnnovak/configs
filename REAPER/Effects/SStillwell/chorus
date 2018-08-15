@@ -13,6 +13,11 @@ slider4:0.7<0,1>Pitch Fudge Factor
 slider5:-6<-100,12,1>Wet Mix (dB)
 slider6:-6<-100,12,1>Dry Mix (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 
 bpos=0;

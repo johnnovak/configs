@@ -27,6 +27,11 @@ slider2:-6<-25,25,0.05>Noise (dB)
 slider3:-6<-25,25,0.05>Dry (dB)
 slider4:0<-25,25,0.05>Output (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 //trc - test rate coeff
 trc = 1;

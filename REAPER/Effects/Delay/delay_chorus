@@ -12,6 +12,11 @@ slider5:0<-120,6,1>Output Dry (dB)
 slider6:500<1,1000,10>Chorus Period (ms)
 slider7:2<0,100,1>Chorus Length (ms)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 delaypos=0;
 

@@ -27,6 +27,9 @@ slider14:4<0,8,1>Number Of Simultaneous Notes
 slider15:4<1,8,1>Quantize Targets Per Beat
 slider16:0<0,100,1>Quantize Strength
 
+in_pin:none
+out_pin:none
+
 @init
 
 // SPB = samples per beat.

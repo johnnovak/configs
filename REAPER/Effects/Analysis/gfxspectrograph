@@ -64,7 +64,7 @@ recpos >= histsize ? recpos=0;
 
 
 @gfx 640 400
-gfx_ext_retina>1.0 ? gfx_setfont(1,"Arial",32,'b');
+gfx_ext_retina>1 ? gfx_setfont(1,"Arial",16*gfx_ext_retina,'b') : gfx_setfont(0);
 
 
 old_w != gfx_w || old_h!=gfx_h? (
@@ -92,7 +92,7 @@ function calc_color(mv, col*) globals(over24)
     );
   ) : (
     mv <= -72 ? ( col.r = (mv+96)*over24; col.g = 0.75; ) :
-    mv <= -48 ? ( col.r = 1; col.g = 0.5-(mv+72)*over24*0.5; ) :
+    mv <= -48 ? ( col.r = 1; col.g = 0.75-(mv+72)*over24*0.75; ) :
     mv <= -24 ? ( col.r = 1; col.b = (mv+48)*over24; ) :
     mv <= 0 ? ( col.r=col.b=1; col.g=(mv+24)*over24; ) :
       col.r=col.g=col.b=1;

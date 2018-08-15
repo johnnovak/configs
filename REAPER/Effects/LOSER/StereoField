@@ -22,6 +22,11 @@ slider2:100<0,200,1>Width (%)
 slider3:0<-100,100,1>Center (%)
 slider4:0<-100,100,1>Left/Right (%)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @slider
 rot=slider1*0.017453292;
 width = slider2 / 200;

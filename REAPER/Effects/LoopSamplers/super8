@@ -105,8 +105,7 @@ function init(x, n1,n2,n3)
   instance(idx rec buf monvol fpos fpos2 fpos_slope sk_fpos2 dirty_top) 
 (
   idx = x;
-  monvol = fpos = fpos2 = sk_fpos2 = 0;
-  fpos_slope = g_slope_recin;
+  fpos_slope = monvol = fpos = fpos2 = sk_fpos2 = 0;
   dirty_top = -1;
   buf = alloc(g_maxlen);
   
@@ -145,6 +144,7 @@ function setstate(st) instance(fpos_slope, sk_fpos2, rec) local(dt)
     ) : g_length > 0 ? (
       g_firstrec = 0;   
       g_recstart_gate = 0;
+      this.extra_recording = 0|min(srate*.5, g_maxlen-g_length);
     );
   ) : (
     st>0 ? ( 
@@ -158,7 +158,7 @@ function setstate(st) instance(fpos_slope, sk_fpos2, rec) local(dt)
         st == 2 ? ( 
           g_recstart_gate = mem_gen_cfg[4] > g_infthreshdb ? ( 10^(mem_gen_cfg[4]/20) );
           g_pos = 0;
-          g_length = 0; 
+          g_offs = g_length = 0; 
           g_firstrec = 1; 
         );        
       );
@@ -177,7 +177,7 @@ function setstate(st) instance(fpos_slope, sk_fpos2, rec) local(dt)
 );
 
 
-function process(s) instance(buf, fpos, fpos2, monvol, monmode, rec, peak_in) local(r,wrpos) (
+function process(s) instance(fpos, fpos2, monvol, monmode, rec, peak_in) local(r,wrpos,buf) (
   g_recstart_gate==0 ? (
     fpos = min(max(0,fpos+this.fpos_slope),1);
     fpos2 = fpos2*g_fadespeed + this.sk_fpos2;
@@ -187,15 +187,23 @@ function process(s) instance(buf, fpos, fpos2, monvol, monmode, rec, peak_in) lo
   peak_in = max(abs(s),peak_in);
 
   wrpos = g_pos;
-  g_firstrec == 0 && this.rdc < g_length ? (
-    wrpos -= this.rdc;
-    wrpos < 0 ? wrpos += g_length;
+  buf = this.buf + g_offs;
+  g_firstrec == 0 ? (
+    this.extra_recording > 0 ? (
+      buf[g_length + g_pos] = s; // write past the end of the loop (in case we want to trim later)
+      this.dirty_top = max(this.dirty_top,g_length + g_pos + g_offs);
+      this.extra_recording -= 1;
+    );
+
+    this.rdc < g_length ? (
+      wrpos -= this.rdc;
+      wrpos < 0 ? wrpos += g_length;
+    );
   );
-  
   monmode == 0 ? (
     // no monitoring
     fpos > 0.0001 ? (
-      this.dirty_top = max(this.dirty_top,wrpos);
+      this.dirty_top = max(this.dirty_top,wrpos + g_offs);
       r=buf[g_pos]*fpos2;
       buf[wrpos] += s*fpos;
       r;
@@ -211,7 +219,7 @@ function process(s) instance(buf, fpos, fpos2, monvol, monmode, rec, peak_in) lo
     );
     
     fpos > 0.0001 ? (
-      this.dirty_top = max(this.dirty_top,wrpos);
+      this.dirty_top = max(this.dirty_top,wrpos + g_offs);
       wrpos == g_pos ? (
         (buf[g_pos] += s*fpos) * fpos2 + s * max(0, monvol - fpos*fpos2);
       ) : (
@@ -226,7 +234,23 @@ function process(s) instance(buf, fpos, fpos2, monvol, monmode, rec, peak_in) lo
   );
 );
 
-function onmsg(m1,m2,m3) instance(rec,note,note2,note3,note4) local(i,x,tmp) (
+function reverse(want_defer) instance(rec) local(i,x,tmp)
+(
+  // reverse
+  i=this.buf + g_offs;
+  x=i + g_length-1;
+  loop(g_length/2,
+    tmp=i[0];
+    i[0]=x[0];
+    x[0]=tmp;
+    x-=1;
+    i+=1;
+  );
+  rec[st_dirty] = this.dirty_top = max(rec[st_dirty],max(this.dirty_top,g_offs+g_length));     
+  rec[st_lastd] = -1;
+);
+
+function onmsg(m1,m2,m3) instance(rec,note,note2,note3,note4) (
    m2 == note || m2 == 1024+rec+st_note1 ? (
      this.setstate((rec[st_state] == 2 && g_firstrec==0) ? 1 : 2);
      g_chan_selected = this.idx;
@@ -236,18 +260,7 @@ function onmsg(m1,m2,m3) instance(rec,note,note2,note3,note4) local(i,x,tmp) (
    ) : m2 == note3 ? (
      g_chan_selected = (g_chan_selected == this.idx) ? -1 : this.idx;
    ) : m2 == note4 || m2 == 1024+rec+st_note4 ? (
-     // reverse
-     i=this.buf;
-     x=this.buf+g_length-1;
-     loop(g_length/2,
-       tmp=i[0];
-       i[0]=x[0];
-       x[0]=tmp;
-       x-=1;
-       i+=1;
-     );
-     rec[st_dirty] = this.dirty_top = max(rec[st_dirty],max(this.dirty_top,g_length));     
-     rec[st_lastd] = -1;
+     this.reverse(1);
    );
 );
 
@@ -296,10 +309,10 @@ function adjustsizes(scale, repup) local(nlen,olen, lp)
     loop(g_nchan,
       lp[st_dirty] ? (
         nlen > olen ? (
-          repup ? repeatbuf(lp[st_buf],olen,nlen);
-          nlen > lp[st_dirty] ? lp[st_dirty] = nlen;
+          repup ? repeatbuf(lp[st_buf] + g_offs,olen,nlen);
+          nlen+g_offs > lp[st_dirty] ? lp[st_dirty] = nlen+g_offs;
         ) : (
-          xfadebuf(lp[st_buf],olen,nlen);
+          xfadebuf(lp[st_buf] + g_offs,olen,nlen);
         );
       );
       lp += st_num;
@@ -343,7 +356,7 @@ function reset() local(i,lp)
     i+=1;
     lp += st_num;
   );
-  g_length=g_pos=0;
+  g_offs=g_length=g_pos=0;
 );
 
 
@@ -379,7 +392,7 @@ ext_noinit == 0 ? (
   g_latchq = alloc(g_latchq_len*3);
   g_latchq_used=0;
   
-  mem_gen_sz=12;
+  mem_gen_sz=13;
   mem_gen_cfg = alloc(mem_gen_sz);
   memset(mem_gen_cfg,128,mem_gen_sz);
   mem_gen_cfg[4]=g_infthreshdb; // gate threshold
@@ -388,6 +401,7 @@ ext_noinit == 0 ? (
   mem_gen_cfg[8]=0;
   mem_gen_cfg[9]=0;
   mem_gen_cfg[10]=0;
+  mem_gen_cfg[12]=0;
   
   mem_gen_names = alloc(mem_gen_sz);
   mem_gen_names[0] = "kill";
@@ -416,6 +430,7 @@ ext_noinit == 0 ? (
   mem_gen_order[9]=-1;
   mem_gen_order[10]=-1;
   mem_gen_order[11]=-1;
+  mem_gen_order[12]=-1;
   
   mem_stlist = alloc(g_nchan * st_num);
 
@@ -424,6 +439,7 @@ ext_noinit == 0 ? (
 
   g_inactive_blockcnt=0;  
   g_active_cnt = 0; 
+  g_offs = 0;
   g_length = 0;
   g_pos=0;
   g_firstrec=0;
@@ -496,6 +512,7 @@ function doconf() local(i,s) (
 doconf();
 
 @block
+ccmode_blockcnt+=1;
 g_peak_decay = 10^(-samplesblock/srate*10);
 
 function trimspare() local(a) (
@@ -612,6 +629,20 @@ g_latchq_used>0 && (g_pos == 0 || g_firstrec) ? latchq_process();
 
 while (sidx == nextmsg_offs)
 (
+
+  // if you want to enable a CC to trigger the current channel, you could enable this:
+  0 && g_chan_selected >= 0 && 
+    nextmsg_1 == 0xb0 && nextmsg_3 == 0x7f && (nextmsg_2 == 0x14 || nextmsg_2 == 0x15) &&
+    ccmode_blockcnt > (srate/samplesblock)*.5 ? 
+  (
+      ccmode_blockcnt=0;
+      nextmsg_1 = 0x90;
+      // if not stopped, treat as play button
+      nextmsg_2 = mem_stlist[g_chan_selected*st_num + st_note1 + (mem_stlist[g_chan_selected*st_num + st_state]?1:0)];
+      // nextmsg_2 = mem_stlist[g_chan_selected*st_num + st_note1 + nextmsg_2 - 0x14];
+      nextmsg_3 = 100;
+  );
+
   nextmsg_1 == 0x90 && nextmsg_3 != 0  ? (
     (!g_latchmode || g_pos == 0 || g_firstrec) ? (
       chan_onmsg(nextmsg_1,nextmsg_2,nextmsg_3);    
@@ -736,7 +767,19 @@ function draw_value_tweaker(xpos,ypos,midimem,draw, lbl) local(t w tw th)
       midimem >= mem_stlist && midimem < mem_stlist+st_num*g_nchan ? (
         t = (midimem-mem_stlist)%st_num;
         t == st_note1 || t == st_note2 || t == st_note4 ? (
-          g_inject_midinote = 1024+midimem;
+          t != st_note4 || g_latchmode ? (
+            g_inject_midinote = 1024+midimem;
+          ) : (
+            t = ((midimem-mem_stlist)/st_num)|0;
+            t == 0 ? ch1.reverse() :
+            t == 1 ? ch2.reverse() :
+            t == 2 ? ch3.reverse() :
+            t == 3 ? ch4.reverse() :
+            t == 4 ? ch5.reverse() :
+            t == 5 ? ch6.reverse() :
+            t == 6 ? ch7.reverse() :
+            t == 7 ? ch8.reverse();
+          );
         );
       );
     ) : (mouse_cap & 2) && !(last_mouse_cap&2) ? (
@@ -842,7 +885,7 @@ function draw(xpos, ypos) local(i w h gap rec mode force_redraw rowsize mx my mw
       gfx_printf("%d",i+1);    
 
       gfx_set(0.5);
-      g_length && rec[st_dirty] && w > 80 ? draw_waveform(xpos+gap,ypos+h*.5,w-2*gap,h*.25,rec[st_buf],g_length);
+      g_length && rec[st_dirty] && w > 80 ? draw_waveform(xpos+gap,ypos+h*.5,w-2*gap,h*.25,rec[st_buf]+g_offs,g_length);
       
       rec[st_monmode]==0 ? (
         gfx_set(0.2)
@@ -995,11 +1038,12 @@ function hit_topbar_button(xp,yp,cm)
 );
 
 function draw_topbar(need_ref) local(s,i,t, lastlen, lastgate, lastlatch,lasthalve,
-        lastclickcount, lastvclickoffs)
+        lastclickcount, lastvclickoffs, lastoffs)
 (
 //need_ref=1;
   need_ref == 0 ? (
     need_ref = (lastlen != g_length || 
+                lastoffs != g_offs ||
                 lastgate != mem_gen_cfg[4] || 
                 lastlatch != g_latchmode ||
                 lastclickcount != (mem_gen_cfg[9]|0) ||
@@ -1016,6 +1060,9 @@ function draw_topbar(need_ref) local(s,i,t, lastlen, lastgate, lastlatch,lasthal
                  sprintf(#,"gate: %.0fdB",lastgate=mem_gen_cfg[4]));
     latch_button.draw_topbar_button(gfx_x+4,2,
                   (lastlatch=g_latchmode) ? "latch on" : "latch off");
+
+    offs_button.draw_topbar_button(gfx_x+4,2,
+                  sprintf(#,"offs %.0f spls", lastoffs=g_offs));
 
     length_button.draw_topbar_button(gfx_x+4,2,
                   sprintf(#,"%.0f spls", lastlen=g_length));
@@ -1040,6 +1087,7 @@ function draw_topbar(need_ref) local(s,i,t, lastlen, lastgate, lastlatch,lasthal
       ) : (
         gate_button.hit_topbar_button(mouse_x,mouse_y,mem_gen_cfg+4)||
         length_button.hit_topbar_button(mouse_x,mouse_y,mem_gen_cfg+6)||
+        offs_button.hit_topbar_button(mouse_x,mouse_y,mem_gen_cfg+12)||
         clickcnt_button.hit_topbar_button(mouse_x,mouse_y,mem_gen_cfg+9)||
         (lastclickcount&&vclick_button.hit_topbar_button(mouse_x,mouse_y,mem_gen_cfg+10))||
         fadesz_button.hit_topbar_button(mouse_x,mouse_y,mem_gen_cfg+5);
@@ -1053,7 +1101,18 @@ function draw_topbar(need_ref) local(s,i,t, lastlen, lastgate, lastlatch,lasthal
         t ? (
           g_length = max(g_length-t,1);
           g_pos %= g_length;
-          redraw_channels();
+          g_edgetrim_drawstate=1;
+          cap_last_y=mouse_y;
+        );       
+      ) : cap_mode == mem_gen_cfg + 12 ? (
+        t = ((mouse_y-cap_last_y)*((mouse_cap&8)?4:100))|0;
+        t ? (
+          i = g_offs+g_length;
+          g_offs = min(max(g_offs-t,0),i-1);
+          t = (i-g_length) - g_offs;
+          g_length = i - g_offs;
+          g_pos = (g_pos + t) % g_length;
+          g_edgetrim_drawstate=1;
           cap_last_y=mouse_y;
         );       
       ) : cap_mode == mem_gen_cfg + 5 ? (
@@ -1163,6 +1222,55 @@ function draw_vclick(pos)
 
 vclick_pos >= 0 ? draw_vclick(vclick_pos);
 
+function draw_trim_waveform(xpos, ypos, w, h, chan, isend)
+  global(g_length mem_stlist st_num st_dirty st_buf g_offs srate) 
+  local(rec buf len maxl linepos xpos2 w2)
+(
+  rec = mem_stlist + chan*st_num;
+  gfx_set(0.25);
+  gfx_rect(xpos,ypos,w,h);
+  
+  gfx_set(1);
+  len = (w * 0.0005 * srate)|0; // 0.5ms/pixel
+  xpos2 = xpos;
+  w2=w;
+
+  isend ? (
+    buf = g_offs + g_length - len*.8;
+  ) : (
+    buf = g_offs - len*.2;
+  );
+
+  buf < 0 ? (
+    xpos2 -= buf*w/len;
+    len += buf;
+    w2 -= xpos2-xpos;
+    buf = 0;
+  );
+  
+  buf += rec[st_buf];
+  
+  
+  g_length && rec[st_dirty] ? 
+    draw_waveform(xpos2,ypos+h*.5,w2,h*.25,buf,len);
+    
+  gfx_set(0,.5,.7,.5);
+  xpos += (w*(isend?.8:.2))|0;
+  gfx_line(xpos,ypos,xpos,ypos+h);
+);
+
+cap_mode == mem_gen_cfg + 12 || cap_mode == mem_gen_cfg + 6 ? (
+  g_edgetrim_drawstate>=0 ? (
+    draw_trim_waveform(0,40,gfx_w,gfx_h-40, max(g_chan_selected,0), cap_mode == mem_gen_cfg+6);
+    g_edgetrim_drawstate=1;
+  );
+) : (
+  g_edgetrim_drawstate>0 ? (
+    last_w=-1;
+    g_edgetrim_drawstate=0;
+  );  
+);
+
 // export must happen from UI thread
 function export()  local(rec, flag)
 (
@@ -1172,7 +1280,7 @@ function export()  local(rec, flag)
   flag|=2<<16; // use tempo from next parameter
   g_length > 0 ? loop(g_nchan,
     rec[st_state] ? (
-      export_buffer_to_project(rec[st_buf],g_length,1,srate,(rec-mem_stlist)/st_num, flag, flag?estbpm(g_length));
+      export_buffer_to_project(rec[st_buf]+g_offs,g_length,1,srate,(rec-mem_stlist)/st_num, flag, flag?estbpm(g_length));
       flag=0; // only go to end/set tempo for first item
     );
     rec+=st_num;

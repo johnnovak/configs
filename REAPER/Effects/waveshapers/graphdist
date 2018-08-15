@@ -6,6 +6,11 @@ slider2:0<-144,24,1>Wet Mix (dB)
 slider3:-144<-144,24,1>Dry Mix (dB)
 slider4:1<1,32,1>Oversampling (times)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 tabsize=40; // actually twice this, but x per side, and 0 is always 0
 tab=0; // first x are 0..1, next x are 0..-1

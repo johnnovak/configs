@@ -18,6 +18,11 @@ desc:Stereo Upmix (Left->Stereo)
 //author: LOSER
 
 slider1:125<0,250,.1>Delay (ms)
+
+in_pin:input
+out_pin:left output
+out_pin:right output
+
 @init
 b=0;
 @slider

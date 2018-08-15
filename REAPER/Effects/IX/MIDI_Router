@@ -28,6 +28,9 @@ slider5:127<0,127,1>Note Max
 
 slider6:0<-60,60,1>Transpose
 
+in_pin:none
+out_pin:none
+
 ////////////////////////////////////////////////////////////////////////////////
 @init
 statNoteOn = $x90;

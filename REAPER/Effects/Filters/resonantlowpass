@@ -8,6 +8,11 @@ desc: Resonant Lowpass Filter
 slider1:1000<20,20000>Frequency (Hz)
 slider2:0.8<0,1>Resonance
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @slider
   cut_lp = slider1*2 / (srate); 
   //res_lp!=slider2 ? n3=n4=rn3=rn4=0;

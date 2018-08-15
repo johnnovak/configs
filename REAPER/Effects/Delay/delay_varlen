@@ -12,6 +12,11 @@ slider5:-6<-120,6,1>Out Dry (dB)
 slider6:1<0.001,30,0.1>Period (sec)
 slider7:0.3<0.001,1.0,0.01>Amplitude (ratio)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 delaypos=0;
 

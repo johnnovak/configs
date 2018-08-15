@@ -23,6 +23,9 @@ slider4:0<0,1,1{Hz,Beats}>LFO Units
 slider5:6<0,9,1{1,2,4,8,16,32,64,128,256,512}>Updates Per Beat
 slider6:1<0,1,1{Off,On}>On/Off
 
+in_pin:none
+out_pin:none
+
 ////////////////////////////////////////////////////////////////////////////////
 @init
 statPitch = $xE0;

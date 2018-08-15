@@ -23,6 +23,11 @@ slider1:0<-100,100,1>Attack (%)
 slider2:0<-100,100,1>Sustain (%)
 slider3:0<-12,6,.1>Output (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 b1Env1 = -exp(-30 / srate );
 a0Env1 = 1.0 + b1Env1;

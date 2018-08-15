@@ -35,6 +35,11 @@ slider6:0<-25,25,0.05>Output (dB)
 slider7:0<0,1,1{On,Off}>Limiter
 slider8:0<0,1,1{Off,On}>Oversample (x2)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 cDenorm = 10^-30;
 mv=2^(-0.2/6);

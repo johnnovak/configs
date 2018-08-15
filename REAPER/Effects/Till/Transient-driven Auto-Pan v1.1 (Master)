@@ -26,6 +26,12 @@ slider14:0<0,100,1>Look Ahead (ms)
 slider15:0<0,10,1{Off,reg00,reg01,reg02,reg03,reg04,reg05,reg06,reg07,reg08,reg09}>Send Pan Data To
 slider16:0<-100,100,1>Current Pan
 
+in_pin:left input
+in_pin:right input
+in_pin:sidechain left input
+in_pin:sidechain right input
+out_pin:left output
+out_pin:right output
 
 /////////////////
 ///           ///

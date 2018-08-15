@@ -17,6 +17,7 @@ in_pin:right input
 options:no_meter
 
 @init
+gfx_ext_retina=1.0;
 ext_nodenorm=1;
 recpos=0;
 max_fft_size=32768;
@@ -45,6 +46,7 @@ recpos = ((recpos+1) >= histsize ? 0 : (recpos+1));
 
 @gfx 640 400
 
+gfx_ext_retina>1 ? gfx_setfont(1,"Arial",16*gfx_ext_retina,'b') : gfx_setfont(0);
 
 function draw_button(xp, yp, str) 
   instance(w,h,x,y) 
@@ -272,8 +274,9 @@ update ? (
           1.0));
        i+=1;
     );
-    pwr=1/(pwr*2-window[i-1]);
+    pwr=.5/(pwr*2-window[i-1]);
     loop(fftsize*.5+1,window[i-=1]*=pwr);
+    integrate_sc=1;
   );
 
 
@@ -283,8 +286,7 @@ update ? (
   buf3=fftworkspace;
   loop(fftsize*.5 + 1,
     buf3[] = buf1[]*buf2[];
-    buf3[1]=0;
-    buf3+=2;
+    buf3+=1;
 
     buf2+=1;
     (buf1+=1) >= histsize ? buf1 -= histsize;
@@ -292,13 +294,13 @@ update ? (
   buf2-=1;
   loop(fftsize*.5 - 1,
     buf3[] = buf1[]*(buf2-=1)[];
-    buf3[1]=0;
-    buf3+=2;
+    buf3+=1;
     (buf1+=1) >= histsize ? buf1 -= histsize;
   );
 
-  fft(fftworkspace,fftsize);
-  fft_permute(fftworkspace,fftsize);
+  fft_real(fftworkspace,fftsize);
+  fft_permute(fftworkspace,fftsize/2);
+  fftworkspace[1]=0;
 
   ascale=gfx_h/$pi*0.25;
   xscale=800/(fftsize-4);
@@ -357,7 +359,7 @@ update ? (
         tx0=tx|0;
         lx0=lx|0;
         tx0>lx0? (
-          ly < gfx_h || ty < gfx_h ? gfx_triangle(lx0,gfx_h,lx0,ly,tx0-1,ty,tx0-1,gfx_h);
+          ly < gfx_h || ty < gfx_h ? gfx_triangle(lx0,max(gfx_h,ly),lx0,ly,tx0-1,ty,tx0-1,max(gfx_h,ty));
         ) : (
           tx0 > fill_slast ? (
            fill_slast < gfx_h ? gfx_line(fill_slast,gfx_h,fill_slast,fill_slmin);

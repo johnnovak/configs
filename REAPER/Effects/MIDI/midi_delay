@@ -6,6 +6,9 @@ slider3:0<0,10000,1>Delay (samples)
 slider4:0<0,16,1>Channel (0=omni)
 slider5:0<0,16,1>Bus (0=all buses)
 
+in_pin:none
+out_pin:none
+
 @init
 ext_midi_bus=ext_nodenorm=1;
 buf_l=buf_r=0;

@@ -1,6 +1,9 @@
 desc:MIDI Logger
 //tags: MIDI analysis utility
 
+in_pin:none
+out_pin:none
+
 @init
 ext_midi_bus = 1; // causes midi_bus to be used for send/recv and midirecv() receives on all buses
 ent_time = 0;

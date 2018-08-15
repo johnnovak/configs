@@ -38,6 +38,11 @@ slider7:4<1,20,0.01>Ratio
 slider8:0<0,1,1{A: 3 és - R: 50 ms,A: 30 és - R: 100 ms,A: 100 és - R: 300 ms}>Time Constants
 slider9:0<-24,24,0.001>Gain (-inf/+24dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 n = 0;
 sqrt2 = sqrt(2);

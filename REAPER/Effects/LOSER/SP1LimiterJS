@@ -19,6 +19,11 @@ desc:Simple Peak-1 Limiter [LOSER]
 
 slider1:-0<-20,0,.1>Threshold (dB)
 
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
 @init
 gain = 1; c = 8.65617025; dc = 10^(-30);
 
