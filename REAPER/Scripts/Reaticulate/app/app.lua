@@ -1,4 +1,4 @@
--- Copyright 2017 Jason Tackaberry
+-- Copyright 2017-2018 Jason Tackaberry
 --
 -- Licensed under the Apache License, Version 2.0 (the "License");
 -- you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@ local rtk = require 'lib.rtk'
 local rfx = require 'rfx'
 local reabank = require 'reabank'
 local articons = require 'articons'
+local feedback = require 'feedback'
 
 App = {
     -- Currently selected track (or nil if no track is selected)
@@ -48,7 +49,12 @@ App = {
         h = 480,
         dockstate = 0,
         scale = 1.0,
-        bg = nil
+        bg = nil,
+        cc_feedback_device = -1,
+        cc_feedback_bus = 1,
+        -- Togglable via action
+        cc_feedback_active = true,
+        autostart = 0
     },
 
     toolbar = {
@@ -61,12 +67,16 @@ App.screens.trackcfg = require 'screens.trackcfg'
 App.screens.settings = require 'screens.settings'
 
 
--- Utility button factory
+-- App-wide utility functions
+function get_image(file)
+    return rtk.Image:new(Path.join(Path.imagedir, file))
+end
+
 function make_button(iconfile, label, textured, attrs)
     local icon = nil
     local button = nil
     if iconfile then
-        icon = rtk.Image:new(Path.join(Path.imagedir, iconfile))
+        icon = get_image(iconfile)
         if label then
             flags = textured and 0 or (rtk.Button.FLAT_ICON | rtk.Button.FLAT_LABEL)
             button = rtk.Button:new({icon=icon, label=label,
@@ -82,6 +92,12 @@ function make_button(iconfile, label, textured, attrs)
     return button
 end
 
+
+function fatal_error(msg)
+    msg = msg .. "\n\nReaticulate must now exit."
+    reaper.ShowMessageBox(msg, "Reaticulate: fatal error", 0)
+    rtk.quit()
+end
 
 
 function App.screens.init()
@@ -142,26 +158,33 @@ function App.screens.get_current()
 end
 
 function App.ontrackchange(last, cur)
+    reaper.PreventUIRefresh(1)
     App.sync_midi_editor()
     App.screens.banklist.filter_entry:onchange()
+    feedback.ontrackchange(last, cur)
+    reaper.PreventUIRefresh(-1)
 end
 
 function App.onartclick(art, event)
     if event.button == rtk.mouse.BUTTON_LEFT then
-        App.activate_articulation(art, true)
+        App.activate_articulation(art, true, false)
     elseif event.button == rtk.mouse.BUTTON_MIDDLE then
         -- Middle click on articulation.  Clear all channels currently assigned to that articulation.
+        rfx.push_state(rfx.track)
         for channel = 0, 15 do
             if art.channels & (1 << channel) ~= 0 then
                 rfx.clear_channel_program(channel + 1, art.group)
             end
         end
         rfx.sync(rfx.track, true)
+        rfx.pop_state()
+    elseif event.button == rtk.mouse.BUTTON_RIGHT then
+        App.activate_articulation(art, true, true)
     end
 end
 
-function App.activate_articulation(art, refocus)
-    if art:activate(refocus or false) then
+function App.activate_articulation(art, refocus, force_insert)
+    if art:activate(refocus or false, force_insert) then
         local bank = art:get_bank()
         local channel = bank:get_src_channel()
         local idx = channel + (art.group << 8)
@@ -233,11 +256,13 @@ function App.handle_command(cmd, arg)
     log("cmd: %s(%s)", cmd, arg)
     if cmd == 'set_default_channel' then
         App.set_default_channel(tonumber(arg))
+        feedback.dump_ccs(App.track)
     elseif cmd == 'activate_articulation' and rfx.fx then
         -- Look at all visible banks and find the matching articulation.
         local args = string.split(arg, ',')
         local channel = _cmd_arg_to_channel(args[1])
         local program = tonumber(args[2])
+        local force_insert = tonumber(args[3] or 0)
         local art = nil
         for _, bank in ipairs(App.screens.banklist.visible_banks) do
             if bank.srcchannel == 17 or bank.srcchannel == channel then
@@ -248,7 +273,7 @@ function App.handle_command(cmd, arg)
             end
         end
         if art then
-            App.activate_articulation(art, false)
+            App.activate_articulation(art, false, force_insert)
         end
     elseif cmd == 'activate_relative_articulation' and rfx.fx then
         local args = string.split(arg, ',')
@@ -273,6 +298,19 @@ function App.handle_command(cmd, arg)
             distance = sign * math.ceil(math.abs(offset) * 16.0 / resolution)
         end
         App.activate_relative_articulation_in_group(channel, group, distance)
+    elseif cmd == 'dump_ccs' and rfx.fx then
+        feedback.dump_ccs(App.track)
+    elseif cmd == 'set_midi_feedback_active' then
+        local enabled = tonumber(arg)
+        if enabled == -1 then
+            -- Toggle
+            feedback.set_active(not App.config.cc_feedback_active)
+        else
+            feedback.set_active(not not enabled)
+        end
+        feedback.dump_ccs(App.track)
+    elseif cmd == 'ping' then
+        reaper.SetExtState("reaticulate", "pong", arg, false)
     end
 end
 
@@ -292,7 +330,23 @@ function App.activate_relative_articulation_in_group(channel, group, distance)
         art = App.active_articulations[artidx]
     end
     if not art or not art.button.visible then
-        log("TODO: select first visible")
+        -- No articulation is currently selected, so we need to pick one to use as a
+        -- starting point.  For negative distances, pick the first articulation, and
+        -- for positive distances, pick the last.
+        if distance < 0 then
+            local bank = App.screens.banklist.get_first_bank()
+            if bank then
+                art = bank:get_first_articulation()
+            end
+        else
+            local bank = App.screens.banklist.get_last_bank()
+            if bank then
+                art = bank:get_last_articulation()
+            end
+        end
+        if not art then
+            return
+        end
     end
 
     local bank = art:get_bank()
@@ -342,7 +396,7 @@ function App.activate_relative_articulation_in_group(channel, group, distance)
         end
     end
     if target ~= art and target.group == group and target.button.visible then
-        App.activate_articulation(target, false)
+        App.activate_articulation(target, false, false)
         target.button:scrolltoview(130, 40)
     end
 end
@@ -419,10 +473,23 @@ end
 function rtk.onkeypresspost(event)
     log("keypress: keycode=%d  handled=%s", event.keycode, event.handled)
     if not event.handled then
-        if event.keycode >= 49 and event.keycode <= 57 then
-            App.set_default_channel(event.keycode - 48)
-        elseif event.keycode == rtk.keycodes.DOWN then
-            App.activate_next_articulation_in_group(1)
+        if App.screens.get_current() == App.screens.banklist then
+            if event.keycode >= 49 and event.keycode <= 57 then
+                App.set_default_channel(event.keycode - 48)
+            elseif event.keycode == rtk.keycodes.DOWN then
+                App.activate_relative_articulation_in_group(App.default_channel, 1, 1)
+            elseif event.keycode == rtk.keycodes.UP then
+                App.activate_relative_articulation_in_group(App.default_channel, 1, -1)
+            end
+        end
+        -- If the app sees an unhandled space key then we do what is _probably_ what
+        -- the user wants, which is to toggle transport play and refocus outside of
+        -- Reaticulate.  This fails if the user has bound space to something else,
+        -- but it's worth the risk.
+        if event.keycode == rtk.keycodes.SPACE then
+            -- Transport: Play/stop
+            reaper.Main_OnCommandEx(40044, 0, 0)
+            App.refocus()
         end
     end
 end
@@ -473,6 +540,9 @@ function App.refresh_banks()
     App.ontrackchange(nil, App.track)
     -- Update articulation list to reflect any changes that were made to the Reabank template.
     App.screens.banklist.update()
+    if App.screens.get_current() == App.screens.trackcfg then
+        App.screens.trackcfg.update()
+    end
     log("bank refresh took %.03fs", os.clock() - t0)
 end
 
@@ -570,7 +640,7 @@ function App.init(basedir)
     articons.init(Path.imagedir)
     rtk.scale = App.config.scale
 
-    App.overlay = rtk.VBox:new({position=rtk.Widget.FIXED})
+    App.overlay = rtk.VBox:new({position=rtk.Widget.FIXED, z=100})
     rtk.widget:add(App.overlay)
 
     App.overlay:add(build_toolbar())
@@ -587,9 +657,9 @@ function App.init(basedir)
     App.set_default_channel(1)
 
     rtk.onupdate = function()
-        exists, val = reaper.GetProjExtState(0, "reaticulate", "command")
-        if exists ~= 0 then
-            reaper.SetProjExtState(0, "reaticulate", "command", '')
+        if reaper.HasExtState("reaticulate", "command") then
+            val = reaper.GetExtState("reaticulate", "command")
+            reaper.SetExtState("reaticulate", "command", '', false)
             for cmd, arg in val:gmatch('(%S+)=([^"]%S*)') do
                 App.handle_command(cmd, arg)
             end

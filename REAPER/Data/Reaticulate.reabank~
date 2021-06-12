@@ -1,0 +1,122 @@
+//! g="LA Scoring Strings" n="All articulations"
+Bank 42 1 LA Scoring Strings - All articulations
+
+//! c=legato i=legato o=@1
+20 legato
+
+//! c=legato-light i=tremolo o=@2
+30 tremolo
+
+//! c=legato-light i=trill o=@3
+70 trill
+
+//! c=legato i=con-sord o=@4
+26 sordino
+
+//! c=textured i=harmonics o=@5
+29 harmonics
+
+//! c=short i=staccato o=@6
+40 staccato
+
+//! c=short i=spiccato o=@7
+42 spiccato
+
+//! c=short-light i=pizz o=@8
+56 pizz
+
+//! c=short-dark i=pizz-bartok o=@9
+57 bartok pizz
+
+
+
+//! g="Berlin Woodwinds" n="All articulations"
+Bank 43 1 Berlin Woodwinds - All articulations
+
+//! c=legato i=legato-vibrato o=@1/cc:22,1@1
+1 leg vib
+
+//! c=legato i=legato o=@1/cc:22,64@1
+2 leg no vib
+
+//! c=legato i=legato-vibrato o=@1/cc:22,127@1
+3 leg prg vib
+
+//! c=long i=vibrato o=@2/cc:22,1@2
+4 sust vib
+
+//! c=long i=whole-note o=@2/cc:22,64@2
+5 sust no vib
+
+//! c=long i=vibrato o=@2/cc:22,127@2
+6 sust prg vib
+
+//! c=short-dark i=sfz o=@3
+7 sfz
+
+//! c=short i=staccato o=@4
+8 stacc
+
+//! c=short-light i=staccato o=@5
+9 stacc short
+
+//! c=short i=tenuto-half o=@6
+10 port long
+
+//! c=short-light i=tenuto-quarter o=@7
+11 port short
+
+//! c=short i=multitongued o=@8/cc:16,127@8
+12 dbl fast
+
+//! c=short i=multitongued o=@8/cc:16,1@8
+13 dbl slow
+
+//! c=short i=multitongued o=@9/cc:16,127@9
+14 triple fast
+
+//! c=short i=multitongued o=@9/cc:16,1@9
+15 triple slow
+
+//! c=short i=trill o=@10
+16 1x trill
+
+//! c=long i=trill o=@11
+17 sfz trill
+
+//! c=long i=trill-perf4 o=@12
+18 perf trill
+
+//! c=legato i=run-major o=@13/cc:16,1@13
+19 run maj
+
+//! c=legato i=run-minor o=@13/cc:16,127@13
+20 run min
+
+//! c=legato i=legato-runs o=@14
+21 run trans
+
+//! c=legato i=legato-runs o=@14
+22 RUN BUILDER
+
+
+//! g="Spitfire Percussion REDUX" n="Timpani"
+Bank 60 1 Spitfire Percussion REDUX - Timpani
+
+//! c=short i=note-quarter o=note:24
+1 hit
+
+//! c=short-light i=note-quarter o=note:25
+2 hit muted
+
+//! c=long i=tremolo o=note:26
+3 roll
+
+//! c=long-dark i=cresc-mf-half o=note:27
+4 swell mf
+
+//! c=long i=cresc-f-half o=note:28
+5 swell f
+
+//! c=long-dark i=tremolo=note:29
+6 hit & roll

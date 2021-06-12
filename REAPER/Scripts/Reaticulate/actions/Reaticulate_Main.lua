@@ -1,4 +1,4 @@
--- Copyright 2017 Jason Tackaberry
+-- Copyright 2017-2018 Jason Tackaberry
 --
 -- Licensed under the Apache License, Version 2.0 (the "License");
 -- you may not use this file except in compliance with the License.
@@ -23,6 +23,12 @@ local sep = package.config:sub(1, 1)
 local script = debug.getinfo(1, 'S').source:sub(2)
 local pattern = "(.*" .. sep .. ")[^" .. sep .. "]+" .. sep
 local basedir = script:match(pattern)
+
+
+-- Remember command id for this script (because Reaper's API actually provides no means
+-- of *reliably* resolving it).
+_, _, _, cmd, _, _, _ = reaper.get_action_context()
+reaper.SetExtState("reaticulate", "main_command_id", tostring(cmd), true)
 
 -- Source code will be in this subdirectory.
 local appdir = basedir .. sep .. 'app' .. sep

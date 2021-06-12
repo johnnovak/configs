@@ -1,4 +1,4 @@
--- Copyright 2017 Jason Tackaberry
+-- Copyright 2017-2018 Jason Tackaberry
 --
 -- Licensed under the Apache License, Version 2.0 (the "License");
 -- you may not use this file except in compliance with the License.
@@ -60,7 +60,10 @@ function screen.filter_articulations(filter)
             if filter:len() > 0 then
                 score = get_filter_score((art.shortname or art.name):lower(), filter)
             end
-            if score ~= 0 and (bank.srcchannel == 17 or bank.srcchannel == App.default_channel) then
+            -- Show articulation if the score is non-zero (in which case there is a match).
+            -- We don't further filter based on the bank's source channel vs the current
+            -- default channel (as we once did).
+            if score ~= 0 then
                 if not art.button.visible then
                     art.button:show()
                 end
@@ -145,7 +148,7 @@ end
 function screen.init()
     screen.widget = rtk.widget:add(rtk.VBox:new())
 
-    local topbar = rtk.VBox:new({spacing=0, position=rtk.Widget.FIXED, bg=rtk.theme.window_bg, tpadding=0, bpadding=15})
+    local topbar = rtk.VBox:new({spacing=0, position=rtk.Widget.FIXED, bg=rtk.theme.window_bg, tpadding=0, bpadding=15, z=50})
     screen.toolbar = rtk.HBox:new({spacing=0})
     screen.widget:add(topbar, {lpadding=0})
 

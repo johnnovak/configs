@@ -1,4 +1,4 @@
--- Copyright 2017 Jason Tackaberry
+-- Copyright 2017-2018 Jason Tackaberry
 --
 -- Licensed under the Apache License, Version 2.0 (the "License");
 -- you may not use this file except in compliance with the License.
@@ -54,17 +54,50 @@ function string.split(s, delim)
     return words
 end
 
+function string.strip(s)
+    return s:match('^%s*(.-)%s*$')
+ end
+
 function read_file(fname)
-    local f = io.open(fname)
-    local contents = f:read("*all")
-    f:close()
-    return contents
+    local f, err = io.open(fname)
+    if f then
+        local contents = f:read("*all")
+        f:close()
+        return contents, nil
+    else
+        return nil, err
+    end
 end
 
 function write_file(fname, contents)
-    local f = io.open(fname, "w")
-    f:write(contents)
-    f:close()
+    local f, err = io.open(fname, "w")
+    if f then
+        f:write(contents)
+        f:close()
+    else
+        return err
+    end
+end
+
+function file_size(fname)
+    local f, err = io.open(fname)
+    if f then
+        local size = f:seek("end")
+        f:close()
+        return size, nil
+    else
+        return nil, err
+    end
+end
+
+function file_exists(fname)
+    local f, err = io.open(fname)
+    if f then
+        f:close()
+        return true
+    else
+        return false
+    end
 end
 
 function table.val_to_str(v)

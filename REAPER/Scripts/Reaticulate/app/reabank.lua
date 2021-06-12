@@ -1,4 +1,4 @@
--- Copyright 2017 Jason Tackaberry
+-- Copyright 2017-2018 Jason Tackaberry
 --
 -- Licensed under the Apache License, Version 2.0 (the "License");
 -- you may not use this file except in compliance with the License.
@@ -43,6 +43,9 @@ local ARTICULATION_FLAG_ANTIHANG_CC = 1 << 2
 local ARTICULATION_FLAG_BLOCK_BANK_CHANGE = 1 << 3
 local ARTICULATION_FLAG_TOGGLE = 1 << 4
 local ARTICULATION_FLAG_HIDDEN = 1 << 5
+local ARTICULATION_FLAG_IS_FILTER = 1 << 6
+
+local DEFAULT_CHASE_CCS = '1,2,11,64-69'
 
 local function insert_program_change(take, selected, ppq, channel, bank_msb, bank_lsb, program)
     reaper.MIDI_InsertCC(take, selected, false, ppq, 0xb0, channel, 0, bank_msb)
@@ -52,66 +55,37 @@ local function insert_program_change(take, selected, ppq, channel, bank_msb, ban
     reaper.UpdateItemInProject(item)
 end
 
-local function replace_selected_events(take, channel, bank_msb, bank_lsb, val)
-    local evtidx = reaper.MIDI_EnumSelEvts(take, 0)
-    local replace = {}
-    while evtidx > -1 do
-        local rv, selected, muted, ppq, msg = reaper.MIDI_GetEvt(take, evtidx, true, true, 1, "")
-        local command = string.byte(msg, 1) & 0xf0
-        local value = string.byte(msg, 2)
-        -- Replace either CC 0 (command == 176) and value 0/32, which is a bank select, or
-        -- a program change (command == 192).
-        if (command == 0xb0 and (value == 0 or value == 0x20)) or command == 0xc0 then
-            replace[#replace+1] = {evtidx, ppq}
+-- Deletes all bank select or program change events at the given ppq.
+-- The caller passes an index of a CC event which must exist at the ppq,
+-- but in case there are multiple events at that ppq, it's not required that
+-- it's the first.
+local function delete_program_events_at_ppq(take, idx, max, ppq)
+    -- The supplied index is at the ppq, but there may be others ahead of it.  So
+    -- rewind to the first.
+    while idx >= 0 do
+        local rv, selected, muted, evtppq, command, chan, msg2, msg3 = reaper.MIDI_GetCC(take, idx)
+        if evtppq ~= ppq then
+            break
         end
-        evtidx = reaper.MIDI_EnumSelEvts(take, evtidx + 1)
+        idx = idx - 1
     end
-    if #replace > 0 then
-        for _, events in ipairs(replace) do
-            local evtidx, ppq = table.unpack(events)
-            reaper.MIDI_DeleteEvt(take, evtidx)
-            insert_program_change(take, true, ppq, channel, bank_msb, bank_lsb, val)
+    idx = idx + 1
+    -- Now idx is the first CC at ppq.  Enumerate subsequent events and delete
+    -- any bank selects or program changes until we move off the ppq.
+    while idx < max do
+        local rv, selected, muted, evtppq, command, chan, msg2, msg3 = reaper.MIDI_GetCC(take, idx)
+        if evtppq ~= ppq then
+            return
         end
-        return true
-    else
-        return false
+        if (command == 0xb0 and (msg2 == 0 or msg2 == 0x20)) or (command == 0xc0) then
+            reaper.MIDI_DeleteCC(take, idx)
+        else
+            -- If we deleted the event, we don't advance idx because the old value would
+            -- point to the adjacent event.  Otherwise we do need to increment it.
+            idx = idx + 1
+        end
     end
-    return #replace > 0
 end
-
--- Source channel starts at 1 (17 = use default channel)
-local function activate_articulation(source_channel, msb, lsb, program)
-    local channel = source_channel - 1
-    if channel >= 16 then
-        channel = App.default_channel - 1
-    end
-    local hwnd = reaper.MIDIEditor_GetActive()
-    if hwnd then
-        -- Magic value 32060 is the MIDI editor context
-        local stepInput = reaper.GetToggleCommandStateEx(32060, 40481)
-        if stepInput == 1 then
-            -- Step recording is enabled in the editor, so inject the PC event at
-            -- the current cursor position.
-            reaper.PreventUIRefresh(1)
-            reaper.Undo_BeginBlock2(0)
-            local take = reaper.MIDIEditor_GetTake(hwnd)
-            -- Replace any existing selected events (if those events are program changes)
-            -- otherwise insert a new event at the cursor position.
-            if not replace_selected_events(take, channel, msb, lsb, program) then
-                local cursor = reaper.GetCursorPosition()
-                local ppq = reaper.MIDI_GetPPQPosFromProjTime(take, cursor)
-                insert_program_change(take, false, ppq, channel, msb, lsb, program)
-            end
-            reaper.Undo_EndBlock2(0, "MIDI editor: insert program change (" .. program .. ")", -1)
-            reaper.PreventUIRefresh(-1)
-        end
-    end
-    rfx.activate_articulation(channel, program)
-    reaper.StuffMIDIMessage(0, 0xb0 + channel, 0, msb)
-    reaper.StuffMIDIMessage(0, 0xb0 + channel, 0x20, lsb)
-    reaper.StuffMIDIMessage(0, 0xc0 + channel, program, 0)
-end
-
 
 local function _parse_flags(flags, value)
     if not flags then
@@ -153,6 +127,8 @@ function Bank:initialize(factory, msb, lsb, name, attrs)
     self.msb = tonumber(msb)
     self.lsb = tonumber(lsb)
     self.name = name
+    -- Set to true when Bank:realize() is called.
+    self.realized = false
     self.msblsb = (self.msb << 8) + self.lsb
     -- List of articulations in order defined in Reabank file
     self.articulations = {}
@@ -162,6 +138,8 @@ function Bank:initialize(factory, msb, lsb, name, attrs)
     -- 1 = channel 1, 17 = omni
     self.channel = 17
     table.merge(self, attrs)
+    -- Remember the supplied attributes for copy_missing_attributes_from()
+    self._attrs = attrs
 
     self.flags = _parse_flags(self.flags,
         -- Defaults
@@ -170,6 +148,12 @@ function Bank:initialize(factory, msb, lsb, name, attrs)
         ARTICULATION_FLAG_ANTIHANG_CC |
         ARTICULATION_FLAG_BLOCK_BANK_CHANGE
     )
+
+    -- Bank-level hidden flag is an exception.  It doesn't propagate to the
+    -- articulations but rather controls whether the bank should be visible
+    -- in the UI.
+    self.hidden = (self.flags & ARTICULATION_FLAG_HIDDEN) ~= 0
+    self.flags = self.flags & ~ARTICULATION_FLAG_HIDDEN
 end
 
 function Bank:add_articulation(art)
@@ -216,6 +200,26 @@ function Bank:get_src_channel()
     end
 end
 
+function Bank:get_chase_cc_list()
+    if self._chase then
+        return self._chase
+    end
+    ccs = {}
+    chase = self.chase or DEFAULT_CHASE_CCS
+    for _, elem in ipairs(chase:split(',')) do
+        if elem:find('-') then
+            subrange = elem:split('-')
+            for i = tonumber(subrange[1]), tonumber(subrange[2]) do
+                ccs[#ccs+1] = i
+            end
+        else
+            ccs[#ccs+1] = tonumber(elem)
+        end
+    end
+    self._chase = ccs
+    return ccs
+end
+
 function Bank:create_ui()
     self.vbox = rtk.VBox:new({spacing=10})
     self.heading = rtk.Heading:new({label=self.shortname or self.name})
@@ -225,12 +229,11 @@ function Bank:create_ui()
         local color = art.color or reabank.colors.default
         local textcolor = '#ffffff'
         if not color:starts('#') then
-            color = reabank.colors[color]
+            color = reabank.colors[color] or reabank.colors.default
         end
         local textcolor = color2luma(color) > 0.7 and '#000000' or '#ffffff'
-        art.icon = articons.get(art.iconname or 'note-eighth')
+        art.icon = articons.get(art.iconname) or articons.get('note-eighth')
         local flags = art.channels > 0 and 0 or rtk.Button.FLAT_LABEL
-        local outputstr = art:describe_outputs()
         art.button = rtk.Button:new({label=(art.shortname or art.name), icon=art.icon, color=color, textcolor=textcolor,
                                      tpadding=1, rpadding=1, bpadding=1, lpadding=1,
                                      flags=flags, rspace=40})
@@ -240,8 +243,10 @@ function Bank:create_ui()
         art.button.ondraw = function(button, offx, offy, event) art:draw_button_midi_channel(button, offx, offy, event) end
         art.button.onblur = function(button, event) App.set_statusbar(nil) end
         art.button.onhover = function(button, event)
-            -- button:scrollto(130, 40)
-            App.set_statusbar(outputstr)
+            if not art.outputstr then
+                art.outputstr = art:describe_outputs()
+            end
+            App.set_statusbar(art.outputstr)
         end
         self.vbox:add(art.button, {lpadding=30})
     end
@@ -263,6 +268,38 @@ function Bank:copy_articulations_from(from_bank)
     end
 end
 
+function Bank:copy_missing_attributes_from(from_bank)
+    for k, v in pairs(from_bank._attrs) do
+        if not self._attrs[k] then
+            self._attrs[k] = v
+            self[k] = v
+        end
+    end
+end
+
+-- Perform any necessary post-processing after all articulations are instantiated
+-- in the bank.  This need only be called when the bank is actually used by the user.
+function Bank:realize()
+    if self.realized then
+        return
+    end
+    -- Discover which articulations are used as filters for other articulations'
+    -- output events and set ARTICULATION_FLAG_IS_FILTER on them.
+    for _, art in ipairs(self.articulations) do
+        local outputs = art:get_outputs()
+        for _, output in ipairs(outputs) do
+            if output.filter_program then
+                local filter = self:get_articulation_by_program(output.filter_program)
+                if filter then
+                    filter.flags = filter.flags | ARTICULATION_FLAG_IS_FILTER
+                end
+            end
+        end
+    end
+    self.realized = true
+end
+
+
 local Articulation = class('Articulation')
 function Articulation:initialize(bank, program, name, attrs)
     self.color = 'default'
@@ -274,6 +311,9 @@ function Articulation:initialize(bank, program, name, attrs)
     self.program = program
     self.name = name
     self._attrs = attrs
+    -- True if any output event has a filter program, false otherwise, or nil if
+    -- we don't know (because we haven't called get_outputs())
+    self._has_conditional_output = nil
     table.merge(self, attrs)
     self.group = tonumber(self.group or 1)
 
@@ -282,22 +322,35 @@ end
 
 function Articulation:get_outputs()
     if not self._outputs then
+        self._has_conditional_output = false
         self._outputs = {}
         for spec in (self.outputs or ''):gmatch('([^/]+)') do
-            output = {type=nil, channel=nil, args={}}
-            for prefix, part in ('/' .. spec):gmatch('([/@:])([^@:]+)') do
+            output = {type=nil, channel=nil, args={}, route=true, filter_program=nil}
+            for prefix, part in ('/' .. spec):gmatch('([/@:%%])([^@:%%]+)') do
                 if prefix == '/' then
-                    output.type = part
+                    if part:starts('-') then
+                        output.route = false
+                        output.type = part:sub(2)
+                    else
+                        output.type = part
+                    end
                 elseif prefix == '@' then
                     output.channel = tonumber(part)
                 elseif prefix == ':' then
                     output.args = part:split(',')
+                elseif prefix == '%' then
+                    output.filter_program = tonumber(part)
+                    self._has_conditional_output = true
                 end
             end
             self._outputs[#self._outputs+1] = output
         end
     end
     return self._outputs
+end
+
+function Articulation:has_conditional_output()
+    return self._has_conditional_output
 end
 
 -- Returns a human readable string explaining what the outputs do.
@@ -320,6 +373,15 @@ function Articulation:describe_outputs()
                 s = string.format('note %s', name)
             else
                 s = string.format('note %s vel %d', name, output.args[2] or 127)
+            end
+        elseif output.type == 'art' then
+            local program = tonumber(output.args[1] or 0)
+            local bank = self:get_bank()
+            local art = bank.articulations_by_program[program]
+            if art then
+                s = art.name or 'unnamed articulation'
+            else
+                s = 'undefined articulation'
             end
         elseif output.type == nil and output.channel then
             verb = 'Routes'
@@ -350,24 +412,103 @@ function Articulation:copy_to_bank(bank)
 end
 
 function Articulation:get_bank()
-    return reabank.banks[self.bankidx]
+    return reabank.get_bank_by_msblsb(self.bankidx)
 end
 
-function Articulation:activate(refocus)
-    local refocus = function()
-        if refocus == true then
-            App.refocus()
-        end
+function Articulation:activate(refocus, force_insert)
+    if refocus == true then
+        reaper.defer(App.refocus)
     end
-    reaper.defer(refocus)
     if self.program >= 0 then
-        local bank = self:get_bank()
-        activate_articulation(bank.srcchannel, bank.msb, bank.lsb, self.program)
+        self:_activate(force_insert)
         return true
     else
         return false
     end
 end
+
+function Articulation:_activate(force_insert)
+    local bank = self:get_bank()
+    -- Source channel starts at 1 (17 = use default channel)
+    local channel = bank.srcchannel - 1
+    if channel >= 16 then
+        channel = App.default_channel - 1
+    end
+
+    local take = nil
+
+    -- If MIDI Editor is open, use the current take there.
+    local hwnd = reaper.MIDIEditor_GetActive()
+    if hwnd then
+        -- Magic value 32060 is the MIDI editor context
+        local stepInput = reaper.GetToggleCommandStateEx(32060, 40481)
+        if stepInput == 1 or force_insert then
+            take = reaper.MIDIEditor_GetTake(hwnd)
+        end
+    elseif force_insert then
+        -- No active MIDI editor and we want to force insert.  Try to find the current
+        -- take on the selected track based on edit cursor position.
+        --
+        -- FIXME: might support multiple selected tracks.
+        local track = reaper.GetSelectedTrack(0, 0)
+        if track then
+            local cursor = reaper.GetCursorPosition()
+            for idx = 0, reaper.CountTrackMediaItems(track) - 1 do
+                local item = reaper.GetTrackMediaItem(track, idx)
+                local startpos = reaper.GetMediaItemInfo_Value(item, 'D_POSITION')
+                local endpos = startpos + reaper.GetMediaItemInfo_Value(item, 'D_LENGTH')
+                if cursor >= startpos and cursor <= endpos then
+                    take = reaper.GetActiveTake(item)
+                    break
+                end
+            end
+        end
+    end
+    reaper.PreventUIRefresh(1)
+    if take then
+        reaper.Undo_BeginBlock2(0)
+        -- Take was found (either because MIDI editor is open with step input enabled or because
+        -- force insert was used), so inject the PC event at the current cursor position.
+
+        -- This is a bit tragic.  There's no native function to get a list of MIDI events given a
+        -- ppq.  So knowing that the event indexes will be ordered by time, we do a binary search
+        -- across the events until we converge on the ppq.
+        --
+        -- If the events at the ppq are program changes, we delete them (as we're about to replace
+        -- them).
+        local cursor = reaper.GetCursorPosition()
+        local ppq = reaper.MIDI_GetPPQPosFromProjTime(take, cursor)
+
+        local _, _, n_events, _ = reaper.MIDI_CountEvts(take)
+        local skip = math.floor(n_events / 2)
+        local idx = skip
+        while idx > 0 and idx < n_events and skip > 0.5 do
+            local rv, _, _, evtppq, _, _, _, _ = reaper.MIDI_GetCC(take, idx)
+            skip = skip / 2
+            if evtppq > ppq then
+                -- Event is ahead of target ppq, back up.
+                idx = idx - math.ceil(skip)
+            elseif evtppq < ppq then
+                -- Event is behind target ppq, skip ahead.
+                idx = idx + math.ceil(skip)
+            else
+                delete_program_events_at_ppq(take, idx, n_events, ppq)
+                break
+            end
+        end
+        insert_program_change(take, false, ppq, channel, bank.msb, bank.lsb, self.program)
+        rfx.activate_articulation(channel, self.program)
+        reaper.Undo_EndBlock2(0, "Reaticulate: insert articulation (" .. self.name .. ")", -1)
+    else
+        rfx.activate_articulation(channel, self.program)
+    end
+    reaper.StuffMIDIMessage(0, 0xb0 + channel, 0, bank.msb)
+    reaper.StuffMIDIMessage(0, 0xb0 + channel, 0x20, bank.lsb)
+    reaper.StuffMIDIMessage(0, 0xc0 + channel, self.program, 0)
+    reaper.PreventUIRefresh(-1)
+end
+
+
 
 function Articulation:is_active()
     return self.channels ~= 0
@@ -484,14 +625,17 @@ function reabank.parse(filename, banks)
             merge(metadata, 'flags', props.f)
             merge(metadata, 'message', props.m)
             merge(metadata, 'clone', props.clone)
+            merge(metadata, 'chase', props.chase)
             if props.colors then
                 reabank.parse_colors(props.colors)
             end
         elseif line:len() > 0 and not line:starts("//") then
             program, name = line:match("(%d+) +(.*)")
-            art = Articulation(bank, tonumber(program), name, metadata)
-            if art.flags & ARTICULATION_FLAG_HIDDEN == 0 then
-                bank:add_articulation(art)
+            if program and name then
+                art = Articulation(bank, tonumber(program), name, metadata)
+                if art.flags & ARTICULATION_FLAG_HIDDEN == 0 then
+                    bank:add_articulation(art)
+                end
             end
             -- Reinitialize for next articulation
             metadata = {}
@@ -501,6 +645,7 @@ function reabank.parse(filename, banks)
     for _, bank in ipairs(cloned) do
         local source = reabank.banks_by_path[bank.clone]
         if source then
+            bank:copy_missing_attributes_from(source)
             bank:copy_articulations_from(source)
         end
     end
@@ -533,7 +678,12 @@ end
 
 local function set_reabank_file(reabank)
     local inifile = reaper.get_ini_file()
-    local ini = read_file(inifile)
+    local ini, err = read_file(inifile)
+    if err then
+        -- Can't read REAPER's ini file.  This shouldn't happen.  Something is wrong with the
+        -- installation.
+        return fatal_error("Failed to read REAPER's ini file: " .. tostring(err))
+    end
     if ini:find("mididefbankprog=") then
         ini = ini:gsub("mididefbankprog=[^\n]*", "mididefbankprog=" .. reabank)
     else
@@ -546,7 +696,10 @@ local function set_reabank_file(reabank)
         end
     end
     log("Updating ini file %s", inifile)
-    write_file(inifile, ini)
+    err = write_file(inifile, ini)
+    if err then
+        return fatal_error("Failed to write ini file: " .. tostring(err))
+    end
 end
 
 function reabank.banks_to_reabank_string()
@@ -562,7 +715,7 @@ end
 
 local function get_reabank_file()
     local ini = read_file(reaper.get_ini_file())
-    return ini:match("mididefbankprog=([^\n]*)")
+    return ini and ini:match("mididefbankprog=([^\n]*)")
 end
 
 function reabank.init()
@@ -572,21 +725,33 @@ function reabank.init()
     reabank.reabank_filename_factory = Path.join(Path.basedir, "Reaticulate-factory.reabank")
     reabank.reabank_filename_user = Path.join(Path.resourcedir, "Data", "Reaticulate.reabank")
     log("Reabank files: factory=%s user=%s", reabank.reabank_filename_factory, reabank.reabank_filename_user)
+
+    local cur_factory_bank_size, err = file_size(reabank.reabank_filename_factory)
     local file = get_reabank_file() or ''
     local tmpnum = file:lower():match("-tmp(%d+).")
-    if tmpnum then
-        log("parsing existing tmp rebeank")
+    if tmpnum and file_exists(file) then
+        log("tmp rebeank exists: %s", file)
         reabank.version = tonumber(tmpnum)
         reabank.filename_tmp = file
-        reabank.menu = nil
-        reabank.banks = reabank.parseall()
-    else
-        -- Install default Reabank.
-        log("generating new reabank")
-        reabank.banks = reabank.parse(reabank.reabank_filename_factory)
-        reabank.refresh()
+        -- Determine if the factory bank has changed file size.  If it has (because e.g. the user
+        -- upgraded), ensure the tmp bank is refreshed.  This isn't foolproof, but it's good enough.
+        local last_factory_bank_size = reaper.GetExtState("reaticulate", "factory_bank_size")
+        if cur_factory_bank_size == tonumber(last_factory_bank_size) then
+            reabank.menu = nil
+            reabank.banks = reabank.parseall()
+            log("Existing reabank %s parsed in %.03fs", reabank.filename_tmp, os.clock() - t0)
+            return
+        else
+            log("factory bank has changed: cur=%s last=%s", cur_factory_bank_size, last_factory_bank_size)
+        end
     end
-    log("Reabank %s parsed in %.03fs", reabank.filename_tmp, os.clock() - t0)
+
+    -- Either tmp reabank doesn't exist or factory banks have changed, so regenerate.
+    log("generating new reabank")
+    reabank.banks = reabank.parse(reabank.reabank_filename_factory)
+    reabank.refresh()
+    reaper.SetExtState("reaticulate", "factory_bank_size", tostring(cur_factory_bank_size), true)
+    log("Refreshed reabank %s parsed in %.03fs", reabank.filename_tmp, os.clock() - t0)
 end
 
 
@@ -603,7 +768,10 @@ function reabank.refresh()
     header = header .. "// Edit this instead: " .. reabank.reabank_filename_user .. "\n\n\n\n"
 
     reabank.banks = reabank.parseall()
-    write_file(newfile, header .. reabank.banks_to_reabank_string())
+    local err = write_file(newfile, header .. reabank.banks_to_reabank_string())
+    if err then
+        return fatal_error("Failed to write Reabank file: " .. tostring(err))
+    end
     set_reabank_file(newfile)
 
     -- Kick all media items on the current track as well as the selected media
@@ -668,7 +836,12 @@ function reabank.to_menu()
                 end
             end
         end
-        submenu[#submenu+1] = {bank.shortname or bank.name, tostring(bank.msblsb), 0, bank.name}
+        submenu[#submenu+1] = {
+            bank.shortname or bank.name,
+            tostring(bank.msblsb),
+            bank.hidden and rtk.OptionMenu.ITEM_DISABLED or rtk.OptionMenu.ITEM_NORMAL,
+            bank.name
+        }
     end
 
     function cmp(a, b)

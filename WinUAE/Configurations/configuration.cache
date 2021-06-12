@@ -1,8 +1,8 @@
 ﻿WinUAE Configuration.Cache
 3
 4
-7
-131767301431910000
+10
+132330213179550000
 ;
 Host\
 131238544056567859
@@ -10,12 +10,15 @@ Host
 
 ;
 A1200 Real Accelerator.uae
-131762977066522541
+132330213177316587
 A1200 Real Accelerator.uae
 020 FPU 8/16MB Cycle Exact x2 - USE THIS FOR GAMES
 
 
 3
+
+
+
 ;
 A1200 Real.uae
 131040465203357680
@@ -24,6 +27,9 @@ A1200 Real.uae
 
 
 3
+
+
+
 ;
 A1200 Turbo.uae
 130267328380000000
@@ -32,6 +38,9 @@ JIT 020 FPU 8/16MB
 
 
 3
+
+
+
 ;
 A4000 Compatible.uae
 130267328440000000
@@ -40,6 +49,9 @@ A4000 Compatible.uae
 
 
 3
+
+
+
 ;
 A4000 Normal.uae
 130267328520000000
@@ -48,6 +60,9 @@ A4000 Normal.uae
 
 
 3
+
+
+
 ;
 A4000 Turbo 040.uae
 131040720885354064
@@ -56,6 +71,9 @@ JIT 040 FPU 8/64MB
 
 
 3
+
+
+
 ;
 A4000 Turbo.uae
 131040702800904331
@@ -64,6 +82,9 @@ JIT 020 FPU 8/32MB
 
 
 3
+
+
+
 ;
 Host\Fullscreen (800x600).uae
 129984809180000000
@@ -72,6 +93,9 @@ Fullscreen (800x600).uae
 
 
 2
+
+
+
 ;
 Host\Fullscreen PAL VSync Perfect.uae
 131238544056687866
@@ -80,6 +104,9 @@ Fullscreen PAL VSync Perfect.uae
 
 
 2
+
+
+
 ;
 Host\Fullscreen PAL VSync.uae
 129984810580000000
@@ -88,6 +115,9 @@ Fullscreen PAL VSync.uae
 
 
 2
+
+
+
 ;
 Host\FullwindowD3D.uae
 129984809200000000
@@ -96,6 +126,9 @@ FullwindowD3D.uae
 
 
 2
+
+
+
 ;
 Host\Windowed.uae
 129984804820000000
@@ -104,6 +137,9 @@ Windowed.uae
 
 
 2
+
+
+
 ;
 ProTracker.uae
 131767301431659572
@@ -112,4 +148,7 @@ ProTracker.uae
 
 
 3
+
+
+
 ;

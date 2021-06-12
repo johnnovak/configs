@@ -1,5 +1,5 @@
 
--- Copyright 2017 Jason Tackaberry
+-- Copyright 2017-2018 Jason Tackaberry
 --
 -- Licensed under the Apache License, Version 2.0 (the "License");
 -- you may not use this file except in compliance with the License.
@@ -44,13 +44,16 @@ function screen.init()
         -- at the top of the chain.  I pine for mature APIs.
         reaper.PreventUIRefresh(1)
         reaper.Undo_BeginBlock()
-        local fx = reaper.TrackFX_AddByName(App.track, 'Reaticulate', 0, 1)
+        local fx = reaper.TrackFX_AddByName(App.track, 'Reaticulate.jsfx', 0, 1)
         for fx = fx, 0, -1 do
             reaper.SNM_MoveOrRemoveTrackFX(App.track, fx, -1)
         end
         reaper.Undo_EndBlock("Add Reaticulate FX", -1)
         reaper.PreventUIRefresh(-1)
         rfx.sync(rfx.track, true)
+        -- Trigger the track changed callback to ensure any actions dependend on the RFX are
+        -- triggered now that we've instantiated it.
+        App.ontrackchange(nil, rfx.track)
         screen.update()
     end
 
